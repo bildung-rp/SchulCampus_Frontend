@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="fontawesome-webfont.ttf" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="customer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="jquery_functions.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <a class="navbar-brand" href="#">
+                        <span class="edu-icon"></span>
+                        <span class="logo-label">Schul
+                            <b>Campus</b>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <button class="navbar-toggler" type="button" data-toggle="dropdown" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="nav dropdown" id="headerdd">
+                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle dropdown-toggle-ellipsis" data-toggle="dropdown">
+                            Anwendung wählen
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lime">
+
+                            <a class="dropdown-item" href="#">Mediathek</a>
+                            <a class="dropdown-item" href="#">Meine Dateien</a>
+                            <a class="dropdown-item" href="#">Mediencompass</a>
+                            <a class="dropdown-item" href="#">Moodle@RLP</a>
+                            <a class="dropdown-item" href="#">VEWA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ss-icon bell-icon"></span>
+                                <span class="badge badge-lime">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ss-icon letter-icon"></span>
+                                <span class="badge badge-lime">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="usertool-icon"></span>
+                                <span class="badge badge-lime">4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="nav dropdown" id="userdd">
+                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <span class="user-icon"></span>
+                            <span class="logo-label">Max Schmidt</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lime">
+
+                            <a class="dropdown-item" href="#">Einstellungen</a>
+                            <a class="dropdown-item" href="#">something else</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Abmelden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div id="content" class="content-padding-normal">
+
+        <nav class="container" id="tabs">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Tab1 Tabelle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test1_Headings_Lists_Pagination.html">Tab2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test2_Forms_Textfield.html">Tab3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test3_Dropdown_Checkbox.html">Tab4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test4_Accordeon_Breadcrumb_Pills_Tabs.html">Tab5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test5_Modal_Fehlermeldung.html">Tab6</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div id="sidebar">
+                <a href="javascript:void(0)" class="ss-icon close-icon" onclick="closeNav()"></a>
+                <ul>
+                    <span class="ss-icon man-icon"></span>Benutzer
+                    <li>
+                        <a href="#contact">Übersicht</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Anlegen</a>
+                    </li>
+                    <li>
+                        <a href="#news">Exportieren</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Importieren</a>
+                    </li>
+                </ul>
+                <ul>
+                    <span class="ss-icon users-icon"></span>Gruppen
+                    <li>
+                        <a href="#contact">Übersicht</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Anlegen</a>
+                    </li>
+                    <li>
+                        <a href="#news">Verwalten</a>
+                    </li>
+                </ul>
+                <ul>
+                    <span class="ss-icon flag-icon"></span>Rollen
+                    <li>
+                        <a href="#contact">Übersicht</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Anlegen</a>
+                    </li>
+                    <li>
+                        <a href="#news">Exportieren</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Importieren</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="sidebar-open">
+                <span class="sidebar-icon" onclick="openNav()"></span>
+            </div>
+        </div>
+        <div id="filter" class="container">
+            <div class="input-group">
+                <input class="form-control py-2" type="search" placeholder="Suchbegriff" value="" id="search-input">
+                <div class="input-group-append">
+                    <button class="btn btn-search" type="button"></button>
+                </div>
+            </div>
+            <span>Ergebnisse filtern:</span>
+            <div class="dropdown dropdown-blue">
+                <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle dropdown-toggle-ellipsis" data-toggle="dropdown">
+                    Gruppe
+                    <span> wählen</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-blue">
+
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item disabled" href="#">Disabled link</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown dropdown-blue">
+                <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle dropdown-toggle-ellipsis" data-toggle="dropdown">
+                    Rolle
+                    <span> wählen</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-blue">
+
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item disabled" href="#">Disabled link</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown dropdown-blue">
+                <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle dropdown-toggle-ellipsis" data-toggle="dropdown">
+                    Status
+                    <span> wählen</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-blue">
+
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item disabled" href="#">Disabled link</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="main" class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Vorname</th>
+                        <th>Benutzername</th>
+                        <th>Email</th>
+                        <th>Erstellt</th>
+                        <th>Gruppe</th>
+                        <th>Rolle</th>
+                        <th>Status</th>
+                        <th>Aktion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <form>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="f1" name="f1" value="">
+                                <label for="f1"></label>
+                            </td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>bf634</td>
+                            <td>john@example.com</td>
+                            <td>16.07.2018</td>
+                            <td>Klasse 7d</td>
+                            <td>Lehrkraft</td>
+                            <td class="status status-yellow"></td>
+                            <td>
+                                <a class="ss-icon write-icon" href="" title="action"></a>
+                                <a class="ss-icon ellipsis-icon" href="" title="action"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="f2" name="f2" value="">
+                                <label for="f2"></label>
+                            </td>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td></td>
+                            <td>mary@example.com</td>
+                            <td>11.07.2018</td>
+                            <td>Klasse 7e</td>
+                            <td>Lehrkraft</td>
+                            <td class="status status-red"></td>
+                            <td>
+                                <a class="ss-icon write-icon" href="" title="action"></a>
+                                <a class="ss-icon ellipsis-icon" href="" title="action"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="f3" name="f3" value="">
+                                <label for="f3"></label>
+                            </td>
+                            <td>Klaus</td>
+                            <td>BlaBla</td>
+                            <td>ghtt785</td>
+                            <td>juhghdy@example.com</td>
+                            <td>11.08.2018</td>
+                            <td>Klasse 7e</td>
+                            <td>Lehrkraft</td>
+                            <td class="status status-green"></td>
+                            <td>
+                                <a class="ss-icon write-icon" href="" title="action"></a>
+                                <a class="ss-icon ellipsis-icon" href="" title="action"></a>
+                            </td>
+                        </tr>
+                    </form>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-lg-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="RLP-logo-weiss.png" alt="Logo_RLP" class="img-fluid mx-auto d-block" width="150">
+                    </a>
+                </div>
+                <div class="col-xs-4 col-lg-8">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutzerklärung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nutzungsbedingungen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sidemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 col-lg-2">
+                    <div class="nav nav-item">
+                        <a href="#header" class="btn btn-sm dropup-grey dropdown-toggle" role="button">Nach oben</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
