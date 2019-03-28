@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/jquery-ui.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="fontawesome-webfont.ttf" rel='stylesheet' type='text/css'>
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="CSS/ie.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="JS/jquery_functions.js"></script>
@@ -159,12 +161,57 @@
                     </div>
                     <div id="c1" class="collapse" aria-labelledby="v1" data-parent="#accordion2">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                            et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                            synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <div class="container" id="filter">
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Bildungsbereich</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+    
+                                        <a class="dropdown-item" href="# ">Admin</a>
+                                        <a class="dropdown-item" href="# ">Lehrer</a>
+                                        <a class="dropdown-item" href="# ">Schüler</a>
+                                        <a class="dropdown-item" href="# ">Besucher</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Fach- und Sachgebiet</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+    
+                                        <a class="dropdown-item" href="#">Admin</a>
+                                        <a class="dropdown-item" href="# ">Lehrer</a>
+                                        <a class="dropdown-item" href="# ">Schüler</a>
+                                        <a class="dropdown-item" href="#">Besucher</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Schlagworte</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+    
+                                        <a class="dropdown-item" href="#">aktiv</a>
+                                        <a class="dropdown-item" href="#">pausiert</a>
+                                        <a class="dropdown-item" href="#">inaktiv</a>
+    
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Wertigkeit</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+    
+                                        <a class="dropdown-item" href="#">Premium Inhalte</a>
+                                        <a class="dropdown-item" href="#">Managed-Content</a>
+                                        <a class="dropdown-item" href="#">Community-Content</a>
+                                        <a class="dropdown-item" href="#">Persönlicher Content</a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,18 +236,21 @@
                 </ul>
 
                 <br>
-                <div class="tab-content">
+                <div class="tab-content" id="div2" ondragover="ablegenErlauben(event)" ondrop="ablegen(event)">
                     <div id="stöbern" class="tab-pane fade active show">
-                        Stöbern
-                        <br>
+                            <div class="media-object" draggable="true" ondragstart="ziehen(event)">
+                                    
+                            </div>
                     </div>
                     <div id="teilen" class="tab-pane fade">
-                        Teilen
-                        <br>
+                            <div class="media-object" draggable="true" ondragstart="ziehen(event)">
+                                    
+                            </div>
                     </div>
                     <div id="ordnen" class="tab-pane fade">
-                        Ordnen
-                        <br>
+                            <div class="media-object" draggable="true" ondragstart="ziehen(event)">
+                                    
+                            </div>
                     </div>
                 </div>
             </div>
@@ -213,15 +263,21 @@
                             <i class="icon-left-open"></i>
                         </button>
                     </div>
-                    <div id="media-content" class="row" style="display: inline-flex">
-                        <div class="col-4">
-                            <img src="Images/media1.png" style="width: 100%">
+                    <div id="media-content" id="div1" ondragover="ablegenErlauben(event)" ondrop="ablegen(event)">
+                        <div class="media-object" draggable="true" ondragstart="ziehen(event)" id="drag1">
+                            Zahlenrätsel
                         </div>
-                        <div class="col-4">
-                            <img src="Images/media3.png" style="width: 100%">
+                        <div class="media-object" draggable="true" ondragstart="ziehen(event)" id="drag2">
+                            Chemische Reaktionen
                         </div>
-                        <div class="col-4">
-                            <img src="Images/media2.png" style="width: 100%">
+                        <div class="media-object" draggable="true" ondragstart="ziehen(event)" id="drag3">
+                            Vertretung Klasse 7
+                        </div>
+                        <div class="media-object" draggable="true" ondragstart="ziehen(event)" id="drag4">
+                            Gedichte
+                        </div>
+                        <div class="media-object" draggable="true" ondragstart="ziehen(event)" id="drag5"> 
+                            Rationale Zahlen
                         </div>
                     </div>
             </div>

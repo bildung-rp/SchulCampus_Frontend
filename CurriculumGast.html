@@ -61,7 +61,7 @@
                                 <span>Curriculum</span>
                             </a>
                             <a class="dropdown-item" href="">
-                                <i class="sc-icon-dd icon-compass"></i>
+                                <i class="sc-icon-dd icon-compass-circled"></i>
                                 <span>Medienkompass</span>
                             </a>
                             <a class="dropdown-item" href="https://evewa.bildung-rp.de/veranstaltungskatalog">
@@ -103,18 +103,12 @@
                     </ul>
                 </div>
                 <div class="col-2">
-                    <div class="nav dropdown userdd">
-                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
-                            <span class="sc-icon-dd icon-userhead"></span>
-                            <span class="dd-label">Max Schmidt</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lime">
-                            <a class="dropdown-item" href="#">Profil</a>
-                            <a class="dropdown-item" href="#">Einstellungen</a>
-                            <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Abmelden</a>
-                        </div>
+                    <div>
+
+                        <a href="LoginPage.html">
+                            <button type="button" class="btn btn-login">LOGIN</button>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -125,20 +119,21 @@
         <div id="subheader">
             <div class="container">
                 <div class="logo">
-                    <span class="sc-icon icon-video"></span>
+                    <span class="icon-curriculum"></span>
                     <span class="logo-label">
-                        Mein Workspace
+                        Curriculum
                     </span>
                 </div>
 
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Mediathek</a>
+                        <a href="#">Curriculum</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Mein Workspace</li>
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
                 </ol>
             </div>
         </div>
+
 
         <div class="container" id="pagesearch">
             <div class="accordion">
@@ -148,7 +143,7 @@
                             <form class="form-inline" action="/action_page.php">
                                 <input class="form-control" type="text" placeholder="Suchen">
                                 <button class="btn btn-blue" type="submit">
-                                    <i class="icon-search"></i>
+                                    <i class="fa fa-search"></i>
                                 </button>
                             </form>
                             <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
@@ -159,12 +154,44 @@
                     </div>
                     <div id="c1" class="collapse" aria-labelledby="v1" data-parent="#accordion2">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                            et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                            synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <div class="container" id="filter">
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Bildungsbereich</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">Admin</a>
+                                        <a class="dropdown-item" href="#">Lehrer</a>
+                                        <a class="dropdown-item" href="#">Schüler</a>
+                                        <a class="dropdown-item" href="#">Besucher</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Fach- und Sachgebiet</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">Admin</a>
+                                        <a class="dropdown-item" href="#">Lehrer</a>
+                                        <a class="dropdown-item" href="#">Schüler</a>
+                                        <a class="dropdown-item" href="#">Besucher</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Schlagworte</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">aktiv</a>
+                                        <a class="dropdown-item" href="#">pausiert</a>
+                                        <a class="dropdown-item" href="#">inaktiv</a>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,65 +200,20 @@
 
 
         <main class="container" id="main">
-
-            <div class="sideoption" id="sideoption">
-
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="" data-target="#stöbern" data-toggle="tab" class="nav-link active">Stöbern</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" data-target="#teilen" data-toggle="tab" class="nav-link">Teilen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" data-target="#ordnen" data-toggle="tab" class="nav-link">Ordnen</a>
-                    </li>
-                </ul>
-
-                <br>
-                <div class="tab-content">
-                    <div id="stöbern" class="tab-pane fade active show">
-                        Stöbern
-                        <br>
-                    </div>
-                    <div id="teilen" class="tab-pane fade">
-                        Teilen
-                        <br>
-                    </div>
-                    <div id="ordnen" class="tab-pane fade">
-                        Ordnen
-                        <br>
-                    </div>
+            <div class="row">
+                <div class="curriculum-mainview">
+                    <a class="" href="Cur-prime.html">
+                        <img src="Images/cur3.png" style="width: 360px" alt="Primastufe">
+                    </a>
+                    <a class="" href="Cur-sec.html">
+                        <img src="Images/cur4.png" style="width: 360px" alt="Sekundarstufe1">
+                    </a>
+                    <a class="" href="Infoportal.html">
+                        <img src="Images/cur5.png" style="width: 360px" alt="Anleitung">
+                    </a>
                 </div>
             </div>
-
-
-            <div id="mainoption" class="mainoption">
-
-                    <div class="extension-button">
-                        <button type="button" class="btn btn-sideoption">
-                            <i class="icon-left-open"></i>
-                        </button>
-                    </div>
-                    <div id="media-content" class="row" style="display: inline-flex">
-                        <div class="col-4">
-                            <img src="Images/media1.png" style="width: 100%">
-                        </div>
-                        <div class="col-4">
-                            <img src="Images/media3.png" style="width: 100%">
-                        </div>
-                        <div class="col-4">
-                            <img src="Images/media2.png" style="width: 100%">
-                        </div>
-                    </div>
-            </div>
-
         </main>
-
-        <div class="more">
-            <button type="button" class="btn btn-more" role="button">Weitere Ergebnisse anzeigen ...</button>
-        </div>
-
 
     </div>
 
