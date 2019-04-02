@@ -29,7 +29,7 @@
 <body>
 
     <header id="header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-7">
                     <div class="nav dropdown" id="mainnav">
@@ -123,93 +123,22 @@
 
     <div id="content" class="content">
 
-        <div id="subheader">
-            <div class="container">
-                <div class="logo">
-                    <span class=""></span>
-                    <span class="logo-label">
-                        Rechteverwaltung
-                    </span>
-                </div>
-
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">Profil</a>
+            <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">IDM</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Rechteverwaltung</li>
-                </ol>
-            </div>
-        </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">MOODLE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">ORGA</a>
+                    </li>
+                  </ul>
 
-        <div class="container" id="pagesearch">
-            <div class="accordion">
-                <div class="card card-blue mini">
-                    <div class="card-header card-header-blue small" id="v1">
-                        <div class="pagesearch-field">
-                            <form class="form-inline" action="/action_page.php">
-                                <input class="form-control" type="text" placeholder="Suchen">
-                                <button class="btn btn-blue" type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </form>
-                            <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
-                                aria-controls="c1">
-                                Erweiterte Suche
-                            </button>
-                        </div>
-                    </div>
-                    <div id="c1" class="collapse" aria-labelledby="v1" data-parent="#accordion2">
-                        <div class="card-body">
-                            <div class="container" id="filter">
-                                <div class="dropdown dropdown-blue">
-                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
-                                        <span>Gruppe wählen</span>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-blue">
-
-                                        <a class="dropdown-item " href="# ">Klasse</a>
-                                        <a class="dropdown-item " href="# ">Kurs</a>
-                                        <a class="dropdown-item " href="# ">Gruppe</a>
-                                        <a class="dropdown-item " href="# ">Organisation</a>
-                                        <a class="dropdown-item " href="# ">Arbeitsgemeinschaft</a>
-                                    </div>
-                                </div>
-                                <div class="dropdown dropdown-blue">
-                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
-                                        <span>Rolle wählen</span>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-blue">
-                                        <a class="dropdown-item " href="# ">OrganisationsAdmin</a>
-                                        <a class="dropdown-item " href="# ">Schulleitung</a>
-                                        <a class="dropdown-item " href="# ">Lehrkraft</a>
-                                        <a class="dropdown-item " href="# ">Schüler</a>
-                                        <a class="dropdown-item " href="# ">Sonstige Personen</a>
-                                        <a class="dropdown-item " href="# ">SuperAdmin</a>
-                                        <a class="dropdown-item " href="# ">ServiceAdmin</a>
-                                        <a class="dropdown-item " href="# ">ContentManager</a>
-                                    </div>
-                                </div>
-                                <div class="dropdown dropdown-blue">
-                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
-                                        <span>Stutus wählen</span>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-blue">
-
-                                        <a class="dropdown-item" href="#">aktiv</a>
-                                        <a class="dropdown-item" href="#">pausiert</a>
-                                        <a class="dropdown-item" href="#">inaktiv</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
 
-        <main class="container" id="main">
+        <main class="container-fluid" id="main">
                     <div class="sideoption" id="sideoption">
                             <ul>
                                     <i class="sideoption-icon icon-user"></i><span>Benutzer</span>
@@ -262,6 +191,76 @@
                                 </button>
                             </div>
                             <div id="media-content" class="row">
+
+
+                                    <div class="container-fluid" id="pagesearch">
+                                            <div class="accordion">
+                                                <div class="card card-blue mini">
+                                                    <div class="card-header card-header-blue small" id="v1">
+                                                        <div class="pagesearch-field">
+                                                            <form class="form-inline" action="/action_page.php">
+                                                                <input class="form-control" type="text" placeholder="Suchen">
+                                                                <button class="btn btn-blue" type="submit">
+                                                                    <i class="fa fa-search"></i>
+                                                                </button>
+                                                            </form>
+                                                            <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
+                                                                aria-controls="c1">
+                                                                Erweiterte Suche
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="c1" class="collapse" aria-labelledby="v1" data-parent="#accordion2">
+                                                        <div class="card-body">
+                                                            <div class="container" id="filter">
+                                                                <div class="dropdown dropdown-blue">
+                                                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                                        <span>Gruppe wählen</span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-blue">
+                                
+                                                                        <a class="dropdown-item " href="# ">Klasse</a>
+                                                                        <a class="dropdown-item " href="# ">Kurs</a>
+                                                                        <a class="dropdown-item " href="# ">Gruppe</a>
+                                                                        <a class="dropdown-item " href="# ">Organisation</a>
+                                                                        <a class="dropdown-item " href="# ">Arbeitsgemeinschaft</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown dropdown-blue">
+                                                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                                        <span>Rolle wählen</span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-blue">
+                                                                        <a class="dropdown-item " href="# ">OrganisationsAdmin</a>
+                                                                        <a class="dropdown-item " href="# ">Schulleitung</a>
+                                                                        <a class="dropdown-item " href="# ">Lehrkraft</a>
+                                                                        <a class="dropdown-item " href="# ">Schüler</a>
+                                                                        <a class="dropdown-item " href="# ">Sonstige Personen</a>
+                                                                        <a class="dropdown-item " href="# ">SuperAdmin</a>
+                                                                        <a class="dropdown-item " href="# ">ServiceAdmin</a>
+                                                                        <a class="dropdown-item " href="# ">ContentManager</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown dropdown-blue">
+                                                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                                        <span>Stutus wählen</span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-blue">
+                                
+                                                                        <a class="dropdown-item" href="#">aktiv</a>
+                                                                        <a class="dropdown-item" href="#">pausiert</a>
+                                                                        <a class="dropdown-item" href="#">inaktiv</a>
+                                
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
@@ -488,7 +487,7 @@
 
     </div>
     <footer id="footer">
-        <nav class="container navbar navbar-expand-lg">
+        <nav class="container-fluid navbar navbar-expand-lg">
             <div class="row">
                 <div class="col-2">
                     <a class="navbar-brand" href="#">
