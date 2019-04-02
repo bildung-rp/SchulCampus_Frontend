@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  max-width: 1140px; /*1140px*/
+  max-width: 1400px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -52,6 +52,18 @@ body {
   margin-left: 0px;
 }
 
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, 
+.col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, 
+.col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, 
+.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, 
+.col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, 
+.col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, 
+.col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, 
+.col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, 
+.col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
 
 header {
@@ -304,7 +316,7 @@ h1, h2, h3, h4 .h1, .h2, .h3, .h4 {
     background-color: #65A300;
 }
 .btn-login:hover{
-  color: #2f3a2f;
+  color: #253100;
   background-color: #65A300;
 }
 
@@ -350,7 +362,7 @@ h1, h2, h3, h4 .h1, .h2, .h3, .h4 {
   }
   
   .dropdown-white {
-    color: #2f3a2f;
+    color: #2f3a48;
       background-color:#fff;
     border:1px solid #99E0FD;
     border-radius:0.2rem;
@@ -362,13 +374,13 @@ h1, h2, h3, h4 .h1, .h2, .h3, .h4 {
   } 
   .dropdown-white:not(:disabled):not(.disabled):active, .dropdown-white:not(:disabled):not(.disabled).active,
   .show > .dropdown-white.dropdown-toggle {
-    color: #2f3a2f;
+    color: #2f3a48;
     background-color: #99E0FD;
     border-color: #99E0FD;
   }
   
   .dropdown-blue {
-    color:#2f3a2f;
+    color:#2f3a48;
       background-color:#00B2F9;
     border:1px solid #99E0FD;
     border-radius:0.2rem;
@@ -431,9 +443,11 @@ h1, h2, h3, h4 .h1, .h2, .h3, .h4 {
 
 /*Breadcrumb*/
 .breadcrumb {
-    margin: 5px;
+    margin: 0;
+    padding:0;
     font-weight:400;
     font-size: 14px;
+    justify-content: right;
     color:#2F3A48;
     background-color:#fff; 
   }
@@ -607,7 +621,7 @@ h1, h2, h3, h4 .h1, .h2, .h3, .h4 {
 }
 .card-header-white {
   color:#505B64;
-  background-color: #fff;
+  background-color: #009CEE;  /*#fff*/
   border-bottom: 1px solid #F1F1F6;
 }
 
@@ -943,7 +957,7 @@ table .ss-icon {
 
 
 .teaser-head{
-  margin: 20px 15px;  
+  margin: 20px 30px;  
   font-weight:600;
   color:#65A300;
 }
@@ -989,7 +1003,7 @@ table .ss-icon {
   position: relative;
   margin: 15px 0;
   align-items: center;
-  min-height:9rem;
+  min-height:10rem;
   background: #00b2f9;
   border-radius:3px;
 }
@@ -1017,8 +1031,8 @@ table .ss-icon {
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     position: relative;
     width: 45%;
-    height:9rem;
-    font-size:58px;
+    height:10rem;
+    font-size:75px;
     justify-content: center;
     background: #0088dc;
     border-radius:3px;
@@ -1037,8 +1051,9 @@ table .ss-icon {
     border-radius:3px;
   }
   .bluebox-label {
-    display:table;
-    padding-left:20px; /*padding-left:70px*/
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
 /*Beschriftung Bluebox*/  
@@ -1070,9 +1085,7 @@ table .ss-icon {
   border-color: transparent;
 }
 
-#compass .bluebox-lg{
-  width: 50%;
-}  
+
 
 
 
@@ -1081,10 +1094,6 @@ table .ss-icon {
 .logo-label { 
   font-size:19px;
   font-weight: 500;
-}
-
-.logo-label .logo-thin{
-
 }
 
 #header .row{
@@ -1537,13 +1546,11 @@ width: 750px;
 
 .sc-icon-dd{
   padding-right: 10px;
-  font-size:20px;
+  font-size:26px;
   color:#fff;
   font-family: "SCicons";
   content:"";
 }
-
-
 
 .sc-icon-pills{
   font-size:20px;
@@ -1578,15 +1585,17 @@ width: 750px;
 
 .icon-schulcampus::before {
   margin-right:10px;
+  font-size:30px;
   content:'\e829';
 }
 
 .icon-curriculum::before {
-  font-size:28px;
+  font-size:30px;
+  padding:0;
+  margin:0;
   content:'\e804';
 }
 .icon-moodle::before {
-  font-size: 30px;
   content:'\e805';
 }
 .icon-status-red {
@@ -1631,7 +1640,6 @@ width: 750px;
 .icon-flag::before {
   content:'\e835'
 }
-
 .icon-cog::before {
   content:'\e80f';
 }
@@ -1665,6 +1673,7 @@ width: 750px;
 .icon-search::before {
   content:'\e819';
   font-size:24px;
+  color:#fff;
 }
 .icon-home::before {
   content:'\e81a';
@@ -1706,11 +1715,11 @@ width: 750px;
   content:'\e826';
 }
 .icon-usersetting::before {
-  font-size:28px;
+  font-size:30px;
   content:'\e827';
 }
 .icon-userhead::before {
-  font-size:28px;
+  font-size:32px;
   content:'\e828';
 }
 .icon-roadblock::before {

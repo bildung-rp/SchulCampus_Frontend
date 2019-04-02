@@ -34,35 +34,31 @@
      max-width:25%;
     }
 
-    #header .dd-label{
-      display: none;
-    }
-
-    .nav-link{
-   
-    }
-
     #mainnav .dropdown-toggle::after {
       display: inline-block;
-      padding: 0 10px 0 0;
-      vertical-align: 0px;
-      color:#2F3A2F;
+      font-size:20px;
+      color:#2F3A48;
       font-family: "SCicons";
       content: "\f0c9";
     }
    
-    .icon-usersetting::before {
-      font-size:22px;
-      content:'\e827';
-    }
-    .icon-userhead::before {
-      font-size:25px;
-      content:'\e828';
+    .sc-icon-dd {
+      font-size: 23px;
     }
 
-  
+    .icon-schulcampus::before {
+      font-size:27px;
+    }
+    .icon-userhead::before {
+      font-size: 30px;
+    }
+	
+	.dd-label{
+		display:none;
+	}
+
     #header .dropdown-menu> .dropdown-item:not(:first-child){
-      border-top:1px solid #A7ADB1;
+      border-top:1px solid #E3E3E5;
     }
   
     #header .dropdown-item {
@@ -70,6 +66,7 @@
       padding: 0.5rem 0.7rem;
       font-size:inherit;
       color:inherit;
+	  text-align:center;
       white-space: nowrap;
       border-radius:none !important;
     }
@@ -85,10 +82,7 @@
       border-top:none;
     }
   
-    #teaser .carousel{
-      padding-left:30px;
-      padding-right:30px;
-    }
+
     #teaser section{
       margin-bottom:15px;
     }
@@ -114,18 +108,15 @@
   
     .bluebox-lg{
       position:absolute;
-      width:100%;
+      width:120%;
       height:8.5rem;
-      font-size:53px;    
+      font-size:55px;    
     }
   
     .bluebox-label {
       display:none;
     }
 
-    #compass .bluebox-lg{
-      width: 100%;
-    } 
 
     #footer{
       height:auto;
@@ -185,4 +176,25 @@
       .content-padding-sm {
         padding-top:150px;
       }
+
+.extension-button{
+  display:none;
+}
+
+.sideoption {
+  width:100%;
+  margin-bottom: 30px;
+}
+
+#sideoption .card-header .btn, #sideoption .card-body a {
+  font-size: 14px;
+  margin:2px;
+  padding:2px;
+}
+
+.pagesearch-field {
+  display: block;
+}
+
+
 }
