@@ -43,14 +43,16 @@ $(document).ready(function(){
 $(document).ready(function (){
 
     $("#topnav.dropdown .btn").click(function () {
-        $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
+        if ($(window).width() < 993) {
 
+        $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
+        } else {
         if ($("#topnav-mobile.dropdown-menu-full").css( "display","block")==true) {
             $("#topnav-mobile.dropdown-menu-fullu").css("display", "none");
         } else {
             ($("#topnav-mobile.dropdown-menu-full").css( "display","block")) ;
         };
-    });
+    }});
 
     //#usernav TODO
 
