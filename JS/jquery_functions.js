@@ -1,7 +1,6 @@
 $(document).ready(function () {
-    if ($(window).width() > 1200) {
+    if ($(window).width() > 993) {
         $("#teaser section").removeClass("carousel-item"); 
-
     } else {
         $("#teaser section").addClass("carousel-item");
     }
@@ -9,9 +8,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(window).resize(function () {
-        if ($(window).width() > 1200) {
+        if ($(window).width() > 993) {
             $("#teaser section").removeClass("carousel-item");
-            
         } else {
             $("#teaser section").addClass("carousel-item");
         };
@@ -19,9 +17,16 @@ $(document).ready(function () {
 });
 
 
-//$(document).ready(function () {
-//    $('[data-toggle="tooltip"]').tooltip();
-//});
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+
+//if click on a("popover") display:none von tooltip//
+
 
 
 $(document).ready(function(){
@@ -31,6 +36,28 @@ $(document).ready(function(){
          $(this).addClass('active'); 
     })
 });
+
+
+//Dropdown-Menüs im Header in mobiler Ansicht
+
+$(document).ready(function (){
+
+    $("#topnav.dropdown .btn").click(function () {
+        $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
+
+        if ($("#topnav-mobile.dropdown-menu-full").css( "display","block")==true) {
+            $("#topnav-mobile.dropdown-menu-fullu").css("display", "none");
+        } else {
+            ($("#topnav-mobile.dropdown-menu-full").css( "display","block")) ;
+        };
+    });
+
+    //#usernav TODO
+
+  
+});
+
+
 
 
 function openTab(tabName, elmnt, color) {
@@ -48,7 +75,7 @@ function openTab(tabName, elmnt, color) {
   
     // Add the specific color to the button used to open the tab content
     elmnt.style.backgroundColor = color;
-  }
+}
   
 
 
@@ -75,7 +102,6 @@ $(document).ready(function () {
     $(".btn-sideoption").click(function () {
         $('#sideoption').toggle();
         $("#mainoption" + " .icon-left-open, .icon-right-open").toggleClass("icon-left-open icon-right-open");
-        
 
         if ($(".mainoption").hasClass( "temp-open" )==false) {
             $(".mainoption").css("width", "100%").addClass( "temp-open");
@@ -128,13 +154,7 @@ function toggleBlueBox(sectionId) {
         $(idBlueNew + " .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
         $(idBlueNew + " .bluebox-lg, .bluebox-sm").toggleClass("bluebox-lg bluebox-sm");
         $(idBlueNew + " .bluebox-label div").toggle();
-        $(idBlueNew + " .add-icon, .close-icon").toggleClass("add-icon close-icon");
-
-        if ($(idBlueNew + " .bluebox-label").css("padding-left") === "70px") {
-            $(idBlueNew + " .bluebox-label").css("padding-left", "20px");
-        } else {
-            $(idBlueNew + " .bluebox-label").css("padding-left", "70px");
-        };
+        $(idBlueNew + " .icon-plus, .icon-cancel").toggleClass("icon-plus icon-cancel");
 
         if ($(idBlueNew + " .bluebox-label>a").css("font-size") === "19px") {
             $(idBlueNew + " .bluebox-label>a").css("font-size", "24px");
@@ -151,7 +171,7 @@ function toggleBlueBox(sectionId) {
 
         $(idBlueOld + " .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
         $(idBlueOld + " .bluebox-lg, .bluebox-sm").toggleClass("bluebox-lg bluebox-sm");
-        $(idBlueOld + " .add-icon, .close-icon").toggleClass("add-icon close-icon");
+        $(idBlueOld + " .icon-plus, .icon-cancel").toggleClass("icon-plus icon-cancel");
 
         $(idBlueOld + " .bluebox-label div").css("display", "none");
         $(idBlueOld + " .bluebox-label").css("padding-left", "20px");
@@ -161,13 +181,7 @@ function toggleBlueBox(sectionId) {
         $(idBlueNew + " .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
         $(idBlueNew + " .bluebox-lg, .bluebox-sm").toggleClass("bluebox-lg bluebox-sm");
         $(idBlueNew + " .bluebox-label div").toggle();
-        $(idBlueNew + " .add-icon, .close-icon").toggleClass("add-icon close-icon");
-
-        if ($(idBlueNew + " .bluebox-label").css("padding-left") === "70px") {
-            $(idBlueNew + " .bluebox-label").css("padding-left", "20px");
-        } else {
-            $(idBlueNew + " .bluebox-label").css("padding-left", "70px");
-        };
+        $(idBlueNew + " .icon-plus, .icon-cancel").toggleClass("icon-plus icon-cancel");
 
         if ($(idBlueNew + " .bluebox-label>a").css("font-size") === "19px") {
             $(idBlueNew + " .bluebox-label>a").css("font-size", "24px");

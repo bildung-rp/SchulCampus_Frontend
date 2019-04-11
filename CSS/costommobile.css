@@ -1,0 +1,272 @@
+/*Desktop-First*/
+
+@media screen and (max-width: 1200px) {   
+
+    /*Header-Elemente*/
+    
+
+    .icon-schulcampus::before{
+        margin-left: 5px;
+    }    
+
+    .dropdown-item{
+        height: 50px; /*Zeilenhöhe soll 50px sein - TODO*/
+    }
+
+    header .dropdown-menu> .dropdown-item:not(:first-child){
+        border-top:1px solid #E3E3E5;
+    }
+
+    .nav-pills-area {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+
+    /*Footer-Elemente"*/
+
+    footer{
+        height:auto;
+    }
+
+    footer .navbar-nav{ 
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .bluebox section {
+        min-height:9rem;
+    }
+    
+    .bluebox-lg{
+        height:9rem;   
+    }
+
+    .bluebox-label a{
+        font-size: 19px !important;
+    }
+
+}
+
+/*MobileAnsicht*/
+@media screen and (max-width: 993px) {   
+
+    #topnav button, .dd-right button{
+        width:auto;
+    }
+
+    header .logo-label {
+        font-size:16px;
+        display:none;
+    }
+    header .badge{
+        display: none;  
+    }
+    
+    .nav-pills-area {
+        float: none;
+    }
+
+
+
+    .dropdown-item {
+        border-radius:0;
+    }
+
+    .dd-label{
+        display: none;
+    }
+
+    .dropdown-menu-full .dropdown-menu> .dropdown-item:not(:first-child){
+        border-top:1px solid #E3E3E5;
+    }
+
+    #topnav .dropdown-menu, #usernav .dropdown-menu{
+        display: none;
+
+    }
+
+    .dropdown-menu-full{
+        display: block;
+        position: absolute;
+        margin-top: 50px;
+        left: 0px;
+        right:0px;
+        z-index: 1024;
+   
+    }
+
+    #usernav-mobile.dropdown-menu-full .dropdown-menu{
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    #topnav-mobile.dropdown-menu-full .dropdown-menu{
+        width: 100%;
+        float: left;     
+        border-radius: 0; 
+    }
+
+    #topnav-mobile .dropdown-item{
+        padding-left: 40%;
+    }
+    
+
+
+
+    footer .navbar-brand{
+        display: flex;
+        justify-content: center;
+    }
+
+    #teaser section{
+        margin-bottom:15px;
+    }
+
+    .carousel-indicators {
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    }
+    .carousel-control-prev, .carousel-control-next{
+        display:none;
+    }
+
+    #teaser.container {
+        width:540px;
+    }
+
+    main .container{
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex; 
+        justify-content: center;
+    }
+
+    .bluebox section {
+        width:9.375rem;
+        min-height:9.375rem;
+    }
+    
+    .bluebox-lg{
+        width:9.375rem;
+        height:9.375rem;   
+    }
+    
+    .bluebox-label {
+        display:none;
+    }
+    
+
+    /*TODO*/
+    .btn-up{
+        display:block;
+    }
+
+}    
+
+@media screen and (max-width: 768px) {  
+
+    /*TODO Logo soll dann mittig über LinkList stehen"*/
+    footer .row{
+        flex-direction: column;
+    }
+
+    #topnav-mobile .dropdown-item{
+        padding-left: 30%;
+    }
+
+} 
+
+@media (max-width: 575px) {
+
+    .container-fluid{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #topnav-mobile .dropdown-item{
+        padding-left: 20%;
+    }
+
+    #teaser.container{
+        width:396px;
+    }
+
+    .bluebox{
+        margin-left:0 !important;
+        margin-right:0 !important;
+    }
+
+
+
+    .bluebox .col-4{
+        padding:10px !important;
+        padding:10px !important;
+    }
+
+    .bluebox section {
+        width:7rem;
+        min-height:7rem;
+        margin: 10px 0;
+    }
+    
+    .bluebox-lg{
+        width:7rem;
+        height:7rem; 
+    }
+
+}
+
+
+/*Ansicht bis 440px gut*/
+
+@media screen and (max-width: 367px) { 
+
+    .nav-pills-area {
+        display: none;
+    }
+
+    #teaser.container{
+        width:396px;
+    }
+
+    .bluebox section {
+        width:6rem;
+        min-height:6rem;
+        margin: 5px 0;
+    }
+    
+    .bluebox-lg{
+        position:absolute;
+        width:6rem;
+        height:6rem; 
+    }
+
+    .blue-icon-lg{
+        font-size:45px;
+    }
+
+    .bluebox .col-4{
+        padding:5px !important;
+        padding:5px !important;
+    }
+
+}
+
+
+
+
+
+   
+
+
+
+
+

@@ -1,0 +1,22 @@
+/*IE Sonderfall*/
+
+*::-ms-backdrop, .dropdown-toggle::after{
+    display: ruby-text-container;
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+
+   
+
+}
+
+
+
+/*Mobile*/
+@media screen and (max-width: 1200px) {
+
+    
+
+}

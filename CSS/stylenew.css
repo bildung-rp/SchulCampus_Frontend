@@ -6,7 +6,8 @@
 	--blau-1: #0583C9;
 	--blau-2: #009CEE;
 	--blau-3: #00B2F9;
-	--blau-4: #99E0FD;
+  --blau-4: #99E0FD;
+  --moodle-orange:#f98012;
 	--gruen-1: #253100;
 	--gruen-2: #518200;
 	--gruen-3: #65A300;
@@ -1099,7 +1100,6 @@ table .ss-icon {
 .userdd+.nav{
   justify-content: flex-end;
 }
-
 .userdd+.nav .btn{
   justify-content: flex-end;
 }
@@ -1107,6 +1107,7 @@ table .ss-icon {
 #header .dropdown-toggle:hover .dropdown-menu{
   display:block;
 }
+
 
 #mainnav.nav{
   margin-left: -15px;
@@ -1129,29 +1130,30 @@ table .ss-icon {
   align-self: center;
 }
 
-#header .nav-pills {
+.nav-pills {
   flex-wrap: nowrap;
   justify-content: space-evenly; 
 }
 
-#header .nav-pills.nav-item.nav-link{
+.nav-pills.nav-item.nav-link{
   margin:0;
 }
-#header .nav-pills {
+.nav-pills {
   background-color:transparent;
 }
   
-#header .nav-pills .nav-item .nav-link:hover, #header .nav-pills .nav-item .nav-link:focus {
+.nav-pills .nav-item .nav-link:hover,.nav-pills .nav-item .nav-link:focus {
   color:#fff;
   background-color:#65A300;
   text-decoration: none;
 }
-#header .nav-pills .nav-link.active,
-#header .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #2F3A48;
   font-weight:400;
   background-color:transparent;
 }
+
 .badge{
   border-radius:50%;
   margin: .25rem;

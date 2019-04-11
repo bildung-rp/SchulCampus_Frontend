@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="fontawesome-webfont.ttf" rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="CSS/scincons.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="CSS/scicons-codes.css">
+    <link rel="stylesheet" href="CSS/scicons-embedded.css">
+    <link rel="stylesheet" href="CSS/scicons-ie7.css">
+    <link rel="stylesheet" href="CSS/scicons-ie7-codes.css">
+
+    <link rel="stylesheet" href="CSS/costomstyle.css">
+    <link rel="stylesheet" href="CSS/costommobile.css">
+    <link rel="stylesheet" href="CSS/costomie.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="JS/jquery_functions.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid" id="header">
+        <div class="row no-gutters">
+            <div class="col-xl-2 col-3">
+                <div class="dropdown" id="topnav">
+                    <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
+                        <span class="sc-icon-dd icon-schulcampus"></span>
+                        <span class="logo-label">
+                            <b>Schul</b>campus
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lime">
+
+                        <a class="dropdown-item" href="SchulcampusDashboard.html">
+                            <i class="sc-icon-dd icon-home"></i>
+                            <span>Startseite</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="sc-icon-dd icon-folder-open"></i>
+                            <span>Meine Dateien</span>
+                        </a>
+                        <a class="dropdown-item active" href="https://lernenonline.bildung-rp.de/">
+                            <i class="sc-icon-dd icon-graduation-cap"></i>
+                            <span>Moodle</span>
+                        </a>
+                        <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                            <i class="sc-icon-dd icon-play-circled"></i>
+                            <span>Mediathek</span>
+                        </a>
+                        <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                            <i class="sc-icon-dd icon-bank"></i>
+                            <span>Curriculum</span>
+                        </a>
+                        <a class="dropdown-item" href="">
+                            <i class="sc-icon-dd icon-compass-circled"></i>
+                            <span>Medienkompass</span>
+                        </a>
+                        <a class="dropdown-item" href="">
+                            <i class="sc-icon-dd icon-book-1"></i>
+                            <span>Lehr- und Arbeitspläne</span>
+                        </a>
+                        <a class="dropdown-item" href="Infoportal.html">
+                            <i class="sc-icon-dd icon-info-circled"></i>
+                            <span>Infoportal</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-6">
+                <div class="nav-pills-area">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Infos">
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" title="Infos" data-content="Dein Moodle-Account wurde nicht abgemeldet.">
+                                <span class="sc-icon-pills icon-bell-alt"></span>
+                                <span class="badge badge-lime">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Nachrichten">
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" title="Nachrichten" data-content="Ein Kollege hat dich zu einer Sammlung freigeschaltet.">
+                                <span class="sc-icon-pills icon-mail-alt"></span>
+                                <span class="badge badge-lime">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Einstellungen">
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
+                                <span class="sc-icon-pills icon-usersetting"></span>
+                                <span class="badge badge-lime">4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-3">
+                <div id="usernav" class="dropdown dd-right">
+                    <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
+                        <span class="sc-icon-dd icon-userhead"></span>
+                        <span class="dd-label">Max Schmidt Müller</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
+                        <a class="dropdown-item" href="#">Profil</a>
+                        <a class="dropdown-item" href="#">Einstellungen</a>
+                        <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Abmelden</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dropdown-menu-full" id="topnav-mobile">
+        <div class="dropdown-menu dropdown-menu-lime">
+            <a class="dropdown-item" href="SchulcampusDashboard.html">
+                <i class="sc-icon-dd icon-home"></i>
+                <span>Startseite</span>
+            </a>
+            <a class="dropdown-item" href="#">
+                <i class="sc-icon-dd icon-folder-open"></i>
+                <span>Meine Dateien</span>
+            </a>
+            <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
+                <i class="sc-icon-dd icon-graduation-cap"></i>
+                <span>Moodle</span>
+            </a>
+            <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                <i class="sc-icon-dd icon-play-circled"></i>
+                <span>Mediathek</span>
+            </a>
+            <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                <i class="sc-icon-dd icon-bank"></i>
+                <span>Curriculum</span>
+            </a>
+            <a class="dropdown-item" href="">
+                <i class="sc-icon-dd icon-compass-circled"></i>
+                <span>Medienkompass</span>
+            </a>
+            <a class="dropdown-item" href="">
+                <i class="sc-icon-dd icon-book-1"></i>
+                <span>Lehr- und Arbeitspläne</span>
+            </a>
+            <a class="dropdown-item" href="Infoportal.html">
+                <i class="sc-icon-dd icon-info-circled"></i>
+                <span>Infoportal</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="dropdown-menu-full" id="usernav-mobile">
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
+            <a class="dropdown-item" href="#">Profil</a>
+            <a class="dropdown-item" href="#">Einstellungen</a>
+            <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Abmelden</a>
+        </div>
+    </div>
+    </div>
+
+
+    <div id="content">
+
+        <div class="container" id="teaser">
+
+            <h3 class="teaser-head">Aktuelles</h3>
+
+            <div id="teaser-carousel" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#teaser-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#teaser-carousel" data-slide-to="1"></li>
+                    <li data-target="#teaser-carousel" data-slide-to="2"></li>
+                </ul>
+
+                <div class="row carousel-inner">
+                    <section class="col-lg-4 active">
+
+                        <h4>20.01.2019</h4>
+                        <h2>
+                            <a href="#news1">Fortbildungen in Mathematik und Deutsch</a>
+                        </h2>
+
+                    </section>
+                    <section class="col-lg-4">
+
+                        <h4>11.10.2018</h4>
+                        <h2>
+                            <a href="#news2">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore
+                                et dolor</a>
+                        </h2>
+                    </section>
+                    <section class="col-lg-4">
+
+                        <h4>02.10.2018</h4>
+                        <h2>
+                            <a href="#news3">Wartungsarbeiten bei moodle</a>
+                        </h2>
+
+                    </section>
+                </div>
+                <a class="carousel-control-prev" href="#teaser-carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon carousel-control-prev-icon-news"></span>
+                </a>
+                <a class="carousel-control-next" href="#teaser-carousel" data-slide="next">
+                    <span class="carousel-control-next-icon carousel-control-next-icon-news"></span>
+                </a>
+            </div>
+        </div>
+
+
+        <main>
+            <div class="container">
+
+                <div class="bluebox">
+
+                    <div class="blue-column col-4">
+
+                        <section id="meineDateien">
+                            <div class="bluebox-lg">
+                                <span class="icon-folder-open blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label" style="background-color:yello">
+                                <a href="">Meine Dateien</a>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="sc-icon icon-plus"></span>
+                                </button>
+                                <div style="display:none">
+                                    <dl>
+                                        <a href="">
+                                            <dt>Konrad Adenauer Gymnasium Westerburg</dt>
+                                            <dd>Klasse 7e</dd>
+                                        </a>
+                                        <a href="">
+                                            <dt>Mathematik</dt>
+                                            <dd>Klasse 8a</dd>
+                                        </a>
+                                        <a href="">
+                                            <dt>NaWi</dt>
+                                            <dd>Klasse 5d</dd>
+                                        </a>
+                                        <a href="">
+                                            <dt>NaWi</dt>
+                                            <dd>Klasse 5f</dd>
+                                        </a>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="curriculum">
+                            <div class="bluebox-lg">
+                                <span class="icon-bank blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="Curriculum.html">Curriculum</a>
+                                <div style="display:none">
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="sc-icon icon-plus"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="blue-column col-4">
+
+                        <section id="media">
+                            <div class="bluebox-lg">
+                                <span class="icon-play-circled blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="https://schul.campus-rlp.de/edu-sharing/components/workspace">Mediathek</a>
+                            </div>
+                        </section>
+
+                        <section id="lehrplaene">
+                            <div class="bluebox-lg">
+                                <span class="icon-book-1 blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="">Lehr- &amp;
+                                    <br>Arbeitspläne
+                                    <h4>Digital</h4>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="blue-column col-4">
+
+                        <section id="moodle" data-toggle="tooltip" data-placement="top" title="Zum Erstellen von Lernpfaden">
+                            <div class="bluebox-lg">
+                                <span class="icon-graduation-cap blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="Moodle.html">moodle@RLP</a>
+                                <div style="display:none">
+                                    <a href="">
+                                        <dt>Lernpfad Mathematik</dt>
+                                        <dd>Klasse 8a</dd>
+                                    </a>
+                                    <a href="">
+                                        <dt>Lernpfad NaWi</dt>
+                                        <dd>Klasse 5d</dd>
+                                    </a>
+                                    <a href="">
+                                        <dt>Lernpfad NaWi</dt>
+                                        <dd>Klasse 5f</dd>
+                                    </a>
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="sc-icon icon-plus"></span>
+                                </button>
+                            </div>
+                        </section>
+
+                        <section id="infoportal">
+                            <div class="bluebox-lg">
+                                <span class="icon-info-circled blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="Infoportal.html">Infoportal</a>
+                            </div>
+                        </section>
+                    </div>
+
+
+                </div>
+            </div>
+        </main>
+
+
+
+    </div>
+
+
+    <a class="nav-link" href="Index.html">
+        <button type="button" class="btn btn-up icon-up-open"></button>
+    </a>
+
+    <footer class="container-fluid" id="footer">
+
+        <div class=" navbar row no-gutters">
+            <div class="col-lg-2">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/RLP-logo-weiss.png" alt="Logo_RLP">
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Datenschutzerklärung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nutzungsbedingungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Impressum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sidemap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
