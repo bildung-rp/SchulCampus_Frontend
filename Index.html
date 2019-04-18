@@ -34,12 +34,12 @@
                     <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
                         <span class="sc-icon-dd icon-schulcampus"></span>
                         <span class="logo-label">
-                            <b>Schul</b>campus
+                            <b>Schul</b>campus&nbsp;<i>RLP</i>
                         </span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-lime">
 
-                        <a class="dropdown-item" href="SchulcampusDashboard.html">
+                        <a class="dropdown-item" href="index.html">
                             <i class="sc-icon-dd icon-home"></i>
                             <span>Startseite</span>
                         </a>
@@ -78,20 +78,20 @@
             <div class="col-xl-8 col-6">
                 <div class="nav-pills-area">
                     <ul class="nav nav-pills">
-                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Infos">
-                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" title="Infos" data-content="Dein Moodle-Account wurde nicht abgemeldet.">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Infos" data-content="Dein Moodle-Account wurde nicht abgemeldet.">
                                 <span class="sc-icon-pills icon-bell-alt"></span>
                                 <span class="badge badge-lime">3</span>
                             </a>
                         </li>
-                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Nachrichten">
-                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" title="Nachrichten" data-content="Ein Kollege hat dich zu einer Sammlung freigeschaltet.">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Nachrichten" data-content="Ein Kollege hat dich zu einer Sammlung freigeschaltet.">
                                 <span class="sc-icon-pills icon-mail-alt"></span>
                                 <span class="badge badge-lime">2</span>
                             </a>
                         </li>
-                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Einstellungen">
-                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
                                 <span class="sc-icon-pills icon-usersetting"></span>
                                 <span class="badge badge-lime">4</span>
                             </a>
@@ -217,60 +217,58 @@
 
         <main>
             <div class="container">
-
                 <div class="bluebox">
 
-                    <div class="blue-column col-4">
-
+                    <div class="col-4">
                         <section id="meineDateien">
                             <div class="bluebox-lg">
                                 <span class="icon-folder-open blue-icon-lg"></span>
                             </div>
-                            <div class="bluebox-label" style="background-color:yello">
+                            <div class="bluebox-label">
                                 <a href="">Meine Dateien</a>
                                 <button class="btn btn-blue" type="button">
                                     <span class="sc-icon icon-plus"></span>
                                 </button>
-                                <div style="display:none">
+                                <div class="box-content">
+                                    <h2>Meine Dateien</h2>
                                     <dl>
                                         <a href="">
-                                            <dt>Konrad Adenauer Gymnasium Westerburg</dt>
+                                            <dt><h4>Konrad Adenauer Gymnasium Westerburg</h4></dt>
                                             <dd>Klasse 7e</dd>
                                         </a>
                                         <a href="">
-                                            <dt>Mathematik</dt>
+                                            <dt><h4>Mathematik</h4></dt>
                                             <dd>Klasse 8a</dd>
                                         </a>
                                         <a href="">
-                                            <dt>NaWi</dt>
+                                            <dt><h4>NaWi</h4></dt>
                                             <dd>Klasse 5d</dd>
                                         </a>
-                                        <a href="">
-                                            <dt>NaWi</dt>
-                                            <dd>Klasse 5f</dd>
-                                        </a>
+
                                     </dl>
                                 </div>
                             </div>
                         </section>
-
+                    </div>
+                    <div class="col-4">
                         <section id="curriculum">
                             <div class="bluebox-lg">
                                 <span class="icon-bank blue-icon-lg"></span>
                             </div>
                             <div class="bluebox-label">
                                 <a href="Curriculum.html">Curriculum</a>
-                                <div style="display:none">
-                                </div>
                                 <button class="btn btn-blue" type="button">
                                     <span class="sc-icon icon-plus"></span>
                                 </button>
+                                <div class="box-content">
+                                    <h2>Curriculum</h2>
+                                </div>
+                                
                             </div>
                         </section>
                     </div>
 
-                    <div class="blue-column col-4">
-
+                    <div class="col-4">
                         <section id="media">
                             <div class="bluebox-lg">
                                 <span class="icon-play-circled blue-icon-lg"></span>
@@ -279,7 +277,50 @@
                                 <a href="https://schul.campus-rlp.de/edu-sharing/components/workspace">Mediathek</a>
                             </div>
                         </section>
+                    </div>
 
+                    <div class="box-content-full" id="bc1">
+
+                        <div id="blue1">
+                            <h2>Meine Dateien</h2>
+                            <dl>
+                                <a href="">
+                                    <dt><h4>Konrad Adenauer Gymnasium Westerburg</h4></dt>
+                                    <dd>Klasse 7e</dd>
+                                </a>
+                                <a href="">
+                                    <dt><h4>Mathematik</h4></dt>
+                                    <dd>Klasse 8a</dd>
+                                </a>
+                                <a href="">
+                                    <dt><h4>NaWi</h4></dt>
+                                    <dd>Klasse 5d</dd>
+                                </a>
+
+                            </dl>
+                        </div>
+                        <div id="blue2"></div>
+                        <div id="blue3">
+                                <h2>Moodle</h2>
+                                <dl><a href="">
+                                    <dt><h4>Lernpfad Mathematik</h4></dt>
+                                    <dd>Klasse 8a</dd>
+                                </a>
+                                <a href="">
+                                    <dt><h4>Lernpfad NaWi</h4></dt>
+                                    <dd>Klasse 5d</dd>
+                                </a>
+                                <a href="">
+                                    <dt><h4>Lernpfad NaWi</h4></dt>
+                                    <dd>Klasse 5f</dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="arrow"></div>
+
+                    </div>
+
+                    <div class="col-4">
                         <section id="lehrplaene">
                             <div class="bluebox-lg">
                                 <span class="icon-book-1 blue-icon-lg"></span>
@@ -293,34 +334,37 @@
                         </section>
                     </div>
 
-                    <div class="blue-column col-4">
-
-                        <section id="moodle" data-toggle="tooltip" data-placement="top" title="Zum Erstellen von Lernpfaden">
+                    <div class="col-4">
+                        <section id="moodle">
                             <div class="bluebox-lg">
                                 <span class="icon-graduation-cap blue-icon-lg"></span>
                             </div>
                             <div class="bluebox-label">
                                 <a href="Moodle.html">moodle@RLP</a>
-                                <div style="display:none">
-                                    <a href="">
-                                        <dt>Lernpfad Mathematik</dt>
-                                        <dd>Klasse 8a</dd>
-                                    </a>
-                                    <a href="">
-                                        <dt>Lernpfad NaWi</dt>
-                                        <dd>Klasse 5d</dd>
-                                    </a>
-                                    <a href="">
-                                        <dt>Lernpfad NaWi</dt>
-                                        <dd>Klasse 5f</dd>
-                                    </a>
-                                </div>
                                 <button class="btn btn-blue" type="button">
                                     <span class="sc-icon icon-plus"></span>
                                 </button>
+                                <div class="box-content">
+                                    <h2>Moodle</h2>
+                                    <dl><a href="">
+                                        <dt><h4>Lernpfad Mathematik</h4></dt>
+                                        <dd>Klasse 8a</dd>
+                                    </a>
+                                    <a href="">
+                                        <dt><h4>Lernpfad NaWi</h4></dt>
+                                        <dd>Klasse 5d</dd>
+                                    </a>
+                                    <a href="">
+                                        <dt><h4>Lernpfad NaWi</h4></dt>
+                                        <dd>Klasse 5f</dd>
+                                    </a>
+                                </dl>
+                                </div>
+                                
                             </div>
                         </section>
-
+                    </div>
+                    <div class="col-4">
                         <section id="infoportal">
                             <div class="bluebox-lg">
                                 <span class="icon-info-circled blue-icon-lg"></span>
@@ -330,7 +374,16 @@
                             </div>
                         </section>
                     </div>
+                    <div class="box-content-full" id="bc2">
 
+                        <div id="blue4">
+                            <h2>Curriculum</h2>
+                        </div>
+                        <div id="blue5"></div>
+                        <div id="blue6"></div>
+
+                        <div class="arrow"></div>
+                    </div>
 
                 </div>
             </div>
@@ -341,9 +394,7 @@
     </div>
 
 
-    <a class="nav-link" href="Index.html">
-        <button type="button" class="btn btn-up icon-up-open"></button>
-    </a>
+    <a href="index.html" class="btn btn-up icon-up-open" role="button"></a>
 
     <footer class="container-fluid" id="footer">
 
@@ -372,9 +423,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-2">
-
-            </div>
+            <div class="col-lg-2"></div>
         </div>
 
     </footer>

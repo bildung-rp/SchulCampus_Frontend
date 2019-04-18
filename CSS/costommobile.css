@@ -2,8 +2,8 @@
 
 @media screen and (max-width: 1200px) {   
 
+
     /*Header-Elemente*/
-    
 
     .icon-schulcampus::before{
         margin-left: 5px;
@@ -20,6 +20,7 @@
     .nav-pills-area {
         border-left: 1px solid #fff;
         border-right: 1px solid #fff;
+        margin-right:0;
     }
 
 
@@ -34,23 +35,33 @@
         align-items: center;
     }
 
+    .bluebox{
+        height: 465px;
+    }
 
     .bluebox section {
         min-height:9rem;
     }
     
     .bluebox-lg{
-        height:9rem;   
+        height:9rem; 
+        width:9rem;  
     }
 
     .bluebox-label a{
         font-size: 19px !important;
     }
 
+
+
 }
 
+
+
+
+
 /*MobileAnsicht*/
-@media screen and (max-width: 993px) {   
+@media screen and (max-width: 992px) {   
 
     #topnav button, .dd-right button{
         width:auto;
@@ -60,6 +71,7 @@
         font-size:16px;
         display:none;
     }
+
     header .badge{
         display: none;  
     }
@@ -67,8 +79,6 @@
     .nav-pills-area {
         float: none;
     }
-
-
 
     .dropdown-item {
         border-radius:0;
@@ -84,7 +94,6 @@
 
     #topnav .dropdown-menu, #usernav .dropdown-menu{
         display: none;
-
     }
 
     .dropdown-menu-full{
@@ -94,7 +103,6 @@
         left: 0px;
         right:0px;
         z-index: 1024;
-   
     }
 
     #usernav-mobile.dropdown-menu-full .dropdown-menu{
@@ -113,9 +121,6 @@
         padding-left: 40%;
     }
     
-
-
-
     footer .navbar-brand{
         display: flex;
         justify-content: center;
@@ -126,43 +131,82 @@
     }
 
     .carousel-indicators {
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: -webkit-flex;     /* NEW - Chrome */
-        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: flex;             
     }
     .carousel-control-prev, .carousel-control-next{
         display:none;
     }
 
-    #teaser.container {
+    #teaser.container{
         width:540px;
+        height: 150px;
     }
 
     main .container{
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: -webkit-flex;     /* NEW - Chrome */
         display: flex; 
+        width:540px;
         justify-content: center;
     }
 
+    .bluebox{
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        margin: 60px 0px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .bluebox :nth-child(1) { order: -1; }
+    .bluebox :nth-child(2) { order: 1; }
+    .bluebox :nth-child(3) { order: -1; }
+    .bluebox :nth-child(4) { order: 0; }
+    .bluebox :nth-child(5) { order: 2; }
+    .bluebox :nth-child(6) { order: -1; }
+    .bluebox :nth-child(7) { order: 2; }
+    .bluebox :nth-child(8) { order: 2; }
+
+    .bluebox .col-4{
+        display: flex;
+        justify-content: center;
+        margin:0;
+        padding: 10px;
+        height: auto;
+    }
+
     .bluebox section {
-        width:9.375rem;
-        min-height:9.375rem;
+        width: 10rem;
+        min-height: 10rem;
+        margin:0;
     }
     
     .bluebox-lg{
-        width:9.375rem;
-        height:9.375rem;   
+        width: 10rem;
+        height:10rem;   
+    }
+
+    .bluebox-sm{
+        display: none;
     }
     
     .bluebox-label {
         display:none;
     }
+
+    dt h4 {
+        display: contents;
+    }
+
+    dt::before {
+
+        padding: 0;
+        margin-right: 5px;
+    }
     
+    .box-content-full {
+        display:none;
+    }
+
 
     /*TODO*/
     .btn-up{
@@ -170,6 +214,9 @@
     }
 
 }    
+
+
+
 
 @media screen and (max-width: 768px) {  
 
@@ -195,68 +242,108 @@
         padding-left: 20%;
     }
 
-    #teaser.container{
+    #teaser.container, main .container{
         width:396px;
+    }
+
+    #teaser.container{
+        height:170px;
     }
 
     .bluebox{
         margin-left:0 !important;
         margin-right:0 !important;
+        height: 300px;
     }
 
-
-
     .bluebox .col-4{
-        padding:10px !important;
-        padding:10px !important;
+        margin:0 !important;
+        padding: 10px;
+        height: auto;
     }
 
     .bluebox section {
-        width:7rem;
-        min-height:7rem;
-        margin: 10px 0;
+        width: 8rem;
+        min-height: 8rem;
+        margin: 0;
     }
     
     .bluebox-lg{
-        width:7rem;
-        height:7rem; 
+        width:8rem;
+        height:8rem; 
     }
+
+    .box-content-full {
+        width: 100%;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
 
 }
 
 
 /*Ansicht bis 440px gut*/
 
-@media screen and (max-width: 367px) { 
+@media screen and (max-width: 398px) { 
 
-    .nav-pills-area {
-        display: none;
+    .nav-link {
+        display: block;
+        padding: .5rem .4rem;
+    }
+
+    .nav-pills-area{
+        margin-left: 3px;
+        margin-right: -4px;
+    }
+
+    .dropdown .btn {
+        padding: .5rem .4rem;
+    }
+
+    .dropdown-toggle::after {
+        padding: 0;
+    }
+
+    #teaser.container, main .container{
+        width:100%;
     }
 
     #teaser.container{
-        width:396px;
+        height: 180px;
     }
 
+    .bluebox{
+        height:200px;
+    }
+
+
     .bluebox section {
-        width:6rem;
-        min-height:6rem;
+        width:5.75rem;
+        min-height:5.75rem;
         margin: 5px 0;
     }
     
     .bluebox-lg{
         position:absolute;
-        width:6rem;
-        height:6rem; 
+        width:5.75rem;
+        height:5.75rem; 
     }
 
     .blue-icon-lg{
-        font-size:45px;
+        font-size:43px;
     }
 
     .bluebox .col-4{
-        padding:5px !important;
-        padding:5px !important;
+        padding:0;
     }
+
+    .box-content-full {
+        margin-left: 2px;
+        margin-right: 1px;
+        width: 100%;
+    }
+
 
 }
 

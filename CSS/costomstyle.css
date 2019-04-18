@@ -154,20 +154,23 @@ a.btn {
     box-shadow: 0 0 0 0 #65A300;
 }
 
-.btn-login{
+.btn-login {
     color: #fff;
     background-color: #65A300;
 }
-.btn-login:hover{
+.btn-login:hover {
   color: #2f3a2f;
   background-color: #65A300;
 }
 
-.btn-up{
+.btn-up {
     display:none;
-    position: absolute;
+    position: fixed;
     right:10px;
     bottom:10px;
+    background-color: #A7ADB1;
+    opacity: 0.70;
+    z-index: 1024;
 }
 
 
@@ -197,13 +200,13 @@ h4 {
 }
   
 /*Schriftgrößen*/
-.normal{
+.normal {
     font-size:16px;
 }
-.small{
+.small {
     font-size:14px;
 }
-.mini{
+.mini {
     font-size:12px;
 }
   
@@ -256,7 +259,9 @@ ol {
 ul {
     list-style-type: none;
 }
-
+dt {
+    display: inline-flex;
+}
 
 /*Dropdown*/
 .dropdown.btn, .dropdown .btn, .dropup .btn {
@@ -270,7 +275,7 @@ ul {
 
 .dropdown-toggle::after {
     display: inline-table;
-    padding: 0 10px 0 0;
+    padding: 0 10px 0 5px;
     font-family:'SCicons';
     content: "\f107";
 }
@@ -282,7 +287,7 @@ ul {
     color:inherit;
     padding:0;
     margin:0;
-    box-shadow: 0 5px 5px rgb(47, 58, 47, 0.15);    /*#2F3A48*/
+    box-shadow: 3px 3px 5px rgb(47, 58, 47, 0.15);    /*#2F3A48*/
 }
   
 .dropdown-item {
@@ -383,7 +388,7 @@ ul {
 
 
 /*Carousel*/
-.carousel{
+.carousel {
     height: auto;
     padding-left: 0px;
     padding-right: 0px;
@@ -402,7 +407,7 @@ ul {
     box-shadow: none;   
 }
   
-.carousel-control-prev, .carousel-control-next{
+.carousel-control-prev, .carousel-control-next {
     display: none;
 }
   
@@ -421,7 +426,6 @@ ul {
 /*Link Liste (Defination-List)*/
 dt {
     font-size:14px;
-    display:block;
 }
 dd {
     padding: 0 20px;
@@ -437,27 +441,29 @@ dt::before {
 }
 
 
-
 /*Header-Elemente*/
 /*Zentrieren der Elemente im Header horizontal*/
-header .row{
+header .row {
     margin-top: .3em;
 }
 
-#topnav.dropdown{
+#topnav.dropdown {
     flex-wrap: wrap;
 } 
 
 /*gleiche Breite*/
-#topnav button, #topnav .dropdown-menu{
-    width: 230px;
+#topnav button, #topnav .dropdown-menu {
+    width: 250px;
     align-items: center;
 }
 
 .logo-label { 
     font-size:19px;
     font-weight: 500;
+    display: contents;
 }
+
+
 header .icon-schulcampus::before {
     font-size: 25px;
     margin-right: 5px;
@@ -465,11 +471,9 @@ header .icon-schulcampus::before {
 
 /*Weißer Rand der Pills*/
 .nav-pills-area {
-    margin-top: -.3em;  /*Ausgleich wegen .row margin*/
-    padding-top:.3em;   /*Ausgleich wegen .row margin*/
-    margin-bottom: -0.6em; /*Ausgleich wegen .row margin*/
     height:50px; 
     float: right;
+    margin-right: 15px;
 }
 
 .nav-pills {
@@ -502,7 +506,7 @@ header .icon-schulcampus::before {
 }
 
 
-.badge{
+.badge {
     border-radius:50%;
     margin: .25rem;
 }
@@ -527,7 +531,7 @@ header .icon-schulcampus::before {
 }
 
 /*gleiche Breite*/
-.dd-right button, .dd-right .dropdown-menu{
+.dd-right button, .dd-right .dropdown-menu {
     width: 200px;
     align-items: center;
 }
@@ -545,25 +549,49 @@ header .icon-userhead::before {
     text-overflow: "…";
 }
 
-#topnav.dropdown-menu-full, #usernav.dropdown-menu-full{
+#usernav .dd-label{
+    background: linear-gradient(to left, #CBD900 0%, #2F3A48 50%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: visible;
+}
+
+#topnav.dropdown-menu-full, #usernav.dropdown-menu-full {
     display: none;
 }
 
-.popover {background-color: rgb(252, 248, 31);}
+#topnav.dropdown .btn:not(:focus) #topnav.dropdown-menu-full {
+    display: none;
+}
+
+.popover {
+    left:85%;
+    background-color: rgb(252, 248, 31);
+}
+
+
 .popover.bottom .arrow::after {border-bottom-color: rgb(252, 248, 31); }
 .popover-content {background-color: rgb(252, 248, 31);}
-.popover-header {color:green;}
+.popover-header {color:#65A300;}
+
+.bs-popover-bottom{
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right:auto;
+    margin-left:auto;
+}
 
 
 /*Footer-Elemente*/
-footer .navbar{
+footer .navbar {
     padding:0 0 0 0.75em;
 }
 footer img {
     height: 40px;
     width: auto;
 }
-footer .navbar-nav{ 
+footer .navbar-nav { 
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
@@ -582,11 +610,11 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
 
 
 /*Teaser-Elemente*/
-#teaser.container{
+#teaser.container {
     hyphens: auto;
     height: 170px;
 }
-.teaser-head{
+.teaser-head {
     margin: 30px 15px 15px; 
     color:#65A300;
 }
@@ -597,18 +625,21 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     color:#A7ADB1;
     content: "\e815";
 }
-#teaser h4{
+#teaser h4 {
     font-weight:400;
     color:#737C83;
 }
-#teaser h2{
+#teaser h2 {
     color:#505B64;
 }
 
 /*Blaue Kacheln -Bluebox*/
 .bluebox {
     display: flex;
+    flex-direction: column;
+    height: 500px;
     margin:60px 0px;    /*60px oder 15%*/
+    flex-wrap: wrap;
 }
   
 .bluebox section {
@@ -619,20 +650,23 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     min-height:9.375rem;
     background: #00b2f9;
     border-radius:3px;
-    box-shadow: none;
+    box-shadow:0 0 5px 3px rgb(47, 58, 47, 0.15);
 }
   
 .bluebox section:hover {
-    box-shadow: 3px 3px 5px rgb(47, 58, 47, 0.15);    /*#2F3A48*/
+    box-shadow: 0 0 5px 3px rgb(47, 58, 47, 0.3);    /*#2F3A48*/
 }
   
-.bluebox button{
+.bluebox button {
     position:absolute;
     top: 0;
     right: 0;
+    padding: 15px;
+    z-index:1;
     background-color:transparent;
     border:none;
     box-shadow:none;
+    color:#0088dc;
 }
 
 .bluebox .btn-blue:focus, .btn-blue.focus {
@@ -640,63 +674,104 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
 }
     
 .bluebox-lg {
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: flex;             
     width: 9.375rem;
     height:9.375rem;
     justify-content: center;
     background: #0088dc;
     border-radius:3px;
 }
-.bluebox-sm{
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+.bluebox-sm {
+    display: flex;             
     background: #0088dc;
     width:50px;
-    height: 100%;
+    height: 260px;
     border-radius:3px;
 }
 .bluebox-label {
-    display:table;
+    display:block;
     padding-left:20px; 
 }
   
+.box-content {
+    display: none;  /*block*/
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    padding-left: 20px;
+    padding-right: 35px;
+}
+
 /*Beschriftung Bluebox*/  
-.bluebox-label a{
+.bluebox-label>a {
+    display:block;
     font-size:24px;
     color: #2F3A48;
 }
   
-.bluebox-label div{
-    word-wrap: break-word;
-}
-  
-.bluebox-label a:hover, .bluebox-label a:hover dt::before{
+dl a h4:hover, .bluebox a:hover, .bluebox a:hover dt::before {
     color:#fff;
 }
+
+dt h4{
+    display: inline;
+}
   
-  
-.bluebox-label .btn-blue:not(:disabled):not(.disabled):active, .btn-blue:not(:disabled):not(.disabled).active,
+.bluebox .btn-blue:not(:disabled):not(.disabled):active, .btn-blue:not(:disabled):not(.disabled).active,
     .show > .btn-blue.dropdown-toggle {
     color: #2F3A48;
     background-color: transparent;
     border-color: transparent;
 }
-  
-#compass .bluebox-lg{
-    width: 50%;
+
+
+
+.box-content-full {
+    display:none;
+    background-color: #00B2F9;
+    height:13rem;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    position: relative;
+    border-radius:3px;
 }
 
-.blue-column{
-    display: flex;
-    flex-direction: column;
+
+
+.arrow{
+    left:15%;
+    bottom: 100%;
+    border: solid #fff;
+    content: " ";
+    height: 0;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-bottom-color: #00B2F9;
+    border-width: 15px;
+    margin-left: -15px;
 }
+.arrow2{
+    left:50%;
+}
+.arrow3{
+    left:85%;
+}
+
+
+#blue1, #blue2, #blue3, #blue4, #blue5, #blue6 {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    padding-left: 15px;
+
+}
+
+
+
+
 
 /*ICONS*/
 @font-face {
@@ -716,7 +791,7 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     margin:0;
 }
 
-.sc-icon-dd{
+.sc-icon-dd {
     padding-right: 10px;
     font-size:20px;
     color:#fff;
@@ -724,14 +799,14 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     content:"";
 }
 
-.sc-icon-pills{
+.sc-icon-pills {
     font-size: 24px;
     color:#fff;
     font-family: "SCicons";
     content:"";
 }
 
-.blue-icon-sm{
+.blue-icon-sm {
     position: absolute;
     margin-top: 10px;
     padding-left:10px;
@@ -740,7 +815,7 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     background-color:transparent;
 }
 
-.blue-icon-lg{
+.blue-icon-lg {
     position: relative;
     align-self: center;
     font-size:58px;
