@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="CSS/scicons-ie7.css">
     <link rel="stylesheet" href="CSS/scicons-ie7-codes.css">
 
-    <link rel="stylesheet" href="CSS/stylenew.css">
-    <link rel="stylesheet" href="CSS/mobile.css">
-    <link rel="stylesheet" href="CSS/ie.css">
+    <link rel="stylesheet" href="CSS/costomstyle.css">
+    <link rel="stylesheet" href="CSS/costommobile.css">
+    <link rel="stylesheet" href="CSS/costomie.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -27,497 +27,598 @@
 </head>
 
 <body>
+    <header class="container-fluid" id="header">
+        <div class="row no-gutters">
+            <div class="col-xl-2 col-3">
+                <div class="dropdown" id="topnav">
+                    <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
+                        <span class="sc-icon-dd icon-schulcampus"></span>
+                        <span class="logo-label">
+                            <b>Schul</b>campus&nbsp;
+                            <i>RLP</i>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lime">
 
-    <header id="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-7">
-                    <div class="nav dropdown" id="mainnav">
-                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
-                            <span class="sc-icon-dd icon-schulcampus"></span>
-                            <span class="logo-label">
-                                <b>Schul</b>Campus</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lime">
+                        <a class="dropdown-item" href="index.html">
+                            <i class="sc-icon-dd icon-home"></i>
+                            <span>Startseite</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="sc-icon-dd icon-folder-open"></i>
+                            <span>Meine Dateien</span>
+                        </a>
+                        <a class="dropdown-item active" href="https://lernenonline.bildung-rp.de/">
+                            <i class="sc-icon-dd icon-graduation-cap"></i>
+                            <span>Moodle</span>
+                        </a>
+                        <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                            <i class="sc-icon-dd icon-play-circled"></i>
+                            <span>Mediathek</span>
+                        </a>
+                        <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                            <i class="sc-icon-dd icon-bank"></i>
+                            <span>Curriculum</span>
+                        </a>
+                        <a class="dropdown-item" href="">
+                            <i class="sc-icon-dd icon-compass-circled"></i>
+                            <span>Medienkompass</span>
+                        </a>
+                        <a class="dropdown-item" href="">
+                            <i class="sc-icon-dd icon-book-1"></i>
+                            <span>Lehr- und Arbeitspläne</span>
+                        </a>
+                        <a class="dropdown-item" href="Infoportal.html">
+                            <i class="sc-icon-dd icon-info-circled"></i>
+                            <span>Infoportal</span>
+                        </a>
 
-                            <a class="dropdown-item" href="SchulcampusDashboard.html">
-                                <i class="sc-icon-dd icon-home"></i>
-                                <span>Startseite</span>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <i class="sc-icon-dd icon-folder-open"></i>
-                                <span>Meine Dateien</span>
-                            </a>
-                            <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
-                                <i class="sc-icon-dd icon-graduation-cap"></i>
-                                <span>Moodle</span>
-                            </a>
-                            <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
-                                <i class="sc-icon-dd icon-play-circled"></i>
-                                <span>Mediathek</span>
-                            </a>
-                            <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
-                                <i class="sc-icon-dd icon-bank"></i>
-                                <span>Curriculum</span>
-                            </a>
-                            <a class="dropdown-item" href="">
-                                <i class="sc-icon-dd icon-compass-circled"></i>
-                                <span>Medienkompass</span>
-                            </a>
-                            <a class="dropdown-item" href="https://evewa.bildung-rp.de/veranstaltungskatalog">
-                                <i class="sc-icon-dd icon-calendar"></i>
-                                <span>Vewa</span>
-                            </a>
-                            <a class="dropdown-item" href="Infoportal.html">
-                                <i class="sc-icon-dd icon-info-circled"></i>
-                                <span>Infoportal</span>
-                            </a>
-                            <a class="dropdown-item" href="">
-                                <i class="sc-icon-dd icon-book-1"></i>
-                                <span>Lehr- und Arbeitspläne</span>
-                            </a>
-                        </div>
                     </div>
-
                 </div>
-                <div class="col-3 nav-pills-area">
+            </div>
+            <div class="col-xl-8 col-6">
+                <div class="nav-pills-area">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="sc-icon-dd icon-bell-alt"></span>
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Infos" data-content="Dein Moodle-Account wurde nicht abgemeldet.">
+                                <span class="sc-icon-pills icon-bell-alt"></span>
                                 <span class="badge badge-lime">3</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="sc-icon-dd icon-mail-alt"></span>
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Nachrichten" data-content="Ein Kollege hat dich zu einer Sammlung freigeschaltet.">
+                                <span class="sc-icon-pills icon-mail-alt"></span>
                                 <span class="badge badge-lime">2</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="sc-icon-dd icon-usersetting"></span>
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
+                                <span class="sc-icon-pills icon-usersetting"></span>
                                 <span class="badge badge-lime">4</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-2">
-                    <div class="nav dropdown userdd">
-                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
-                            <span class="sc-icon-dd icon-userhead"></span>
-                            <span class="dd-label">Max Schmidt</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lime">
-                            <a class="dropdown-item" href="#">Profil</a>
-                            <a class="dropdown-item" href="#">Einstellungen</a>
-                            <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Abmelden</a>
-                        </div>
+            </div>
+            <div class="col-xl-2 col-3">
+                <div id="usernav" class="dropdown dd-right">
+                    <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
+                        <span class="sc-icon-dd icon-userhead"></span>
+                        <span class="dd-label">Max Schmidt Müller</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
+                        <a class="dropdown-item" href="#">Profil</a>
+                        <a class="dropdown-item" href="#">Einstellungen</a>
+                        <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Abmelden</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="content" class="content">
+    <div class="dropdown-menu-full" id="topnav-mobile">
+        <div class="dropdown-menu dropdown-menu-lime">
+            <a class="dropdown-item" href="SchulcampusDashboard.html">
+                <i class="sc-icon-dd icon-home"></i>
+                <span>Startseite</span>
+            </a>
+            <a class="dropdown-item" href="#">
+                <i class="sc-icon-dd icon-folder-open"></i>
+                <span>Meine Dateien</span>
+            </a>
+            <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
+                <i class="sc-icon-dd icon-graduation-cap"></i>
+                <span>Moodle</span>
+            </a>
+            <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                <i class="sc-icon-dd icon-play-circled"></i>
+                <span>Mediathek</span>
+            </a>
+            <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                <i class="sc-icon-dd icon-bank"></i>
+                <span>Curriculum</span>
+            </a>
+            <a class="dropdown-item" href="">
+                <i class="sc-icon-dd icon-compass-circled"></i>
+                <span>Medienkompass</span>
+            </a>
+            <a class="dropdown-item" href="">
+                <i class="sc-icon-dd icon-book-1"></i>
+                <span>Lehr- und Arbeitspläne</span>
+            </a>
+            <a class="dropdown-item" href="Infoportal.html">
+                <i class="sc-icon-dd icon-info-circled"></i>
+                <span>Infoportal</span>
+            </a>
+        </div>
+    </div>
 
+    <div class="dropdown-menu-full" id="usernav-mobile">
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
+            <a class="dropdown-item" href="#">Profil</a>
+            <a class="dropdown-item" href="#">Einstellungen</a>
+            <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Abmelden</a>
+        </div>
+    </div>
+    </div>
+
+
+    <div id="content">
+
+        <div class="container-fluid" id="main-tabs">
             <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">IDM</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">MOODLE</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">ORGA</a>
-                    </li>
-                  </ul>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#idm" data-toggle="tab">IDM
+                        <span> Benutzerverwaltung</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#moodle" data-toggle="tab">MOODLE
+                        <span> Benutzerverwaltung</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#orga" data-toggle="tab">ORGA
+                        <span> Benutzerverwaltung</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-        
+        <main id="main">
 
+            <div class="sidebar" id="sidebar">
 
-        <main class="container-fluid" id="main">
-                    <div class="sideoption" id="sideoption">
-                            <ul>
-                                    <i class="sideoption-icon icon-user"></i><span>Benutzer</span>
-                                    <li>
-                                        <a href="#contact">Übersicht</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact">Anlegen</a>
-                                    </li>
-                                    <li>
-                                        <a href="#news">Exportieren</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact">Importieren</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <i class="sideoption-icon icon-users"></i><span>Gruppen</span>
-                                    <li>
-                                        <a href="#contact">Übersicht</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact">Anlegen</a>
-                                    </li>
-                                    <li>
-                                        <a href="#news">Verwalten</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <i class="sideoption-icon icon-flag"></i><span>Rollen</span>
-                                    <li>
-                                        <a href="#contact">Übersicht</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact">Anlegen</a>
-                                    </li>
-                                    <li>
-                                        <a href="#news">Exportieren</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact">Importieren</a>
-                                    </li>
-                                </ul>
+                <div class="accordion">
 
-                    </div>
-                    <div id="mainoption" class="mainoption">
-                            <div class="extension-button">
-                                <button type="button" class="btn btn-sideoption">
-                                    <i class="icon-left-open"></i>
-                                </button>
+                    <div class="card">
+                        <div class="card-header" id="s1">
+
+                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
+                                <i class="sc-icon icon-user"></i>Benutzer
+                            </button>
+
+                        </div>
+                        <div id="cs1" class="collapse show" aria-labelledby="s1" data-parent="#accordion1">
+                            <div class="card-body">
+                                <a href="#">Übersicht</a>
                             </div>
-                            <div id="media-content" class="row">
+                            <div class="card-body">
+                                <a href="#">Anlegen</a>
+                            </div>
+                            <div class="card-body active">
+                                <a href="#">Exportieren</a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#">Importieren</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="s2">
+
+                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
+                                <i class="sc-icon icon-users"></i>Gruppen
+                            </button>
+
+                        </div>
+                        <div id="cs2" class="collapse show" aria-labelledby="s2" data-parent="#accordion1">
+                            <div class="card-body">
+                                <a href="#">Übersicht</a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#">Anlegen</a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#">Verwalten</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="s3">
+
+                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
+                                <i class="sc-icon icon-flag"></i>Rollen
+                            </button>
+
+                        </div>
+                        <div id="cs3" class="collapse show" aria-labelledby="s3" data-parent="#accordion1">
+                            <div class="card-body">
+                                <a href="#">Übersicht</a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#">Anlegen</a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#">Exportieren</a>
+                            </div>
+                            <div class="card-body">
+                                <a href="#">Importieren</a>
+                            </div>
+                        </div>
+                    </div>
 
 
-                                    <div class="container-fluid" id="pagesearch">
-                                            <div class="accordion">
-                                                <div class="card card-blue mini">
-                                                    <div class="card-header card-header-blue small" id="v1">
-                                                        <div class="pagesearch-field">
-                                                            <form class="form-inline" action="/action_page.php">
-                                                                <input class="form-control" type="text" placeholder="Suchen">
-                                                                <button class="btn btn-blue" type="submit">
-                                                                    <i class="fa fa-search"></i>
-                                                                </button>
-                                                            </form>
-                                                            <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
-                                                                aria-controls="c1">
-                                                                Erweiterte Suche
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div id="c1" class="collapse" aria-labelledby="v1" data-parent="#accordion2">
-                                                        <div class="card-body">
-                                                            <div class="container" id="filter">
-                                                                <div class="dropdown dropdown-blue">
-                                                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                                        <span>Gruppe wählen</span>
-                                                                    </button>
-                                                                    <div class="dropdown-menu dropdown-menu-blue">
-                                
-                                                                        <a class="dropdown-item " href="# ">Klasse</a>
-                                                                        <a class="dropdown-item " href="# ">Kurs</a>
-                                                                        <a class="dropdown-item " href="# ">Gruppe</a>
-                                                                        <a class="dropdown-item " href="# ">Organisation</a>
-                                                                        <a class="dropdown-item " href="# ">Arbeitsgemeinschaft</a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dropdown dropdown-blue">
-                                                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                                        <span>Rolle wählen</span>
-                                                                    </button>
-                                                                    <div class="dropdown-menu dropdown-menu-blue">
-                                                                        <a class="dropdown-item " href="# ">OrganisationsAdmin</a>
-                                                                        <a class="dropdown-item " href="# ">Schulleitung</a>
-                                                                        <a class="dropdown-item " href="# ">Lehrkraft</a>
-                                                                        <a class="dropdown-item " href="# ">Schüler</a>
-                                                                        <a class="dropdown-item " href="# ">Sonstige Personen</a>
-                                                                        <a class="dropdown-item " href="# ">SuperAdmin</a>
-                                                                        <a class="dropdown-item " href="# ">ServiceAdmin</a>
-                                                                        <a class="dropdown-item " href="# ">ContentManager</a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="dropdown dropdown-blue">
-                                                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                                        <span>Stutus wählen</span>
-                                                                    </button>
-                                                                    <div class="dropdown-menu dropdown-menu-blue">
-                                
-                                                                        <a class="dropdown-item" href="#">aktiv</a>
-                                                                        <a class="dropdown-item" href="#">pausiert</a>
-                                                                        <a class="dropdown-item" href="#">inaktiv</a>
-                                
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <button type="button" class="btn btn-sidebar">
+                <i class="sc-icon icon-indent-left"></i>
+            </button>
+
+            <div class="main-content" id="main-content">
+
+                <div id="pagesearch">
+                    <div class="accordion">
+                        <div class="card card-blue small">
+                            <div class="card-header card-header-blue" id="v1">
+                                <div class="pagesearch-field">
+
+                                    <div class="input-group">
+                                        <input class="form-control border-right-0" type="search" value="" id="" placeholder="Suchbegriff">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-search border-left-0" type="button">
+                                                <i class="sc-icon icon-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+
+                                    <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
+                                        aria-controls="c1">
+                                        Erweiterte Suche
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="c1" class="collapse" aria-labelledby="v1">
+                                <div class="card-body">
+                                    <div id="filter">
+                                        <div class="dropdown dropdown-blue">
+                                            <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                <span>Gruppe wählen</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-blue">
+
+                                                <a class="dropdown-item " href="# ">Klasse</a>
+                                                <a class="dropdown-item " href="# ">Kurs</a>
+                                                <a class="dropdown-item " href="# ">Gruppe</a>
+                                                <a class="dropdown-item " href="# ">Organisation</a>
+                                                <a class="dropdown-item " href="# ">Arbeitsgemeinschaft</a>
                                             </div>
                                         </div>
+                                        <div class="dropdown dropdown-blue">
+                                            <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                <span>Rolle wählen</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-blue">
+                                                <a class="dropdown-item " href="# ">OrganisationsAdmin</a>
+                                                <a class="dropdown-item " href="# ">Schulleitung</a>
+                                                <a class="dropdown-item " href="# ">Lehrkraft</a>
+                                                <a class="dropdown-item " href="# ">Schüler</a>
+                                                <a class="dropdown-item " href="# ">Sonstige Personen</a>
+                                                <a class="dropdown-item " href="# ">SuperAdmin</a>
+                                                <a class="dropdown-item " href="# ">ServiceAdmin</a>
+                                                <a class="dropdown-item " href="# ">ContentManager</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown dropdown-blue">
+                                            <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                <span>Stutus wählen</span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-blue">
 
+                                                <a class="dropdown-item" href="#">aktiv</a>
+                                                <a class="dropdown-item" href="#">pausiert</a>
+                                                <a class="dropdown-item" href="#">inaktiv</a>
 
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Name</th>
-                                            <th>Vorname</th>
-                                            <th>Benutzername</th>
-                                            <th>Email</th>
-                                            <th>Erstellt</th>
-                                            <th>Gruppe</th>
-                                            <th>Rolle</th>
-                                            <th>Status</th>
-                                            <th>Aktion</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <form>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f1" name="f1" value="">
-                                                    <label for="f1"></label>
-                                                </td>
-                                                <td>John</td>
-                                                <td>Doe</td>
-                                                <td>bf634</td>
-                                                <td>john@example.com</td>
-                                                <td>16.07.2018</td>
-                                                <td>Klasse 7d</td>
-                                                <td>Lehrkraft</td>
-                                                <td class="status icon-status-yellow"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f2" name="f2" value="">
-                                                    <label for="f2"></label>
-                                                </td>
-                                                <td>Mary</td>
-                                                <td>Moe</td>
-                                                <td></td>
-                                                <td>mary@example.com</td>
-                                                <td>11.07.2018</td>
-                                                <td>Klasse 7e</td>
-                                                <td>Lehrkraft</td>
-                                                <td class="status icon-status-red"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f3" name="f3" value="">
-                                                    <label for="f3"></label>
-                                                </td>
-                                                <td>Klaus</td>
-                                                <td>BlaBla</td>
-                                                <td>ghtt785</td>
-                                                <td>juhghdy@example.com</td>
-                                                <td>11.08.2018</td>
-                                                <td>Klasse 7e</td>
-                                                <td>Lehrkraft</td>
-                                                <td class="status icon-status-green"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f4" name="f4" value="">
-                                                    <label for="f4"></label>
-                                                </td>
-                                                <td>Klaus</td>
-                                                <td>BlaBla</td>
-                                                <td>ghtt785</td>
-                                                <td>juhghdy@example.com</td>
-                                                <td>11.08.2018</td>
-                                                <td>Klasse 7e</td>
-                                                <td>Lehrkraft</td>
-                                                <td class="status icon-status-green"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f5" name="f5" value="">
-                                                    <label for="f5"></label>
-                                                </td>
-                                                <td>Mustermann</td>
-                                                <td>Max</td>
-                                                <td>maxmuster1</td>
-                                                <td>maxmuster@muster.de</td>
-                                                <td>10.02.2019</td>
-                                                <td>Klasse 5e</td>
-                                                <td>Schüler</td>
-                                                <td class="status icon-status-green"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f6" name="f6" value="">
-                                                    <label for="f6"></label>
-                                                </td>
-                                                <td>Mustermann</td>
-                                                <td>Max</td>
-                                                <td>maxmuster1</td>
-                                                <td>maxmuster@muster.de</td>
-                                                <td>10.02.2019</td>
-                                                <td>Klasse 5e</td>
-                                                <td>Schüler</td>
-                                                <td class="status icon-status-green"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f7" name="f7" value="">
-                                                    <label for="f7"></label>
-                                                </td>
-                                                <td>Mustermann</td>
-                                                <td>Max</td>
-                                                <td>maxmuster1</td>
-                                                <td>maxmuster@muster.de</td>
-                                                <td>10.02.2019</td>
-                                                <td>Klasse 5e</td>
-                                                <td>Schüler</td>
-                                                <td class="status icon-status-green"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f8" name="f8" value="">
-                                                    <label for="f8"></label>
-                                                </td>
-                                                <td>Mustermann</td>
-                                                <td>Max</td>
-                                                <td>maxmuster1</td>
-                                                <td>maxmuster@muster.de</td>
-                                                <td>10.02.2019</td>
-                                                <td>Klasse 5e</td>
-                                                <td>Schüler</td>
-                                                <td class="status icon-status-green"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f9" name="f9" value="">
-                                                    <label for="f9"></label>
-                                                </td>
-                                                <td>Mustermann</td>
-                                                <td>Max</td>
-                                                <td>maxmuster1</td>
-                                                <td>maxmuster@muster.de</td>
-                                                <td>10.02.2019</td>
-                                                <td>Klasse 5e</td>
-                                                <td>Schüler</td>
-                                                <td class="status icon-status-yellow"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f10" name="f10" value="">
-                                                    <label for="f10"></label>
-                                                </td>
-                                                <td>Mustermann</td>
-                                                <td>Max</td>
-                                                <td>maxmuster1</td>
-                                                <td>maxmuster@muster.de</td>
-                                                <td>10.02.2019</td>
-                                                <td>Klasse 5e</td>
-                                                <td>Schüler</td>
-                                                <td class="status icon-status-green"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox" id="f11" name="f11" value="">
-                                                    <label for="f11"></label>
-                                                </td>
-                                                <td>Mustermann</td>
-                                                <td>Max</td>
-                                                <td>maxmuster1</td>
-                                                <td>maxmuster@muster.de</td>
-                                                <td>10.02.2019</td>
-                                                <td>Klasse 5e</td>
-                                                <td>Schüler</td>
-                                                <td class="status icon-status-red"></td>
-                                                <td>
-                                                    <a class="icon-pencil" href=" " title="action"></a>
-                                                    <a class="icon-ellipsis" href=" " title="action"></a>
-                                                </td>
-                                            </tr>
-                                        </form>
-                                    </tbody>
-                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active container" id="idm">
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Vorname</th>
+                                    <th>Benutzername</th>
+                                    <th>Email</th>
+                                    <th>Erstellt</th>
+                                    <th>Gruppe</th>
+                                    <th>Rolle</th>
+                                    <th>Status</th>
+                                    <th>Aktion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <form>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f1" name="f1" value="">
+                                            <label for="f1"></label>
+                                        </td>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>bf634</td>
+                                        <td>john@example.com</td>
+                                        <td>16.07.2018</td>
+                                        <td>Klasse 7d</td>
+                                        <td>Lehrkraft</td>
+                                        <td class="status status-yellow"></td>
+                                        <td>
+                                            <a class="sc-icon icon-pencil" href=" " title="action"></a>
+                                            <a class="sc-icon icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f2" name="f2" value="">
+                                            <label for="f2"></label>
+                                        </td>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                        <td></td>
+                                        <td>mary@example.com</td>
+                                        <td>11.07.2018</td>
+                                        <td>Klasse 7e</td>
+                                        <td>Lehrkraft</td>
+                                        <td class="status status-red"></td>
+                                        <td>
+                                            <a class="sc-icon icon-pencil" href=" " title="action"></a>
+                                            <a class="sc-icon icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f3" name="f3" value="">
+                                            <label for="f3"></label>
+                                        </td>
+                                        <td>Klaus</td>
+                                        <td>BlaBla</td>
+                                        <td>ghtt785</td>
+                                        <td>juhghdy@example.com</td>
+                                        <td>11.08.2018</td>
+                                        <td>Klasse 7e</td>
+                                        <td>Lehrkraft</td>
+                                        <td class="status status-green"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f4" name="f4" value="">
+                                            <label for="f4"></label>
+                                        </td>
+                                        <td>Klaus</td>
+                                        <td>BlaBla</td>
+                                        <td>ghtt785</td>
+                                        <td>juhghdy@example.com</td>
+                                        <td>11.08.2018</td>
+                                        <td>Klasse 7e</td>
+                                        <td>Lehrkraft</td>
+                                        <td class="status status-green"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f5" name="f5" value="">
+                                            <label for="f5"></label>
+                                        </td>
+                                        <td>Mustermann</td>
+                                        <td>Max</td>
+                                        <td>maxmuster1</td>
+                                        <td>maxmuster@muster.de</td>
+                                        <td>10.02.2019</td>
+                                        <td>Klasse 5e</td>
+                                        <td>Schüler</td>
+                                        <td class="status status-green"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f6" name="f6" value="">
+                                            <label for="f6"></label>
+                                        </td>
+                                        <td>Mustermann</td>
+                                        <td>Max</td>
+                                        <td>maxmuster1</td>
+                                        <td>maxmuster@muster.de</td>
+                                        <td>10.02.2019</td>
+                                        <td>Klasse 5e</td>
+                                        <td>Schüler</td>
+                                        <td class="status status-green"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f7" name="f7" value="">
+                                            <label for="f7"></label>
+                                        </td>
+                                        <td>Mustermann</td>
+                                        <td>Max</td>
+                                        <td>maxmuster1</td>
+                                        <td>maxmuster@muster.de</td>
+                                        <td>10.02.2019</td>
+                                        <td>Klasse 5e</td>
+                                        <td>Schüler</td>
+                                        <td class="status status-red"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f8" name="f8" value="">
+                                            <label for="f8"></label>
+                                        </td>
+                                        <td>Mustermann</td>
+                                        <td>Max</td>
+                                        <td>maxmuster1</td>
+                                        <td>maxmuster@muster.de</td>
+                                        <td>10.02.2019</td>
+                                        <td>Klasse 5e</td>
+                                        <td>Schüler</td>
+                                        <td class="status status-green"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f9" name="f9" value="">
+                                            <label for="f9"></label>
+                                        </td>
+                                        <td>Mustermann</td>
+                                        <td>Max</td>
+                                        <td>maxmuster1</td>
+                                        <td>maxmuster@muster.de</td>
+                                        <td>10.02.2019</td>
+                                        <td>Klasse 5e</td>
+                                        <td>Schüler</td>
+                                        <td class="status status-yellow"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f10" name="f10" value="">
+                                            <label for="f10"></label>
+                                        </td>
+                                        <td>Mustermann</td>
+                                        <td>Max</td>
+                                        <td>maxmuster1</td>
+                                        <td>maxmuster@muster.de</td>
+                                        <td>10.02.2019</td>
+                                        <td>Klasse 5e</td>
+                                        <td>Schüler</td>
+                                        <td class="status status-green"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" id="f11" name="f11" value="">
+                                            <label for="f11"></label>
+                                        </td>
+                                        <td>Mustermann</td>
+                                        <td>Max</td>
+                                        <td>maxmuster1</td>
+                                        <td>maxmuster@muster.de</td>
+                                        <td>10.02.2019</td>
+                                        <td>Klasse 5e</td>
+                                        <td>Schüler</td>
+                                        <td class="status status-red"></td>
+                                        <td>
+                                            <a class="icon-pencil" href=" " title="action"></a>
+                                            <a class="icon-ellipsis" href=" " title="action"></a>
+                                        </td>
+                                    </tr>
+                                </form>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                    <div class="tab-pane container" id="moodle">moodle</div>
+                    <div class="tab-pane container" id="orga">orga</div>
+                </div>
+
             </div>
+
         </main>
 
-    </div>
-    <footer id="footer">
-        <nav class="container-fluid navbar navbar-expand-lg">
-            <div class="row">
-                <div class="col-2">
-                    <a class="navbar-brand" href="#">
-                        <img src="Images/RLP-logo-weiss.png" alt="Logo_RLP">
-                    </a>
-                </div>
-                <div class="col-8">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Datenschutzerklärung</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nutzungsbedingungen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Impressum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sidemap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-2"></div>
-            </div>
-        </nav>
-    </footer>
+        <a href="index.html" class="btn btn-up icon-up-open" role="button" id="up-button"></a>
 
+    </div>
+
+    <footer class="container-fluid" id="footer">
+
+        <div class=" navbar row no-gutters">
+            <div class="col-lg-2">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/RLP-logo-weiss.png" alt="Logo_RLP">
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Datenschutzerklärung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nutzungsbedingungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Impressum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sidemap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+    </footer>
 </body>
 
 </html>

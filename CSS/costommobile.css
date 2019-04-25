@@ -178,6 +178,7 @@
         width: 10rem;
         min-height: 10rem;
         margin:0;
+        cursor: pointer;
     }
     
     .bluebox-lg{
@@ -297,6 +298,10 @@
         margin-right: -4px;
     }
 
+    .dd-right .dropdown-toggle::after {
+        padding: 0;
+    }
+
     .dropdown .btn {
         padding: .5rem .4rem;
     }
@@ -314,7 +319,7 @@
     }
 
     .bluebox{
-        height:200px;
+        height:180px;
     }
 
 
@@ -339,8 +344,6 @@
     }
 
     .box-content-full {
-        margin-left: 2px;
-        margin-right: 1px;
         width: 100%;
     }
 

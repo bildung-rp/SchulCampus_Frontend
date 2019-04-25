@@ -18,6 +18,17 @@ $(document).ready(function () {
     })
 
 
+ //Volle Höhe von Sidebar
+    var newHeight = $("html").height() + "px";
+    $(".sidebar").css("min-height", newHeight); 
+  
+
+    $(".btn-sidebar").click(function () {
+        $('#sidebar').toggle();
+        $(".btn-sidebar" + " .icon-indent-left, .icon-indent-right").toggleClass("icon-indent-left icon-indent-right");
+    });    
+
+    
 
 
 });
@@ -31,21 +42,13 @@ $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
 });
 
-//if click on a("popover") display:none von tooltip//
 
 
 
-$(document).ready(function(){
-    $dts = $('.nav-tabs .nav-item')
-    $('.nav-tabs').on('click', '.nav-item', function(){
-         $dts.removeClass('active');
-         $(this).addClass('active'); 
-    })
-});
+
 
 
 //Dropdown-Menüs im Header in mobiler Ansicht
-
 
 $(document).ready(function (){
     
@@ -81,6 +84,17 @@ $(document).ready(function (){
 });
 
 
+//Accordion Icon-Wechsel
+$(document).ready(function () {
+    $(".sidebar .btn-link").click(function () {
+        $(".sidebar .card-header").addClass("active");
+        if ($(".sidebar .card-header").hasClass("active")==true){
+            $(".sidebar .card-header").removeClass("active");
+        } else {
+            $(".sidebar .card-header").addClass("active");
+        }
+    });
+});
 
 
 
@@ -104,58 +118,6 @@ function openTab(tabName, el, color) {
 }
   
 
-
-
-/*Drag-and-Drop*/
-
-function ziehen(ev) {
-    ev.dataTransfer.setData('text', ev.target.id);
-}
- 
-function ablegenErlauben(ev) {
-    ev.preventDefault();
-}
- 
-function ablegen(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData('text');
-    ev.target.appendChild(document.getElementById(data));
-}
-
-
-
-$(document).ready(function () {
-    $(".btn-sideoption").click(function () {
-        $('#sideoption').toggle();
-        $("#mainoption" + " .icon-left-open, .icon-right-open").toggleClass("icon-left-open icon-right-open");
-
-        if ($(".mainoption").hasClass( "temp-open" )==false) {
-            $(".mainoption").css("width", "100%").addClass( "temp-open");
-        } else {
-            $(".mainoption").css("width", "80%").removeClass("temp-open") ;
-        };
-    });
-});
-
-
-
-$(document).ready(function () {
-    $(".input-group > input").focus(function (e) {
-        $("#search-input").css("border", "1px solid #99E0FD");
-        $("#search-input").css("border-right", "none");
-        $(".input-group-append").css("border", "1px solid #99E0FD");
-        $(".input-group-append").css("border-left", "none");
-        $(".btn-search:after").css("color", "#99E0FD");
-
-
-    }).blur(function (e) {
-        $("#search-input").css("border", "1px solid #ced4da");
-        $("#search-input").css("border-right", "none");
-        $(".input-group-append").css("border", "1px solid #ced4da");
-        $(".input-group-append").css("border-left", "none");
-        $(".btn-search:after").css("color", "#A7ADB1");
-    });
-});
 
 
 //BlueBox-Funktionen
@@ -182,6 +144,7 @@ function toggleBlueBox(sectionId) {
         $(idBlueNew + " .box-content").toggle();
         $(idBlueNew + " .bluebox-label>a").toggle();
         $(idBlueNew + " .icon-plus, .icon-cancel").toggleClass("icon-plus icon-cancel");
+        $(idBlueNew + " .bluebox section").css("height", "260px");  //wegen IE
 
         idBlueOld = idBlueNew;
         console.log("neueAlte " + idBlueOld);
@@ -195,6 +158,7 @@ function toggleBlueBox(sectionId) {
         $(idBlueOld + " .box-content").css("display", "none");
         $(idBlueOld + " .bluebox-label>a").css("display", "block");
         $(idBlueOld + " .icon-plus, .icon-cancel").toggleClass("icon-plus icon-cancel");
+        $(idBlueOld + " .bluebox section").css("height", "9.37rem");
 
 
         $(idBlueNew + " .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
@@ -202,6 +166,7 @@ function toggleBlueBox(sectionId) {
         $(idBlueNew + " .box-content").toggle();
         $(idBlueNew + " .bluebox-label>a").toggle();
         $(idBlueNew + " .icon-plus, .icon-cancel").toggleClass("icon-plus icon-cancel");
+        $(idBlueNew + " .bluebox section").css("height", "260px");
 
         idBlueOld = idBlueNew;
         console.log("neueAlte " + idBlueOld);
@@ -223,7 +188,7 @@ $(document).ready(function () {
         } else if ($("#bc1.box-content-full").css("display") == "block") {
             $(".bluebox").css("height", "510px")
         } else {
-            $(".bluebox").css("height", "400px")
+            $(".bluebox").css("height", "500px")
         }
     });
 });
@@ -243,7 +208,7 @@ function toggleBlueMobile(tempId) {
             $("#blue1").css("display", "block");
             $("#blue2").css("display", "none");
             $("#blue3").css("display", "none");
-            $(".arrow").css("left","15%");
+            $(".arrowblue").css("left","15%");
 
         } else if ($("#blue1").css("display") == "block"){
             $("#bc1.box-content-full").css("display", "none");
@@ -253,7 +218,7 @@ function toggleBlueMobile(tempId) {
             $("#blue1").css("display", "block");
             $("#blue2").css("display", "none");
             $("#blue3").css("display", "none");
-            $(".arrow").css("left","15%");
+            $(".arrowblue").css("left","15%");
         };
 
     } else if (idBlueMobile == "#media"){
@@ -269,7 +234,7 @@ function toggleBlueMobile(tempId) {
             $("#blue3").css("display", "block");
             $("#blue2").css("display", "none");
             $("#blue1").css("display", "none");
-            $(".arrow").css("left","85%");
+            $(".arrowblue").css("left","85%");
 
         } else if ($("#blue3").css("display") == "block"){
             $("#bc1.box-content-full").css("display", "none");
@@ -279,7 +244,7 @@ function toggleBlueMobile(tempId) {
             $("#blue3").css("display", "block");
             $("#blue2").css("display", "none");
             $("#blue1").css("display", "none");
-            $(".arrow").css("left","85%");
+            $(".arrowblue").css("left","85%");
         };
 
     } else if (idBlueMobile == "#curriculum"){
@@ -291,7 +256,7 @@ function toggleBlueMobile(tempId) {
             $("#blue4").css("display", "block");
             $("#blue5").css("display", "none");
             $("#blue6").css("display", "none");
-            $(".arrow").css("left","15%");
+            $(".arrowblue").css("left","15%");
 
         } else if ($("#blue4").css("display") == "block"){
             $("#bc2.box-content-full").css("display", "none");
@@ -301,7 +266,7 @@ function toggleBlueMobile(tempId) {
             $("#blue4").css("display", "block");
             $("#blue5").css("display", "none");
             $("#blue6").css("display", "none");
-            $(".arrow").css("left","15%");
+            $(".arrowblue").css("left","15%");
         };
 
     }   else if (idBlueMobile == "#lehrplaene"){
