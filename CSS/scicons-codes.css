@@ -54,6 +54,8 @@
 .icon-compass-circled:before { content: '\e834'; } /* '' */
 .icon-flag:before { content: '\e835'; } /* '' */
 .icon-pencil:before { content: '\e836'; } /* '' */
+.icon-plus-circled:before { content: '\e837'; } /* '' */
+.icon-doc-new:before { content: '\e838'; } /* '' */
 .icon-movie:before { content: '\f040'; } /* '' */
 .icon-info-circled-2:before { content: '\f085'; } /* '' */
 .icon-docs:before { content: '\f0c5'; } /* '' */
@@ -61,6 +63,7 @@
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-list-bullet:before { content: '\f0ca'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-upload-cloud:before { content: '\f0ee'; } /* '' */
 .icon-bell-alt:before { content: '\f0f3'; } /* '' */
 .icon-angle-double-left:before { content: '\f100'; } /* '' */
 .icon-angle-double-right:before { content: '\f101'; } /* '' */
@@ -83,6 +86,7 @@
 .icon-graduation-cap:before { content: '\f19d'; } /* '' */
 .icon-file-video:before { content: '\f1c8'; } /* '' */
 .icon-paper-plane:before { content: '\f1d8'; } /* '' */
+.icon-share:before { content: '\f1e0'; } /* '' */
 .icon-trash:before { content: '\f1f8'; } /* '' */
 .icon-user-plus:before { content: '\f234'; } /* '' */
 .icon-safari:before { content: '\f267'; } /* '' */

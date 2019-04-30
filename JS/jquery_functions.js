@@ -18,17 +18,65 @@ $(document).ready(function () {
     })
 
 
- //Volle Höhe von Sidebar
+    //Volle Höhe von Sidebar
     var newHeight = $("html").height() + "px";
     $(".sidebar").css("min-height", newHeight); 
   
-
-    $(".btn-sidebar").click(function () {
+    //Sidebar-Button-Click
+    $(".btn-sidebar .sc-icon").click(function () {
         $('#sidebar').toggle();
         $(".btn-sidebar" + " .icon-indent-left, .icon-indent-right").toggleClass("icon-indent-left icon-indent-right");
+        $(".icon-indent-right").css("margin-left", "-15px");
+    
+
+        if ($(".sidebar").css("display")=="none"){
+
+            $(".btn-sidebar").css("margin", "0");
+            $(".btn-sidebar").css("background-color", "transparent");
+
+            $(".tab-pane").css("margin-right", "auto");
+            $(".tab-pane").css("margin-left", "auto");
+
+        } else {
+        
+        $(".btn-sidebar").css("margin", "0 0 0 -45px");
+
+        $(".tab-pane").css("margin-right", "30px");
+        $(".tab-pane").css("margin-left", "35px");
+
+        }
     });    
 
     
+    //Scrolling Up-Button
+    $(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) { 
+				$('.btn-up').fadeIn();
+			} else {
+				$('.btn-up').fadeOut();
+			}
+		});
+
+		$('.btn-up').click(function () { 
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+
+
+
+    $('#all').click(function(e) {
+        if (e.currentTarget.checked) {
+            $('.tab-content .table td').find('input[type="checkbox"]').prop('checked', true);
+        } else {
+            $('.tab-content .table td').find('input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
 
 
 });
@@ -84,7 +132,7 @@ $(document).ready(function (){
 });
 
 
-//Accordion Icon-Wechsel
+//Accordion Icon-Wechsel mit active-Zustand (Mehrfachnennung möglich)
 $(document).ready(function () {
     $(".sidebar .btn-link").click(function () {
         $(".sidebar .card-header").addClass("active");
@@ -94,6 +142,32 @@ $(document).ready(function () {
             $(".sidebar .card-header").addClass("active");
         }
     });
+
+//card-body active-Zustand (Nur ein aktiver Zustand)
+    
+    if ($(".sidebar .card-body").hasClass("card-body")==true) {
+        $(".sidebar .card-body .card-body").addClass("sub");
+    } else {
+        $(this).removeClass("sub");
+    }
+
+    $(".sidebar .card-body").click(function () {
+
+        if ($(this).hasClass("sub")==true && $(this).hasClass("active")==false){
+            $(".sidebar .card-body").removeClass("active");
+            $(".sidebar .card-body.sub").removeClass("active");
+            $(this).addClass("active");
+        } else if ($(this).hasClass("active")==true){
+            $(".sidebar .card-body").removeClass("active");
+            
+        } else {
+            $(".sidebar .card-body.sub").removeClass("active");
+            $(".sidebar .card-body").removeClass("active");
+            $(this).addClass("active");
+        }
+
+    });
+
 });
 
 

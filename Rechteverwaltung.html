@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="CSS/scicons-ie7.css">
     <link rel="stylesheet" href="CSS/scicons-ie7-codes.css">
 
-    <link rel="stylesheet" href="CSS/costomstyle.css">
-    <link rel="stylesheet" href="CSS/costommobile.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
     <link rel="stylesheet" href="CSS/costomie.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -275,9 +275,14 @@
 
             </div>
 
-            <button type="button" class="btn btn-sidebar">
+
+            <div class="btn-sidebar">
+            <button type="button" class="btn">
                 <i class="sc-icon icon-indent-left"></i>
             </button>
+            </div>
+
+
 
             <div class="main-content" id="main-content">
 
@@ -305,7 +310,7 @@
                             <div id="c1" class="collapse" aria-labelledby="v1">
                                 <div class="card-body">
                                     <div id="filter">
-                                        <div class="dropdown dropdown-blue">
+                                        <div class="dropdown">
                                             <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
                                                 <span>Gruppe wählen</span>
                                             </button>
@@ -318,7 +323,7 @@
                                                 <a class="dropdown-item " href="# ">Arbeitsgemeinschaft</a>
                                             </div>
                                         </div>
-                                        <div class="dropdown dropdown-blue">
+                                        <div class="dropdown">
                                             <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
                                                 <span>Rolle wählen</span>
                                             </button>
@@ -333,7 +338,7 @@
                                                 <a class="dropdown-item " href="# ">ContentManager</a>
                                             </div>
                                         </div>
-                                        <div class="dropdown dropdown-blue">
+                                        <div class="dropdown">
                                             <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
                                                 <span>Stutus wählen</span>
                                             </button>
@@ -353,7 +358,7 @@
                 </div>
 
                 <div class="tab-content">
-                    <div class="tab-pane active container" id="idm">
+                    <div class="tab-pane active" id="idm">
 
                         <table class="table">
                             <thead>
@@ -576,9 +581,17 @@
 
 
                     </div>
-                    <div class="tab-pane container" id="moodle">moodle</div>
-                    <div class="tab-pane container" id="orga">orga</div>
+                    <div class="tab-pane" id="moodle">moodle</div>
+                    <div class="tab-pane" id="orga">orga</div>
                 </div>
+
+                <div class="selectAll" id="all">
+                    <input type="checkbox" id="f100" name="f100" value="">
+                    <label for="f100">
+                        <div class="checkbox"></div>Alle markieren
+                    </label>
+                </div>
+
 
             </div>
 
