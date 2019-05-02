@@ -1098,7 +1098,7 @@ dt h4{
     display:block;
     width: 300px; /*width: 276px;*/
     height:100%;
-    background-color: #F1F1F6;
+    background-color: #F0F0F1;
 }
 
 .sidebar .card {
@@ -1111,7 +1111,7 @@ dt h4{
     padding: .5rem 1.25rem;
     color: #505B64;
     background-color: transparent;
-    border-bottom: 1px solid #F1F1F6;
+    border-bottom: 1px solid #F0F0F1;
 }
 
 .sidebar .card-body {
@@ -1202,7 +1202,7 @@ dt h4{
     margin:0 0 0 -40px;
     padding: 0 .75rem;
     border-radius: 0;
-    background-color: #F1F1F6;
+    background-color: #F0F0F1;
     z-index:1;
 }
 
@@ -1311,6 +1311,7 @@ dt h4{
 #filter .dropdown-toggle::after {
     font-size: 14px;
 }
+
 
 
 #all {

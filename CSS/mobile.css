@@ -294,7 +294,7 @@
 
 /*Ansicht bis 440px gut*/
 
-@media screen and (max-width: 398px) { 
+@media screen and (max-width: 400px) { 
 
     .nav-link {
         display: block;
@@ -332,15 +332,15 @@
 
 
     .bluebox section {
-        width: 5.75rem;
-        min-height: 5.75rem;
+        width: 4.75em;
+        min-height: 4.75em;
         margin: 5px 0;
     }
     
     .bluebox-lg{
         position:absolute;
-        width: 5.75rem;
-        height: 5.75rem; 
+        width: 4.75em;
+        height: 4.75em; 
     }
 
     .blue-icon-lg{
