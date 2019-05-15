@@ -1089,8 +1089,8 @@ table .ss-icon {
   font-weight: 500;
 }
 
-.logo-label .logo-thin{
-
+.logo-label .sc-icon-dd {
+  font-size:25px;
 }
 
 #header .row{
@@ -1591,14 +1591,6 @@ width: 750px;
   content:'\e829';
 }
 
-.icon-curriculum::before {
-  font-size:28px;
-  content:'\e804';
-}
-.icon-moodle::before {
-  font-size: 30px;
-  content:'\e805';
-}
 .icon-status-red {
   content:'\f111';
   background-color: #e94b4b;

@@ -1,175 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include "header.php"; ?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="fontawesome-webfont.ttf" rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="CSS/scincons.css">
-    <link rel="stylesheet" href="CSS/animation.css">
-    <link rel="stylesheet" href="CSS/scicons-codes.css">
-    <link rel="stylesheet" href="CSS/scicons-embedded.css">
-    <link rel="stylesheet" href="CSS/scicons-ie7.css">
-    <link rel="stylesheet" href="CSS/scicons-ie7-codes.css">
-
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/mobile.css">
-    <link rel="stylesheet" href="CSS/costomie.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="JS/jquery_functions.js"></script>
-</head>
-
-<body>
-    <header class="container-fluid" id="header">
-        <div class="row no-gutters">
-            <div class="col-xl-2 col-3">
-                <div class="dropdown" id="topnav">
-                    <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
-                        <span class="sc-icon-dd icon-schulcampus"></span>
-                        <span class="logo-label">
-                            <b>Schul</b>campus&nbsp;
-                            <i>RLP</i>
-                        </span>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-lime">
-
-                        <a class="dropdown-item" href="index.html">
-                            <i class="sc-icon-dd icon-home"></i>
-                            <span>Startseite</span>
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="sc-icon-dd icon-folder-open"></i>
-                            <span>Meine Dateien</span>
-                        </a>
-                        <a class="dropdown-item active" href="https://lernenonline.bildung-rp.de/">
-                            <i class="sc-icon-dd icon-graduation-cap"></i>
-                            <span>Moodle</span>
-                        </a>
-                        <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
-                            <i class="sc-icon-dd icon-play-circled"></i>
-                            <span>Mediathek</span>
-                        </a>
-                        <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
-                            <i class="sc-icon-dd icon-bank"></i>
-                            <span>Curriculum</span>
-                        </a>
-                        <a class="dropdown-item" href="">
-                            <i class="sc-icon-dd icon-compass-circled"></i>
-                            <span>Medienkompass</span>
-                        </a>
-                        <a class="dropdown-item" href="">
-                            <i class="sc-icon-dd icon-book-1"></i>
-                            <span>Lehr- und Arbeitspläne</span>
-                        </a>
-                        <a class="dropdown-item" href="Infoportal.html">
-                            <i class="sc-icon-dd icon-info-circled"></i>
-                            <span>Infoportal</span>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8 col-6">
-                <div class="nav-pills-area">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Infos" data-content="Dein Moodle-Account wurde nicht abgemeldet.">
-                                <span class="sc-icon-pills icon-bell-alt"></span>
-                                <span class="badge badge-lime">3</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Nachrichten" data-content="Ein Kollege hat dich zu einer Sammlung freigeschaltet.">
-                                <span class="sc-icon-pills icon-mail-alt"></span>
-                                <span class="badge badge-lime">2</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
-                                <span class="sc-icon-pills icon-usersetting"></span>
-                                <span class="badge badge-lime">4</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl-2 col-3">
-                <div id="usernav" class="dropdown dd-right">
-                    <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
-                        <span class="sc-icon-dd icon-userhead"></span>
-                        <span class="dd-label">Max Schmidt Müller</span>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-                        <a class="dropdown-item" href="#">Profil</a>
-                        <a class="dropdown-item" href="#">Einstellungen</a>
-                        <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Abmelden</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="dropdown-menu-full" id="topnav-mobile">
-        <div class="dropdown-menu dropdown-menu-lime">
-            <a class="dropdown-item" href="SchulcampusDashboard.html">
-                <i class="sc-icon-dd icon-home"></i>
-                <span>Startseite</span>
-            </a>
-            <a class="dropdown-item" href="#">
-                <i class="sc-icon-dd icon-folder-open"></i>
-                <span>Meine Dateien</span>
-            </a>
-            <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
-                <i class="sc-icon-dd icon-graduation-cap"></i>
-                <span>Moodle</span>
-            </a>
-            <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
-                <i class="sc-icon-dd icon-play-circled"></i>
-                <span>Mediathek</span>
-            </a>
-            <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
-                <i class="sc-icon-dd icon-bank"></i>
-                <span>Curriculum</span>
-            </a>
-            <a class="dropdown-item" href="">
-                <i class="sc-icon-dd icon-compass-circled"></i>
-                <span>Medienkompass</span>
-            </a>
-            <a class="dropdown-item" href="">
-                <i class="sc-icon-dd icon-book-1"></i>
-                <span>Lehr- und Arbeitspläne</span>
-            </a>
-            <a class="dropdown-item" href="Infoportal.html">
-                <i class="sc-icon-dd icon-info-circled"></i>
-                <span>Infoportal</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="dropdown-menu-full" id="usernav-mobile">
-        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-            <a class="dropdown-item" href="#">Profil</a>
-            <a class="dropdown-item" href="#">Einstellungen</a>
-            <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Abmelden</a>
-        </div>
-    </div>
-    </div>
-
-
-    <div id="content">
-
-        <div class="container-fluid" id="main-tabs">
+        <div class="container-fluid" id="maintabs">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link active" href="#idm" data-toggle="tab">IDM
@@ -189,7 +20,7 @@
             </ul>
         </div>
 
-        <main id="main">
+        <main class="space" id="main">
 
             <div class="sidebar" id="sidebar">
 
@@ -223,7 +54,7 @@
                         <div class="card-header" id="s2">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
-                                <i class="sc-icon icon-users"></i>Gruppen
+                                <i class="sc-icon icon-user-friends-solid"></i>Gruppen
                             </button>
 
                         </div>
@@ -268,27 +99,22 @@
                 </div>
 
 
-
-
-
-
-
             </div>
 
 
             <div class="btn-sidebar">
-            <button type="button" class="btn">
-                <i class="sc-icon icon-indent-left"></i>
-            </button>
+                <button type="button" class="btn">
+                    <i class="sc-icon icon-grip-lines-vertical-solid"></i>
+                </button>
             </div>
 
 
 
             <div class="main-content" id="main-content">
 
-                <div id="pagesearch">
-                    <div class="accordion">
-                        <div class="card card-blue small">
+                <div class="pagesearch" id="tabsearch">
+                    <div class="accordion small">
+                        <div class="card card-blue">
                             <div class="card-header card-header-blue" id="v1">
                                 <div class="pagesearch-field">
 
@@ -360,10 +186,17 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="idm">
 
-                        <table class="table">
+                        <table class="table" id="myTable">
                             <thead>
                                 <tr>
-                                    <th></th>
+                                    <th>
+                                        <div class="selectAll">
+                                            <input type="checkbox" id="selectAll" name="f100" value="">
+                                            <label for="f100">
+                                                <div class="checkbox"></div>
+                                            </label>
+                                        </div>
+                                    </th>
                                     <th>Name</th>
                                     <th>Vorname</th>
                                     <th>Benutzername</th>
@@ -585,53 +418,11 @@
                     <div class="tab-pane" id="orga">orga</div>
                 </div>
 
-                <div class="selectAll" id="all">
-                    <input type="checkbox" id="f100" name="f100" value="">
-                    <label for="f100">
-                        <div class="checkbox"></div>Alle markieren
-                    </label>
-                </div>
+                
 
 
             </div>
 
         </main>
 
-        <a href="index.html" class="btn btn-up icon-up-open" role="button" id="up-button"></a>
-
-    </div>
-
-    <footer class="container-fluid" id="footer">
-
-        <div class=" navbar row no-gutters">
-            <div class="col-lg-2">
-                <a class="navbar-brand" href="#">
-                    <img src="Images/RLP-logo-weiss.png" alt="Logo_RLP">
-                </a>
-            </div>
-            <div class="col-lg-8">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Datenschutzerklärung</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nutzungsbedingungen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Impressum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sidemap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-
-    </footer>
-</body>
-
-</html>
+<?php include "footer.php"; ?>

@@ -1,13 +1,14 @@
 $(document).ready(function () {
+
     if ($(window).width() > 975) {
+        
         $("#teaser section").removeClass("carousel-item"); 
         $(".box-content-full").css("display", "none");
     } else {
         $("#teaser section").addClass("carousel-item");
-    }
-});
 
-$(document).ready(function () {
+    };
+
     $(window).resize(function () {
         if ($(window).width() > 975) {
             $("#teaser section").removeClass("carousel-item");
@@ -15,39 +16,76 @@ $(document).ready(function () {
         } else {
             $("#teaser section").addClass("carousel-item");
         };
-    })
+    });
 
 
-    //Volle Höhe von Sidebar
-    var newHeight = $("html").height() + "px";
-    $(".sidebar").css("min-height", newHeight); 
-  
+    $('#myTable').DataTable( {
+       
+        "ordering": true,
+        "info": false,
+        "searching" : false
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+
+    $('[data-toggle="popover"]').popover(); 
+
+
+
+    //Sidebar-Höhe dem Window angepasst
+
+    var h = 0;
+        h = $( window ).height()-parseInt($("header").height())-parseInt($("footer").height())-parseInt($("#maintabs").height());
+        console.log(h);
+        
+        if ( $( "#subheader" ).length ) {
+            h = h-parseInt($("#subheader").height())
+            console.log(h + " mit subheader");
+        };
+
+        if ( $( "#pagesearch" ).length ) {
+            h = h-parseInt($("#pagesearch").height())
+            console.log(h + " mit pagesearch");
+        };
+
+        if (h < parseInt($("#sidebar").css('min-height'))) { //min-height
+            $("#sidebar").css("height", h);
+            console.log(h + " default-wert");
+        } else {
+            $("#sidebar").css("height", h);
+            console.log(h + " berechnetes h");
+        };
+
+        
+
+
+
     //Sidebar-Button-Click
-    $(".btn-sidebar .sc-icon").click(function () {
+    $(".btn-sidebar").click(function () {
         $('#sidebar').toggle();
-        $(".btn-sidebar" + " .icon-indent-left, .icon-indent-right").toggleClass("icon-indent-left icon-indent-right");
-        $(".icon-indent-right").css("margin-left", "-15px");
-    
-
+        
         if ($(".sidebar").css("display")=="none"){
 
-            $(".btn-sidebar").css("margin", "0");
             $(".btn-sidebar").css("background-color", "transparent");
-
             $(".tab-pane").css("margin-right", "auto");
             $(".tab-pane").css("margin-left", "auto");
 
         } else {
         
-        $(".btn-sidebar").css("margin", "0 0 0 -45px");
-
         $(".tab-pane").css("margin-right", "30px");
-        $(".tab-pane").css("margin-left", "35px");
+        $(".tab-pane").css("margin-left", "0");
 
         }
     });    
+ 
 
-    
+
+
+
+
+
+
     //Scrolling Up-Button
     $(function () {
 		$(window).scroll(function () {
@@ -68,8 +106,8 @@ $(document).ready(function () {
 
 
 
-
-    $('#all').click(function(e) {
+    //TODO not working
+    $('#selectAll').click(function(e) {
         if (e.currentTarget.checked) {
             $('.tab-content .table td').find('input[type="checkbox"]').prop('checked', true);
         } else {
@@ -77,18 +115,21 @@ $(document).ready(function () {
         }
     });
 
+    $('#selectAll').click(function(e){
+        var table= $(e.target).closest('table');
+        $('td input:checkbox',table).attr('checked',e.target.checked);
+    });
+
+    
+
+    
+
 
 
 });
 
 
-$(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-});
 
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
 
 
 
@@ -109,8 +150,10 @@ $(document).ready(function (){
         };
     })
 
-    $('#topnav.dropdown .btn').focusout(function (e) {
+    $('#topnav.dropdown .dropdown-menu-full').focusout(function (e) {
+        
         $('#topnav-mobile.dropdown-menu-full .dropdown-menu').hide();
+        
     });
 
 
@@ -127,48 +170,72 @@ $(document).ready(function (){
         $('#usernav-mobile.dropdown-menu-full .dropdown-menu').hide();
     });
 
-    //ToDo - RESIZE-Problem
-
-});
-
-
-//Accordion Icon-Wechsel mit active-Zustand (Mehrfachnennung möglich)
-$(document).ready(function () {
-    $(".sidebar .btn-link").click(function () {
-        $(".sidebar .card-header").addClass("active");
-        if ($(".sidebar .card-header").hasClass("active")==true){
-            $(".sidebar .card-header").removeClass("active");
-        } else {
-            $(".sidebar .card-header").addClass("active");
-        }
-    });
-
-//card-body active-Zustand (Nur ein aktiver Zustand)
+    $(window).resize(function () {
+        
+        $("#topnav.dropdown .btn").click(function (t) {
+            if ($(window).width() < 992) {
     
-    if ($(".sidebar .card-body").hasClass("card-body")==true) {
-        $(".sidebar .card-body .card-body").addClass("sub");
-    } else {
-        $(this).removeClass("sub");
-    }
+            $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
+            } else {        
+                $("#topnav-mobile.dropdown-menu-full").css("display", "none");    
+            };
+        })
+    
+        $('#topnav.dropdown .btn').focusout(function (t) {
+            $('#topnav-mobile.dropdown-menu-full .dropdown-menu').hide();
+        });
+    
+    
+        $("#usernav.dropdown .btn").click(function (t) {
+            if ($(window).width() < 992) {
+    
+            $('#usernav-mobile.dropdown-menu-full .dropdown-menu').toggle();
+            } else {        
+                $("#usernav-mobile.dropdown-menu-full").css("display", "none");    
+            };
+        })
+    
+        $('#usernav.dropdown .btn').focusout(function (t) {
+            $('#usernav-mobile.dropdown-menu-full .dropdown-menu').hide();
+        });
 
-    $(".sidebar .card-body").click(function () {
+    });    
 
-        if ($(this).hasClass("sub")==true && $(this).hasClass("active")==false){
-            $(".sidebar .card-body").removeClass("active");
+
+
+
+
+});
+
+
+//Accordion Sidebar active-Zustand (Mehrfachnennung möglich)
+$(document).ready(function () {
+        
+    
+
+
+
+    $("#sidebar .card-body").click(function () {
+
+        if ( $(this).children("card") ) {
+            $(this).addClass("sub");
+            console.log("sub added");
+       
+        };
+       
+
             $(".sidebar .card-body.sub").removeClass("active");
-            $(this).addClass("active");
-        } else if ($(this).hasClass("active")==true){
-            $(".sidebar .card-body").removeClass("active");
-            
-        } else {
-            $(".sidebar .card-body.sub").removeClass("active");
             $(".sidebar .card-body").removeClass("active");
             $(this).addClass("active");
-        }
+            console.log("sub machen active rest weg");
+        
 
     });
 
 });
+
+
+
 
 
 

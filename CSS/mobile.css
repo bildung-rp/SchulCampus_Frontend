@@ -39,6 +39,10 @@
     .bluebox{
         height: 465px;
     }
+    .box-content {
+        width: 230px;
+        overflow-x: hidden;
+    }
 
     .bluebox section {
         min-height:9rem;
@@ -49,7 +53,7 @@
         width:9rem;  
     }
 
-    .bluebox-label a{
+    .bluebox-label>a{
         font-size: 19px !important;
     }
 
@@ -78,8 +82,7 @@
         width:auto;
     }
 
-    header .logo-label {
-        font-size:16px;
+    header .logo span {
         display:none;
     }
 
@@ -153,6 +156,8 @@
         height: 150px;
     }
 
+
+
     main .container{
         display: flex; 
         width:540px;
@@ -219,6 +224,32 @@
         display:none;
     }
 
+    .sidebar {
+        display: none;
+    }
+
+    .btn-sidebar {
+        align-items: start;
+        cursor: pointer;
+    }
+    .btn-sidebar .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    .icon-grip-lines-vertical-solid:before {
+        display: none;
+    }
+    .icon-menu:before {
+        display: block;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 19px;
+    }
+
+    .form-row > .col, .form-row > [class*="col-"] {
+        padding: 5px;
+    }
 
 
 
@@ -242,30 +273,34 @@
 
 @media (max-width: 575px) {
 
-    .container-fluid{
+    header.container-fluid {
         padding-right: 0;
         padding-left: 0;
     }
 
-    #topnav-mobile .dropdown-item{
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-link {
+        padding: .3rem 0.75rem;
+    }
+
+    #topnav-mobile .dropdown-item {
         padding-left: 20%;
     }
 
-    #teaser.container, main .container{
+    #teaser.container {
         width:396px;
-    }
-
-    #teaser.container{
         height:170px;
     }
 
-    .bluebox{
-        margin-left:0 !important;
-        margin-right:0 !important;
+    .bluebox {
         height: 300px;
     }
 
-    .bluebox .col-4{
+    .bluebox .col-4 {
         margin:0 !important;
         padding: 10px;
         height: auto;
@@ -288,6 +323,23 @@
         margin-right: 2px;
     }
 
+    .nav-tabs {
+        margin-left: 15px;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .nav-tabs .nav-item {
+        margin-right: 30px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 14px;
+
+        
+    }
+
+
 
 }
 
@@ -295,6 +347,12 @@
 /*Ansicht bis 440px gut*/
 
 @media screen and (max-width: 400px) { 
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 
     .nav-link {
         display: block;
@@ -314,15 +372,9 @@
         padding: .5rem .4rem;
     }
 
-    .dropdown-toggle::after {
-        padding: 0;
-    }
 
-    #teaser.container, main .container{
+    #teaser.container {
         width:100%;
-    }
-
-    #teaser.container{
         height: 180px;
     }
 
