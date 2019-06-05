@@ -1,14 +1,13 @@
 <?php include "header.php"; ?>
 
-        <div class="container-fluid" id="subheader">
+        <div class="container-fluid mt-30" id="subheader">
             
-              
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">Mediathek</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">Mein Workspace</li>
-                </ol>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Mediathek</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Mein Workspace</li>
+            </ol>
             
         </div>
 
@@ -35,10 +34,8 @@
                         </div>
                     </div>
                     <div id="c1" class="collapse" aria-labelledby="v1">
-                        <div class="card-body">
-                            <div id="filter">
-
-
+                        <div class="card-body pagesearch-filter">
+                            
                                 <form>
                                     <div class="form-row">
                                     <div class="col-auto">
@@ -98,18 +95,9 @@
                                     </div>
                                 </form>
 
-
-                                
-
-
-
-
-                               
+                     
 
                                 <button type="submit" class="btn btn-blue">Suchen</button>
-
-
-                            </div>
 
                         </div>
                     </div>
@@ -130,7 +118,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#mediathek" data-toggle="tab">MEDIATHEK
+                    <a class="nav-link" href="#mediacontent" data-toggle="tab">MEDIATHEK
                         <span> </span>
                     </a>
                 </li>
@@ -141,12 +129,12 @@
 
             <div class="sidebar" id="sidebar">
 
-                    <div class="new">
-                            <button type="button" class="btn">
-                                <i class="sc-icon icon-plus-circled"></i>
-                                <span>Neu</span>
-                            </button>
-                        </div>
+                <div class="new">
+                    <button type="button" class="btn">
+                        <i class="sc-icon icon-plus"></i>
+                        <span>Neu</span>
+                    </button>
+                </div>
 
 
                 <div class="accordion">
@@ -155,7 +143,8 @@
                         <div class="card-header" id="s1">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
-                                <i class="sc-icon icon-user"></i>Meine Inhalte
+                                <i class="sc-icon icon-user"></i>
+                                <span>Meine Inhalte</span>
                             </button>
 
                         </div>
@@ -177,7 +166,8 @@
                         <div class="card-header" id="s2">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
-                                <i class="sc-icon icon-user-friends-solid"></i>Gemeinsame Inhalte
+                                <i class="sc-icon icon-user-friends-solid"></i>
+                                <span>Gemeinsame Inhalte</span>
                             </button>
 
                         </div>
@@ -196,7 +186,8 @@
                         <div class="card-header" id="s3">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
-                                <i class="sc-icon icon-share"></i>Von mir freigegeben
+                                <i class="sc-icon icon-share"></i>
+                                <span>Von mir freigegeben</span>
                             </button>
 
                         </div>
@@ -240,7 +231,8 @@
                         <div class="card-header" id="s4">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs4" aria-expanded="true" aria-controls="cs4">
-                                <i class="sc-icon icon-paper-plane"></i>Für mich freigegeben
+                                <i class="sc-icon icon-paper-plane"></i>
+                                <span>Für mich freigegeben</span>
                             </button>
 
                         </div>
@@ -255,16 +247,7 @@
                 </div>
 
 
-                <div class="new" style="display: inline-flex; justify-content: space-evenly;">
-                    <button type="button" class="btn">
-                        <i class="sc-icon icon-doc-new"></i>
-                        <span>Neu</span>
-                    </button>
-                    <button type="button" class="btn">
-                        <i class="sc-icon icon-folder-open"></i>
-                        <span>Neu</span>
-                    </button>
-                </div>
+                
 
 
 
@@ -287,18 +270,59 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="all">
                     
-                    <div class="readingtext">
-                    <h1>Lesbarer Text</h1>
-                    <p class="gross">Das World Wide Web [ˌwɜːldˌwaɪdˈwɛb] (Audio-Datei / Hörbeispiel Anhören?/i) (englisch für „weltweites Netz“, kurz Web, WWW, selten und vor allem in der Anfangszeit und den USA auch W3) ist ein über das Internet abrufbares System von elektronischen Hypertext-Dokumenten, sogenannten Webseiten, welche mit HTML beschrieben werden. Sie sind durch Hyperlinks untereinander verknüpft und werden im Internet über die Protokolle HTTP oder HTTPS übertragen. Die Webseiten enthalten meist Texte, oft mit Bildern und grafischen Elementen illustriert. Häufig sind auch Videos, Tondokumente oder Musikstücke eingebettet. </p>
-                    </div>
+                        <div class="readingtext">
+                        <h1>Lesbarer Text</h1>
+                        <p class="gross">Das World Wide Web [ˌwɜːldˌwaɪdˈwɛb] (Audio-Datei / Hörbeispiel Anhören?/i) (englisch für „weltweites Netz“, kurz Web, WWW, selten und vor allem in der Anfangszeit und den USA auch W3) ist ein über das Internet abrufbares System von elektronischen Hypertext-Dokumenten, sogenannten Webseiten, welche mit HTML beschrieben werden. Sie sind durch Hyperlinks untereinander verknüpft und werden im Internet über die Protokolle HTTP oder HTTPS übertragen. Die Webseiten enthalten meist Texte, oft mit Bildern und grafischen Elementen illustriert. Häufig sind auch Videos, Tondokumente oder Musikstücke eingebettet. </p>
+                        </div>
 
                     </div>
+
                     <div class="tab-pane" id="ccontent">
-                        <img src="Images/media5sp.png" style="width: 100%">
+                        <div class="grid-wrapper">
+                            <div class="grid-text">
+                                Sammlungen (179)
+                            </div>
+                            <div class="row grid-header">
+                                    <div class="grid-item item-header">1</div>
+                                    <div class="grid-item item-header">2</div>
+                                    <div class="grid-item item-header">3</div>
+                                    <div class="grid-item item-header">4</div>
+                                    <div class="grid-item item-header">5</div>
+                                    <div class="grid-item item-header">6</div>
+                                    <div class="grid-item item-header">7</div>
+                                    <div class="grid-item item-header">8</div>
+                                    <div class="grid-item item-header">9</div>
+                                    
+                            </div>
+                            <div class="grid-text">
+                                Materialien (6792)
+                            </div>
+                            <div class="row grid-view">
+                                    <div class="grid-item">1</div>
+                                    <div class="grid-item">2</div>
+                                    <div class="grid-item">3</div>
+                                    <div class="grid-item">4</div>
+                                    <div class="grid-item">5</div>
+                                    <div class="grid-item">6</div>
+                                    <div class="grid-item">7</div>
+                                    <div class="grid-item">8</div>
+                                    <div class="grid-item">9</div>
+                                    <div class="grid-item">10</div>
+                                    <div class="grid-item">11</div>
+                                    <div class="grid-item">12</div>
+                                    <div class="grid-item">13</div>
+                                    <div class="grid-item">14</div>
+                                    <div class="grid-item">15</div>
+                                    <div class="grid-item">16</div>
+                            </div>    
+                            
+                        </div>
                     </div>
-                    <div class="tab-pane" id="mediathek">
-                        <img src="Images/media6sp.png" style="width: 100%">
+
+                    <div class="tab-pane" id="mediacontent">
+                        
                     </div>
+
                 </div>
 
             </div>

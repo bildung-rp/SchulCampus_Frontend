@@ -1,113 +1,316 @@
 $(document).ready(function () {
 
-    if ($(window).width() > 975) {
+    update();
+
+    $(window).resize(function () {
+
+        update();
+
+    });
+
+
+
+    //------------Sidebar Ein-und Ausklappen------//
+
+    $(".btn-sidebar").click(function () { 
+
+
+        if ($(window).width() < 992) {
+
+            if($("#sidebar").css("min-width") == "300px") {
+
+                $(".sidebar").css("display", "none");
+                $('.sidebar').css("min-width", "70px");
+                
+
+                
+
+            } else {
+                $('#sidebar').css("min-width", "300px");
+                $('#sidebar').css("display", "block");
+                
+
+                
+                
+                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-body").css("display", "block");
+                $(".sidebar span").css("display", "block");
+            }
+        } else {
+
+            if($("#sidebar").css("min-width") == "300px"){
+            
+                
+
+                $('#sidebar').css("min-width", "70px");
+                $('#sidebar').css("display", "block");
+                
+
+                $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
+                $(".sidebar .card-body").css("display", "none");
+                $(".sidebar span").css("display", "none");
+                $(".sidebar .new .btn").css("margin-left", "-18px");
+
+            } else {
+                
+                $('#sidebar').css("min-width", "300px");
+                $('#sidebar').css("display", "block");
+                
+                
+                
+                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-body").css("display", "block");
+                $(".sidebar span").css("display", "block");
+            }
+
+        }   
+
+    });
+
+    //-------Zusatz: Wenn man auf eingeklappete Sidebar klickt, geht dises auch komplett auf---//
+    $(".sidebar").click(function () {
         
-        $("#teaser section").removeClass("carousel-item"); 
+            console.log("habe auf sidebar geklickt")
+            if($(".sidebar").css("min-width") == "70px") {
+
+                console.log("habe auf sidebar geklickt und sidebar ist 70 oder weg")
+
+                $('.sidebar').css("min-width", "300px");
+
+                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-body").css("display", "block");
+                $(".sidebar span").css("display", "block");
+            }
+    });
+
+
+
+    $(".btn-sidebar").click(function () {
+        countMediaElements();
+    });
+
+
+    //--------Header Dropdown--------//
+    $("#topnav.dropdown .btn").click(function (e) {
+        if ($(window).width() < 992) {
+
+            $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
+        } else {
+            $("#topnav-mobile.dropdown-menu-full").css("display", "none");
+        };
+    })
+    $('#topnav.dropdown .dropdown-menu-full').focusout(function (e) {
+        $('#topnav-mobile.dropdown-menu-full .dropdown-menu').hide();
+
+    });
+
+
+    $("#usernav.dropdown .btn").click(function (f) {
+        if ($(window).width() < 992) {
+
+            $('#usernav-mobile.dropdown-menu-full .dropdown-menu').toggle();
+        } else {
+            $("#usernav-mobile.dropdown-menu-full").css("display", "none");
+        };
+    })
+    $('#usernav.dropdown .btn').focusout(function (f) {
+        $('#usernav-mobile.dropdown-menu-full .dropdown-menu').hide();
+    });
+
+
+
+    //------Position des Statusfelds----//
+
+    $('td.status').click(function (e) {
+
+        $(".status-change .status-green").css("color", "#44B687");
+        $(".status-change .status-yellow").css("color", "#EFB640");
+        $(".status-change .status-red").css("color", "#E94B4B");
+
+        var posX = $(this).offset().left 
+        var posY = $(this).offset().top
+
+        console.log((posX) + ' , ' + (posY));
+
+        var y = posY + 30
+        var x = posX - 30
+
+        $(".status-change").css("top", y + "px");
+        $(".status-change").css("left", x + "px");
+        $(".status-change").css("display", "block");
+
+        if($(this).hasClass("status-green")){
+            $(".status-change .status-green").css("color", "#F1F1F6"); 
+        } 
+
+        if($(this).hasClass("status-yellow")){
+            $(".status-change .status-yellow").css("color", "#F1F1F6"); 
+        } 
+
+        if($(this).hasClass("status-red")){
+            $(".status-change .status-red").css("color", "#F1F1F6"); 
+        } 
+
+        //-------Auswahl des Status-Zustandes------//
+
+
+
+
+    });
+
+    
+
+
+   //-----------Blaue Kacheln aufklappen---//
+    
+    $(".bluebox .btn-blue").click(function () {
+        var blueBoxSectionId = $(this).closest("section").prop("id");
+        toggleBlueBox(blueBoxSectionId);
+    });
+
+    $(".bluebox section").click(function () {
+        var blueSectionId = $(this).closest("section").prop("id");
+        toggleBlueMobile(blueSectionId);
+
+        if ($("#bc2.box-content-full").css("display") == "block") {
+            $(".bluebox").css("height", "520px");
+        } else if ($("#bc1.box-content-full").css("display") == "block") {
+            $(".bluebox").css("height", "510px")
+        } else {
+            $(".bluebox").css("height", "500px")
+        }
+    });
+
+
+});
+
+
+
+function update() {
+
+
+    //-----------Carousel----------//
+
+    if ($(window).width() > 975) {
+
+        $("#teaser section").removeClass("carousel-item");
         $(".box-content-full").css("display", "none");
     } else {
         $("#teaser section").addClass("carousel-item");
-
     };
 
-    $(window).resize(function () {
-        if ($(window).width() > 975) {
-            $("#teaser section").removeClass("carousel-item");
-            $(".box-content-full").css("display", "none");
-        } else {
-            $("#teaser section").addClass("carousel-item");
-        };
-    });
+
+    //----------Sidebar Ansicht-----------//
+
+    if ($(window).width() > 992) {
+
+        $(".icon-menu").css("display", "none");
+        $(".icon-grip-lines-vertical-solid").css("display", "block");
+        $('#sidebar').css("min-width", "300px");
+        $('#sidebar').css("display", "block");
+    } else {
+        $(".icon-grip-lines-vertical-solid").css("display", "none");
+        $(".icon-menu").css("display", "block");
+        $('#sidebar').css("min-width", "70px");
+        $('#sidebar').css("display", "none");
+    }
 
 
-    $('#myTable').DataTable( {
-       
-        "ordering": true,
-        "info": false,
-        "searching" : false
-    });
+    if($("#sidebar").css("min-width") == "300px") {
+        $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+        $(".sidebar .card-body").css("display", "block");
+        $(".sidebar span").css("display", "block");
+    } else {
+        $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
+        $(".sidebar .card-body").css("display", "none");
+        $(".sidebar span").css("display", "none");
+        $(".sidebar .new .btn").css("margin-left", "-18px");
+    }
+
+    //-----------Tooltip und Popover aktivieren--------//
 
     $('[data-toggle="tooltip"]').tooltip();
-
-
-    $('[data-toggle="popover"]').popover(); 
-
-
-
-    //Sidebar-Höhe dem Window angepasst
-
-    var h = 0;
-        h = $( window ).height()-parseInt($("header").height())-parseInt($("footer").height())-parseInt($("#maintabs").height());
-        console.log(h);
-        
-        if ( $( "#subheader" ).length ) {
-            h = h-parseInt($("#subheader").height())
-            console.log(h + " mit subheader");
-        };
-
-        if ( $( "#pagesearch" ).length ) {
-            h = h-parseInt($("#pagesearch").height())
-            console.log(h + " mit pagesearch");
-        };
-
-        if (h < parseInt($("#sidebar").css('min-height'))) { //min-height
-            $("#sidebar").css("height", h);
-            console.log(h + " default-wert");
-        } else {
-            $("#sidebar").css("height", h);
-            console.log(h + " berechnetes h");
-        };
-
-        
+    $('[data-toggle="popover"]').popover();
 
 
 
-    //Sidebar-Button-Click
-    $(".btn-sidebar").click(function () {
-        $('#sidebar').toggle();
-        
-        if ($(".sidebar").css("display")=="none"){
-
-            $(".btn-sidebar").css("background-color", "transparent");
-            $(".tab-pane").css("margin-right", "auto");
-            $(".tab-pane").css("margin-left", "auto");
-
-        } else {
-        
-        $(".tab-pane").css("margin-right", "30px");
-        $(".tab-pane").css("margin-left", "0");
-
-        }
-    });    
- 
+    //------Status Feld ausblenden-------//
+    $(".status-change").css("display", "none");
 
 
 
-
-
-
-
-    //Scrolling Up-Button
+    //-------------Scrolling Up-Button-------//
     $(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) { 
-				$('.btn-up').fadeIn();
-			} else {
-				$('.btn-up').fadeOut();
-			}
-		});
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.btn-up').fadeIn();
+            } else {
+                $('.btn-up').fadeOut();
+            }
+        });
 
-		$('.btn-up').click(function () { 
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-	});
+        $('.btn-up').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
 
+    //---------Sidebar-Toggle------//
+
+    countMediaElements()
+
+
+
+
+};
+
+
+
+
+//--------------Ansicht der Sammlungen in der Mediathek------------//
+
+function countMediaElements() {
+
+    var a = $(window).width();
+    console.log(a + " window width");
+
+    var tabcontent_temp = 0;
+
+    if ($("#sidebar").css("display") == "block") {
+        tabcontent_temp = $(window).width() - parseInt($("#sidebar").width()) - 90;
+        $(".tab-content .grid-wrapper").css("max-width", tabcontent_temp);
+    } else {
+        tabcontent_temp = $(window).width();
+        $(".tab-content .grid-wrapper").css("max-width", tabcontent_temp);
+    }
+
+    //Elemente in der Mediathek-Row begrenzen
+
+    var count1 = $(".grid-header .item-header").length;
+    console.log(count1 + " Themen stehen zur Verfügung");
+
+    var countbox = (tabcontent_temp - 70) / 200;
+    c = Math.floor(countbox);                   //Zahl abschneiden! abrunden!
+    console.log(c + " anzahl kacheln");
+
+    $(".item-header").css("display", "none"); 
+    for (var i = 1; i <= c; i++) {
+        s = ".grid-header .item-header:nth-child(" + i + ")"
+        $(s).css("display", "block");
+    };
+};
+
+
+
+
+
+$(document).ready(function () {
 
 
     //TODO not working
-    $('#selectAll').click(function(e) {
+    $('#selectAll').click(function (e) {
         if (e.currentTarget.checked) {
             $('.tab-content .table td').find('input[type="checkbox"]').prop('checked', true);
         } else {
@@ -115,160 +318,58 @@ $(document).ready(function () {
         }
     });
 
-    $('#selectAll').click(function(e){
-        var table= $(e.target).closest('table');
-        $('td input:checkbox',table).attr('checked',e.target.checked);
+    $('#selectAll').click(function (e) {
+        var table = $(e.target).closest('table');
+        $('td input:checkbox', table).attr('checked', e.target.checked);
     });
-
-    
-
-    
-
 
 
 });
 
-
-
-
-
-
-
-
-
-
-//Dropdown-Menüs im Header in mobiler Ansicht
-
-$(document).ready(function (){
-    
-    $("#topnav.dropdown .btn").click(function (e) {
-        if ($(window).width() < 992) {
-
-        $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
-        } else {        
-            $("#topnav-mobile.dropdown-menu-full").css("display", "none");    
-        };
-    })
-
-    $('#topnav.dropdown .dropdown-menu-full').focusout(function (e) {
-        
-        $('#topnav-mobile.dropdown-menu-full .dropdown-menu').hide();
-        
-    });
-
-
-    $("#usernav.dropdown .btn").click(function (e) {
-        if ($(window).width() < 992) {
-
-        $('#usernav-mobile.dropdown-menu-full .dropdown-menu').toggle();
-        } else {        
-            $("#usernav-mobile.dropdown-menu-full").css("display", "none");    
-        };
-    })
-
-    $('#usernav.dropdown .btn').focusout(function (e) {
-        $('#usernav-mobile.dropdown-menu-full .dropdown-menu').hide();
-    });
-
-    $(window).resize(function () {
-        
-        $("#topnav.dropdown .btn").click(function (t) {
-            if ($(window).width() < 992) {
-    
-            $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
-            } else {        
-                $("#topnav-mobile.dropdown-menu-full").css("display", "none");    
-            };
-        })
-    
-        $('#topnav.dropdown .btn').focusout(function (t) {
-            $('#topnav-mobile.dropdown-menu-full .dropdown-menu').hide();
-        });
-    
-    
-        $("#usernav.dropdown .btn").click(function (t) {
-            if ($(window).width() < 992) {
-    
-            $('#usernav-mobile.dropdown-menu-full .dropdown-menu').toggle();
-            } else {        
-                $("#usernav-mobile.dropdown-menu-full").css("display", "none");    
-            };
-        })
-    
-        $('#usernav.dropdown .btn').focusout(function (t) {
-            $('#usernav-mobile.dropdown-menu-full .dropdown-menu').hide();
-        });
-
-    });    
-
-
-
-
-
-});
 
 
 //Accordion Sidebar active-Zustand (Mehrfachnennung möglich)
 $(document).ready(function () {
-        
-    
-
 
 
     $("#sidebar .card-body").click(function () {
 
-        if ( $(this).children("card") ) {
+        if ($(this).children("card")) {
             $(this).addClass("sub");
             console.log("sub added");
-       
+
         };
-       
 
-            $(".sidebar .card-body.sub").removeClass("active");
-            $(".sidebar .card-body").removeClass("active");
-            $(this).addClass("active");
-            console.log("sub machen active rest weg");
-        
+
+        $(".sidebar .card-body.sub").removeClass("active");
+        $(".sidebar .card-body").removeClass("active");
+        $(this).addClass("active");
+        console.log("sub machen active rest weg");
+
 
     });
 
 });
 
 
+//TODO wenn in desktor Kachel auf ... dann resize
 
-
-
-
-
-
-function openTab(tabName, el, color) {
-
-    // Hide all elements with class="tabcontent" by default */
-    
-    var i, tabcontent, 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Show the specific tab content
-    document.getElementById(tabName).style.display = "flex";
-  
-    // Add the specific color to the button used to open the tab content
-    el.style.backgroundColor = color;
-}
-  
-
-
-
-//BlueBox-Funktionen
-var idBlueOld = 0;
 $(document).ready(function () {
-    $(".bluebox .btn-blue").click(function () {
-        var blueBoxSectionId = $(this).closest("section").prop("id");
-        toggleBlueBox(blueBoxSectionId);
+
+    $(window).resize(function () {
+        if ($(window).width() < 992) {
+            if ($(".bluebox").hasClass("bluebox-lg") == "true") {
+                $(".bluebox .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
+            };
+        };
     });
+
+
 });
+
+//Bluebox desktop-Ansicht
+
+var idBlueOld = 0;
 
 function toggleBlueBox(sectionId) {
 
@@ -319,105 +420,91 @@ function toggleBlueBox(sectionId) {
 //Bluebox-Mobile
 
 var idBlueMobileOld = 0;
-$(document).ready(function () {
-    $(".bluebox section").click(function () {
-        var blueSectionId = $(this).closest("section").prop("id");
-        toggleBlueMobile(blueSectionId);
-        
-        if ($("#bc2.box-content-full").css("display") == "block"){
-            $(".bluebox").css("height", "520px");
-        } else if ($("#bc1.box-content-full").css("display") == "block") {
-            $(".bluebox").css("height", "510px")
-        } else {
-            $(".bluebox").css("height", "500px")
-        }
-    });
-});
 
 function toggleBlueMobile(tempId) {
 
     var idBlueMobile = "#" + tempId;
-    
+
     if ($(window).width() < 975) {
 
-    if (idBlueMobile == "#meineDateien") {
-        
-        $("#bc2.box-content-full").css("display", "none");
+        if (idBlueMobile == "#meineDateien") {
 
-        if($("#bc1.box-content-full").css("display") == "none"){
-            $("#bc1.box-content-full").css("display", "block");
-            $("#blue1").css("display", "block");
-            $("#blue2").css("display", "none");
-            $("#blue3").css("display", "none");
-            $(".arrowblue").css("left","15%");
-
-        } else if ($("#blue1").css("display") == "block"){
-            $("#bc1.box-content-full").css("display", "none");
-            
-        } else {
-            $("#bc1.box-content-full").css("display", "block");
-            $("#blue1").css("display", "block");
-            $("#blue2").css("display", "none");
-            $("#blue3").css("display", "none");
-            $(".arrowblue").css("left","15%");
-        };
-
-    } else if (idBlueMobile == "#media"){
-        $("#bc1.box-content-full").css("display", "none");
-        $("#bc2.box-content-full").css("display", "none");
-
-    } else if (idBlueMobile == "#moodle"){
-        
-        $("#bc2.box-content-full").css("display", "none");
-
-        if($("#bc1.box-content-full").css("display") == "none"){
-            $("#bc1.box-content-full").css("display", "block");
-            $("#blue3").css("display", "block");
-            $("#blue2").css("display", "none");
-            $("#blue1").css("display", "none");
-            $(".arrowblue").css("left","85%");
-
-        } else if ($("#blue3").css("display") == "block"){
-            $("#bc1.box-content-full").css("display", "none");
-           
-        } else {
-            $("#bc1.box-content-full").css("display", "block");
-            $("#blue3").css("display", "block");
-            $("#blue2").css("display", "none");
-            $("#blue1").css("display", "none");
-            $(".arrowblue").css("left","85%");
-        };
-
-    } else if (idBlueMobile == "#curriculum"){
-
-        $("#bc1.box-content-full").css("display", "none");
-
-        if($("#bc2.box-content-full").css("display") == "none"){
-            $("#bc2.box-content-full").css("display", "block");
-            $("#blue4").css("display", "block");
-            $("#blue5").css("display", "none");
-            $("#blue6").css("display", "none");
-            $(".arrowblue").css("left","15%");
-
-        } else if ($("#blue4").css("display") == "block"){
             $("#bc2.box-content-full").css("display", "none");
 
-        } else {
-            $("#bc2.box-content-full").css("display", "block");
-            $("#blue4").css("display", "block");
-            $("#blue5").css("display", "none");
-            $("#blue6").css("display", "none");
-            $(".arrowblue").css("left","15%");
-        };
+            if ($("#bc1.box-content-full").css("display") == "none") {
+                $("#bc1.box-content-full").css("display", "block");
+                $("#blue1").css("display", "block");
+                $("#blue2").css("display", "none");
+                $("#blue3").css("display", "none");
+                $(".arrowblue").css("left", "15%");
 
-    }   else if (idBlueMobile == "#lehrplaene"){
-        $("#bc1.box-content-full").css("display", "none");
-        $("#bc2.box-content-full").css("display", "none");
+            } else if ($("#blue1").css("display") == "block") {
+                $("#bc1.box-content-full").css("display", "none");
 
-    } else {    //Infoportal
-        $("#bc1.box-content-full").css("display", "none");
-        $("#bc2.box-content-full").css("display", "none");
-    } 
+            } else {
+                $("#bc1.box-content-full").css("display", "block");
+                $("#blue1").css("display", "block");
+                $("#blue2").css("display", "none");
+                $("#blue3").css("display", "none");
+                $(".arrowblue").css("left", "15%");
+            };
+
+        } else if (idBlueMobile == "#media") {
+            $("#bc1.box-content-full").css("display", "none");
+            $("#bc2.box-content-full").css("display", "none");
+
+        } else if (idBlueMobile == "#moodle") {
+
+            $("#bc2.box-content-full").css("display", "none");
+
+            if ($("#bc1.box-content-full").css("display") == "none") {
+                $("#bc1.box-content-full").css("display", "block");
+                $("#blue3").css("display", "block");
+                $("#blue2").css("display", "none");
+                $("#blue1").css("display", "none");
+                $(".arrowblue").css("left", "85%");
+
+            } else if ($("#blue3").css("display") == "block") {
+                $("#bc1.box-content-full").css("display", "none");
+
+            } else {
+                $("#bc1.box-content-full").css("display", "block");
+                $("#blue3").css("display", "block");
+                $("#blue2").css("display", "none");
+                $("#blue1").css("display", "none");
+                $(".arrowblue").css("left", "85%");
+            };
+
+        } else if (idBlueMobile == "#curriculum") {
+
+            $("#bc1.box-content-full").css("display", "none");
+
+            if ($("#bc2.box-content-full").css("display") == "none") {
+                $("#bc2.box-content-full").css("display", "block");
+                $("#blue4").css("display", "block");
+                $("#blue5").css("display", "none");
+                $("#blue6").css("display", "none");
+                $(".arrowblue").css("left", "15%");
+
+            } else if ($("#blue4").css("display") == "block") {
+                $("#bc2.box-content-full").css("display", "none");
+
+            } else {
+                $("#bc2.box-content-full").css("display", "block");
+                $("#blue4").css("display", "block");
+                $("#blue5").css("display", "none");
+                $("#blue6").css("display", "none");
+                $(".arrowblue").css("left", "15%");
+            };
+
+        } else if (idBlueMobile == "#lehrplaene") {
+            $("#bc1.box-content-full").css("display", "none");
+            $("#bc2.box-content-full").css("display", "none");
+
+        } else {    //Infoportal
+            $("#bc1.box-content-full").css("display", "none");
+            $("#bc2.box-content-full").css("display", "none");
+        }
 
     } else {
         $("#bc1.box-content-full").css("display", "none");

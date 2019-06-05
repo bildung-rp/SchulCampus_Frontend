@@ -30,7 +30,8 @@
                         <div class="card-header" id="s1">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
-                                <i class="sc-icon icon-user"></i>Benutzer
+                                <i class="sc-icon icon-user"></i>
+                                <span>Benutzer</span>
                             </button>
 
                         </div>
@@ -54,7 +55,8 @@
                         <div class="card-header" id="s2">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
-                                <i class="sc-icon icon-user-friends-solid"></i>Gruppen
+                                <i class="sc-icon icon-user-friends-solid"></i>
+                                <span>Gruppen</span>
                             </button>
 
                         </div>
@@ -75,7 +77,8 @@
                         <div class="card-header" id="s3">
 
                             <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
-                                <i class="sc-icon icon-flag"></i>Rollen
+                                <i class="sc-icon icon-flag"></i>
+                                <span>Rollen</span>
                             </button>
 
                         </div>
@@ -135,7 +138,7 @@
                             </div>
                             <div id="c1" class="collapse" aria-labelledby="v1">
                                 <div class="card-body">
-                                    <div id="filter">
+                                    <div class="pagesearch-filter">
                                         <div class="dropdown">
                                             <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
                                                 <span>Gruppe wählen</span>
@@ -186,7 +189,7 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="idm">
 
-                        <table class="table" id="myTable">
+                        <table class="table">
                             <thead>
                                 <tr>
                                     <th>
@@ -222,7 +225,7 @@
                                         <td>16.07.2018</td>
                                         <td>Klasse 7d</td>
                                         <td>Lehrkraft</td>
-                                        <td class="status status-yellow"></td>
+                                        <td class="sc-icon icon-circle status status-green"></td>
                                         <td>
                                             <a class="sc-icon icon-pencil" href=" " title="action"></a>
                                             <a class="sc-icon icon-ellipsis" href=" " title="action"></a>
@@ -240,7 +243,7 @@
                                         <td>11.07.2018</td>
                                         <td>Klasse 7e</td>
                                         <td>Lehrkraft</td>
-                                        <td class="status status-red"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="sc-icon icon-pencil" href=" " title="action"></a>
                                             <a class="sc-icon icon-ellipsis" href=" " title="action"></a>
@@ -258,7 +261,7 @@
                                         <td>11.08.2018</td>
                                         <td>Klasse 7e</td>
                                         <td>Lehrkraft</td>
-                                        <td class="status status-green"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -276,7 +279,7 @@
                                         <td>11.08.2018</td>
                                         <td>Klasse 7e</td>
                                         <td>Lehrkraft</td>
-                                        <td class="status status-green"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -294,7 +297,7 @@
                                         <td>10.02.2019</td>
                                         <td>Klasse 5e</td>
                                         <td>Schüler</td>
-                                        <td class="status status-green"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -312,7 +315,7 @@
                                         <td>10.02.2019</td>
                                         <td>Klasse 5e</td>
                                         <td>Schüler</td>
-                                        <td class="status status-green"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -330,7 +333,7 @@
                                         <td>10.02.2019</td>
                                         <td>Klasse 5e</td>
                                         <td>Schüler</td>
-                                        <td class="status status-red"></td>
+                                        <td class="sc-icon icon-circle status status-yellow"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -348,7 +351,7 @@
                                         <td>10.02.2019</td>
                                         <td>Klasse 5e</td>
                                         <td>Schüler</td>
-                                        <td class="status status-green"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -366,7 +369,7 @@
                                         <td>10.02.2019</td>
                                         <td>Klasse 5e</td>
                                         <td>Schüler</td>
-                                        <td class="status status-yellow"></td>
+                                        <td class="sc-icon icon-circle status status-red"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -384,7 +387,7 @@
                                         <td>10.02.2019</td>
                                         <td>Klasse 5e</td>
                                         <td>Schüler</td>
-                                        <td class="status status-green"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -402,7 +405,7 @@
                                         <td>10.02.2019</td>
                                         <td>Klasse 5e</td>
                                         <td>Schüler</td>
-                                        <td class="status status-red"></td>
+                                        <td class="sc-icon icon-circle status"></td>
                                         <td>
                                             <a class="icon-pencil" href=" " title="action"></a>
                                             <a class="icon-ellipsis" href=" " title="action"></a>
@@ -410,12 +413,108 @@
                                     </tr>
                                 </form>
                             </tbody>
+
+
+                            <div class="status-change">
+                                <i class="sc-icon icon-circle status status-red"></i>
+                                <i class="sc-icon icon-circle status status-yellow"></i>
+                                <i class="sc-icon icon-circle status status-green"></i>
+                            </div>
+
                         </table>
+
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a class="page-link sc-icon icon-angle-double-left" href="#" tabindex="-1"></a></li>
+                                <li class="page-item disabled"><a class="page-link sc-icon icon-angle-left" href="#"></a></li>
+                                <li class="page-item disabled active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item"><a class="page-link sc-icon icon-angle-right" href="#"></a></li>
+                                <li class="page-item"><a class="page-link sc-icon icon-angle-double-right" href="#"></a></li>
+                            </ul>
+                        </nav>
 
 
                     </div>
+
                     <div class="tab-pane" id="moodle">moodle</div>
-                    <div class="tab-pane" id="orga">orga</div>
+
+                    <div class="tab-pane" id="orga">
+
+                        <h1 class="mb-15">Benutzer anlegen</h1>
+
+                        <h2>Allgemein</h2>
+
+                        <form class="">
+                        
+                            <div class="form-group d-flex">
+                                <div class="col-md-7">
+                                    <div class="form-wrapper mb-15">
+                                        <label for="name" class="col-md-4">Vorname</label>
+                                        <input type="text" class="form-control col-md-7" id="name" placeholder="Vorname" value="">
+                                        <i class="col-md-1 sc-icon icon-help-circled"></i>
+                                    </div>
+                                
+                                    <div class="form-wrapper mb-15">
+                                        <label for="lastname" class="col-md-4">Nachname</label>
+                                        <input type="text" class="form-control col-md-7" id="lastname" placeholder="Nachname" value="">
+                                        <i class="col-md-1 sc-icon icon-help-circled"></i>
+                                    </div>
+                                
+                                    <div class="form-wrapper mb-15">
+                                        <label for="email" class="col-md-4">E-Mail</label>
+                                        <input type="text" class="form-control col-md-7" id="email" placeholder="E-Mail" value="">
+                                        <i class="col-md-1 sc-icon icon-help-circled"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profil-image">
+                                    <img src="Images/cur1.png" class="round" alt="Bsp" width="200" height="200">
+                                </div>
+
+
+                            </div>
+
+                            <h2>Mitgliedschaften</h2>
+
+                            <div class="form-group d-flex">
+                                <div class="col-md-7">
+
+                                </div>
+                            </div>
+
+
+                            <h2>Account</h2>
+
+                            <div class="form-group d-flex">   
+                                <div class="col-md-7">
+
+                                    <div class="form-wrapper mb-15">
+                                        <label for="name" class="col-md-4">Benutzerkennung</label>
+                                        <input type="text" class="form-control col-md-7" id="name" placeholder="Nutzerkennung" value="">
+                                        
+                                    </div>
+
+                                    <div class="form-wrapper mb-15">
+                                        <label for="inputPassword2" class="col-md-4">Passwort</label>
+                                        <input type="password" class="form-control col-md-7" id="inputPassword2" placeholder="Password">
+                                        <i class="col-md-1 sc-icon icon-help-circled"></i>
+                                    </div>
+                                
+                                    <button type="submit" class="btn btn-blue ml-15">Bestätigen</button>
+                                </div>
+                            </div>
+                            
+
+                            
+                            
+                        </form>
+
+                    </div>
+
                 </div>
 
                 

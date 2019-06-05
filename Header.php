@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    
-    <link rel="stylesheet" href="DataTables/dataTables.bootstrap.min.css">
 
     <link rel="stylesheet" href="CSS/scincons.css">
     <link rel="stylesheet" href="CSS/animation.css">
@@ -23,10 +21,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-    <script src="DataTables/js/jquery.dataTables.min.js"></script>
-    <script src="DataTables/js/dataTables.bootstrap.min.js"></script>
-    <script src="DataTables/js/dataTables.bootstrap4.min.js"></script>
 
     <script src="JS/jquery_functions.js"></script>
 </head>
@@ -136,19 +130,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Infos" data-content="Dein Moodle-Account wurde nicht abgemeldet.">
                                 <span class="sc-icon-pills icon-bell-alt"></span>
-                                <span class="badge badge-lime">3</span>
+                                <span class="badge">3</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Nachrichten" data-content="Ein Kollege hat dich zu einer Sammlung freigeschaltet.">
                                 <span class="sc-icon-pills icon-mail-alt"></span>
-                                <span class="badge badge-lime">2</span>
+                                <span class="badge">25</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
-                                <span class="sc-icon-pills icon-usersetting"></span>
-                                <span class="badge badge-lime">4</span>
+                                <span class="sc-icon-pills icon-user-cog-solid"></span>
+                                <span class="badge">4124</span>
                             </a>
                         </li>
                     </ul>
