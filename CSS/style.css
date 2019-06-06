@@ -318,6 +318,13 @@ dt::before {
 .show > .dropdown-toggle::after {
     content: "\f106";
 }
+
+.sidebar .dropdown-toggle.special::after {
+    display: none;
+}
+
+
+
 .dropdown-menu {
     text-align:left;
     color:inherit;
@@ -766,8 +773,8 @@ tbody tr:hover {
 
 
 
-.icon-circle {
-    /*text-shadow: 2px 1px 5px #737C83;*/
+tbody tr:hover .icon-circle {
+    color: #505B64;
 }
 
 .status-red {
@@ -975,7 +982,8 @@ header .row {
 
 .nav-pills {
     flex-wrap: nowrap;
-    justify-content: center; 
+    white-space: nowrap;
+    justify-content: space-evenly;
     padding-top: 5px;
 }
 

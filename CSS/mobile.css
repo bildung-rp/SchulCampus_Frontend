@@ -76,9 +76,9 @@
         display:none;
     }
 
-    header .badge{
-        display: none;  
-    }
+   .nav-pills {
+        justify-content: center;
+   }
     
     .nav-pills-area {
         float: none;
@@ -262,7 +262,13 @@
         cursor: pointer;
     }
 
- 
+    .btn-sidebar .icon-menu {
+        display: block;
+    }
+
+    .btn-sidebar .icon-grip-lines-vertical-solid {
+        display: none;
+    }
 
     .nav-tabs .nav-link {
         font-size: 19px;
@@ -305,6 +311,22 @@
     .container-fluid {
         padding-right: 0;
         padding-left: 0;
+    }
+
+
+
+    .sc-icon-pills {
+        font-size: 20px;
+        color:#fff;
+    }
+
+    .nav-pills {
+        padding-top: 10px;
+    }
+
+    .badge {
+        padding: .2em .3em;
+        font-size: 60%;
     }
 
     .nav-link {
@@ -380,12 +402,24 @@
 
     .nav-link {
         display: block;
-        padding: .5rem .4rem;
+        padding: .2rem .4rem;
+        margin-right: 3px;
+    }
+   
+    .nav-pills-area{
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
-    .nav-pills-area{
-        margin-left: 3px;
-        margin-right: -4px;
+    .nav-pills {
+        margin-left: -10px;
+    }
+
+
+
+    .badge {
+        position: absolute;
+        margin: -3px 0px 10px -8px;
     }
 
     .dd-right .dropdown-toggle::after {
@@ -393,7 +427,7 @@
     }
 
     .dropdown .btn {
-        padding: .5rem .4rem;
+        padding: .375rem 0.3rem;
     }
 
 

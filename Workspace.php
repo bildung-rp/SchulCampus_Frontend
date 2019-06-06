@@ -142,7 +142,7 @@
                     <div class="card">
                         <div class="card-header" id="s1">
 
-                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
+                            <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
                                 <i class="sc-icon icon-user"></i>
                                 <span>Meine Inhalte</span>
                             </button>
@@ -165,7 +165,7 @@
                     <div class="card">
                         <div class="card-header" id="s2">
 
-                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
+                            <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
                                 <i class="sc-icon icon-user-friends-solid"></i>
                                 <span>Gemeinsame Inhalte</span>
                             </button>
@@ -185,7 +185,7 @@
                     <div class="card">
                         <div class="card-header" id="s3">
 
-                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
+                            <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
                                 <i class="sc-icon icon-share"></i>
                                 <span>Von mir freigegeben</span>
                             </button>
@@ -204,7 +204,7 @@
                                 <div class="card">
                                     <div class="card-header" id="s20">
             
-                                        <button class="btn btn-link dropdown-toggle collapsed" data-toggle="collapse" data-target="#cs20" aria-expanded="false" aria-controls="cs20">
+                                        <button class="btn btn-link dropdown-toggle special collapsed" data-toggle="collapse" data-target="#cs20" aria-expanded="false" aria-controls="cs20">
                                             Naturwissenschaft: Kl 5
                                         </button>
             
@@ -230,7 +230,7 @@
                     <div class="card">
                         <div class="card-header" id="s4">
 
-                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs4" aria-expanded="true" aria-controls="cs4">
+                            <button class="btn btn-link dropdown-toggl speciale" data-toggle="collapse" data-target="#cs4" aria-expanded="true" aria-controls="cs4">
                                 <i class="sc-icon icon-paper-plane"></i>
                                 <span>Für mich freigegeben</span>
                             </button>

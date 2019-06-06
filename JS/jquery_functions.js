@@ -5,45 +5,159 @@ $(document).ready(function () {
     $(window).resize(function () {
 
         update();
-
+        sidebarView()
     });
+
+
+
+    function update() {
+
+        //-----------Carousel----------//
+    
+        if ($(window).width() > 975) {
+    
+            $("#teaser section").removeClass("carousel-item");
+            $(".box-content-full").css("display", "none");
+        } else {
+            $("#teaser section").addClass("carousel-item");
+        };
+
+    
+        //-----------Tooltip und Popover aktivieren--------//
+    
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+    
+    
+    
+        //------Status Feld ausblenden-------//
+        $(".status-change").css("display", "none");
+    
+    
+    
+        //-------------Scrolling Up-Button-------//
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.btn-up').fadeIn();
+                } else {
+                    $('.btn-up').fadeOut();
+                }
+            });
+    
+            $('.btn-up').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    
+        //---------Sidebar-Toggle------//
+    
+        countMediaElements()
+    
+    
+    
+    
+    };
 
 
 
     //------------Sidebar Ein-und Ausklappen------//
 
+    function sidebarView() {
+
+        if ($(window).width() < 992) {
+            $("#sidebar").css("min-width", "70px");
+            $('#sidebar').css("display", "none");
+
+            $(".sidebar .dropdown-toggle").addClass("special");
+            $(".btn-sidebar").css("align-items", "start");
+            $(".icon-menu").css("display", "block");
+            $(".icon-grip-lines-vertical-solid").css("display", "none");
+            $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
+            $(".sidebar .card-body").css("display", "none");
+            $(".sidebar span").css("display", "none");
+            $(".sidebar .new .btn").css("margin-left", "-18px");
+
+
+        } else {
+            $("#sidebar").css("min-width", "300px");
+            $('#sidebar').css("display", "block");
+
+            $(".btn-sidebar").css("align-items", "center");
+            $(".icon-menu").css("display", "none");
+            $(".icon-grip-lines-vertical-solid").css("display", "block");
+
+            $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+            $(".sidebar .card-body").css("display", "block");
+            $(".sidebar span").css("display", "block");
+            $(".dropdown-toggle").removeClass("special");
+        }
+
+
+
+        if($("#sidebar").css("min-width") == "300px") {
+            $('#sidebar').css("display", "block");
+            $(".btn-sidebar").css("align-items", "center");
+            $(".icon-menu").css("display", "none");
+            $(".icon-grip-lines-vertical-solid").css("display", "block");
+
+            $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+            $(".sidebar .card-body").css("display", "block");
+            $(".sidebar span").css("display", "block");
+            $(".dropdown-toggle").removeClass("special");
+            
+        } else {
+            
+            $(".sidebar .dropdown-toggle").addClass("special");
+            $(".btn-sidebar").css("align-items", "start");
+            $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
+            $(".sidebar .card-body").css("display", "none");
+            $(".sidebar span").css("display", "none");
+            $(".sidebar .new .btn").css("margin-left", "-18px");
+        }
+        
+    }
+
+
     $(".btn-sidebar").click(function () { 
-
-
+        
         if ($(window).width() < 992) {
 
             if($("#sidebar").css("min-width") == "300px") {
 
                 $(".sidebar").css("display", "none");
                 $('.sidebar').css("min-width", "70px");
-                
+                $(".icon-menu").css("display", "block");
+                $(".icon-grip-lines-vertical-solid").css("display", "none");
 
+                $(".dropdown-toggle").removeClass("special");
                 
-
             } else {
                 $('#sidebar').css("min-width", "300px");
                 $('#sidebar').css("display", "block");
-                
+                $(".icon-menu").css("display", "none");
+                $(".icon-grip-lines-vertical-solid").css("display", "block");
+                $(".btn-sidebar").css("align-items", "center");
 
-                
-                
                 $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
+                
+                $(".dropdown-toggle").removeClass("special");
+                
+                
             }
         } else {
 
             if($("#sidebar").css("min-width") == "300px"){
-            
-                
 
                 $('#sidebar').css("min-width", "70px");
                 $('#sidebar').css("display", "block");
+
+                $(".sidebar .dropdown-toggle").addClass("special");
                 
 
                 $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
@@ -55,17 +169,22 @@ $(document).ready(function () {
                 
                 $('#sidebar').css("min-width", "300px");
                 $('#sidebar').css("display", "block");
-                
-                
-                
+
+                $(".icon-menu").css("display", "none");
+                $(".icon-grip-lines-vertical-solid").css("display", "block");
                 $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
+
+                $(".sidebar .dropdown-toggle").removeClass("special");
+                
+ 
             }
 
-        }   
+        }
 
     });
+
 
     //-------Zusatz: Wenn man auf eingeklappete Sidebar klickt, geht dises auch komplett auf---//
     $(".sidebar").click(function () {
@@ -177,7 +296,7 @@ $(document).ready(function () {
         } else if ($("#bc1.box-content-full").css("display") == "block") {
             $(".bluebox").css("height", "510px")
         } else {
-            $(".bluebox").css("height", "500px")
+            $(".bluebox").css("height", "auto")
         }
     });
 
@@ -186,85 +305,7 @@ $(document).ready(function () {
 
 
 
-function update() {
 
-
-    //-----------Carousel----------//
-
-    if ($(window).width() > 975) {
-
-        $("#teaser section").removeClass("carousel-item");
-        $(".box-content-full").css("display", "none");
-    } else {
-        $("#teaser section").addClass("carousel-item");
-    };
-
-
-    //----------Sidebar Ansicht-----------//
-
-    if ($(window).width() > 992) {
-
-        $(".icon-menu").css("display", "none");
-        $(".icon-grip-lines-vertical-solid").css("display", "block");
-        $('#sidebar').css("min-width", "300px");
-        $('#sidebar').css("display", "block");
-    } else {
-        $(".icon-grip-lines-vertical-solid").css("display", "none");
-        $(".icon-menu").css("display", "block");
-        $('#sidebar').css("min-width", "70px");
-        $('#sidebar').css("display", "none");
-    }
-
-
-    if($("#sidebar").css("min-width") == "300px") {
-        $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
-        $(".sidebar .card-body").css("display", "block");
-        $(".sidebar span").css("display", "block");
-    } else {
-        $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
-        $(".sidebar .card-body").css("display", "none");
-        $(".sidebar span").css("display", "none");
-        $(".sidebar .new .btn").css("margin-left", "-18px");
-    }
-
-    //-----------Tooltip und Popover aktivieren--------//
-
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
-
-
-
-    //------Status Feld ausblenden-------//
-    $(".status-change").css("display", "none");
-
-
-
-    //-------------Scrolling Up-Button-------//
-    $(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.btn-up').fadeIn();
-            } else {
-                $('.btn-up').fadeOut();
-            }
-        });
-
-        $('.btn-up').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-    });
-
-    //---------Sidebar-Toggle------//
-
-    countMediaElements()
-
-
-
-
-};
 
 
 
