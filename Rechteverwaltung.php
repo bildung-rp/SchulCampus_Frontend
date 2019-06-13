@@ -29,7 +29,7 @@
                     <div class="card">
                         <div class="card-header" id="s1">
 
-                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
+                            <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
                                 <i class="sc-icon icon-user"></i>
                                 <span>Benutzer</span>
                             </button>
@@ -54,7 +54,7 @@
                     <div class="card">
                         <div class="card-header" id="s2">
 
-                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
+                            <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
                                 <i class="sc-icon icon-user-friends-solid"></i>
                                 <span>Gruppen</span>
                             </button>
@@ -76,7 +76,7 @@
                     <div class="card">
                         <div class="card-header" id="s3">
 
-                            <button class="btn btn-link dropdown-toggle" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
+                            <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
                                 <i class="sc-icon icon-flag"></i>
                                 <span>Rollen</span>
                             </button>

@@ -93,7 +93,7 @@ $(document).ready(function () {
             $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
             $(".sidebar .card-body").css("display", "block");
             $(".sidebar span").css("display", "block");
-            $(".sidebar .dropdown-toggle").removeClass("special");
+            $(".dropdown-toggle").removeClass("special");
         }
 
 
@@ -107,7 +107,7 @@ $(document).ready(function () {
             $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
             $(".sidebar .card-body").css("display", "block");
             $(".sidebar span").css("display", "block");
-            $(".sidebar .dropdown-toggle").removeClass("special");
+            $(".dropdown-toggle").removeClass("special");
             
         } else {
             
@@ -133,7 +133,7 @@ $(document).ready(function () {
                 $(".icon-menu").css("display", "block");
                 $(".icon-grip-lines-vertical-solid").css("display", "none");
 
-                $(".sidebar .dropdown-toggle").removeClass("special");
+                $(".dropdown-toggle").removeClass("special");
                 
             } else {
                 $('#sidebar').css("min-width", "300px");
@@ -146,7 +146,7 @@ $(document).ready(function () {
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
                 
-                $(".sidebar .dropdown-toggle").removeClass("special");
+                $(".dropdown-toggle").removeClass("special");
                 
                 
             }
@@ -195,6 +195,24 @@ $(document).ready(function () {
                 console.log("habe auf sidebar geklickt und sidebar ist 70 oder weg")
 
                 $('.sidebar').css("min-width", "300px");
+
+                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-body").css("display", "block");
+                $(".sidebar span").css("display", "block");
+            }
+    });
+
+
+
+    $(".btn-sidebar").click(function () {
+        countMediaElements();
+    });
+
+
+    //--------Header Dropdown--------//
+    $("#topnav.dropdown .btn").click(function (e) {
+        if ($(window).width() < 992) {
+
 
                 $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
@@ -296,7 +314,7 @@ $(document).ready(function () {
         } else if ($("#bc1.box-content-full").css("display") == "block") {
             $(".bluebox").css("height", "510px")
         } else {
-            $(".bluebox").css("height", "500px")
+            $(".bluebox").css("height", "500")
         }
     });
 
