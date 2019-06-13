@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="fontawesome-webfont.ttf" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/stylenew.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/ie.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="JS/jquery_functions.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a class="logo" href="">
+                        <span class="edu-icon"></span>
+                        <span class="logo-label">
+                            <b>Schul</b>Campus
+                        </span>
+                    </a>
+                </div>
+                <div class="col-3 nav-pills-area">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ss-icon bell-icon"></span>
+                                <span class="badge badge-lime">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ss-icon letter-icon"></span>
+                                <span class="badge badge-lime">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="usertool-icon"></span>
+                                <span class="badge badge-lime">4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="nav dropdown">
+                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <span class="user-icon"></span>
+                            <span>Max Schmidt</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lime">
+                            <a class="dropdown-item" href="#">Einstellungen</a>
+                            <a class="dropdown-item" href="#">something else</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Abmelden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+
+
+        <aside id="sidebar" class="sidebar">
+		
+            <a href="javascript:void(0)" class="openbtn" onclick="openNav()"></a>
+            <ul>
+                <li>
+                    <a href="SchulcampusDashboard.html" class="active">
+                        <i class="sidedashboard-icon"></i>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="sidefiles-icon"></i>
+                        <span class="sidebar-text">Meine Dateien</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://lernenonline.bildung-rp.de/">
+                        <i class="sidemoodle-icon"></i>
+                        <span class="sidebar-text">Moodle</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                        <i class="sidemedia-icon"></i>
+                        <span class="sidebar-text">Mediathek</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                        <i class="sidecurriculum-icon"></i>
+                        <span class="sidebar-text">Curriculum</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://evewa.bildung-rp.de/veranstaltungskatalog">
+                        <i class="sidevewa-icon"></i>
+                        <span class="sidebar-text">Vewa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Infoportal.html">
+                        <i class="sideinfo-icon"></i>
+                        <span class="sidebar-text">Infoportal</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <div class="container" id="subheader">
+            <div class="logo" href="">
+                <span class="moodle-icon"></span>
+            </div>
+
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Moodle</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Meine Kurse</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Klasse 7d - Mathematik</li>
+            </ol>
+
+        </div>
+
+        <div class="container" id="pagesearch">
+            <div class="accordion">
+                <div class="card card-blue mini">
+                    <div class="card-header card-header-blue small" id="v1">
+                        <div class="mb-0 pagesearch-field">
+                            <form class="form-inline" action="/action_page.php">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Suchen">
+                                <button class="btn btn-blue" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                            <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
+                                aria-controls="c1">
+                                Erweiterte Suche
+                            </button>
+                        </div>
+                    </div>
+                    <div id="c1" class="collapse" aria-labelledby="v1" data-parent="#accordion2">
+                        <div class="card-body">
+                            <div class="container" id="filter">
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Bildungsbereich</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">Admin</a>
+                                        <a class="dropdown-item" href="#">Lehrer</a>
+                                        <a class="dropdown-item" href="#">Schüler</a>
+                                        <a class="dropdown-item" href="#">Besucher</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Fach- und Sachgebiet</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">Admin</a>
+                                        <a class="dropdown-item" href="#">Lehrer</a>
+                                        <a class="dropdown-item" href="#">Schüler</a>
+                                        <a class="dropdown-item" href="#">Besucher</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Schlagworte</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">aktiv</a>
+                                        <a class="dropdown-item" href="#">pausiert</a>
+                                        <a class="dropdown-item" href="#">inaktiv</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <main id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="moodleside.jpg" style="width: 100%">
+                    </div>
+                    <div class="col-8">
+                        <img src="moodlemiddle.jpg" style="width: 110%">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer id="footer">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="row">
+                <div class="col-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="RLP-logo-weiss.png" alt="Logo_RLP">
+                    </a>
+                </div>
+                <div class="col-8">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutzerklärung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nutzungsbedingungen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sidemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

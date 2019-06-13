@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="fontawesome-webfont.ttf" rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="CSS/scincons.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="CSS/scicons-codes.css">
+    <link rel="stylesheet" href="CSS/scicons-embedded.css">
+    <link rel="stylesheet" href="CSS/scicons-ie7.css">
+    <link rel="stylesheet" href="CSS/scicons-ie7-codes.css">
+
+    <link rel="stylesheet" href="CSS/stylenew.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/ie.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="JS/jquery_functions.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="nav dropdown" id="mainnav">
+                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <span class="sc-icon-dd icon-schulcampus"></span>
+                            <span class="logo-label">
+                                <b>Schul</b>campus<span class="logo-thin"></span></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lime">
+
+                            <a class="dropdown-item" href="SchulcampusDashboard.html">
+                                <i class="sc-icon-dd icon-home"></i>
+                                <span>Startseite</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="sc-icon-dd icon-folder-open"></i>
+                                <span>Meine Dateien</span>
+                            </a>
+                            <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
+                                <i class="sc-icon-dd icon-graduation-cap"></i>
+                                <span>Moodle</span>
+                            </a>
+                            <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                                <i class="sc-icon-dd icon-play-circled"></i>
+                                <span>Mediathek</span>
+                            </a>
+                            <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                                <i class="sc-icon-dd icon-bank"></i>
+                                <span>Curriculum</span>
+                            </a>
+                            <a class="dropdown-item" href="">
+                                <i class="sc-icon-dd icon-compass-circled"></i>
+                                <span>Medienkompass</span>
+                            </a>
+                            <a class="dropdown-item" href="">
+                                <i class="sc-icon-dd icon-book-1"></i>
+                                <span>Lehr- und Arbeitspläne</span>
+                            </a>
+                            <a class="dropdown-item" href="Infoportal.html">
+                                <i class="sc-icon-dd icon-info-circled"></i>
+                                <span>Infoportal</span>
+                            </a>
+                            <a class="dropdown-item" href="https://evewa.bildung-rp.de/veranstaltungskatalog">
+                                <i class="sc-icon-dd icon-calendar"></i>
+                                <span>Vewa</span>
+                            </a>
+                            
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 nav-pills-area">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="sc-icon-dd icon-bell-alt"></span>
+                                <span class="badge badge-lime">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="sc-icon-dd icon-mail-alt"></span>
+                                <span class="badge badge-lime">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="sc-icon-dd icon-usersetting"></span>
+                                <span class="badge badge-lime">4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="nav dropdown userdd">
+                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <span class="sc-icon-dd icon-userhead"></span>
+                            <span class="dd-label">Max Schmidt</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lime">
+                            <a class="dropdown-item" href="#">Profil</a>
+                            <a class="dropdown-item" href="#">Einstellungen</a>
+                            <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Abmelden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content" class="content">
+
+        <div class="container" id="info" hidden>
+            <span class="ss-icon info-icon"></span>
+            <h2>Server-Wartung bei Moodle@RLP</h2>
+            <button class="btn" type="button">
+                <span class="ss-icon close-icon"></span>
+            </button>
+        </div>
+
+
+        <div class="container-fluid" id="commercial">
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Images/lernen.jpg" alt="Los Angeles" width="100%">
+                    <div class="carousel-caption">
+                    <div class="overlay">Lernen im digitalen Zeitalter</div>
+                      <a href="https://lernenonline.bildung-rp.de/"><button type="button" class="btn">Entdecke Moodle</button></a>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/notebook.jpg" alt="Chicago" width="100%">
+                    <div class="carousel-caption">
+                    <div class="overlay">Medien für den Unterricht auf einen Blick</div>
+                        <a href="https://schul.campus-rlp.de/edu-sharing/components/workspace"><button type="button" class="btn">Entdecke die Mediathek</button></a>
+                      </div>
+                    </div>   
+                  
+                  <div class="carousel-item">
+                    <img src="Images/tafel.jpg" alt="New York" width="100%">
+                    <div class="carousel-caption">
+                    <div class="overlay">Kompetenzen bilden und zertifizieren lassen</div>
+                        <a href="Mediencompass.html"><button type="button" class="btn">Auf zum Medienkompass</button></a>
+                    </div>
+                    </div>   
+                  </div>
+            </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              
+
+        <main id="main">
+
+            <div class="container">
+                <div class="bluebox">
+                    <div class="col-4">
+                        <section id="meineDateien">
+                            <div class="bluebox-lg">
+                                <span class="icon-folder-open blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="">Meine Dateien</a>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                                <div style="display:none">
+                                    <dl>
+                                        <a href="">
+                                            <dt>Konrad Adenauer Gymnasium Westerburg</dt>
+                                            <dd>Klasse 7e</dd>
+                                        </a>
+                                        <a href="">
+                                            <dt>Mathematik</dt>
+                                            <dd>Klasse 8a</dd>
+                                        </a>
+                                        <a href="">
+                                            <dt>NaWi</dt>
+                                            <dd>Klasse 5d</dd>
+                                        </a>
+                                        <a href="">
+                                            <dt>NaWi</dt>
+                                            <dd>Klasse 5f</dd>
+                                        </a>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section id="curriculum">
+                            <div class="bluebox-lg">
+                                <span class="icon-bank blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="Curriculum.html">Curriculum</a>
+                                <div style="display:none">
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-4">
+                        <section id="infoportal">
+                            <div class="bluebox-lg">
+                                <span class="icon-info-circled blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="Infoportal.html">Infoportal</a>
+                                <div style="display:none">
+
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section id="moodle" data-toggle="tooltip" data-placement="top" title="Zum Erstellen von Lernpfaden">
+                            <div class="bluebox-lg">
+                                <span class="icon-graduation-cap blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="Moodle.html">moodle@RLP</a>
+                                <div style="display:none">
+                                    <a href="">
+                                        <dt>Lernpfad Mathematik</dt>
+                                        <dd>Klasse 8a</dd>
+                                    </a>
+                                    <a href="">
+                                        <dt>Lernpfad NaWi</dt>
+                                        <dd>Klasse 5d</dd>
+                                    </a>
+                                    <a href="">
+                                        <dt>Lernpfad NaWi</dt>
+                                        <dd>Klasse 5f</dd>
+                                    </a>
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section id="compass">
+                            <div class="bluebox-lg">
+                                <span class="icon-compass-circled blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="">Medien-komP@ss</a>
+                                <div style="display:none">
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                  
+                    <div class="col-4">
+                        <section id="vewa">
+                            <div class="bluebox-lg">
+                                <span class="icon-calendar blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="https://evewa.bildung-rp.de/veranstaltungskatalog">Vewa</a>
+                                <div style="display:none">
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section id="media">
+                            <div class="bluebox-lg">
+                                <span class="icon-play-circled blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="https://schul.campus-rlp.de/edu-sharing/components/workspace">Mediathek</a>
+                                <div style="display:none">
+                                    <dl>
+                                        <a href="#">
+                                            <dt>Meine Medien</dt>
+                                            <dd>Deutsch</dd>
+                                        </a>
+                                        <a href="#">
+                                            <dt>Alle Medien</dt>
+                                            <dd></dd>
+                                        </a>
+                                    </dl>
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+     
+                    <div class="col-4">
+                        <section id="lehrplaene">
+                            <div class="bluebox-lg">
+                                <span class="icon-book-1 blue-icon-lg"></span>
+                            </div>
+                            <div class="bluebox-label">
+                                <a href="">Lehr- &amp;<br>Arbeitspläne<h4>Digital</h4></a>
+                                <div style="display:none">
+
+                                </div>
+                                <button class="btn btn-blue" type="button">
+                                    <span class="ss-icon add-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+    <footer id="footer">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="row">
+                <div class="col-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="Images/RLP-logo-weiss.png" alt="Logo_RLP">
+                    </a>
+                </div>
+                <div class="col-8">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutzerklärung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nutzungsbedingungen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sidemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

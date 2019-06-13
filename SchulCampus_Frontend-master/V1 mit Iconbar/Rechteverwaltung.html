@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="fontawesome-webfont.ttf" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/stylenew.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/ie.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="JS/jquery_functions.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a class="logo" href="">
+                        <span class="edu-icon"></span>
+                        <span class="logo-label">
+                            <b>Schul</b>Campus
+                        </span>
+                    </a>
+                </div>
+                <div class="col-3 nav-pills-area">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ss-icon bell-icon"></span>
+                                <span class="badge badge-lime">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ss-icon letter-icon"></span>
+                                <span class="badge badge-lime">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="usertool-icon"></span>
+                                <span class="badge badge-lime">4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="nav dropdown">
+                        <button type="button" class="btn dropdown-lime btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <span class="user-icon"></span>
+                            <span>Max Schmidt</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lime">
+                            <a class="dropdown-item" href="#">Einstellungen</a>
+                            <a class="dropdown-item" href="#">something else</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Abmelden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+        <aside id="sidebar" class="sidebar">
+		
+            <a href="javascript:void(0)" class="openbtn" onclick="openNav()"></a>
+            <ul>
+                <li>
+                    <a href="SchulcampusDashboard.html" class="active">
+                        <i class="sidedashboard-icon"></i>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="sidefiles-icon"></i>
+                        <span class="sidebar-text">Meine Dateien</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://lernenonline.bildung-rp.de/">
+                        <i class="sidemoodle-icon"></i>
+                        <span class="sidebar-text">Moodle</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                        <i class="sidemedia-icon"></i>
+                        <span class="sidebar-text">Mediathek</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                        <i class="sidecurriculum-icon"></i>
+                        <span class="sidebar-text">Curriculum</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://evewa.bildung-rp.de/veranstaltungskatalog">
+                        <i class="sidevewa-icon"></i>
+                        <span class="sidebar-text">Vewa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Infoportal.html">
+                        <i class="sideinfo-icon"></i>
+                        <span class="sidebar-text">Infoportal</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <div id="subheader">
+            <div class="container">
+                <div class="logo">
+                    
+                    <span class="logo-label">
+                        Rechteverwaltung
+                    </span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container" id="pagesearch">
+            <div class="accordion">
+                <div class="card card-blue mini">
+                    <div class="card-header card-header-blue small" id="v1">
+                        <div class="mb-0 pagesearch-field">
+                            <form class="form-inline" action="/action_page.php">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Suchen">
+                                <button class="btn btn-blue" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                            <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
+                                aria-controls="c1">
+                                Erweiterte Suche
+                            </button>
+                        </div>
+                    </div>
+                    <div id="c1" class="collapse" aria-labelledby="v1" data-parent="#accordion2">
+                        <div class="card-body">
+                            <div class="container" id="filter">
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Gruppe wählen</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">Klasse</a>
+                                        <a class="dropdown-item" href="#">Kurs</a>
+                                        <a class="dropdown-item" href="#">Gruppe</a>
+                                        <a class="dropdown-item" href="#">Organisation</a>
+                                        <a class="dropdown-item" href="#">Arbeitsgemeinschaft</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Rolle wählen</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">OrganisationsAdmin</a>
+                                        <a class="dropdown-item" href="#">Schulleitung</a>
+                                        <a class="dropdown-item" href="#">Lehrkraft</a>
+                                        <a class="dropdown-item" href="#">Schüler</a>
+                                        <a class="dropdown-item" href="#">Sonstige Personen</a>
+                                        <a class="dropdown-item" href="#">SuperAdmin</a>
+                                        <a class="dropdown-item" href="#">ServiceAdmin</a>
+                                        <a class="dropdown-item" href="#">ContentManager</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-blue">
+                                    <button type="button" class="btn dropdown-blue btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <span>Status wählen</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-blue">
+
+                                        <a class="dropdown-item" href="#">aktiv</a>
+                                        <a class="dropdown-item" href="#">pausiert</a>
+                                        <a class="dropdown-item" href="#">inaktiv</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main id="main">
+            <div class="container">
+                <div class="row">
+                    <div class=" sideoption" id="sideoption">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a href="" data-target="#benutzer" data-toggle="tab" class="nav-link active">Benutzer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" data-target="#gruppen" data-toggle="tab" class="nav-link">Gruppen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" data-target="#rollen" data-toggle="tab" class="nav-link">Rollen</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <div class="tab-content">
+                            <div id="benutzer" class="tab-pane fade active show">
+                                <ul>
+
+                                    <li>
+                                        <a href="#contact">Übersicht</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Anlegen</a>
+                                    </li>
+                                    <li>
+                                        <a href="#news">Exportieren</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Importieren</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                            <div id="gruppen" class="tab-pane fade">
+                                <ul>
+
+                                    <li>
+                                        <a href="#contact">Übersicht</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Anlegen</a>
+                                    </li>
+                                    <li>
+                                        <a href="#news">Verwalten</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="rollen" class="tab-pane fade">
+                                <ul>
+
+                                    <li>
+                                        <a href="#contact">Übersicht</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Anlegen</a>
+                                    </li>
+                                    <li>
+                                        <a href="#news">Exportieren</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Importieren</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainoption">
+                        <div class="row" id="media-content">
+                            <div class="container">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Name</th>
+                                            <th>Vorname</th>
+                                            <th>Benutzername</th>
+                                            <th>Email</th>
+                                            <th>Erstellt</th>
+                                            <th>Gruppe</th>
+                                            <th>Rolle</th>
+                                            <th>Status</th>
+                                            <th>Aktion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <form>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="f1" name="f1" value="">
+                                                    <label for="f1"></label>
+                                                </td>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>bf634</td>
+                                                <td>john@example.com</td>
+                                                <td>16.07.2018</td>
+                                                <td>Klasse 7d</td>
+                                                <td>Lehrkraft</td>
+                                                <td class="status status-yellow"></td>
+                                                <td>
+                                                    <a class="ss-icon write-icon" href="" title="action"></a>
+                                                    <a class="ss-icon ellipsis-icon" href="" title="action"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="f2" name="f2" value="">
+                                                    <label for="f2"></label>
+                                                </td>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td></td>
+                                                <td>mary@example.com</td>
+                                                <td>11.07.2018</td>
+                                                <td>Klasse 7e</td>
+                                                <td>Lehrkraft</td>
+                                                <td class="status status-red"></td>
+                                                <td>
+                                                    <a class="ss-icon write-icon" href="" title="action"></a>
+                                                    <a class="ss-icon ellipsis-icon" href="" title="action"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="f3" name="f3" value="">
+                                                    <label for="f3"></label>
+                                                </td>
+                                                <td>Klaus</td>
+                                                <td>BlaBla</td>
+                                                <td>ghtt785</td>
+                                                <td>juhghdy@example.com</td>
+                                                <td>11.08.2018</td>
+                                                <td>Klasse 7e</td>
+                                                <td>Lehrkraft</td>
+                                                <td class="status status-green"></td>
+                                                <td>
+                                                    <a class="ss-icon write-icon" href="" title="action"></a>
+                                                    <a class="ss-icon ellipsis-icon" href="" title="action"></a>
+                                                </td>
+                                            </tr>
+                                        </form>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer id="footer">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="row">
+                <div class="col-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="RLP-logo-weiss.png" alt="Logo_RLP">
+                    </a>
+                </div>
+                <div class="col-8">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutzerklärung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nutzungsbedingungen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sidemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

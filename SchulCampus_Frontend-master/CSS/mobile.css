@@ -1,0 +1,493 @@
+/*Desktop-First*/
+
+@media screen and (max-width: 1200px) {   
+
+
+    /*Header-Elemente*/
+
+    .icon-schulcampus::before{
+        margin-left: 5px;
+    }    
+
+    .dropdown-item{
+        height: 50px; /*Zeilenhöhe soll 50px sein - TODO*/
+    }
+
+    header .dropdown-menu> .dropdown-item:not(:first-child){
+        border-top:1px solid #E3E3E5;
+    }
+
+    .nav-pills-area {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        margin-right:0;
+    }
+
+
+    /*Footer-Elemente"*/
+
+    footer{
+        height:auto;
+    }
+
+    footer .navbar-nav{ 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Bluebox*/
+    .bluebox{
+        height: 465px;
+    }
+
+    .bluebox section {
+        min-height:9rem;
+    }
+    
+    .bluebox-lg{
+        height:9rem; 
+        width:9rem;  
+    }
+
+    .bluebox-label>a{
+        font-size: 19px !important;
+    }
+
+
+    .pagesearch-field {
+        width: 90%;
+        display: inline-block;
+    }
+
+
+
+}
+
+
+
+/*MobileAnsicht*/
+@media screen and (max-width: 992px) {   
+
+    #topnav button, .dd-right button{
+        width:auto;
+    }
+
+    header .logo span {
+        display:none;
+    }
+
+   .nav-pills {
+        justify-content: center;
+   }
+    
+    .nav-pills-area {
+        float: none;
+    }
+
+    .dropdown-item {
+        border-radius:0;
+    }
+
+    .dd-label{
+        display: none;
+    }
+
+    .dropdown-menu-full .dropdown-menu> .dropdown-item:not(:first-child){
+        border-top:1px solid #E3E3E5;
+    }
+
+    #topnav .dropdown-menu, #usernav .dropdown-menu{
+        display: none;
+    }
+
+    .dropdown-menu-full{
+        display: block;
+        position: absolute;
+        margin-top: 50px;
+        left: 0px;
+        right:0px;
+        z-index: 1024;
+    }
+
+    #usernav-mobile.dropdown-menu-full .dropdown-menu{
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    #topnav-mobile.dropdown-menu-full .dropdown-menu{
+        width: 100%;
+        float: left;     
+        border-radius: 0; 
+    }
+
+    #topnav-mobile .dropdown-item{
+        padding-left: 40%;
+    }
+    
+    footer .navbar-brand{
+        display: flex;
+        justify-content: center;
+    }
+
+    #teaser section{
+        margin-bottom:15px;
+    }
+
+    .carousel-indicators {
+        display: flex;             
+    }
+    .carousel-control-prev, .carousel-control-next{
+        display:none;
+    }
+
+    #teaser.container{
+        width:540px;
+        height: 150px;
+    }
+
+
+
+    main .container{
+        display: flex; 
+        width:540px;
+        justify-content: center;
+    }
+
+    .bluebox{
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        margin: 60px 0px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .box-content-full {
+        display:none;
+        background-color: #00B2F9;
+        height:13rem;
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        position: relative;
+        border-radius:3px;
+    }
+    
+    .box-content-full .btn-link {
+        display: ruby;
+        padding: 0;
+    }
+
+    .box-content {
+        width: 265px;
+    }
+
+    .arrowblue{
+        left:15%;        /*50% oder 85%*/
+        bottom: 100%;
+        border: solid #fff;
+        content: " ";
+        height: 0;
+        width: 0px;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+        border-bottom-color: #00B2F9;
+        border-width: 15px;
+        margin-left: -15px;
+    }
+    
+    #blue1, #blue2, #blue3, #blue4, #blue5, #blue6 {
+        display: none;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        padding-left: 15px;
+    
+    }
+
+    .bluebox :nth-child(1) { order: -1; }
+    .bluebox :nth-child(2) { order: 1; }
+    .bluebox :nth-child(3) { order: -1; }
+    .bluebox :nth-child(4) { order: 0; }
+    .bluebox :nth-child(5) { order: 2; }
+    .bluebox :nth-child(6) { order: -1; }
+    .bluebox :nth-child(7) { order: 2; }
+    .bluebox :nth-child(8) { order: 2; }
+
+    .bluebox .col-4{
+        display: flex;
+        justify-content: center;
+        margin:0;
+        padding: 10px;
+        height: auto;
+    }
+
+    .bluebox section {
+        width: 10rem;
+        min-height: 10rem;
+        margin:0;
+        cursor: pointer;
+    }
+    
+    .bluebox-lg{
+        width: 10rem;
+        height:10rem;   
+    }
+
+    .bluebox-sm{
+        display: none;
+    }
+    
+    .bluebox-label {
+        display:none;
+    }
+
+
+    .box-content-full .btn-link:hover, .box-content-full .card-header:hover .sc-icon::before {
+        color: #fff;
+    }
+
+
+    .sidebar {
+        display: none;
+        min-width: 70px
+    }
+
+    .btn-sidebar {
+        align-items: start;
+        cursor: col-resize;
+    }
+    .btn-sidebar .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    .btn-sidebar .icon-menu {
+        display: block;
+    }
+
+    .btn-sidebar .icon-grip-lines-vertical-solid {
+        display: none;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 19px;
+    }
+
+    .form-row > .col, .form-row > [class*="col-"] {
+        padding: 5px;
+    }
+
+    form label {
+        display:none;
+    }
+
+
+}    
+
+
+
+
+@media screen and (max-width: 768px) {  
+
+    /*TODO Logo soll dann mittig über LinkList stehen"*/
+    footer .row{
+        flex-direction: column;
+    }
+
+    #topnav-mobile .dropdown-item{
+        padding-left: 30%;
+    }
+
+} 
+
+@media (max-width: 575px) {
+
+    header.container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+
+    .sc-icon-pills {
+        font-size: 20px;
+        color:#fff;
+    }
+
+    .nav-pills {
+        padding-top: 10px;
+    }
+
+    .badge {
+        padding: .2em .3em;
+        font-size: 60%;
+    }
+
+    .nav-link {
+        padding: .3rem 0.75rem;
+    }
+
+    #topnav-mobile .dropdown-item {
+        padding-left: 20%;
+    }
+
+    #teaser.container {
+        width:396px;
+        height:170px;
+    }
+
+    .bluebox {
+        height: 300px;
+    }
+
+    .bluebox .col-4 {
+        margin:0 !important;
+        padding: 10px;
+        height: auto;
+    }
+
+    .bluebox section {
+        width: 8rem;
+        min-height: 8rem;
+        margin: 0;
+    }
+    
+    .bluebox-lg{
+        width:8rem;
+        height:8rem; 
+    }
+
+    .box-content-full {
+        width: 100%;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .nav-tabs {
+        margin-left: 15px;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .nav-tabs .nav-item {
+        margin-right: 30px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 14px;
+
+        
+    }
+
+
+
+}
+
+
+/*Ansicht bis 440px gut*/
+
+@media screen and (max-width: 400px) { 
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .nav-link {
+        display: block;
+        padding: .2rem .4rem;
+        margin-right: 3px;
+    }
+   
+    .nav-pills-area{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .nav-pills {
+        margin-left: -10px;
+    }
+
+
+
+    .badge {
+        position: absolute;
+        margin: -3px 0px 10px -8px;
+    }
+
+    .dd-right .dropdown-toggle::after {
+        padding: 0;
+    }
+
+    .dropdown .btn {
+        padding: .375rem 0.3rem;
+    }
+
+
+    #teaser.container {
+        width:100%;
+        height: 180px;
+    }
+
+    .bluebox{
+        height:180px;
+    }
+
+
+    .bluebox section {
+        width: 4.75em;
+        min-height: 4.75em;
+        margin: 5px 0;
+    }
+    
+    .bluebox-lg{
+        position:absolute;
+        width: 4.75em;
+        height: 4.75em; 
+    }
+
+    .blue-icon-lg{
+        font-size :43px;
+    }
+
+    .bluebox .col-4{
+        padding: 0;
+    }
+
+    .box-content-full {
+        width: 100%;
+    }
+
+    #subheader {
+        padding: 0;
+    }
+
+    #subheader .logo {
+        padding: .75rem 0;
+        margin: 5px 10px;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+   
+
+
+
+
+

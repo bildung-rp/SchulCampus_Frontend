@@ -1,0 +1,85 @@
+/*IE Sonderfall*/
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+
+    *::-ms-backdrop, .edu-icon{
+      margin-right:5px !important;
+    }
+    *::-ms-backdrop, .user-icon{
+     margin-right:5px !important;
+    }
+    *::-ms-backdrop, .dropdown-toggle:after{
+      padding:0 10px 0 0 !important;
+    }
+    *::-ms-backdrop, #footer{
+      height:70px !important;
+      margin-top:0px;
+    }
+    *::-ms-backdrop, #content{
+      padding-bottom:100px !important;  /*320px*/
+    }
+    *::-ms-backdrop, #footer .navbar-brand {
+     margin: 0px 0px !important;    
+    }
+    *::-ms-backdrop, #footer .navbar-nav {
+      margin: 0px !important;    
+    }
+    *::-ms-backdrop, #footer .dropup-grey {
+      padding: 0 0 5px 0 !important;   
+    }
+    *::-ms-backdrop, #headerdd{
+      margin-top:18px !important;
+     } 
+  }
+  
+  
+  /*Browserhacks*/
+  @media all and (-ms-high-contrast:none) {
+    /* IE10 */
+    #content{
+      margin-top:70px;
+    }
+      
+    /* IE11 */
+    *::-ms-backdrop, #content{
+      margin-top:70px;
+    }
+  }
+
+  @media screen and (min-width: 320px) { 
+
+    *::-ms-backdrop, #header.navbar-brand{
+        padding-left: 0px;
+      }
+      *::-ms-backdrop, .edu-icon{
+        margin-right:-20px !important;
+      }
+      *::-ms-backdrop, .user-icon{
+        margin-right:-20px !important;
+      }
+      *::-ms-backdrop, .dropdown-toggle:after{
+        padding:0 0 0 20px !important;
+      }
+      *::-ms-backdrop, #footer{
+        height:320px !important;
+        margin-top:-320px;
+      }
+      *::-ms-backdrop, #content{
+        padding-bottom:320px !important;  /*320px*/
+      }
+     
+      *::-ms-backdrop, #footer .navbar-brand {
+        margin: -150px 180px !important;    
+      }
+      *::-ms-backdrop, #footer .navbar-nav {
+        margin: -80px !important;    
+      }
+      *::-ms-backdrop, #footer .dropup-grey {
+        margin: 121px -15px !important;    
+      }
+      *::-ms-backdrop, #footer .row {
+        flex-direction: row !important;
+      }     
+
+  }

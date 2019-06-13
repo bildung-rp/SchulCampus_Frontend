@@ -39,39 +39,29 @@
     .bluebox{
         height: 465px;
     }
-    .box-content {
-        width: 230px;
-        overflow-x: hidden;
-    }
 
     .bluebox section {
-        min-height:9rem;
+        min-height:144px;
     }
     
     .bluebox-lg{
-        height:9rem; 
-        width:9rem;  
+        height:144px; 
+        width:144px;  
     }
 
     .bluebox-label>a{
         font-size: 19px !important;
     }
 
-    .sidebar {
-        min-width: 150px;
-    }
 
     .pagesearch-field {
         width: 90%;
         display: inline-block;
     }
-    .btn-link-blue {
-        margin: 0;
-        padding:15px 0 0;
-    }
+
+
+
 }
-
-
 
 
 
@@ -86,9 +76,9 @@
         display:none;
     }
 
-    header .badge{
-        display: none;  
-    }
+   .nav-pills {
+        justify-content: center;
+   }
     
     .nav-pills-area {
         float: none;
@@ -173,6 +163,49 @@
         align-content: flex-start;
     }
 
+    .box-content-full {
+        display:none;
+        background-color: #00B2F9;
+        height:210px;
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        position: relative;
+        border-radius:3px;
+    }
+    
+    .box-content-full .btn-link {
+        display: ruby;
+        padding: 0;
+    }
+
+    .box-content {
+        width: 265px;
+    }
+
+    .arrowblue{
+        left:15%;        /*50% oder 85%*/
+        bottom: 100%;
+        border: solid #fff;
+        content: " ";
+        height: 0;
+        width: 0px;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+        border-bottom-color: #00B2F9;
+        border-width: 15px;
+        margin-left: -15px;
+    }
+    
+    #blue1, #blue2, #blue3, #blue4, #blue5, #blue6 {
+        display: none;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        padding-left: 15px;
+    
+    }
+
     .bluebox :nth-child(1) { order: -1; }
     .bluebox :nth-child(2) { order: 1; }
     .bluebox :nth-child(3) { order: -1; }
@@ -191,15 +224,15 @@
     }
 
     .bluebox section {
-        width: 10rem;
-        min-height: 10rem;
+        width: 160px;
+        min-height: 160px;
         margin:0;
         cursor: pointer;
     }
     
     .bluebox-lg{
-        width: 10rem;
-        height:10rem;   
+        width: 160px;
+        height:160px;   
     }
 
     .bluebox-sm{
@@ -210,37 +243,31 @@
         display:none;
     }
 
-    dt h4 {
-        display: contents;
+
+    .box-content-full .btn-link:hover, .box-content-full .card-header:hover .sc-icon::before {
+        color: #fff;
     }
 
-    dt::before {
-
-        padding: 0;
-        margin-right: 5px;
-    }
-    
-    .box-content-full {
-        display:none;
-    }
 
     .sidebar {
         display: none;
+        min-width: 70px
     }
 
     .btn-sidebar {
         align-items: start;
-        cursor: pointer;
+        cursor: col-resize;
     }
     .btn-sidebar .btn:not(:disabled):not(.disabled) {
         cursor: pointer;
     }
 
-    .icon-grip-lines-vertical-solid:before {
-        display: none;
-    }
-    .icon-menu:before {
+    .btn-sidebar .icon-menu {
         display: block;
+    }
+
+    .btn-sidebar .icon-grip-lines-vertical-solid {
+        display: none;
     }
 
     .nav-tabs .nav-link {
@@ -251,6 +278,9 @@
         padding: 5px;
     }
 
+    form label {
+        display:none;
+    }
 
 
 }    
@@ -283,6 +313,22 @@
         padding-left: 0;
     }
 
+
+
+    .sc-icon-pills {
+        font-size: 20px;
+        color:#fff;
+    }
+
+    .nav-pills {
+        padding-top: 10px;
+    }
+
+    .badge {
+        padding: .2em .3em;
+        font-size: 60%;
+    }
+
     .nav-link {
         padding: .3rem 0.75rem;
     }
@@ -307,14 +353,14 @@
     }
 
     .bluebox section {
-        width: 8rem;
-        min-height: 8rem;
+        width: 128px;
+        min-height: 128px;
         margin: 0;
     }
     
     .bluebox-lg{
-        width:8rem;
-        height:8rem; 
+        width:128px;
+        height:128px; 
     }
 
     .box-content-full {
@@ -356,12 +402,24 @@
 
     .nav-link {
         display: block;
-        padding: .5rem .4rem;
+        padding: .2rem .4rem;
+        margin-right: 3px;
+    }
+   
+    .nav-pills-area{
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
-    .nav-pills-area{
-        margin-left: 3px;
-        margin-right: -4px;
+    .nav-pills {
+        margin-left: -10px;
+    }
+
+
+
+    .badge {
+        position: absolute;
+        margin: -3px 0px 10px -8px;
     }
 
     .dd-right .dropdown-toggle::after {
@@ -369,7 +427,7 @@
     }
 
     .dropdown .btn {
-        padding: .5rem .4rem;
+        padding: .375rem 0.3rem;
     }
 
 
@@ -384,15 +442,15 @@
 
 
     .bluebox section {
-        width: 4.75em;
-        min-height: 4.75em;
+        width: 76px;
+        min-height: 76px;
         margin: 5px 0;
     }
     
     .bluebox-lg{
         position:absolute;
-        width: 4.75em;
-        height: 4.75em; 
+        width: 76px;
+        height: 76px; 
     }
 
     .blue-icon-lg{
