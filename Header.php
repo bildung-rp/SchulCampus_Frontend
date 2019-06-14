@@ -158,7 +158,6 @@
                         <a class="dropdown-item" href="#">Profil</a>
                         <a class="dropdown-item" href="#">Einstellungen</a>
                         <a class="dropdown-item" href="Rechteverwaltung.php">Rechteverwaltung</a>
-                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Abmelden</a>
                     </div>
                 </div>
@@ -204,7 +203,6 @@
             <a class="dropdown-item" href="#">Profil</a>
             <a class="dropdown-item" href="#">Einstellungen</a>
             <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
-            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Abmelden</a>
         </div>
     </div>

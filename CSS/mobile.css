@@ -92,8 +92,12 @@
         display: none;
     }
 
+	.dropdown-menu {
+		border: 1px solid #A7ADB1;
+	}
+
     .dropdown-menu-full .dropdown-menu> .dropdown-item:not(:first-child){
-        border-top:1px solid #E3E3E5;
+        border-top:1px solid #A7ADB1;
     }
 
     #topnav .dropdown-menu, #usernav .dropdown-menu{
@@ -169,6 +173,7 @@
         height:210px;
         width: calc(100% - 20px);
         margin-left: 10px;
+		margin-bottom: 10px;
         position: relative;
         border-radius:3px;
     }
