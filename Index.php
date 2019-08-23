@@ -427,7 +427,7 @@
                         <span class="icon-info-circled blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="Infoportal.html">Infoportal</a>
+                        <a href="Infoportal.php">Infoportal</a>
                     </div>
                 </section>
             </div>

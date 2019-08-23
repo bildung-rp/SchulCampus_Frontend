@@ -186,6 +186,11 @@ $(document).ready(function () {
     });
 
 
+
+
+
+
+
     //-------Zusatz: Wenn man auf eingeklappete Sidebar klickt, geht dises auch komplett auf---//
     $(".sidebar").click(function () {
         
@@ -427,7 +432,6 @@ $(document).ready(function () {
 });
 
 //Bluebox desktop-Ansicht
-
 var idBlueOld = 0;
 
 function toggleBlueBox(sectionId) {
@@ -477,7 +481,6 @@ function toggleBlueBox(sectionId) {
 
 
 //Bluebox-Mobile
-
 var idBlueMobileOld = 0;
 
 function toggleBlueMobile(tempId) {
@@ -573,3 +576,9 @@ function toggleBlueMobile(tempId) {
 };
 
 
+$(document).ready(function () {
+    $(".curtain__panel").click(function () {
+        $(".curtain__panel--right").css("transform", "translateX(100%)");
+        $(".curtain__panel--left").css("transform", "translateX(-100%)");
+    })
+});

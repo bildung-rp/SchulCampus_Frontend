@@ -25,6 +25,8 @@
 }
 
 
+
+
 html, body {
     height: 100%;
     margin: 0;    /*Browser-Styles reset*/
@@ -57,6 +59,14 @@ footer {
     flex-shrink: 0;
     height: 50px;
     background-color: #737C83;
+}
+
+img[width=0] {
+    width: auto !important;
+}
+
+img[height=0] {
+    height: auto !important;
 }
 
 
@@ -232,7 +242,8 @@ p.normal {
     line-height: 21px;
 }
 .readingtext {
-    max-width: 730px;
+    max-width: 680px;
+    padding-top: 30px;
     margin-right: auto !important;
     margin-left: auto !important;
 }
@@ -361,7 +372,7 @@ dt::before {
   
 .dropdown-blue {
     color:#2f3a2f;
-      background-color:#00B2F9;
+    background-color:#00B2F9;
     border:1px solid #99E0FD;
     border-radius:3px;
 }
@@ -663,12 +674,10 @@ input[type=text] {
     border-radius: 0;
     border-right:none;
     border-top:none;
-    
     border-left: none;
 }
 
 .form-control:focus {
-    
     border-bottom: 2px solid #009CEE;
     box-shadow: none;
 }
@@ -1399,27 +1408,8 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     padding-bottom: 30px;
 }
 
-/* Subheader */
-#subheader{
-    display: inline-flex;
-    background-color: #fff;
-    align-items: last baseline;
-}
-  
-#subheader .logo-label {
-    padding-left: 10px;
-    font-size: 24px;
-    padding-top: 30px;
-}
-
-#subheader .sc-icon{
-    margin-right: 5px;
-    font-size: 25px;
-}
-
-
 /*Suche*/
-.pagesearch .card-header {
+.pagesearch .card-header, .pagesearch.infosearch  {
     padding: 15px 10px;
 }
 
@@ -1504,6 +1494,189 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
 }
 
 
+/************ Infoportal ****************/
+
+#info-metanav {
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+}
+
+#info-metanav .input-group {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#info-metanav .pagesearch-field {
+    padding: 15px 0;
+    background-color: #009cee;
+}
+
+.no-pad {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#info-metanav .pagesearch-field {
+    padding: 15px 0;
+}
+
+#info-metanav .form-control {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.no-border {
+    border-radius: 0;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.z-low {
+    z-index: -1;
+}
+
+.z-normal {
+    z-index: 1;
+}
+
+.z-high {
+    z-index: 1000;
+}
+
+a.card:hover {
+    color: #fff;
+}
+
+a.card.active {
+    color: #fff;
+}
+
+#info-metanav .card:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    transform-origin: bottom;
+    transition: height 0.5s ease;
+    z-index: 1;
+}
+  
+
+
+.info-main .nav-tabs {
+    margin: 0 30px;
+}
+
+#meta1.card:after, #meta1.card.active {
+    background-color: #CBD900;
+}
+#meta2.card:after, #meta2.card.active {
+    background-color: #0088dc;
+}
+#meta3.card:after, #meta3.card.active {
+    background-color: #CBD900;  /*#D9005F;*/
+}
+#meta4.card:after, #meta4.card.active {
+    background-color: #0088dc;  /*#F0DD0C;*/
+}
+
+#info-metanav .card:hover .sc-icon, #info-metanav .card.active .sc-icon {
+    color: #fff;
+}
+
+
+
+#info-metanav .card-title {
+    text-align: center;
+}
+
+#info-metanav .card .sc-icon {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(80, 91, 100, 0.822);
+    margin-right: 30px;
+    display: flex;
+    align-self: center;
+}
+
+.row-border {
+    border: solid 1px rgba(47, 58, 72, 0.151);
+    border-bottom: none;
+}
+
+#info-metanav .card:hover.card:after {
+    height: 100%;
+    z-index:1;
+}
+
+.more-link {
+    float: right;
+}
+
+#ic1 {
+    margin-top: -191px;
+}
+
+.info-main .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info-main .card-title {
+    text-align: center;
+    padding: 5px;
+    color: #2F3A48;
+}
+
+.info-main .row {
+	margin-top: 30px;
+}
+
+.info-main-menu {
+    display: flex;
+    position: sticky;
+    top: 30px;
+    margin-top: 30px;
+    width: max-content;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    scroll-behavior: smooth;
+    align-self: end;
+}
+
+.info-main-menu .nav {
+    flex-direction: column;
+}
+
+.info-main-menu a {
+    scroll-behavior: smooth;
+}
+
+.info-main .card-navs .nav-link {
+    border: solid 1px rgb(220, 225, 230);
+    border-radius: 3px;
+}
+
+/***********************News-Content***************/
+
+.news-wrapper {
+    
+}
+
+.news-content {
+    margin: 30px 0;
+    display: inline-flex;
+}
+
+.news-content-small {
+
+}
+
+
 
 
 
@@ -1584,13 +1757,10 @@ bluebox .icon-plus::before {
     background-color:transparent;
 }
 
-<<<<<<< HEAD
 .icon-grip-lines-vertical-solid::before {
     color: #505B64;
 }
 
-=======
->>>>>>> 86d5cc89c58c93d9bb6c83528b48d7dd98b26d73
 .icon-up-open{
     padding:10px 12px;
 }
@@ -1603,8 +1773,79 @@ bluebox .icon-plus::before {
     font-size: 20px;
 }
 
+/******************************************TEST-Intro**********************/
+.curtain {
+    margin: 0 auto;
+    width: 100%; /* Ensures the component is the full screen width */
+    height: 100vh; /* We're using this for demo purposes */
+    overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
+  }
+    
+  .curtain__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+        
+  .curtain__panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #CBD900;   
+    color: #fff;
+    width: 50%; /* Each panel takes up half the container */
+    height: 100vh; /* Used for demo purposes */
+    float: left; /* Makes sure panels are side-by-side */
+    position: relative; /* Needed to define the z-index */
+    z-index: 2; /* Places the panels in front of the prize */
+    transition: all 1s ease-out; /* Animates the sliding transition */
+  }
 
+  .curtain__content {
+    background: #fff;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
 
+  .curtain__wrapper input[type=checkbox] {
+    position: absolute; /* Force the checkbox at the start of the container */
+    cursor: pointer; /* Indicate the curtain is clickable */
+    width: 100%; /* The checkbox is as wide as the component */
+    height: 100%; /* The checkbox is as tall as the component */
+    z-index: 100; /* Make sure the checkbox is on top of everything else */
+    opacity: 0; /* Hide the checkbox */
+    top: 0;
+    left: 0;
+  }
+
+    /* When the checkbox is checked... */
+        
+    /* Slide the first panel in */
+    .curtain__wrapper input[type=checkbox]:checked ~ div.curtain__panel--left {
+        transform: translateX(0);
+    }
+          
+    /* Slide the second panel in */
+    .curtain__wrapper input[type=checkbox]:checked ~ div.curtain__panel--right {
+        transform: translateX(0);
+    }
+
+    /* Slide the panel to the left out of the container */
+    .curtain__panel--left {
+        justify-content: center;
+
+transform: translateX(-100%);
+
+align-items: end;
+    }
+  
+    /* Slide the panel to the right out of the container */
+    .curtain__panel--right {
+        justify-content: center;
+transform: translateX(100%);
+align-items: start;
+    }
 
 /*******************************************Standard-Abstände***********************************/
 
@@ -1678,6 +1919,10 @@ bluebox .icon-plus::before {
 
 .mb-30 {
     margin-bottom: 30px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
 }
 
 

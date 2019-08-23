@@ -1,136 +1,128 @@
-
 <?php include "header.php"; ?>
 
+<?php include "infoportalnav.php"; ?>
 
-        <div id="subheader">
-            <div class="container-fluid">
-                <div class="logo">
-                    <span class="ss-icon video-icon"></span>
-                    <span class="logo-label">
-                        Infoportal
-                    </span>
-                </div>
+<div class="container-fluid info-main mb-60">
 
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">Infoportal</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">Bedienung</li>
-                </ol>
-            </div>
+    <main class="container" id="main">
+
+        <div id="submenu1" class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" id="1-tab" data-toggle="tab" role="tab" aria-selected="true" href="#ta1">Moodle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="2-tab" data-toggle="tab" role="tab" aria-selected="false" href="#ta2">Meine Dateien</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="3-tab" data-toggle="tab" role="tab" aria-selected="false" href="#ta3">Mediathek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="4-tab" data-toggle="tab" role="tab" aria-selected="false" href="#ta4">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="5-tab" data-toggle="tab" role="tab" aria-selected="false" href="#ta5">Lehr- und Arbeitspläne</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="tab-content" id="myTabContent">
+
+        <div class="tab-pane show fade active" id="ta1" role="tabpanel" aria-labelledby="1-tab">
+          <div class="card-body readingtext">
+            <h5 class="card-title">Moodle</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.</p>
+
+            <a class="more-link" href="http://localhost/typo3/index.php?id=30#">Weiterlesen</a>
+
+            <nav class="nav card-navs">
+
+              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="#">Hilfen</a>
+              <a class="nav-link " href="#">Tutorials</a>
+            </nav>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="ta2" role="tabpanel" aria-labelledby="2-tab">
+          <div class="card-body readingtext">
+            <h5 class="card-title">Meine Dateien</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+            <a class="more-link" href="#">Weiterlesen</a>
+
+            <nav class="nav card-navs">
+
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link " href="#">Link</a>
+            </nav>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="ta3" role="tabpanel" aria-labelledby="3-tab">
+          <div class="card-body readingtext">
+            <h5 class="card-title">Mediathek</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <a class="more-link" href="#">Weiterlesen</a>
+
+            <nav class="nav card-navs">
+
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link " href="#">Link</a>
+            </nav>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="ta4" role="tabpanel" aria-labelledby="4-tab">
+          <div class="card-body readingtext">
+            <h5 class="card-title">Curriculum</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. With supporting
+              text below as a natural lead-in to additional content.</p>
+
+            <a class="more-link" href="#">Weiterlesen</a>
+
+            <nav class="nav card-navs">
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link " href="#">Link</a>
+            </nav>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="ta5" role="tabpanel" aria-labelledby="5-tab">
+          <div class="card-body readingtext">
+            <h5 class="card-title">Lehr- und Arbeitspläne</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+            <a class="more-link" href="#">Weiterlesen</a>
+
+            <nav class="nav card-navs">
+
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link " href="#">Link</a>
+            </nav>
+
+          </div>
         </div>
 
 
-       <div class="container-fluid pagesearch" id="pagesearch">
-            <div class="accordion">
-                <div class="card card-blue small">
-                    <div class="card-header card-header-blue" id="v1">
-                        <div class="pagesearch-field">
+      </div>
 
-                            <div class="input-group">
-                                <input class="form-control border-right-0" type="search" value="" id="" placeholder="Suchbegriff">
-                                <span class="input-group-append">
-                                    <button class="btn btn-search border-left-0" type="button">
-                                        <i class="sc-icon icon-search"></i>
-                                    </button>
-                                </span>
-                            </div>
+    </div>
+  </div>
 
-                            <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
-                                aria-controls="c1">
-                                Erweiterte Suche
-                            </button>
-                        </div>
-                    </div>
-                    <div id="c1" class="collapse" aria-labelledby="v1">
-                        <div class="card-body">
-                            <div id="filter">
-
-
-                                <form>
-                                    <div class="form-row">
-                                    <div class="col-auto">
-                                        
-                                            <select class="custom-select" id="inlineForm1">
-                                                <option selected>Fach wählen</option>
-                                                <option value="1">Mathematik</option>
-                                                <option value="2">Naturwissenschaft</option>
-                                                <option value="3">Deutsch</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-auto">
-                                        
-                                            <select class="custom-select" id="inlineForm2">
-                                                <option selected>Klassenstufe wählen</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-auto">
-                                        
-                                            <select class="custom-select" id="inlineForm3">
-                                                <option selected>Schulart wählen</option>
-                                                <option value="1">Realschule</option>
-                                                <option value="2">Grundschule</option>
-                                                <option value="3">Gymnasium</option>
-                                                <option value="3">Oberstufe</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-auto">
-                                        
-                                            <select class="custom-select" id="inlineForm4">
-                                                <option selected>Themengebiet wählen</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-auto">
-                                        
-                                            <select class="custom-select" id="inlineForm5">
-                                                <option selected>Sammlung wählen</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-auto">
-                                        
-                                            <select class="custom-select" id="inlineForm6">
-                                                <option selected>Medium wählen</option>
-                                                <option value="1">Arbeitsblatt</option>
-                                                <option value="2">Film</option>
-                                                <option value="3">Textdokument</option>
-                                            </select>
-                                    </div>
-                                </form>
-
-
-                                
-
-
-
-
-                               
-
-                                <button type="submit" class="btn btn-blue">Suchen</button>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div></div> 
-
-
-
-        <main class="container-fluid" id="main">
-            <div>
-                <p style="margin-top: 30px;">Hallo, ich bin das Infoportal!</p>
-            </div>
-        </main>
+</main>
+</div>
 
 <?php include "footer.php"; ?>
