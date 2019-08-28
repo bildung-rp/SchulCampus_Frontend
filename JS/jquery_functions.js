@@ -10,6 +10,10 @@ $(document).ready(function () {
 
 
 
+  
+
+
+
     function update() {
 
         //-----------Carousel----------//
@@ -330,9 +334,6 @@ $(document).ready(function () {
 
 
 
-
-
-
 //--------------Ansicht der Sammlungen in der Mediathek------------//
 
 function countMediaElements() {
@@ -367,6 +368,12 @@ function countMediaElements() {
 };
 
 
+//Filter - Select-Felder 
+$(function () {
+    $('#slct4').multipleSelect({
+        width: 150
+    })
+  })
 
 
 

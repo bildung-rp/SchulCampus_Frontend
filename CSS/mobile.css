@@ -304,7 +304,13 @@
         padding-left: 30%;
     }
 
-} 
+    #info-nav .column {
+        width: 100%;
+        height: auto;
+    }
+}
+
+ 
 
 @media (max-width: 575px) {
 

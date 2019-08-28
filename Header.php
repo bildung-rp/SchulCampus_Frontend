@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.css">
 
     <link rel="stylesheet" href="CSS/scincons.css">
     <link rel="stylesheet" href="CSS/animation.css">
@@ -20,6 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.js"></script>
 
     <script src="JS/jquery_functions.js"></script>
 </head>
@@ -76,7 +79,7 @@
                         </div>
                     </button>
                     <div class="dropdown-menu dropdown-menu-lime">
-                        <a class="dropdown-item" href="Index.php">
+                        <a class="dropdown-item" href="index.php">
                             
                                 <i class="sc-icon-dd icon-schulcampus"></i>
                                 <span>
@@ -84,37 +87,37 @@
                                 </span>
                             
                         </a>
-                        <a class="dropdown-item" href="Workspace.php">
+                        <a class="dropdown-item" href="workspace.php">
                             
                                 <i class="sc-icon-dd icon-folder-open"></i>
                                 <span>Meine Dateien</span>
                             
                         </a>
-                        <a class="dropdown-item" href="Moodle.php">
+                        <a class="dropdown-item" href="moodle.php">
                             
                                 <i class="sc-icon-dd icon-graduation-cap"></i>
                                 <span>Moodle</span>
                             
                         </a>
-                        <a class="dropdown-item" href="Mediathek.php">
+                        <a class="dropdown-item" href="mediathek.php">
                             
                                 <i class="sc-icon-dd icon-play-circled"></i>
                                 <span>Mediathek</span>
                             
                         </a>
-                        <a class="dropdown-item" href="Curriculum.php">
+                        <a class="dropdown-item" href="curriculum.php">
                             
                                 <i class="sc-icon-dd icon-bank"></i>
                                 <span>Curriculum</span>
                             
                         </a>
-                        <a class="dropdown-item" href="Lehrplan.php">
+                        <a class="dropdown-item" href="lehrplan.php">
                             
                                 <i class="sc-icon-dd icon-book-1"></i>
                                 <span>Lehr- und Arbeitspläne</span>
                             
                         </a>
-                        <a class="dropdown-item" href="Infoportal.php">
+                        <a class="dropdown-item" href="infoportal.php">
                             
                                 <i class="sc-icon-dd icon-info-circled"></i>
                                 <span>Infoportal</span>
@@ -156,7 +159,7 @@
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
                         <a class="dropdown-item" href="#">Profil</a>
                         <a class="dropdown-item" href="#">Einstellungen</a>
-                        <a class="dropdown-item" href="Rechteverwaltung.php">Rechteverwaltung</a>
+                        <a class="dropdown-item" href="rechteverwaltung.php">Rechteverwaltung</a>
                         <a class="dropdown-item" href="#">Abmelden</a>
                     </div>
                 </div>
@@ -166,11 +169,11 @@
 
     <div class="dropdown-menu-full" id="topnav-mobile">
         <div class="dropdown-menu dropdown-menu-lime">
-            <a class="dropdown-item" href="Index.php">
+            <a class="dropdown-item" href="index.php">
                 <i class="sc-icon-dd icon-schulcampus"></i>
                 <span>Schulcampus</span>
             </a>
-            <a class="dropdown-item" href="Workspace.php">
+            <a class="dropdown-item" href="workspace.php">
                 <i class="sc-icon-dd icon-folder-open"></i>
                 <span>Meine Dateien</span>
             </a>
@@ -190,7 +193,7 @@
                 <i class="sc-icon-dd icon-book-1"></i>
                 <span>Lehr- und Arbeitspläne</span>
             </a>
-            <a class="dropdown-item" href="Infoportal.php">
+            <a class="dropdown-item" href="infoportal.php">
                 <i class="sc-icon-dd icon-info-circled"></i>
                 <span>Infoportal</span>
             </a>
@@ -201,7 +204,7 @@
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
             <a class="dropdown-item" href="#">Profil</a>
             <a class="dropdown-item" href="#">Einstellungen</a>
-            <a class="dropdown-item" href="Rechteverwaltung.html">Rechteverwaltung</a>
+            <a class="dropdown-item" href="rechteverwaltung.html">Rechteverwaltung</a>
             <a class="dropdown-item" href="#">Abmelden</a>
         </div>
     </div>

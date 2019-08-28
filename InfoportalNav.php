@@ -13,68 +13,342 @@
 </div>
 
 
-<div class="container-fluid" id="info-metanav">
 
-    <div class="container">
+<div class="container" id="info-nav">
 
-        <div class="row row-border">
-            <div class="col-xl-3 col-md-6 col-12 no-pad">
-                <a class="card no-border" id="meta1" href="UeberUns.php">
-                    <i class="z-high sc-icon icon-schulcampus"></i>
-                    <div class="card-body z-high">
-                        <h5 class="card-title">Über uns</h5>
+    <div class="row">
+        <div class="col-12 p-0">
+            <nav class="navbar navbar-expand-lg">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="sc-icon icon-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
                         
+                        <li class="nav-item dropdown megamenu-li">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fächer</a>
+                            <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis,
+                                            facilis eligendi sunt, culpa autem harum porro earum.</p>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown megamenu-li">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Themen</a>
+                            <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-4">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/250x150/?sig=1" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/250x150/?sig=2" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="https://source.unsplash.com/250x150/?sig=3" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-5">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam impedit itaque minus
+                                            distinctio possimus reiciendis et repellat. Voluptate, temporibus veniam et praesentium
+                                            alias, maxime repudiandae aliquid, natus omnis animi iste!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown megamenu-li">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Werkzeuge</a>
+                            <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown megamenu-li">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Konzepte</a>
+                            <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis,
+                                            facilis eligendi sunt, culpa autem harum porro earum.</p>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown megamenu-li">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tutorials</a>
+                            <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis,
+                                            facilis eligendi sunt, culpa autem harum porro earum.</p>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis,
+                                            facilis eligendi sunt, culpa autem harum porro earum.</p>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">
+                                    </div>
+                                </div>
 
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-3 col-md-6 col-12 no-pad">
-                <a class="card no-border active" id="meta2" href="Anwendungen.php">
-                    <i class="z-high sc-icon icon-cog-alt"></i>
-                    <div class="card-body z-high">
-                        <h5 class="card-title">Anwenungen</h5>
-                        
-
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-3 col-md-6 col-12 no-pad">
-                <a class="card no-border" id="meta3" href="Aktuelles.php">
-                    <i class="z-high sc-icon icon-paste"></i>
-                    <div class="card-body z-high">
-                        <h5 class="card-title">Aktuelles</h5>
-                        
-
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-3 col-md-6 col-12 no-pad">
-                <a class="card no-border" id="meta4" href="Service.php">
-                    <i class="z-high sc-icon icon-help-circled"></i>
-                    <div class="card-body z-high">
-                        <h5 class="card-title">Service</h5>
-                        
-
-                    </div>
-                </a>
-            </div>
 
 
-        </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown megamenu-li">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
+                            <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <h5 class="text-uppercase">Datenschutz</h5>
+                                        <a class="dropdown-item" href="#">Rechtliche Grundlagen</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Urheberrecht</h5>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Fortbildung</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis,
+                                            facilis eligendi sunt, culpa autem harum porro earum.</p>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                    <h5 class="text-uppercase">Links</h5>
+                                        <img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
 
-        <div class="pagesearch-field">
 
-            <div class="input-group">
-                <input class="form-control border-right-0" type="search" value="" id="" placeholder="Suchbegriff">
-                <span class="input-group-append">
-                    <button class="btn btn-search border-left-0" type="button">
-                        <i class="sc-icon icon-search"></i>
-                    </button>
-                </span>
-            </div>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 
+
+
+
+    <div class="pagesearch" id="pagesearch">
+        <div class="accordion small">
+            <div class="card card-blue">
+                <div class="card-header card-header-blue" id="v1">
+                    <div class="pagesearch-field">
+
+                        <div class="input-group">
+                            <input class="form-control" type="search" value="" id="" placeholder="Suchbegriff">
+                            <span class="input-group-append">
+                                <button class="btn btn-search" type="button">
+                                    <i class="sc-icon icon-search"></i>
+                                </button>
+                            </span>
+                        </div>
+
+                        <button class="btn btn-link btn-link-blue dropdown-toggle collapsed" data-toggle="collapse" data-target="#c1" aria-expanded="true"
+                            aria-controls="c1">
+                            Erweiterte Suche
+                        </button>
+                    </div>
+                </div>
+                <div id="c1" class="collapse" aria-labelledby="v1">
+                    <div class="card-body pagesearch-filter">
+
+                        <form>
+                            <div class="form-row">
+                                <div class="col-auto">
+                                    <div class="select">
+                                        <select name="slct" id="slct1">
+                                            <option class="spe">Zielgruppe</option>
+                                            <option value="1">Schüler</option>
+                                            <option value="2">Lehrer</option>
+                                            <option value="3">Administratoren</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+
+                                    <div class="select">
+                                        <select name="slct" id="slct2">
+                                            <option>Inhaltliche Kategorie</option>
+                                            <option value="1">Moodle</option>
+                                            <option value="2">Mediathek</option>
+                                            <option value="3">Curriculum</option>
+                                            <option value="3">BNV</option>
+                                            <option value="3">Unterrichtsideen</option>
+                                            <option value="3">Web-Werkzeuge</option>
+                                            <option value="3">...Sonstiges</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+
+                                    <div class="select">
+                                        <select name="slct" id="slct3">
+                                            <option>Fächer</option>
+                                            <option value="1">Mathematik</option>
+                                            <option value="2">Deutsch</option>
+                                            <option value="3">Chemie</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+
+                                    <div class="">
+                                        <select name="slct" id="slct4" multiple="multiple">
+                                            <option>Themen</option>
+                                            <option value="1">Pure CSS</option>
+                                            <option value="2">No JS</option>
+                                            <option value="3">Nice!</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+
+                                    <div class="select">
+                                        <select name="slct" id="slct5">
+                                            <option>Sortieren nach...</option>
+                                            <option value="1">Beliebtheit</option>
+                                            <option value="2">Neuigkeiten</option>
+                                            <option value="3">Personspezifisch</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                        </form>
+
+
+                        <button type="submit" class="btn btn-blue">Suchen</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
