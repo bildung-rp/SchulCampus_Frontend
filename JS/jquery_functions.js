@@ -10,9 +10,10 @@ $(document).ready(function () {
 
 
 
-  
+    $('select').selectpicker();
 
-
+    $(".dropdown-toggle").removeClass("special");
+    
 
     function update() {
 
@@ -61,10 +62,37 @@ $(document).ready(function () {
     
         countMediaElements()
     
+
+
+
+        
+            
+                
+        
+
     
-    
-    
+
+        
+
     };
+
+
+    //------------Hover-Effekt MegaMenü------//
+    $().ready(function(){
+        $(".megamenu").hover(function(){
+            $(this).closest(".megamenu-li").css("background-color", "#0583C9");
+        
+        },
+            function(){$(this).closest(".megamenu-li").css("background-color", "transparent");});
+    });
+
+    
+    
+
+
+
+
+
 
 
 
@@ -368,12 +396,6 @@ function countMediaElements() {
 };
 
 
-//Filter - Select-Felder 
-$(function () {
-    $('#slct4').multipleSelect({
-        width: 150
-    })
-  })
 
 
 

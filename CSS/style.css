@@ -334,6 +334,12 @@ dt::before {
     display: none;
 }
 
+/*wenn beim Hover das DD geöffnet werden soll*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
 
 
 .dropdown-menu {
@@ -546,7 +552,7 @@ dt::before {
 }
 
 
-/*Select-Feld*/
+
 
 
 
@@ -1406,11 +1412,6 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     width: 100%;
 }
 
-.pagesearch-filter span {
-    display:block;
-    padding-left:30px;
-    padding-right:15px;
-}
 .pagesearch-filter button span {
     padding-left:5px;
     padding-right:5px;
@@ -1478,69 +1479,71 @@ select {
     border: 0 !important;
     background: #00B2F9;
     background-image: none;
-  }
-  /* Custom Select */
-  .select {
-    position: relative;
-    display: block;
-    width: 180px;
-    height: 3em;
-    line-height: 3;
-    background: #00B2F9;
-    overflow: hidden;
-    border-radius: .25em;
-    border: 1px solid #99E0FD;
-  }
-  select {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0 0 0 .5em;
-    color: #2F3A48;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  select::-ms-expand {
-    display: none;
-  }
-  /* Arrow */
-  .select::after {
-    font-family:'SCicons';
-    content: "\f107";
-    font-size: 20px;
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    pointer-events: none;
-  }
-  /* Transition */
-  .select:hover::after {
-    color: #fff;
-  }
-  .select::after {
-    -webkit-transition: .25s all ease;
-    transition: .25s all ease;
-  }
-  option {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    background: #00B2F9;
-    background-image: none;
-    font-family: 'Open Sans', Arial, sans-serif !important;
-    border-radius: 3px;
-  }
-  .spe {
-      background: #99E0FD;
-  }
-  option:hover {
-      background-color: orange;
-  }
+}
+  
+.bootstrap-select {
+    padding-bottom: 10px;
+}
 
+.pagesearch-filter .dropdown-item.active {
+    background-color: transparent;
+    color: #2F3A48;
+}
+
+.bootstrap-select.show-tick .dropdown-menu li a span.text {
+    margin-right: 0;
+}
+
+select .dropdown-item::before {
+    display: inline-table;
+    padding: 0;
+    font-family: 'SCicons';
+    content: "\f114";
+    border: none;
+}
+
+.dropup .dropdown-toggle::after {
+    border:none;
+}
+
+.bootstrap-select .dropdown-item::before {
+    content: "\e82d";
+}
+
+.bootstrap-select .bs-ok-default::after {
+    color: #00B2F9;
+}
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+    outline: none !important;
+}
+
+.btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show > .btn-light.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.pagesearch-filter .dropdown .btn {
+    border: 1px solid #99E0FD;
+}
+
+.filter-option-inner-inner {
+    font-size: 14px;
+}
+
+.bootstrap-select .dropdown-item {
+    font-size: 14px;
+}
+
+.btn-light {
+    background-color: #00B2F9;
+    
+}
+
+
+.btn-submit {
+    position: absolute;
+    right: 20px;
+}
 
 
 /************ Infoportal ****************/
@@ -1602,9 +1605,7 @@ select {
     content: "\f101";
     border:none;
 }    
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
+
 
 #info-nav .pagesearch .card-header {
     padding: 0 10px;
@@ -1712,6 +1713,10 @@ select {
     background-color: #737C83;
 }
 
+#info-nav .nav-link.active {
+    background-color: #00b2f9;
+}
+
 .info-teaser-image {
     width: 100%;
     height: 150px;
@@ -1735,10 +1740,57 @@ select {
     margin-left: -8px;
 } 
 
+.title-page {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+
 .infopage-image {
     margin: 30px 0;
     width: 100%;
     height: auto;
+    padding-top: 19px;
+}
+
+.ext-links {
+    border-top: 1px solid lightgray;
+    padding-top: 15px;
+}
+
+.ext-links h1, .ext-links h2, .ext-links h3, .ext-links h4, .ext-links h5 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.ext-links ul {
+    margin: 15px 0;
+}
+
+.ext-links li {
+    margin: 10px 0;
+}
+
+.next-link {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.next-link:before {
+    display: inline-table;
+    padding: 0 5px 0 5px;
+    font-family:'SCicons';
+    content: "\f101";
+    border:none;
+}
+
+.btn-back {
+
+}
+
+.btn-back:hover {
+
 }
 
 

@@ -44,6 +44,7 @@
 .icon-tag:before { content: '\e82a'; } /* '' */
 .icon-doc-text-inv-1:before { content: '\e82b'; } /* '' */
 .icon-folder:before { content: '\e82c'; } /* '' */
+.icon-right-dir:before { content: '\e82d'; } /* '' */
 .icon-book-1:before { content: '\e82e'; } /* '' */
 .icon-block:before { content: '\e82f'; } /* '' */
 .icon-zoom-in:before { content: '\e830'; } /* '' */
@@ -62,6 +63,7 @@
 .icon-file-alt-solid:before { content: '\e83d'; } /* '' */
 .icon-file-medical-solid:before { content: '\e83e'; } /* '' */
 .icon-grip-lines-vertical-solid:before { content: '\e83f'; } /* '' */
+.icon-left-dir:before { content: '\e840'; } /* '' */
 .icon-user-circle-solid:before { content: '\e841'; } /* '' */
 .icon-user-cog-solid:before { content: '\e842'; } /* '' */
 .icon-user-friends-solid:before { content: '\e843'; } /* '' */

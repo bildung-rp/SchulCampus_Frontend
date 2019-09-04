@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.css">
+
+    <link rel="stylesheet" href="dist/css/bootstrap-select.min.css">
+    
 
     <link rel="stylesheet" href="CSS/scincons.css">
     <link rel="stylesheet" href="CSS/animation.css">
@@ -22,12 +25,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.js"></script>
+    <script src="dist/js/bootstrap-select.min.js"></script>
+
+    
 
     <script src="JS/jquery_functions.js"></script>
+
+
+
+
 </head>
 
 <body>
+
+
+
+
     <header class="container-fluid" id="header">
         <div class="row">
             <div class="col-xl-2 col-3">

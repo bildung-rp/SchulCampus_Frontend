@@ -40,7 +40,7 @@
                                     <div class="form-row">
                                     <div class="col-auto">
                                         
-                                            <select class="custom-select" id="inlineForm1">
+                                    <select class="selectpicker">
                                                 <option selected>Fach wählen</option>
                                                 <option value="1">Mathematik</option>
                                                 <option value="2">Naturwissenschaft</option>
@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="col-auto">
                                         
-                                            <select class="custom-select" id="inlineForm2">
+                                    <select class="selectpicker">
                                                 <option selected>Klassenstufe wählen</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -58,7 +58,7 @@
                                     </div>
                                     <div class="col-auto">
                                         
-                                            <select class="custom-select" id="inlineForm3">
+                                    <select class="selectpicker">
                                                 <option selected>Schulart wählen</option>
                                                 <option value="1">Realschule</option>
                                                 <option value="2">Grundschule</option>
@@ -68,7 +68,7 @@
                                     </div>
                                     <div class="col-auto">
                                         
-                                            <select class="custom-select" id="inlineForm4">
+                                    <select class="selectpicker">
                                                 <option selected>Themengebiet wählen</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="col-auto">
                                         
-                                            <select class="custom-select" id="inlineForm5">
+                                    <select class="selectpicker">
                                                 <option selected>Sammlung wählen</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -86,7 +86,7 @@
                                     </div>
                                     <div class="col-auto">
                                         
-                                            <select class="custom-select" id="inlineForm6">
+                                    <select class="selectpicker">
                                                 <option selected>Medium wählen</option>
                                                 <option value="1">Arbeitsblatt</option>
                                                 <option value="2">Film</option>
@@ -97,7 +97,7 @@
 
                      
 
-                                <button type="submit" class="btn btn-blue">Suchen</button>
+                                <button type="submit" class="btn btn-blue btn-submit">Suchen</button>
 
                         </div>
                     </div>

@@ -4,12 +4,13 @@
 
 <main class="container info-page mb-60" id="main">
 
-    
-        <div class="col-md-8">
+
+        
+        <div class="col-md-8 col-sm-12">
 
 <div class="readingtext">
 
-    <h2>Überschrift der Seite</h2>
+    <h2 class="title-page">Überschrift der Seite</h2>
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
         sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
@@ -48,8 +49,11 @@
         </p>
 
 </div>
+<div class="">
+    <button type="button" class="btn btn-back">Zurück</button>
 </div>
-<div class="col-md-4">
+</div>
+<div class="col-md-4 col-sm-12">
 
 <div class="infopage-image">
     <img class="infopage-image" src="Images/tafel.jpg" alt="tafel">
@@ -58,24 +62,31 @@
 
 
 <div class="ext-links">
+    <h3>Weiterführende Links</h3>
     <ul>
         <li>
-            <a href="">LInks</a>
+            <a href="" class="next-link">LInks</a>
         </li>
         <li>
-            <a href="">LInks</a>
+            <a href="" class="next-link">LInks</a>
         </li>
         <li>
-            <a href="">LInks</a>
+            <a href="" class="next-link">LInks</a>
         </li>
         <li>
-            <a href="">LInks</a>
+            <a href="" class="next-link">LInks</a>
         </li>
     </ul>
 </div>
 
 
 </div>
+
+
+
+
+
+
 
 </main>
 
