@@ -206,7 +206,7 @@
                                     <th>Benutzername</th>
                                     <th>Email</th>
                                     <th>Erstellt</th>
-                                    <th>Gruppe</th>
+                                    
                                     <th>Rolle</th>
                                     <th>Status</th>
                                     <th>Aktion</th>
@@ -224,7 +224,7 @@
                                         <td>bf634</td>
                                         <td>john@example.com</td>
                                         <td>16.07.2018</td>
-                                        <td>Klasse 7d</td>
+                                        
                                         <td>Lehrkraft</td>
                                         <td class="sc-icon icon-circle status status-green"></td>
                                         <td>
@@ -242,7 +242,7 @@
                                         <td></td>
                                         <td>mary@example.com</td>
                                         <td>11.07.2018</td>
-                                        <td>Klasse 7e</td>
+                                        
                                         <td>Lehrkraft</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>
@@ -260,7 +260,7 @@
                                         <td>ghtt785</td>
                                         <td>juhghdy@example.com</td>
                                         <td>11.08.2018</td>
-                                        <td>Klasse 7e</td>
+                                        
                                         <td>Lehrkraft</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>
@@ -278,7 +278,7 @@
                                         <td>ghtt785</td>
                                         <td>juhghdy@example.com</td>
                                         <td>11.08.2018</td>
-                                        <td>Klasse 7e</td>
+                                        
                                         <td>Lehrkraft</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>
@@ -296,7 +296,7 @@
                                         <td>maxmuster1</td>
                                         <td>maxmuster@muster.de</td>
                                         <td>10.02.2019</td>
-                                        <td>Klasse 5e</td>
+                                        
                                         <td>Schüler</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>
@@ -314,7 +314,7 @@
                                         <td>maxmuster1</td>
                                         <td>maxmuster@muster.de</td>
                                         <td>10.02.2019</td>
-                                        <td>Klasse 5e</td>
+                                        
                                         <td>Schüler</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>
@@ -332,7 +332,7 @@
                                         <td>maxmuster1</td>
                                         <td>maxmuster@muster.de</td>
                                         <td>10.02.2019</td>
-                                        <td>Klasse 5e</td>
+                                        
                                         <td>Schüler</td>
                                         <td class="sc-icon icon-circle status status-yellow"></td>
                                         <td>
@@ -350,7 +350,7 @@
                                         <td>maxmuster1</td>
                                         <td>maxmuster@muster.de</td>
                                         <td>10.02.2019</td>
-                                        <td>Klasse 5e</td>
+                                        
                                         <td>Schüler</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>
@@ -368,7 +368,7 @@
                                         <td>maxmuster1</td>
                                         <td>maxmuster@muster.de</td>
                                         <td>10.02.2019</td>
-                                        <td>Klasse 5e</td>
+                                        
                                         <td>Schüler</td>
                                         <td class="sc-icon icon-circle status status-red"></td>
                                         <td>
@@ -386,7 +386,7 @@
                                         <td>maxmuster1</td>
                                         <td>maxmuster@muster.de</td>
                                         <td>10.02.2019</td>
-                                        <td>Klasse 5e</td>
+                                        
                                         <td>Schüler</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>
@@ -404,7 +404,7 @@
                                         <td>maxmuster1</td>
                                         <td>maxmuster@muster.de</td>
                                         <td>10.02.2019</td>
-                                        <td>Klasse 5e</td>
+                                        
                                         <td>Schüler</td>
                                         <td class="sc-icon icon-circle status"></td>
                                         <td>

@@ -64,7 +64,6 @@ $(document).ready(function () {
     
 
 
-
         
             
                 
@@ -77,20 +76,36 @@ $(document).ready(function () {
     };
 
 
-    //------------Hover-Effekt MegaMenü------//
+    //---------------Select-Felder Bezeichnungen festlegen-------//
+    $(document).ready(function(){
+        //$('.filter-option-inner-inner').html('ausgewählen'); //
+        $('.actions-btn.bs-select-all').html('alle'); 
+        $('.actions-btn.bs-deselect-all').html('entfernen'); 
+    });
+
+
+    //------------Hover-Effekt - Focus MegaMenü------//
     $().ready(function(){
         $(".megamenu").hover(function(){
-            $(this).closest(".megamenu-li").css("background-color", "#0583C9");
-        
+            $(this).closest(".megamenu-li").css("background-color", "#009cee");
+            
         },
             function(){$(this).closest(".megamenu-li").css("background-color", "transparent");});
     });
 
+    $().ready(function(){
+        $(".megamenu").focus(function(){
+            $(this).closest(".megamenu-li").css("background-color", "#009cee");
+            
+        },
+            function(){$(this).closest(".megamenu-li").css("background-color", "transparent");});
+    });
     
+
+
+   
+       
     
-
-
-
 
 
 
@@ -445,7 +460,7 @@ $(document).ready(function () {
 });
 
 
-//TODO wenn in desktor Kachel auf ... dann resize
+//TODO wenn in desktop Kachel auf ... dann resize
 
 $(document).ready(function () {
 
@@ -604,7 +619,7 @@ function toggleBlueMobile(tempId) {
 
 };
 
-
+// Intro
 $(document).ready(function () {
     $(".curtain__panel").click(function () {
         $(".curtain__panel--right").css("transform", "translateX(100%)");

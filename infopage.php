@@ -49,10 +49,15 @@
         </p>
 
 </div>
-<div class="">
-    <button type="button" class="btn btn-back">Zurück</button>
+    <div class="">
+        <button type="button" class="btn btn-back">Zurück</button>
+    </div>
 </div>
-</div>
+
+
+
+
+
 <div class="col-md-4 col-sm-12">
 
 <div class="infopage-image">

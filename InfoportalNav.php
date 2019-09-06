@@ -283,10 +283,11 @@
                                 <div class="col-auto">
                                     
                                     <select class="selectpicker">
-                                            <option class="spe">Zielgruppe</option>
+                                    <optgroup label="Zielgruppe">
                                             <option value="1">Schüler</option>
                                             <option value="2">Lehrer</option>
                                             <option value="3">Administratoren</option>
+                                            </optgroup>
                                         </select>
                                     
                                 </div>
@@ -294,7 +295,7 @@
 
                                     
                                     <select class="selectpicker">
-                                            <option>Inhaltliche Kategorie</option>
+                                        <optgroup label="Inhaltliche Kategorie">
                                             <option value="1">Moodle</option>
                                             <option value="2">Mediathek</option>
                                             <option value="3">Curriculum</option>
@@ -302,7 +303,8 @@
                                             <option value="5">Unterrichtsideen</option>
                                             <option value="6">Web-Werkzeuge</option>
                                             <option value="7">...Sonstiges</option>
-                                        </select>
+                                        </optgroup>
+                                    </select>
                                     
                                 </div>
                                 <div class="col-auto">
@@ -323,7 +325,9 @@
                                             <option>Themen</option>
                                             <option value="1">Pure CSS</option>
                                             <option value="2">No JS</option>
-                                            <option value="3">Nice!</option>
+                                            <option value="3">Nice</option>
+                                            <option value="2">Schulcampus</option>
+                                            <option value="3">Mediathek</option>
                                         </select>
                                     
                                 </div>
