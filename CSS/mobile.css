@@ -404,6 +404,9 @@
         
     }
 
+    input[type="text"] {
+        height: 34px;
+    }
 
 
 }
@@ -494,6 +497,10 @@
     }
 
     .breadcrumb {
+        display: none;
+    }
+    
+    .form-control::placeholder {
         display: none;
     }
 

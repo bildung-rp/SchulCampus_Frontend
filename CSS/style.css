@@ -202,6 +202,12 @@ a.btn {
     background-color: #0583C9;
 }
 
+.form-group .btn {
+    float: right;
+    margin-right: 100px;
+}
+
+
 
 /* Headings */
 h1, h2, h3, h4 .h1, .h2, .h3, .h4 {
@@ -656,9 +662,12 @@ input[type=text] {
     border-radius: 3px;
 }
 
+
+
 .form-control:focus {
     border-bottom: 2px solid #009CEE;
     box-shadow: none;
+    border-radius: 0px; /*wenn man INPUT als Linie umsetzt*/
 }
 .form-group, .form-control{
     color:#2F3A48;
@@ -683,6 +692,11 @@ input[type=text].small{
     align-items: center;
 }
 
+.form-wrapper .col-lg-2 {
+    padding-left: 0px;
+    margin-left: -15px;
+} 
+
 .profil-image {
     padding-left: 100px;
 }
@@ -690,6 +704,27 @@ input[type=text].small{
 img.round {
     border-radius: 50%;
 }
+
+.form-group .btn-blue::before {
+    display: inline-block;
+    padding: 0 8px 0 0;
+    font-family: 'SCicons';
+    color:#fff;
+    content: "\e844";
+}
+.form-group  .btn-blue:hover.btn-blue::before {
+    color: #2F3A48;
+}
+
+.pagesearch-filter .dropdown-item::before {
+    display: inline-table;
+    padding: 0 5px 0 5px;
+    font-family: 'SCicons';
+    content: "\f101";
+    border: none;
+}
+
+
 
 /* Suchfeld */
 .form-control::placeholder{
@@ -756,9 +791,7 @@ tbody tr:hover {
 
 
 
-tbody tr:hover .icon-circle {
-    color: #505B64;
-}
+
 
 .status-red {
     color:#E94B4B;
@@ -792,6 +825,10 @@ tbody tr:hover .icon-circle {
     z-index: 1;
     border-radius: 3px;
     background-color: #fff;
+}
+
+tbody tr:hover .icon-circle {
+    color: inherit;
 }
 
 .table .icon-pencil, .table .icon-ellipsis {
@@ -1393,7 +1430,8 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
 }
 
 .pagesearch .btn-link-blue {
-    width:220px;
+    width:auto;
+    white-space: nowrap;
 }
 
 .pagesearch .btn-link:after {
@@ -1508,7 +1546,7 @@ select .dropdown-item::before {
 }
 
 .bootstrap-select .dropdown-item::before {
-    content: "\e82d";
+    /*content: "\e82d";*/
 }
 
 .bootstrap-select .bs-ok-default::after {
@@ -1536,6 +1574,7 @@ select .dropdown-item::before {
 }
 
 .bootstrap-select .dropdown-item:hover {
+    color: #2F3A48;
     background-color: #E3E3E5;
 }
 
@@ -1805,6 +1844,22 @@ select .dropdown-item::before {
 }
 
 
+.box-content-full h2 {
+    font-size: 21px;
+} 
+
+.box-content-full h4 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.bluebox .accordion {
+    width: 420px;
+}
+
+.box-content-full .accordion.small .card-body {
+    font-size: 16px !important;
+}
 
 
 
