@@ -6,8 +6,21 @@ $(document).ready(function () {
 
         update();
         sidebarView()
+
+        if ($(window).width() > 975) {
+            //$(".bluebox").css("height", "465");
+        }
+
+
     });
 
+
+
+    var cardheight = 0
+
+    
+    
+    
 
 
     $('select').selectpicker();
@@ -63,7 +76,7 @@ $(document).ready(function () {
         countMediaElements()
     
 
-
+        
         
             
                 
@@ -116,13 +129,12 @@ $(document).ready(function () {
     function sidebarView() {
 
         if ($(window).width() < 992) {
-            $("#sidebar").css("min-width", "70px");
-            $('#sidebar').css("display", "none");
+            
 
             $(".sidebar .dropdown-toggle").addClass("special");
-            $(".btn-sidebar").css("align-items", "start");
-            $(".icon-menu").css("display", "block");
-            $(".icon-grip-lines-vertical-solid").css("display", "none");
+            $(".btn-sidebar").css("align-items", "center");
+            
+            $(".icon-grip-lines-vertical-solid").css("display", "block");
             $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
             $(".sidebar .card-body").css("display", "none");
             $(".sidebar span").css("display", "none");
@@ -134,7 +146,7 @@ $(document).ready(function () {
             $('#sidebar').css("display", "block");
 
             $(".btn-sidebar").css("align-items", "center");
-            $(".icon-menu").css("display", "none");
+            
             $(".icon-grip-lines-vertical-solid").css("display", "block");
 
             $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
@@ -148,7 +160,7 @@ $(document).ready(function () {
         if($("#sidebar").css("min-width") == "300px") {
             $('#sidebar').css("display", "block");
             $(".btn-sidebar").css("align-items", "center");
-            $(".icon-menu").css("display", "none");
+            
             $(".icon-grip-lines-vertical-solid").css("display", "block");
 
             $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
@@ -159,7 +171,7 @@ $(document).ready(function () {
         } else {
             
             $(".sidebar .dropdown-toggle").addClass("special");
-            $(".btn-sidebar").css("align-items", "start");
+            $(".btn-sidebar").css("align-items", "center");
             $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
             $(".sidebar .card-body").css("display", "none");
             $(".sidebar span").css("display", "none");
@@ -175,17 +187,17 @@ $(document).ready(function () {
 
             if($("#sidebar").css("min-width") == "300px") {
 
-                $(".sidebar").css("display", "none");
+                
                 $('.sidebar').css("min-width", "70px");
-                $(".icon-menu").css("display", "block");
-                $(".icon-grip-lines-vertical-solid").css("display", "none");
+                
+                
 
                 $(".dropdown-toggle").removeClass("special");
                 
             } else {
                 $('#sidebar').css("min-width", "300px");
                 $('#sidebar').css("display", "block");
-                $(".icon-menu").css("display", "none");
+                
                 $(".icon-grip-lines-vertical-solid").css("display", "block");
                 $(".btn-sidebar").css("align-items", "center");
 
@@ -281,12 +293,20 @@ $(document).ready(function () {
 
     //--------Header Dropdown--------//
     $("#topnav.dropdown .btn").click(function (e) {
+        
+        if($("#usernav-mobile .dropdown-menu").css("display") == "block") {
+            $("#usernav-mobile .dropdown-menu").css("display", "none");
+        }
+        
         if ($(window).width() < 992) {
 
             $('#topnav-mobile.dropdown-menu-full .dropdown-menu').toggle();
         } else {
             $("#topnav-mobile.dropdown-menu-full").css("display", "none");
         };
+
+        
+
     })
     $('#topnav.dropdown .dropdown-menu-full').focusout(function (e) {
         $('#topnav-mobile.dropdown-menu-full .dropdown-menu').hide();
@@ -295,12 +315,20 @@ $(document).ready(function () {
 
 
     $("#usernav.dropdown .btn").click(function (f) {
+
+        if($("#topnav-mobile .dropdown-menu").css("display") == "block") {
+            $("#topnav-mobile .dropdown-menu").css("display", "none");
+        }
+
         if ($(window).width() < 992) {
 
             $('#usernav-mobile.dropdown-menu-full .dropdown-menu').toggle();
         } else {
             $("#usernav-mobile.dropdown-menu-full").css("display", "none");
         };
+
+        
+
     })
     $('#usernav.dropdown .btn').focusout(function (f) {
         $('#usernav-mobile.dropdown-menu-full .dropdown-menu').hide();
@@ -321,7 +349,7 @@ $(document).ready(function () {
 
         console.log((posX) + ' , ' + (posY));
 
-        var y = posY + 30
+        var y = posY + 5
         var x = posX - 30
 
         $(".status-change").css("top", y + "px");
@@ -347,7 +375,36 @@ $(document).ready(function () {
 
     });
 
-    
+
+    //------------Höhe der Mobilen Ansicht - Bluebox-innen ändern----//
+
+    /* var actheight = $(".box-content-full").height()
+    var mainheight = 0
+    console.log(actheight)
+    $('.box-content-full .card-header').click(function () {
+        
+        actheight = actheight + 30
+        console.log(actheight)
+        mainheight = mainheight + 60
+
+        $(".box-content-full").css("height", actheight);
+        $("main").css("padding-bottom", mainheight);
+
+    });
+    $('.bluebox-lg').click(function () {
+        
+        actheight = 210
+        console.log(actheight)
+        mainheight = 0
+
+        $(".box-content-full").css("height", actheight);
+        $("main").css("padding-bottom", mainheight);
+
+    }); */
+
+
+
+
 
 
    //-----------Blaue Kacheln aufklappen---//
@@ -362,11 +419,11 @@ $(document).ready(function () {
         toggleBlueMobile(blueSectionId);
 
         if ($("#bc2.box-content-full").css("display") == "block") {
-            $(".bluebox").css("height", "520px");
+            $(".bluebox").css("height", "370px");
         } else if ($("#bc1.box-content-full").css("display") == "block") {
-            $(".bluebox").css("height", "510px")
+            $(".bluebox").css("height", "370px")
         } else {
-            $(".bluebox").css("height", "500")
+            $(".bluebox").css("height", "490")
         }
     });
 
@@ -543,6 +600,13 @@ function toggleBlueMobile(tempId) {
                 $("#blue2").css("display", "none");
                 $("#blue3").css("display", "none");
                 $(".arrowblue").css("left", "15%");
+
+
+                cardheight = $(".box-content-full .card").height();
+                console.log(cardheight + " cardheight");
+                var acclenght = $(".box-content-full .accodion").size;
+                console.log(acclenght + " länge")
+
 
             } else if ($("#blue1").css("display") == "block") {
                 $("#bc1.box-content-full").css("display", "none");

@@ -5,9 +5,7 @@
 
     /*Header-Elemente*/
 
-    .icon-schulcampus::before{
-        margin-left: 5px;
-    }    
+        
 
     .dropdown-item{
         height: 50px; /*Zeilenhöhe soll 50px sein - TODO*/
@@ -68,6 +66,10 @@
 
 /*MobileAnsicht*/
 @media screen and (max-width: 992px) {   
+
+    #container-blue {
+        width: 100%;
+    }
 
     #topnav button, .dd-right button{
         width:auto;
@@ -148,7 +150,7 @@
 
     #teaser.container{
         width:540px;
-        height: 150px;
+        height: 180px;
     }
 
 
@@ -171,7 +173,7 @@
     .box-content-full {
         display:none;
         background-color: #00B2F9;
-        height:210px;
+        height: 132px;
         width: calc(100% - 20px);
         margin-left: 10px;
 		margin-bottom: 10px;
@@ -185,7 +187,11 @@
     }
 
     .box-content {
-        width: 265px;
+        width: 100%;
+    }
+
+    .bluebox .accordion {
+        width: 100%;
     }
 
     .arrowblue{
@@ -206,10 +212,9 @@
     #blue1, #blue2, #blue3, #blue4, #blue5, #blue6 {
         display: none;
         position: absolute;
-        top: 15px;
-        left: 30px;
+        top: 0;
+        left: 0;
         padding-left: 15px;
-    
     }
 
     .bluebox :nth-child(1) { order: -1; }
@@ -256,25 +261,17 @@
 
 
     .sidebar {
-        display: none;
+        display: block;
         min-width: 70px
     }
 
-    .btn-sidebar {
-        align-items: start;
-        cursor: col-resize;
-    }
+    
     .btn-sidebar .btn:not(:disabled):not(.disabled) {
         cursor: pointer;
     }
 
-    .btn-sidebar .icon-menu {
-        display: block;
-    }
+    
 
-    .btn-sidebar .icon-grip-lines-vertical-solid {
-        display: none;
-    }
 
     .nav-tabs .nav-link {
         font-size: 19px;
@@ -287,6 +284,15 @@
     form label {
         display:none;
     }
+
+    .form-group .btn {
+        margin-right: 32%;
+    }
+
+    .box-content .card {
+        padding:0
+    }
+
 
 
 }    
@@ -316,6 +322,12 @@
         display: none;
     }
 
+    .form-group .btn {
+        margin-right: 15%;
+    }
+
+    
+
 }
 
  
@@ -332,7 +344,11 @@
         padding-left: 0;
     }
 
+    .bluebox .col-4{
+        justify-content: flex-start;
+    }
 
+    
 
     .sc-icon-pills {
         font-size: 20px;
@@ -348,44 +364,43 @@
         font-size: 60%;
     }
 
-    .nav-link {
+    /* .nav-link {
         padding: .3rem 0.75rem;
-    }
+    } */
 
     #topnav-mobile .dropdown-item {
         padding-left: 20%;
     }
 
     #teaser.container {
-        width:396px;
-        height:170px;
+        width:100%;
+        height: 180px;
     }
 
     .bluebox {
-        height: 300px;
+        height: 270px;
     }
 
     .bluebox .col-4 {
-        margin:0 !important;
-        padding: 10px;
-        height: auto;
+        margin: 0;
+        padding: 0 0 5px 0;
     }
 
     .bluebox section {
-        width: 128px;
-        min-height: 128px;
+        width: 140px;
+        min-height: 140px;
         margin: 0;
     }
     
     .bluebox-lg{
-        width:128px;
-        height:128px; 
+        width:140px;
+        height:140px; 
     }
 
     .box-content-full {
         width: 100%;
-        margin-left: 2px;
-        margin-right: 2px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .nav-tabs {
@@ -407,6 +422,8 @@
     input[type="text"] {
         height: 34px;
     }
+
+    
 
 
 }
@@ -458,21 +475,25 @@
         height: 180px;
     }
 
+    .carousel-indicators {
+        margin-bottom: -40px;
+    }
+
     .bluebox{
         height:180px;
     }
 
 
     .bluebox section {
-        width: 76px;
-        min-height: 76px;
+        width: 100px;
+        min-height: 100px;
         margin: 5px 0;
     }
     
     .bluebox-lg{
         position:absolute;
-        width: 76px;
-        height: 76px; 
+        width: 100px;
+        height: 100px; 
     }
 
     .blue-icon-lg{
@@ -485,6 +506,12 @@
 
     .box-content-full {
         width: 100%;
+    }
+
+    .box-content-full h4 {
+        font-size: 15px;
+        margin: 15px 0; 
+        max-width: 238px;
     }
 
     #subheader {

@@ -49,7 +49,7 @@
 
 
 <main>
-    <div class="container">
+    <div class="container" id="container-blue">
         <div class="bluebox">
 
             <div class="col-4">
@@ -212,9 +212,9 @@
             <div class="box-content-full" id="bc1">
 
                 <div class="box-content" id="blue1">
-                    <h2>Meine Dateien</h2>
+                    
 
-                    <div class="accordion small">
+                    <div class="accordion">
 
                         <div class="card">
                             <div class="card-header" id="u1">
@@ -273,9 +273,9 @@
                 </div>
                 <div class="box-content" id="blue2"></div>
                 <div class="box-content" id="blue3">
-                    <h2>Moodle</h2>
+                    
 
-                    <div class="accordion small">
+                    <div class="accordion">
 
                         <div class="card">
                             <div class="card-header" id="v1">
@@ -437,9 +437,9 @@
             <div class="box-content-full" id="bc2">
 
                 <div class="box-content" id="blue4">
-                    <h2>Curriculum</h2>
+                    
 
-                    <div class="accordion small">
+                    <div class="accordion">
 
                         <div class="card">
                             <div class="card-header" id="x1">
