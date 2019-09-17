@@ -535,7 +535,8 @@ dt::before {
 }
   
 .btn-link-blue {
-    margin: 0 15px;
+    margin-right: 0;
+    float: right;
     color: #fff;
     font-weight:400;
 }
@@ -690,7 +691,7 @@ input[type=text].small{
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 .form-wrapper .col-lg-2 {
@@ -700,14 +701,48 @@ input[type=text].small{
 
 .profil-image {
     position: absolute;
-    right: 262px;
+    right: 270px;
+    width: 200px;
+    height: 200px;
+    padding-left: 20px;
 }
+
+.profil-image:hover .img-edit {
+    display: block;
+}
+
+.img-edit {
+    display:none;
+}
+
+.img-edit .icon-pencil::before, .img-edit .icon-trash::before {
+    font-size: 25px;
+    padding-right: 20px;
+}
+.img-edit .icon-pencil:hover, .img-edit .icon-trash:hover {
+    color: #009CEE;
+}
+
+
 
 img.round {
     border-radius: 50%;
 }
 
-.btn-blue::before {
+.markaction {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+
+}
+
+.markaction .btn {
+    font-weight: 400;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-blue::before, .btn::before {
     display: inline-block;
     padding: 0 8px 0 0;
     font-family: 'SCicons';
@@ -717,7 +752,7 @@ img.round {
 
 .btn-save {
     float: right;
-    margin: 30px 0;
+    margin: 30px 40px;
 }
 
 .btn-save.btn-blue::before {
@@ -729,11 +764,12 @@ img.round {
 }
 
 .btn-delete {
-    background-color: #E2293F;
+    background-color: rgb(197, 29, 48);
     color:#fff;
+    border: solid 1px #000;
 }
 
-.btn-delete.btn-blue::before {
+.btn-delete.btn::before {
     content: "\f1f8";
 }
 
@@ -741,9 +777,64 @@ img.round {
     content: "\e819";
 }
 
+.btn-role.btn-blue::before, btn-group.btn-blue::before {
+    content: "\e806";
+}
+
+.btn-password.btn-password::before {
+    content: "\e827";
+}
+
+.btn-unlock {
+    background-color: #44B687;
+    color:#fff;
+}
+
+.btn-lock {
+    background-color: #E94B4B;
+    color:#fff;
+}
+
+
+.btn-unlock.btn::before {
+    content: "\f13e";
+}
+
+.btn-lock.btn::before {
+    content: "\e81b";
+}
+
+.btn-assign.btn-blue::before {
+    content: "\e81d";
+}
+
+.btn-reject {
+    background-color: #EFB640;
+    color:rgb(96, 99, 105);
+}
+
+.btn-reject.btn::before {
+    content: "\f235";
+}
+
+
 .btn-blue:hover.btn-blue::before {
+    background-color: inherit;
     color: #2F3A48;
 }
+
+.row-assign {
+    margin: 30px 0;
+}
+
+.row-assign .btn {
+    margin-top: -1px;
+}
+
+.row-assign .dropdown select {
+    background: #E3E3E5;
+}
+
 
 .form-wrapper h4 {
     font-weight: 400;
@@ -772,6 +863,10 @@ img.round {
 .iconnav {
     display:flex;
     flex-direction: column;
+}
+
+.iconnav:first-child {
+    margin-top: 30px;
 }
 
 .iconnav .btn {
@@ -803,7 +898,8 @@ img.round {
 .form-control[type=search]:focus {
     color: #2F3A48;
     box-shadow: 0 0 0 0 #009CEE;
-    border-right:none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     box-shadow: none;
 }
   
@@ -818,6 +914,10 @@ img.round {
 
 .icon-search {
     font-size: 21px;
+}
+
+.icon-question-circle-regular.sc-icon::before {
+    margin-left: 25px;
 }
 
 
@@ -839,7 +939,7 @@ img.round {
 .table tbody {
     font-size:12px;
 }
-tbody tr:hover {
+tbody tr:hover :not(.status) {
     color:#009CEE;
     background-color:#F1F1F6;
 }
@@ -853,7 +953,7 @@ thead th:after {
 
 
 tbody tr:hover .icon-circle {
-    color: #505B64;
+    background-color:#F1F1F6;
 }
 
 .status-red {
@@ -899,18 +999,7 @@ tbody tr:hover .icon-pencil, tbody tr:hover .icon-trash {
     color: #009CEE;
 }
 
-.markaction {
-    display: flex;
 
-}
-
-.markaction .btn {
-    font-weight: 400;
-}
-
-.markaction .btn::before {
-    
-}
 
 
 
@@ -1282,8 +1371,12 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
     white-space: nowrap;
     flex-wrap: wrap;
     background-color: transparent;
-    border: none;
+    border: dotted 1px #99e0fd;
+    border-left: none;
+    border-right: none;
 }
+
+
 
 .box-content .sc-icon::before {
     font-size: 12px;
@@ -1686,7 +1779,7 @@ select .dropdown-item::before {
 
 .btn-submit {
     position: absolute;
-    right: 60px;
+    right: 30px;
 }
 
 
@@ -1961,6 +2054,16 @@ select .dropdown-item::before {
 }
 
 /*Modal-Fehlermeldung*/
+
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    pointer-events: none;
+}
+
+
 .modal-content-error {
     background-color: #E2293F;
   }
@@ -2002,15 +2105,34 @@ select .dropdown-item::before {
 
 /* ----------Tooltip----------*/
 .tooltip-inner {
-    background-color: #FF0000;
+    background-color: #EAF099;
 }
-.tooltip.right .tooltip-arrow {
-    border-right: 5px solid #FF0000;
-    background-color: #FF0000;
+.tooltip.bottom .tooltip-arrow {
+    border-right: 5px solid #EAF099;
+    background-color: #EAF099;
 }
-.tooltip {
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+   
+}
 
+.tooltip .arrow::before {
+    
 }
+
+.tooltip {
+    
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #2F3A48;
+    text-align: center;
+    background-color: #EAF099;
+    border-radius: 0.25rem;
+}
+
+
 
 
 

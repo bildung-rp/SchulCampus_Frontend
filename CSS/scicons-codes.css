@@ -38,6 +38,7 @@
 .icon-star:before { content: '\e824'; } /* '' */
 .icon-bookmark:before { content: '\e825'; } /* '' */
 .icon-help-circled:before { content: '\e826'; } /* '' */
+.icon-key:before { content: '\e827'; } /* '' */
 .icon-tag:before { content: '\e82a'; } /* '' */
 .icon-doc-text-inv-1:before { content: '\e82b'; } /* '' */
 .icon-folder:before { content: '\e82c'; } /* '' */
@@ -73,7 +74,9 @@
 .icon-indent-right-1:before { content: '\e856'; } /* '' */
 .icon-users-2:before { content: '\e85b'; } /* '' */
 .icon-users-3:before { content: '\e85c'; } /* '' */
+.icon-user-1:before { content: '\e85d'; } /* '' */
 .icon-usersetting:before { content: '\e866'; } /* '' */
+.icon-userhead:before { content: '\e867'; } /* '' */
 .icon-schulcampus:before { content: '\e868'; } /* '' */
 .icon-tag-1:before { content: '\e869'; } /* '' */
 .icon-doc-text-inv-2:before { content: '\e86a'; } /* '' */

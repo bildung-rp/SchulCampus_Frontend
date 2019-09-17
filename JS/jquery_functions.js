@@ -357,16 +357,33 @@ $(document).ready(function () {
         $(".status-change").css("display", "block");
 
         if($(this).hasClass("status-green")){
-            $(".status-change .status-green").css("color", "#F1F1F6"); 
+            $(".status-change .status-green").removeClass("icon-circle-empty");
+            $(".status-change .status-green").addClass("icon-circle");
+            $(".status-change .status-yellow").removeClass("icon-circle");
+            $(".status-change .status-yellow").addClass("icon-circle-empty");
+            $(".status-change .status-red").removeClass("icon-circle");
+            $(".status-change .status-red").addClass("icon-circle-empty");
+
         } 
 
         if($(this).hasClass("status-yellow")){
-            $(".status-change .status-yellow").css("color", "#F1F1F6"); 
+            $(".status-change .status-yellow").removeClass("icon-circle-empty");
+            $(".status-change .status-yellow").addClass("icon-circle");
+            $(".status-change .status-green").removeClass("icon-circle");
+            $(".status-change .status-green").addClass("icon-circle-empty");
+            $(".status-change .status-red").removeClass("icon-circle");
+            $(".status-change .status-red").addClass("icon-circle-empty");
         } 
 
         if($(this).hasClass("status-red")){
-            $(".status-change .status-red").css("color", "#F1F1F6"); 
+            $(".status-change .status-red").removeClass("icon-circle-empty");
+            $(".status-change .status-red").addClass("icon-circle");
+            $(".status-change .status-yellow").removeClass("icon-circle");
+            $(".status-change .status-yellow").addClass("icon-circle-empty");
+            $(".status-change .status-green").removeClass("icon-circle");
+            $(".status-change .status-green").addClass("icon-circle-empty"); 
         } 
+
 
         //-------Auswahl des Status-Zustandes------//
 
@@ -418,13 +435,13 @@ $(document).ready(function () {
         var blueSectionId = $(this).closest("section").prop("id");
         toggleBlueMobile(blueSectionId);
 
-        if ($("#bc2.box-content-full").css("display") == "block") {
-            $(".bluebox").css("height", "370px");
+        /* if ($("#bc2.box-content-full").css("display") == "block") {
+            $(".bluebox").css("height", "454px");
         } else if ($("#bc1.box-content-full").css("display") == "block") {
-            $(".bluebox").css("height", "370px")
+            $(".bluebox").css("height", "454px")
         } else {
-            $(".bluebox").css("height", "490")
-        }
+            $(".bluebox").css("height", "454")
+        } */
     });
 
 

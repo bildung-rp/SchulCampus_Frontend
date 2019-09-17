@@ -144,11 +144,11 @@
                                 <div class="form-row">
                                     <div class="col-auto">
 
-                                        <select class="selectpicker">
-                                            <optgroup label="Gruppe">
-                                                <option value="1">Klasse 5d</option>
-                                                <option value="2">Schule A</option>
-                                                <option value="3">Naturwissenschaft</option>
+                                        <select class="selectpicker" multiple>
+                                            <optgroup label="Gruppen">
+                                                <option>Klasse 5d</option>
+                                                <option>Schule A</option>
+                                                <option>Naturwissenschaft AG</option>
                                             </optgroup>
                                         </select>
 
@@ -156,8 +156,8 @@
                                     <div class="col-auto">
 
 
-                                        <select class="selectpicker">
-                                            <optgroup label="Rolle">
+                                        <select class="selectpicker" multiple>
+                                            <optgroup label="Rollen">
                                                 <option value="1">Admin</option>
                                                 <option value="2">Lehrkraft</option>
                                                 <option value="3">Schüler</option>
@@ -174,12 +174,14 @@
 
                                         <select class="selectpicker">
                                             <option>Status</option>
-                                            <option value="1">Mathematik</option>
-                                            <option value="2">Deutsch</option>
-                                            <option value="3">Chemie</option>
+                                            <option value="1">aktiv</option>
+                                            <option value="2">inaktiv</option>
+                                            <option value="3">gespeert</option>
                                         </select>
 
                                     </div>
+
+
                             </form>
 
                             <button type="submit" class="btn btn-blue btn-submit">Suchen</button>
@@ -234,17 +236,25 @@
                                         <input type="checkbox" id="f1" name="f1" value="">
                                         <label for="f1"></label>
                                     </td>
-                                    <td><a href="profiledit.php">John</a></td>
-                                    <td><a href="profiledit.php">Doe</a></td>
-                                    <td><a href="profiledit.php">bf634</a></td>
-                                    <td><a href="profiledit.php">john@example.com</a></td>
+                                    <td>
+                                        <a href="profiledit.php">John</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">Doe</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">bf634</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">john@example.com</a>
+                                    </td>
                                     <td>16.07.2018</td>
 
 
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -252,17 +262,25 @@
                                         <input type="checkbox" id="f2" name="f2" value="">
                                         <label for="f2"></label>
                                     </td>
-                                    <td><a href="profiledit.php">Mary</a></td>
-                                    <td><a href="profiledit.php">Moe</a></td>
-                                    <td><a href="profiledit.php">mamo</a></td>
-                                    <td><a href="profiledit.php">mary@example.com</a></td>
+                                    <td>
+                                        <a href="profiledit.php">Mary</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">Moe</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">mamo</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">mary@example.com</a>
+                                    </td>
                                     <td>11.07.2018</td>
 
 
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -280,7 +298,7 @@
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -298,7 +316,7 @@
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -316,7 +334,7 @@
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -334,7 +352,7 @@
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -352,7 +370,7 @@
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -370,7 +388,7 @@
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -388,7 +406,7 @@
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -406,7 +424,7 @@
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -424,7 +442,7 @@
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                             </form>
@@ -476,7 +494,7 @@
 
                 <div class="tab-pane" id="moodle">
 
-<table class="table">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>
@@ -517,17 +535,25 @@
                                         <input type="checkbox" id="f1" name="f1" value="">
                                         <label for="f1"></label>
                                     </td>
-                                    <td><a href="profiledit.php">John</a></td>
-                                    <td><a href="profiledit.php">Doe</a></td>
-                                    <td><a href="profiledit.php">bf634</a></td>
-                                    <td><a href="profiledit.php">john@example.com</a></td>
+                                    <td>
+                                        <a href="profiledit.php">John</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">Doe</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">bf634</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">john@example.com</a>
+                                    </td>
                                     <td>16.07.2018</td>
 
 
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -535,17 +561,25 @@
                                         <input type="checkbox" id="f2" name="f2" value="">
                                         <label for="f2"></label>
                                     </td>
-                                    <td><a href="profiledit.php">Mary</a></td>
-                                    <td><a href="profiledit.php">Moe</a></td>
-                                    <td><a href="profiledit.php">mamo</a></td>
-                                    <td><a href="profiledit.php">mary@example.com</a></td>
+                                    <td>
+                                        <a href="profiledit.php">Mary</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">Moe</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">mamo</a>
+                                    </td>
+                                    <td>
+                                        <a href="profiledit.php">mary@example.com</a>
+                                    </td>
                                     <td>11.07.2018</td>
 
 
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -563,7 +597,7 @@
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -581,7 +615,7 @@
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -599,7 +633,7 @@
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -617,7 +651,7 @@
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -635,7 +669,7 @@
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -653,7 +687,7 @@
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -671,7 +705,7 @@
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -689,7 +723,7 @@
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -707,7 +741,7 @@
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-                                        
+
                                     </td>
                                 </tr>
                             </form>
@@ -724,12 +758,146 @@
 
 
                     <div class="markaction">
-                    
-                        <button type="submit" class="btn btn-blue btn-delete">Alle löschen</button>
-                    
+
+                        <button type="submit" class="btn btn-delete">Löschen</button>
+                        <button type="submit" class="btn btn-reject">Ablehnen</button>
+                        <button type="submit" class="btn btn-lock">Speeren</button>
+                        <button type="submit" class="btn btn-unlock">Freischalten</button>
+                        <button type="submit" class="btn btn-blue btn-assign">Zuweisen</button>
+                        <button type="submit" class="btn btn-blue btn-role">Rolle zuordnen</button>
+                        <button type="submit" class="btn btn-blue btn-password">Passwort zurücksetzen</button>
+
                     </div>
 
+                    <form>
+                        <div class="form-group d-flex">
+                            <div class="col-lg-12">
+                                <div class="form-wrapper mb-15">
+                                
+                                    <label for="group" class="col-lg-2">Gruppe</label>
+                                    <div class="col-lg-3">
 
+                                        <h4>Ausgewählte Objekte</h4>
+
+                                        <ul class="auswahlbox">
+                                            <li class="auswahlobjekt">
+                                                Schulleitung
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="iconnav">
+                                        <button class="btn">
+                                            <i class="sc-icon icon-angle-double-up"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-up-dir"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-down-dir"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-angle-double-down"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-cancel"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <h4>Verfügbare Objekte</h4>
+
+                                        <ul class="auswahlbox">
+                                            <li class="auswahlobjekt">
+                                                Schülerzeitung
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                Sekretariat
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                5a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                6a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                7a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                8a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                9d (2015/16)
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="iconset">
+                                        <button class="btn">
+                                            <i class="sc-icon icon-pencil"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-plus"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-list-alt"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="form-wrapper mb-15">
+                                    <label for="lastname" class="col-lg-2">Rolle/ Berechtigung</label>
+                                    <div class="col-lg-3">
+
+                                        <h4>Ausgewählte Objekte</h4>
+
+                                        <ul class="auswahlbox">
+                                            <li class="auswahlobjekt">
+                                                Lehrkraft
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="iconnav">
+                                        <button class="btn">
+                                            <i class="sc-icon icon-angle-double-up"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-up-dir"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-down-dir"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-angle-double-down"></i>
+                                        </button>
+                                        <button class="btn">
+                                            <i class="sc-icon icon-cancel"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <h4>Verfügbare Objekte</h4>
+
+                                        <ul class="auswahlbox">
+                                            <li class="auswahlobjekt">
+                                                Schüler/ in
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                an Schule Beteiligte
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="iconset">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
 
 
 
@@ -769,6 +937,14 @@
 
                 </div>
 
+
+
+
+
+
+
+
+
                 <div class="tab-pane" id="orga">
 
                     <h1 class="mb-15">Mein Profil</h1>
@@ -782,20 +958,19 @@
                                 <div class="form-wrapper mb-15">
                                     <label for="name" class="col-lg-2">Vorname</label>
                                     <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Vorname" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname" data-content="Vorname"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
                                     <label for="lastname" class="col-lg-2">Nachname</label>
                                     <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="lastname" placeholder="Nachname" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Infos" data-content="Nachname."></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
                                     <label for="email" class="col-lg-2">E-Mail</label>
                                     <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Infos"
-                                        data-content="E-Mail Adresse"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
                                 </div>
                             </div>
 
@@ -827,8 +1002,7 @@
                                 <div class="form-wrapper mb-15">
                                     <label for="inputPassword2" class="col-lg-2">Passwort</label>
                                     <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="efos"
-                                        data-content="Das Passwort sollte 8 Zeichen enthalten"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort"></a>
                                 </div>
 
 
@@ -836,7 +1010,7 @@
                         </div>
 
                         <div class="col-lg-9">
-                            <button type="submit" class="btn btn-blue btn-save ml-15">Speichern</button>
+                            <button type="submit" class="btn btn-blue btn-save">Speichern</button>
                         </div>
 
 
@@ -860,10 +1034,11 @@
                             </div>
                             <div class="modal-body modal-body-error">
                                 Hier ist ein Fehler aufgetreten!
+
                             </div>
                             <div class="modal-footer modal-footer-error">
-                                <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-sm btn-error">Link</button>
+                                <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Schließen</button>
+                                <button type="button" class="btn btn-sm btn-error">Details</button>
                             </div>
                         </div>
                     </div>
@@ -875,7 +1050,7 @@
                             <div class="modal-header modal-header-error">
                                 <div class="modal-title" id="exampleModalLabel">Fehlerbenachrichtigung
                                 </div>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>

@@ -147,8 +147,8 @@
                                 <div class="form-row">
                                     <div class="col-auto">
 
-                                        <select class="selectpicker">
-                                            <optgroup label="Gruppe">
+                                        <select class="selectpicker" multiple>
+                                            <optgroup label="Gruppen">
                                                 <option value="1">Klasse 5d</option>
                                                 <option value="2">Schule A</option>
                                                 <option value="3">Naturwissenschaft</option>
@@ -159,8 +159,8 @@
                                     <div class="col-auto">
 
 
-                                        <select class="selectpicker">
-                                            <optgroup label="Rolle">
+                                        <select class="selectpicker" multiple>
+                                            <optgroup label="Rollen">
                                                 <option value="1">Admin</option>
                                                 <option value="2">Lehrkraft</option>
                                                 <option value="3">Schüler</option>
@@ -177,9 +177,9 @@
 
                                         <select class="selectpicker">
                                             <option>Status</option>
-                                            <option value="1">Mathematik</option>
-                                            <option value="2">Deutsch</option>
-                                            <option value="3">Chemie</option>
+                                            <option value="1">aktiv</option>
+                                            <option value="2">inaktiv</option>
+                                            <option value="3">gespeert</option>
                                         </select>
 
                                     </div>
@@ -208,35 +208,36 @@
                                 <div class="form-wrapper mb-15">
                                     <label for="name" class="col-lg-2">Vorname</label>
                                     <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="name" placeholder="Vorname" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"
-                                        data-content="Vorname"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
                                     <label for="lastname" class="col-lg-2">Nachname</label>
                                     <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="lastname" placeholder="Nachname" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto"
-                                        title="Infos" data-content="Nachname."></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
                                     <label for="email" class="col-lg-2">E-Mail</label>
                                     <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto"
-                                        title="Infos" data-content="E-Mail Adresse"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
                                     <label for="profil" class="col-lg-2">Profilbild</label>
-                                    <button type="submit" class="btn btn-blue btn-change">Ändern</button>
+                                    
                                 </div>
                             
 
                             </div>
 
                                 <div class="profil-image">
-                                    <img class="round" src="Images/cur1.png" alt="Bsp" width="200" height="200">
+                                    <img class="round" src="Images/cur1.png" alt="Bsp" width="180" height="180">
                                     <!-- <i class="sc-icon icon-user"></i> -->
+                                    <div class="img-edit">
+                                    <i class="sc-icon icon-pencil"></i>
+                                    <i class="sc-icon icon-trash"></i>
+                                    </div>
                                 </div>
                             
 
@@ -260,10 +261,9 @@
                                                     Schulleitung        
                                                 </li>
                                             </ul>
-
+ 
                                     </div>
-                                    
-                                        <div class="iconnav">
+                                    <div class="iconnav">
                                             <button class="btn"><i class="sc-icon icon-angle-double-up"></i></button>
                                             <button class="btn"><i class="sc-icon icon-up-dir"></i></button>
                                             <button class="btn"><i class="sc-icon icon-down-dir"></i></button>
@@ -349,8 +349,7 @@
                                 <div class="form-wrapper mb-15">
                                     <label for="email" class="col-lg-2">Personalnummer</label>
                                     <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="email" placeholder="Personalnummer" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto"
-                                        title="Infos" data-content="E-Mail Adresse"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Personalnummer"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
@@ -362,10 +361,10 @@
                                     <label for="status" class="col-lg-2">Status</label>
                                     <div class="checks">
                                         <input type="checkbox" id="f1" name="f1" value="">
-                                            <label for="f1">Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
+                                            <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
                                         
                                         <input type="checkbox" id="f2" name="f2" value="">
-                                            <label for="f2">Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
+                                            <label for="f2">&nbsp;Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
                                     </div>
                                 </div>
 
@@ -387,8 +386,7 @@
                                 <div class="form-wrapper mb-15">
                                     <label for="inputPassword2" class="col-lg-2">Passwort</label>
                                     <input type="password" class="form-control col-lg-4 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto"
-                                        title="efos" data-content="Das Passwort sollte 8 Zeichen enthalten"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
@@ -402,10 +400,10 @@
                                     <label for="status" class="col-lg-2"></label>
                                     <div class="checks">
                                         <input type="checkbox" id="f1" name="f1" value="">
-                                            <label for="f1">Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
+                                            <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
                                         
                                         <input type="checkbox" id="f2" name="f2" value="">
-                                            <label for="f2">Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
+                                            <label for="f2">&nbsp;Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
                                     </div>
                                 </div>
 
@@ -414,7 +412,7 @@
                         </div>
 
                         <div class="col-lg-9">
-                            <button type="submit" class="btn btn-blue btn-save ml-15">Speichern</button>
+                            <button type="submit" class="btn btn-blue btn-save">Speichern</button>
                         </div>
 
 
