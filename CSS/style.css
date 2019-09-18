@@ -319,7 +319,6 @@ dt::before {
 .dropdown.btn, .dropdown .btn {
     border: none;
     box-shadow:none;
-    transition:none;
 }
 
 .dropdown-toggle::after {
@@ -329,9 +328,7 @@ dt::before {
     content: "\f107";
     border:none;
 }
-.show > .dropdown-toggle::after {
-    content: "\f106";
-}
+
 
 .sidebar .dropdown-toggle.special::after {
     display: none;
@@ -341,8 +338,6 @@ dt::before {
 .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu {
     display: block;
 }
-
-
 
 
 .dropdown-menu {
@@ -401,11 +396,13 @@ dt::before {
     color:#253100;
     background-color:#CBD900;
     border:1px solid #CBD900;
+    transition: 0.3s;
 }
 .dropdown-lime:hover {
     color: #fff;
     background-color: #65A300;
     border-color: #65A300;
+    transition: 0.3s;
 } 
 .dropdown-lime:not(:disabled):not(.disabled):active, .dropdown-lime:not(:disabled):not(.disabled).active,
   .show > .dropdown-lime.dropdown-toggle {
@@ -434,9 +431,11 @@ dt::before {
     color: #253100;
     background-color: #CBD900;
 }
+
 .dropdown-menu-lime > a:hover {
     color: #fff;
     background-color: #65A300;
+    transition: 0.3s; 
 }
 .dropdown-item.active{
     color: #65A300;
@@ -690,8 +689,6 @@ input[type=text].small{
     display: flex;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-align: center;
-    align-items: baseline;
 }
 
 .form-wrapper .col-lg-2 {
@@ -863,6 +860,7 @@ img.round {
 .iconnav {
     display:flex;
     flex-direction: column;
+    margin-top: 24px;
 }
 
 .iconnav:first-child {
@@ -879,6 +877,11 @@ img.round {
     padding:0;
     margin:0;
 } 
+
+.iconset {
+    margin-top: 24px;
+}
+
 .form-wrapper .checks {
     display: flex;
     flex-direction: column;
@@ -1808,7 +1811,7 @@ select .dropdown-item::before {
 
 .dropdown-menu {
     border: none;
-    border-radius: 0;
+    border-radius: 3px;
 }
 
 .megamenu {
@@ -1983,7 +1986,6 @@ select .dropdown-item::before {
     margin: 15px 0;
 }
 
-
 .infopage-image {
     margin: 30px 0;
     width: 100%;
@@ -2066,15 +2068,16 @@ select .dropdown-item::before {
 
 .modal-content-error {
     background-color: #E2293F;
-  }
-  .modal-header-error {
+}
+
+.modal-header-error {
     color:#fff;
     border:none
-  }
-  .modal-header > button.close {
-    font-size: 29px;
-    color: rgb(119, 7, 7);
 }
+.modal-title {
+    margin-bottom: 3px;
+}
+
   .modal-body-error {
     font-size:14px;
     color:#fff;
@@ -2083,7 +2086,7 @@ select .dropdown-item::before {
     font-size:14px;
     color:#fff;
     border:none;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   .btn-error {
     color:#fff;
@@ -2097,11 +2100,19 @@ select .dropdown-item::before {
 
   .modal-title::before {
     display: inline-table;
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 5px;
     font-family:'SCicons';
     content: "\e822";
     border:none;
+    font-size: 20px;
+
   }
+  .model-close-icon::before {
+    content: "\e800";
+    color: #810b0b;
+    font-size: 20px;
+  }
+
 
 /* ----------Tooltip----------*/
 .tooltip-inner {
@@ -2386,6 +2397,23 @@ align-items: start;
 .mb-60 {
     margin-bottom: 60px;
 }
+
+.pl-15 {
+    padding-left: 15px !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pr-15 {
+    padding-right: 15px !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
 
 
 /*vor oder hinter Icons*/

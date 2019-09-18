@@ -1029,7 +1029,7 @@
                             <div class="modal-header modal-header-error">
                                 <div class="modal-title" id="exampleModalLabel">Fehlerbenachrichtigung</div>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sc-icon model-close-icon" aria-hidden="true"></span>
                                 </button>
                             </div>
                             <div class="modal-body modal-body-error">
@@ -1037,8 +1037,8 @@
 
                             </div>
                             <div class="modal-footer modal-footer-error">
-                                <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Schließen</button>
-                                <button type="button" class="btn btn-sm btn-error">Details</button>
+                                <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Deteils</button>
+                                <button type="button" class="btn btn-sm btn-error">Schließen</button>
                             </div>
                         </div>
                     </div>
@@ -1051,7 +1051,7 @@
                                 <div class="modal-title" id="exampleModalLabel">Fehlerbenachrichtigung
                                 </div>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
-                                    <span aria-hidden="true">&times;</span>
+                                    <span aria-hidden="true" class="sc-icon model-close-icon"></span>
                                 </button>
                             </div>
                         </div>

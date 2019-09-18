@@ -63,8 +63,6 @@
                             <span class="sc-icon icon-plus"></span>
                         </button>
                         <div class="box-content">
-                            <h2>Meine Dateien</h2>
-
                             <div class="accordion small">
 
                                 <div class="card">
@@ -133,8 +131,7 @@
                             <span class="sc-icon icon-plus"></span>
                         </button>
                         <div class="box-content">
-                            <h2>Curriculum</h2>
-
+                            
                             <div class="accordion small">
 
                                 <div class="card">
@@ -359,8 +356,7 @@
                             <span class="sc-icon icon-plus"></span>
                         </button>
                         <div class="box-content">
-                            <h2>Moodle</h2>
-
+                            
                             <div class="accordion small">
 
                                 <div class="card">

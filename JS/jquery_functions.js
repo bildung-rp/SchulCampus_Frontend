@@ -285,12 +285,6 @@ $(document).ready(function () {
     });
 
 
-
-    $(".btn-sidebar").click(function () {
-        countMediaElements();
-    });
-
-
     //--------Header Dropdown--------//
     $("#topnav.dropdown .btn").click(function (e) {
         

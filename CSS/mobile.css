@@ -116,6 +116,10 @@
         z-index: 1024;
     }
 
+    .show > .dropdown-toggle::after {
+        content: "\f106";
+    }
+
     #usernav-mobile.dropdown-menu-full .dropdown-menu{
         width: 100%;
         text-align: center;

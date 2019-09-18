@@ -214,32 +214,32 @@
                                 <div class="form-wrapper mb-15">
                                     <label for="lastname" class="col-lg-2">Nachname</label>
                                     <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="lastname" placeholder="Nachname" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
                                     <label for="email" class="col-lg-2">E-Mail</label>
                                     <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
+                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
                                 </div>
 
                                 <div class="form-wrapper mb-15">
                                     <label for="profil" class="col-lg-2">Profilbild</label>
-                                    
+
                                 </div>
-                            
+
 
                             </div>
 
-                                <div class="profil-image">
-                                    <img class="round" src="Images/cur1.png" alt="Bsp" width="180" height="180">
-                                    <!-- <i class="sc-icon icon-user"></i> -->
-                                    <div class="img-edit">
+                            <div class="profil-image">
+                                <img class="round" src="Images/cur1.png" alt="Bsp" width="180" height="180">
+                                <!-- <i class="sc-icon icon-user"></i> -->
+                                <div class="img-edit">
                                     <i class="sc-icon icon-pencil"></i>
                                     <i class="sc-icon icon-trash"></i>
-                                    </div>
                                 </div>
-                            
+                            </div>
+
 
                         </div>
 
@@ -247,238 +247,215 @@
 
                         <h2>Mitgliedschaften</h2>
 
-                        <div class="form-group d-flex">
-                            <div class="col-lg-12">
+                        
+
 
                                 <div class="form-wrapper mb-15">
-                                    <label for="group" class="col-lg-2">Gruppe</label>
-                                    <div class="col-lg-3">
-                                        
-                                            <h4>Ausgewählte Objekte</h4>
-                                        
-                                            <ul class="auswahlbox">
-                                                <li class="auswahlobjekt">
-                                                    Schulleitung        
-                                                </li>
-                                            </ul>
- 
-                                    </div>
-                                    <div class="iconnav">
-                                            <button class="btn"><i class="sc-icon icon-angle-double-up"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-up-dir"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-down-dir"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-angle-double-down"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-cancel"></i></button>
-                                        </div>
-                                    
-                                    <div class="col-lg-3">
-                                        <h4>Verfügbare Objekte</h4>
-                                        
-                                            <ul class="auswahlbox">
-                                                <li class="auswahlobjekt">
-                                                    Schülerzeitung        
-                                                </li>
-                                                <li class="auswahlobjekt">
-                                                    Sekretariat        
-                                                </li>
-                                                <li class="auswahlobjekt">
-                                                    5a (2015/16)        
-                                                </li>
-                                                <li class="auswahlobjekt">
-                                                    6a (2015/16)         
-                                                </li>
-                                                <li class="auswahlobjekt">
-                                                    7a (2015/16)        
-                                                </li>
-                                                <li class="auswahlobjekt">
-                                                    8a (2015/16)         
-                                                </li>
-                                                <li class="auswahlobjekt">
-                                                    9d (2015/16)        
-                                                </li>
-                                            </ul>    
-                                    
-                                    </div>
-                                    <div class="iconset">
-                                            <button class="btn"><i class="sc-icon icon-pencil"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-plus"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-list-alt"></i></button>
-                                    </div>
+                                <label for="lastname" class="col-lg-2 pl-15">Gruppe</label>
+                                <div class="col-lg-3">
+
+                                    <h4>Ausgewählte Objekte</h4>
+
+                                    <ul class="auswahlbox">
+                                            <li class="auswahlobjekt">
+                                                Schulleitung
+                                            </li>
+                                    </ul>
+
                                 </div>
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="lastname" class="col-lg-2">Rolle/ Berechtigung</label>
-                                    <div class="col-lg-3">
-                                        
-                                            <h4>Ausgewählte Objekte</h4>
-                                        
-                                            <ul class="auswahlbox">
-                                                <li class="auswahlobjekt">
-                                                    Lehrkraft        
-                                                </li>
-                                            </ul>
-
-                                    </div>
-                                    
-                                        <div class="iconnav">
-                                            <button class="btn"><i class="sc-icon icon-angle-double-up"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-up-dir"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-down-dir"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-angle-double-down"></i></button>
-                                            <button class="btn"><i class="sc-icon icon-cancel"></i></button>
-                                        </div>
-                                    
-                                    <div class="col-lg-3">
-                                        <h4>Verfügbare Objekte</h4>
-                                        
-                                            <ul class="auswahlbox">
-                                                <li class="auswahlobjekt">
-                                                    Schüler/ in        
-                                                </li>
-                                                <li class="auswahlobjekt">
-                                                    an Schule Beteiligte       
-                                                </li>
-                                            </ul>    
-                                    
-                                    </div>
-                                    <div class="iconset">
-                                            
-                                    </div>
+                                <div class="iconnav">
+                                    <button class="btn">
+                                        <i class="sc-icon icon-angle-double-up"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-up-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-down-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-angle-double-down"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-cancel"></i>
+                                    </button>
                                 </div>
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="email" class="col-lg-2">Personalnummer</label>
-                                    <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="email" placeholder="Personalnummer" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Personalnummer"></a>
-                                </div>
+                                <div class="col-lg-3">
+                                    <h4>Verfügbare Objekte</h4>
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="lastname" class="col-lg-2">Stammorganisation</label>
-                                    <span>RS+ Testort Testschule</span>
-                                </div>
+                                    <ul class="auswahlbox">
+                                            <li class="auswahlobjekt">
+                                                Schülerzeitung
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                Sekretariat
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                5a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                6a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                7a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                8a (2015/16)
+                                            </li>
+                                            <li class="auswahlobjekt">
+                                                9d (2015/16)
+                                            </li>
+                                    </ul>
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="status" class="col-lg-2">Status</label>
-                                    <div class="checks">
-                                        <input type="checkbox" id="f1" name="f1" value="">
-                                            <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
-                                        
-                                        <input type="checkbox" id="f2" name="f2" value="">
-                                            <label for="f2">&nbsp;Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
-                                    </div>
                                 </div>
-
+                                <div class="iconset">
+                                            <button class="btn">
+                                                <i class="sc-icon icon-pencil"></i>
+                                            </button>
+                                            <button class="btn">
+                                                <i class="sc-icon icon-plus"></i>
+                                            </button>
+                                            <button class="btn">
+                                                <i class="sc-icon icon-list-alt"></i>
+                                            </button>
+                                </div>
                             </div>
-                        </div>
 
 
-                        <h2>Account</h2>
 
-                        <div class="form-group d-flex">
-                            <div class="col-lg-12">
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="name" class="col-lg-2">Benutzerkennung</label>
-                                    <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="name" placeholder="Nutzerkennung" value="">
+                            <div class="form-wrapper mb-15">
+                                <label for="lastname" class="col-lg-2 pl-15">Rolle/ Berechtigung</label>
+                                <div class="col-lg-3">
+
+                                    <h4>Ausgewählte Objekte</h4>
+
+                                    <ul class="auswahlbox">
+                                        <li class="auswahlobjekt">
+                                            Lehrkraft
+                                        </li>
+                                    </ul>
 
                                 </div>
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="inputPassword2" class="col-lg-2">Passwort</label>
-                                    <input type="password" class="form-control col-lg-4 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
-                                    <a class="col-1 sc-icon icon-question-circle-regular"  data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort"></a>
+                                <div class="iconnav">
+                                    <button class="btn">
+                                        <i class="sc-icon icon-angle-double-up"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-up-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-down-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-angle-double-down"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-cancel"></i>
+                                    </button>
                                 </div>
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="inputPassword2" class="col-lg-2">Passwort (Bestätigung)</label>
-                                    <input type="password" class="form-control col-lg-4 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
+                                <div class="col-lg-3">
+                                    <h4>Verfügbare Objekte</h4>
+
+                                    <ul class="auswahlbox">
+                                        <li class="auswahlobjekt">
+                                            Schüler/ in
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            an Schule Beteiligte
+                                        </li>
+                                    </ul>
+
                                 </div>
+                                <div class="iconset">
 
-                                
-
-                                <div class="form-wrapper mb-15">
-                                    <label for="status" class="col-lg-2"></label>
-                                    <div class="checks">
-                                        <input type="checkbox" id="f1" name="f1" value="">
-                                            <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
-                                        
-                                        <input type="checkbox" id="f2" name="f2" value="">
-                                            <label for="f2">&nbsp;Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
-                                    </div>
                                 </div>
-
-
                             </div>
+
+                            <div class="form-wrapper mb-15">
+                                <label for="email" class="col-lg-2 pl-15">Personalnummer</label>
+                                <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="email" placeholder="Personalnummer" value="">
+                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Personalnummer"></a>
+                            </div>
+
+                            <div class="form-wrapper mb-15">
+                                <label for="lastname" class="col-lg-2 pl-15">Stammorganisation</label>
+                                <span>RS+ Testort Testschule</span>
+                            </div>
+
+                            <div class="form-wrapper mb-15">
+                                <label for="status" class="col-lg-2 pl-15">Status</label>
+                                <div class="checks">
+                                    <input type="checkbox" id="f1" name="f1" value="">
+                                    <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
+
+                                    <input type="checkbox" id="f2" name="f2" value="">
+                                    <label for="f2">&nbsp;Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
+                                </div>
+                            </div>
+
                         </div>
-
-                        <div class="col-lg-9">
-                            <button type="submit" class="btn btn-blue btn-save">Speichern</button>
-                        </div>
-
-
-
-
-                    </form>
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
-                <div class="tab-pane" id="moodle">moodle</div>
 
-                <div class="tab-pane" id="orga">
+                <h2>Account</h2>
+
+                <div class="form-group d-flex">
+                    <div class="col-lg-12">
+
+                        <div class="form-wrapper mb-15">
+                            <label for="name" class="col-lg-2">Benutzerkennung</label>
+                            <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="name" placeholder="Nutzerkennung" value="">
+
+                        </div>
+
+                        <div class="form-wrapper mb-15">
+                            <label for="inputPassword2" class="col-lg-2">Passwort</label>
+                            <input type="password" class="form-control col-lg-4 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
+                            <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort"></a>
+                        </div>
+
+                        <div class="form-wrapper mb-15">
+                            <label for="inputPassword2" class="col-lg-2">Passwort (Bestätigung)</label>
+                            <input type="password" class="form-control col-lg-4 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
+                        </div>
 
 
 
-                    <button type="button" class="btn btn-blue m-2" data-toggle="modal" data-target="#exampleModal">
-                        lange Fehlermeldung
-                    </button>
-                    <button type="button" class="btn btn-blue m-2" data-toggle="modal" data-target="#exampleModal2">
-                        kurze Fehlermeldung
-                    </button>
-                </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content modal-content-error">
-                            <div class="modal-header modal-header-error">
-                                <div class="modal-title" id="exampleModalLabel">Fehlerbenachrichtigung</div>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body modal-body-error">
-                                Hier ist ein Fehler aufgetreten!
-                            </div>
-                            <div class="modal-footer modal-footer-error">
-                                <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-sm btn-error">Link</button>
+                        <div class="form-wrapper mb-15">
+                            <label for="status" class="col-lg-2"></label>
+                            <div class="checks">
+                                <input type="checkbox" id="f1" name="f1" value="">
+                                <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
+
+                                <input type="checkbox" id="f2" name="f2" value="">
+                                <label for="f2">&nbsp;Der Benutzer ist tatsächlich in meiner Organisation beschäftigt (validiert)</label>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
 
-                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content modal-content-error">
-                            <div class="modal-header modal-header-error">
-                                <div class="modal-title" id="exampleModalLabel">Fehlerbenachrichtigung
-                                </div>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-9">
+                    <button type="submit" class="btn btn-blue btn-save">Speichern</button>
                 </div>
+
+
+
+
+                </form>
+
+
+
+
+
+
+
 
 
 
@@ -486,7 +463,7 @@
 
             </div>
 
-        </div>
+    
 
 
 
