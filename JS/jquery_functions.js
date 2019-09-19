@@ -115,7 +115,14 @@ $(document).ready(function () {
     });
     
 
-
+/*     //-----------------Hover-Effekt - Dropdown ---------//
+    $().ready(function(){
+        $(".dropdown-menu").hover(function(){
+            $(".dropdown-menu-lime").siblings().css("background-color", "#65A300");
+        },
+        $(".dropdown-menu").focusout(function(){
+            $(".dropdown-lime").css("background-color", "#CBD900")}))}); */
+    
    
        
     

@@ -437,10 +437,16 @@ dt::before {
     background-color: #65A300;
     transition: 0.3s; 
 }
-.dropdown-item.active{
+.dropdown-menu-lime .dropdown-item.active, .dropdown-menu-lime .dropdown-item:active {
     color: #65A300;
     background-color: #C0CD00;
 }
+.dropdown-menu-lime .dropdown-item:focus {
+    color: #253100;
+    background-color: #C0CD00;
+}
+
+
 
 
 /* Carousel */

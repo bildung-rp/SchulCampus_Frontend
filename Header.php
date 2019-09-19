@@ -55,33 +55,33 @@
                         $lastElement = array_slice(explode('/', rtrim($url, '/')), -1)[0];
 
                         switch($lastElement) {
-                            case "Index.php":
+                            case "index.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>
                                     <b>Schul</b>campus&nbsp;<i>RLP</i>
                                 </span>";
                             break;
-                            case "Workspace.php":
+                            case "workspace.php":
                                 echo "<i class='sc-icon-dd icon-folder-open'></i>
                                 <span>Meine Dateien</span>";
                             break;
-                            case "Moodle.php":
+                            case "moodle.php":
                                 echo "<i class='sc-icon-dd icon-graduation-cap'></i>
                                 <span>Moodle</span>";
                             break;
-                            case "Mediathek.php":
+                            case "mediathek.php":
                                 echo "<i class='sc-icon-dd icon-play-circled'></i>
                                 <span>Mediathek</span>";
                             break;
-                            case "Curriculum.php":
+                            case "curriculum.php":
                                 echo "<i class='sc-icon-dd icon-bank'></i>
                                 <span>Curriculum</span>";
                             break;
-                            case "Lehrplan.php":
+                            case "lehrplan.php":
                                 echo "<i class='sc-icon-dd icon-book-1'></i>
                                 <span>Lehr- und Arbeitspläne</span>";
                             break;
-                            case "Infoportal.php":
+                            case "infoportal.php":
                                 echo "<i class='sc-icon-dd icon-info-circled'></i>
                                 <span>Infoportal</span>";
                             break;
