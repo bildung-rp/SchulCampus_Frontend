@@ -736,7 +736,7 @@ img.round {
     display: flex;
     width: 300px;
     flex-wrap: wrap;
-
+    padding: 30px 0;
 }
 
 .markaction .btn {
@@ -1758,7 +1758,35 @@ select .dropdown-item::before {
     box-shadow: none;
 }
 
+/*----Results anzeigen----*/
+.result-counter {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 925px;
+}
 
+select.result-counter {
+    background-color: rgb(202, 205, 207);
+}
+
+.result-counter .btn-light {
+    background-color: rgb(202, 205, 207);
+}
+
+.result-select.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: auto;
+}
+
+.result-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bootstrap-select .dropdown-item.active, .bootstrap-select .dropdown-item:active {
+    color: inherit;
+    background-color: transparent;
+}
 
 .pagesearch-filter .dropdown .btn {
     font-weight: 400;
@@ -2097,6 +2125,7 @@ select .dropdown-item::before {
   .btn-error {
     color:#fff;
     background-color:#E2293F;
+    border: solid 1px #fff;
   }
   .btn-error:hover {
     color: #E2293F;

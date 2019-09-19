@@ -457,305 +457,6 @@
 
                     </table>
 
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li class="page-item disabled">
-                                <a class="page-link sc-icon icon-angle-double-left" href="#" tabindex="-1"></a>
-                            </li>
-                            <li class="page-item disabled">
-                                <a class="page-link sc-icon icon-angle-left" href="#"></a>
-                            </li>
-                            <li class="page-item disabled active">
-                                <a class="page-link" href="#">1</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">3</a>
-                            </li>
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#">...</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">10</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link sc-icon icon-angle-right" href="#"></a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link sc-icon icon-angle-double-right" href="#"></a>
-                            </li>
-                        </ul>
-                    </nav>
-
-
-                </div>
-
-                <div class="tab-pane" id="moodle">
-
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <div class="selectAll">
-                                        <input type="checkbox" id="selectAll" name="f100" value="">
-                                        <label for="f100">
-                                            <div class="checkbox"></div>
-                                        </label>
-                                    </div>
-                                </th>
-                                <th>Name
-                                    <i class="sc-icon icon-down-dir" style="display:none"></i>
-                                </th>
-                                <th>Vorname
-                                    <i class="sc-icon icon-down-dir" style="display:none"></i>
-                                </th>
-                                <th>Benutzername
-                                    <i class="sc-icon icon-down-dir"></i>
-                                </th>
-                                <th>Email
-                                    <i class="sc-icon icon-down-dir" style="display:none"></i>
-                                </th>
-                                <th>Erstellt
-                                    <i class="sc-icon icon-down-dir" style="display:none"></i>
-                                </th>
-
-
-                                <th>Status
-                                    <i class=""></i>
-                                </th>
-                                <th>Aktion</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <form>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f1" name="f1" value="">
-                                        <label for="f1"></label>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">John</a>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">Doe</a>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">bf634</a>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">john@example.com</a>
-                                    </td>
-                                    <td>16.07.2018</td>
-
-
-                                    <td class="sc-icon icon-circle status status-green"></td>
-                                    <td>
-                                        <a class="sc-icon icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f2" name="f2" value="">
-                                        <label for="f2"></label>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">Mary</a>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">Moe</a>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">mamo</a>
-                                    </td>
-                                    <td>
-                                        <a href="profiledit.php">mary@example.com</a>
-                                    </td>
-                                    <td>11.07.2018</td>
-
-
-                                    <td class="sc-icon icon-circle status status-yellow"></td>
-                                    <td>
-                                        <a class="sc-icon icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f3" name="f3" value="">
-                                        <label for="f3"></label>
-                                    </td>
-                                    <td>Klaus</td>
-                                    <td>BlaBla</td>
-                                    <td>ghtt785</td>
-                                    <td>juhghdy@example.com</td>
-                                    <td>11.08.2018</td>
-
-
-                                    <td class="sc-icon icon-circle status status-red"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f4" name="f4" value="">
-                                        <label for="f4"></label>
-                                    </td>
-                                    <td>Klaus</td>
-                                    <td>BlaBla</td>
-                                    <td>ghtt785</td>
-                                    <td>juhghdy@example.com</td>
-                                    <td>11.08.2018</td>
-
-
-                                    <td class="sc-icon icon-circle status status-green"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f5" name="f5" value="">
-                                        <label for="f5"></label>
-                                    </td>
-                                    <td>Mustermann</td>
-                                    <td>Max</td>
-                                    <td>maxmuster1</td>
-                                    <td>maxmuster@muster.de</td>
-                                    <td>10.02.2019</td>
-
-
-                                    <td class="sc-icon icon-circle status status-red"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f6" name="f6" value="">
-                                        <label for="f6"></label>
-                                    </td>
-                                    <td>Mustermann</td>
-                                    <td>Max</td>
-                                    <td>maxmuster1</td>
-                                    <td>maxmuster@muster.de</td>
-                                    <td>10.02.2019</td>
-
-
-                                    <td class="sc-icon icon-circle status status-green"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f7" name="f7" value="">
-                                        <label for="f7"></label>
-                                    </td>
-                                    <td>Mustermann</td>
-                                    <td>Max</td>
-                                    <td>maxmuster1</td>
-                                    <td>maxmuster@muster.de</td>
-                                    <td>10.02.2019</td>
-
-
-                                    <td class="sc-icon icon-circle status status-yellow"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f8" name="f8" value="">
-                                        <label for="f8"></label>
-                                    </td>
-                                    <td>Mustermann</td>
-                                    <td>Max</td>
-                                    <td>maxmuster1</td>
-                                    <td>maxmuster@muster.de</td>
-                                    <td>10.02.2019</td>
-
-
-                                    <td class="sc-icon icon-circle status status-yellow"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f9" name="f9" value="">
-                                        <label for="f9"></label>
-                                    </td>
-                                    <td>Mustermann</td>
-                                    <td>Max</td>
-                                    <td>maxmuster1</td>
-                                    <td>maxmuster@muster.de</td>
-                                    <td>10.02.2019</td>
-
-
-                                    <td class="sc-icon icon-circle status status-red"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f10" name="f10" value="">
-                                        <label for="f10"></label>
-                                    </td>
-                                    <td>Mustermann</td>
-                                    <td>Max</td>
-                                    <td>maxmuster1</td>
-                                    <td>maxmuster@muster.de</td>
-                                    <td>10.02.2019</td>
-
-
-                                    <td class="sc-icon icon-circle status status-green"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" id="f11" name="f11" value="">
-                                        <label for="f11"></label>
-                                    </td>
-                                    <td>Mustermann</td>
-                                    <td>Max</td>
-                                    <td>maxmuster1</td>
-                                    <td>maxmuster@muster.de</td>
-                                    <td>10.02.2019</td>
-
-
-                                    <td class="sc-icon icon-circle status status-yellow"></td>
-                                    <td>
-                                        <a class="icon-pencil" href=" " title="action"></a>
-
-                                    </td>
-                                </tr>
-                            </form>
-                        </tbody>
-
-
-                        <div class="status-change">
-                            <i class="sc-icon icon-circle status status-red"></i>
-                            <i class="sc-icon icon-circle status status-yellow"></i>
-                            <i class="sc-icon icon-circle status status-green"></i>
-                        </div>
-
-                    </table>
-
 
                     <div class="markaction">
 
@@ -769,11 +470,23 @@
 
                     </div>
 
+                    <div class="result-counter">
+
+                        <span class="result-text">Zeige&nbsp;</span>    
+                        <select class="result-select">
+                            <option value="1">50</option>
+                            <option value="2">100</option>
+                            <option value="3">150</option>
+                            <option value="3">alle</option>
+                        </select>
+                        <span  class="result-text">Einträge pro Seite.</span> 
+                    </div>
+
                     <form>
-                        <div class="form-group d-flex">
+                        <div class="form-group">
                             <div class="col-lg-12">
                                 <div class="form-wrapper mb-15">
-                                
+
                                     <label for="group" class="col-lg-2">Gruppe</label>
                                     <div class="col-lg-3">
 
@@ -934,10 +647,13 @@
                     </nav>
 
 
-
                 </div>
 
+                <div class="tab-pane" id="moodle">
 
+                    moodle-Tab
+
+                </div>
 
 
 
