@@ -174,6 +174,15 @@
         align-content: flex-start;
     }
 
+    .box-content .card-body a {
+        color: #fff;
+        font-size: 19px;
+    }
+
+    .box-content .card-body {
+        padding: 0 40px;
+    }
+
     .box-content-full {
         display:none;
         background-color: #00B2F9;
@@ -384,7 +393,14 @@
     } */
 
     #topnav-mobile .dropdown-item {
-        padding-left: 20%;
+        padding-left: 25%;
+        display: flex;
+        align-items: center;
+    }
+
+    #usernav .dropdown-item {
+        display: flex;
+        align-items: center;
     }
 
     #teaser.container {

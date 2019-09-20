@@ -145,11 +145,9 @@
                                     <div class="col-auto">
 
                                         <select class="selectpicker" multiple>
-                                            <optgroup label="Gruppen">
                                                 <option>Klasse 5d</option>
                                                 <option>Schule A</option>
                                                 <option>Naturwissenschaft AG</option>
-                                            </optgroup>
                                         </select>
 
                                     </div>
@@ -157,7 +155,6 @@
 
 
                                         <select class="selectpicker" multiple>
-                                            <optgroup label="Rollen">
                                                 <option value="1">Admin</option>
                                                 <option value="2">Lehrkraft</option>
                                                 <option value="3">Schüler</option>
@@ -165,7 +162,6 @@
                                                 <option value="5">Unterrichtsideen</option>
                                                 <option value="6">Web-Werkzeuge</option>
                                                 <option value="7">...Sonstiges</option>
-                                            </optgroup>
                                         </select>
 
                                     </div>
@@ -173,7 +169,6 @@
 
 
                                         <select class="selectpicker">
-                                            <option>Status</option>
                                             <option value="1">aktiv</option>
                                             <option value="2">inaktiv</option>
                                             <option value="3">gespeert</option>
@@ -462,151 +457,137 @@
 
                         <button type="submit" class="btn btn-delete">Löschen</button>
                         <button type="submit" class="btn btn-reject">Ablehnen</button>
-                        <button type="submit" class="btn btn-lock">Speeren</button>
+                        <button type="submit" class="btn btn-lock">Sperren</button>
                         <button type="submit" class="btn btn-unlock">Freischalten</button>
-                        <button type="submit" class="btn btn-blue btn-assign">Zuweisen</button>
-                        <button type="submit" class="btn btn-blue btn-role">Rolle zuordnen</button>
                         <button type="submit" class="btn btn-blue btn-password">Passwort zurücksetzen</button>
 
                     </div>
 
-                    <div class="result-counter">
-
-                        <span class="result-text">Zeige&nbsp;</span>    
-                        <select class="result-select">
-                            <option value="1">50</option>
-                            <option value="2">100</option>
-                            <option value="3">150</option>
-                            <option value="3">alle</option>
-                        </select>
-                        <span  class="result-text">Einträge pro Seite.</span> 
-                    </div>
+                    
 
                     <form>
                         <div class="form-group">
-                            <div class="col-lg-12">
-                                <div class="form-wrapper mb-15">
 
-                                    <label for="group" class="col-lg-2">Gruppe</label>
-                                    <div class="col-lg-3">
+                            <div class="form-wrapper mb-15">
+                                <label for="lastname" class="col-lg-2 pl-15" style="font-weight:700">Gruppe</label>
+                                <div class="col-lg-3">
 
-                                        <h4>Ausgewählte Objekte</h4>
+                                    <h4>Ausgewählte Objekte</h4>
 
-                                        <ul class="auswahlbox">
-                                            <li class="auswahlobjekt">
-                                                Schulleitung
-                                            </li>
-                                        </ul>
+                                    <ul class="auswahlbox">
+                                        <li class="auswahlobjekt">
+                                            Schulleitung
+                                        </li>
+                                    </ul>
 
-                                    </div>
-
-                                    <div class="iconnav">
-                                        <button class="btn">
-                                            <i class="sc-icon icon-angle-double-up"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-up-dir"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-down-dir"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-angle-double-down"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-cancel"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="col-lg-3">
-                                        <h4>Verfügbare Objekte</h4>
-
-                                        <ul class="auswahlbox">
-                                            <li class="auswahlobjekt">
-                                                Schülerzeitung
-                                            </li>
-                                            <li class="auswahlobjekt">
-                                                Sekretariat
-                                            </li>
-                                            <li class="auswahlobjekt">
-                                                5a (2015/16)
-                                            </li>
-                                            <li class="auswahlobjekt">
-                                                6a (2015/16)
-                                            </li>
-                                            <li class="auswahlobjekt">
-                                                7a (2015/16)
-                                            </li>
-                                            <li class="auswahlobjekt">
-                                                8a (2015/16)
-                                            </li>
-                                            <li class="auswahlobjekt">
-                                                9d (2015/16)
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="iconset">
-                                        <button class="btn">
-                                            <i class="sc-icon icon-pencil"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-plus"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-list-alt"></i>
-                                        </button>
-                                    </div>
                                 </div>
 
-                                <div class="form-wrapper mb-15">
-                                    <label for="lastname" class="col-lg-2">Rolle/ Berechtigung</label>
-                                    <div class="col-lg-3">
+                                <div class="iconnav">
+                                    <button class="btn" style="border: none">
+                                        <i class="sc-icon icon-actions-move-to-top"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-up-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-down-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-actions-move-to-bottom"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-trash"></i>
+                                    </button>
+                                </div>
 
-                                        <h4>Ausgewählte Objekte</h4>
+                                <div class="col-lg-3">
+                                    <h4>Verfügbare Objekte</h4>
 
-                                        <ul class="auswahlbox">
-                                            <li class="auswahlobjekt">
-                                                Lehrkraft
-                                            </li>
-                                        </ul>
+                                    <ul class="auswahlbox">
+                                        <li class="auswahlobjekt">
+                                            Schülerzeitung
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            Sekretariat
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            5a (2015/16)
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            6a (2015/16)
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            7a (2015/16)
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            8a (2015/16)
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            9d (2015/16)
+                                        </li>
+                                    </ul>
 
-                                    </div>
+                                </div>
+                                <div class="iconset">
+                                    <button class="btn">
+                                        <i class="sc-icon icon-pencil"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-plus"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-list-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
 
-                                    <div class="iconnav">
-                                        <button class="btn">
-                                            <i class="sc-icon icon-angle-double-up"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-up-dir"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-down-dir"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-angle-double-down"></i>
-                                        </button>
-                                        <button class="btn">
-                                            <i class="sc-icon icon-cancel"></i>
-                                        </button>
-                                    </div>
+                            <div class="form-wrapper mb-15">
+                                <label for="lastname" class="col-lg-2 pl-15" style="font-weight:700">Rolle/ Berechtigung</label>
+                                <div class="col-lg-3">
 
-                                    <div class="col-lg-3">
-                                        <h4>Verfügbare Objekte</h4>
+                                    <h4>Ausgewählte Objekte</h4>
 
-                                        <ul class="auswahlbox">
-                                            <li class="auswahlobjekt">
-                                                Schüler/ in
-                                            </li>
-                                            <li class="auswahlobjekt">
-                                                an Schule Beteiligte
-                                            </li>
-                                        </ul>
+                                    <ul class="auswahlbox">
+                                        <li class="auswahlobjekt">
+                                            Lehrkraft
+                                        </li>
+                                    </ul>
 
-                                    </div>
-                                    <div class="iconset">
+                                </div>
 
-                                    </div>
+                                <div class="iconnav">
+                                    <button class="btn" style="border: none">
+                                        <i class="sc-icon icon-actions-move-to-top"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-up-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-down-dir"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-actions-move-to-bottom"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="sc-icon icon-trash"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <h4>Verfügbare Objekte</h4>
+
+                                    <ul class="auswahlbox">
+                                        <li class="auswahlobjekt">
+                                            Schüler/ in
+                                        </li>
+                                        <li class="auswahlobjekt">
+                                            an Schule Beteiligte
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="iconset">
+
                                 </div>
                             </div>
                         </div>
@@ -614,7 +595,7 @@
 
 
 
-                    <nav aria-label="Page navigation">
+                    <nav aria-label="page navigation">
                         <ul class="pagination">
                             <li class="page-item disabled">
                                 <a class="page-link sc-icon icon-angle-double-left" href="#" tabindex="-1"></a>
@@ -645,6 +626,21 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <div class="result-counter">
+
+                    <span class="result-text">Zeige&nbsp;</span>
+                    <select class="result-select">
+                        <option value="1">50</option>
+                        <option value="2">100</option>
+                        <option value="3">150</option>
+                        <option value="3">200</option>
+                        <option value="3">250</option>
+                        <option value="3">500</option>
+                    </select>
+                    <span class="result-text">Einträge pro Seite.</span>
+                    </div>
+
 
 
                 </div>

@@ -24,9 +24,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Impressum</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sidemap</a>
-                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#">Kontakt</a>
                 </li>

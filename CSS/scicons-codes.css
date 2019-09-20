@@ -39,6 +39,7 @@
 .icon-bookmark:before { content: '\e825'; } /* '' */
 .icon-help-circled:before { content: '\e826'; } /* '' */
 .icon-key:before { content: '\e827'; } /* '' */
+.icon-actions-move-to-top:before { content: '\e828'; } /* '' */
 .icon-tag:before { content: '\e82a'; } /* '' */
 .icon-doc-text-inv-1:before { content: '\e82b'; } /* '' */
 .icon-folder:before { content: '\e82c'; } /* '' */
@@ -83,6 +84,8 @@
 .icon-folder-1:before { content: '\e86b'; } /* '' */
 .icon-right-dir-1:before { content: '\e86c'; } /* '' */
 .icon-question-circle-regular:before { content: '\e873'; } /* '' */
+.icon-actions-filter:before { content: '\e874'; } /* '' */
+.icon-actions-move-to-bottom:before { content: '\e875'; } /* '' */
 .icon-pencil-1:before { content: '\e876'; } /* '' */
 .icon-doc-new-1:before { content: '\e878'; } /* '' */
 .icon-arrows-cw-1:before { content: '\e879'; } /* '' */
