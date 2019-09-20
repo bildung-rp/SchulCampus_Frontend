@@ -214,7 +214,7 @@
                     <div class="accordion">
 
                         <div class="card">
-                            <div class="card-header" id="u1">
+                            <div class="card-header" id="u1" style="border-top:none;">
 
                                 <button class="btn btn-link sc-icon collapsed" data-toggle="collapse" data-target="#cu1"
                                     aria-expanded="true" aria-controls="cu1">
@@ -275,7 +275,7 @@
                     <div class="accordion">
 
                         <div class="card">
-                            <div class="card-header" id="v1">
+                            <div class="card-header" id="v1" style="border-top:none;">
 
                                 <button class="btn btn-link sc-icon collapsed" data-toggle="collapse" data-target="#cv1"
                                     aria-expanded="true" aria-controls="cv1">
@@ -438,7 +438,7 @@
                     <div class="accordion">
 
                         <div class="card">
-                            <div class="card-header" id="x1">
+                            <div class="card-header" id="x1" style="border-top:none;">
 
                                 <button class="btn btn-link sc-icon collapsed" data-toggle="collapse" data-target="#cx1"
                                     aria-expanded="true" aria-controls="cx1">

@@ -198,6 +198,12 @@
         width: 100%;
     }
 
+    .box-content .card-header {
+        border: dotted 1px #99e0fd;
+        border-left: none;
+        border-right: none;
+    }
+
     .arrowblue{
         left:15%;        /*50% oder 85%*/
         bottom: 100%;
