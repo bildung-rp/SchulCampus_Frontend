@@ -10,7 +10,7 @@
     <div class=" navbar row no-gutters">
         <div class="col-lg-2">
             <a class="navbar-brand" href="#">
-                <img src="Images/RLP-logo-weiss.png" alt="Logo_RLP">
+                <img src="images/rlp-logo-weiss.png" alt="Logo_RLP">
             </a>
         </div>
         <div class="col-lg-8">

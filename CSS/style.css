@@ -348,9 +348,13 @@ dt::before {
     box-shadow: 3px 3px 5px rgb(47, 58, 47, 0.15);    /*#2F3A48*/
 }
   
+.dropdown-menu.dropdown-menu-wide {
+  min-width: 100%;
+}
+
 .dropdown-item {
     width:auto;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 1rem;
     font-size:inherit;
     color:inherit;
     border-radius:3px;
@@ -1186,7 +1190,7 @@ header .row {
     font-size:19px;
     font-weight: 500;
 }
-.logo .sc-icon-dd {
+.logo .sc-icon-dd, .logo.sc-icon-dd {
     font-size: 25px;
 }
 
@@ -1229,12 +1233,13 @@ header .row {
 
 .dd-right{
     float: right;
+    max-width: 100%;
 }
 
 /* gleiche Breite */
 .dd-right button, .dd-right .dropdown-menu {
-    width:200px;
-    max-width: 200px;
+/*    width:200px;
+    max-width: 200px; */
     align-items: center;
 }
 
@@ -1243,7 +1248,7 @@ header .icon-userhead::before {
 }
 
 .dd-label { 
-    max-width: 115px;
+/*    max-width: 115px; */
     font-size:16px;
     font-weight: 700;
     overflow: hidden;
@@ -2230,6 +2235,7 @@ select.result-counter {
     color:#fff;   
     margin-left: 0;
     padding: 0;
+    width: 30px;
 }
 
 .sc-icon-pills {

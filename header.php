@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="dist/css/bootstrap-select.min.css">
     
 
-    <link rel="stylesheet" href="CSS/scincons.css">
+    <link rel="stylesheet" href="CSS/scicons.css">
     <link rel="stylesheet" href="CSS/animation.css">
     <link rel="stylesheet" href="CSS/scicons-codes.css">
     <link rel="stylesheet" href="CSS/scicons-embedded.css">
@@ -32,7 +32,7 @@
 
     
 
-    <script src="JS/jquery_functions.js"></script>
+    <script src="js/jquery_functions.js"></script>
 
 
 
@@ -46,7 +46,7 @@
 
     <header class="container-fluid" id="header">
         <div class="row">
-            <div class="col-xl-2 col-3">
+            <div class="col-xl-2 col-3 col-md-3">
                 <div class="dropdown" id="topnav">
                     <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
                         <div class="logo" id="mainpage-0">
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-8 col-6">
+            <div class="col-xl-7 col-6 col-md-5">
                 <div class="nav-pills-area">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
@@ -160,23 +160,25 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
                                 <span class="sc-icon-pills icon-user-cog-solid"></span>
-                                <span class="badge">4124</span>
+                                <span class="badge">2</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-2 col-3">
+            <div class="col-xl-3 col-3 col-md-4">
                 <div id="usernav" class="dropdown dd-right">
                     <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
-                        <i class="sc-icon-dd icon-userhead"></i>
-                        <span class="dd-label">Max Schmidt Müller</span>
+                        <i class="logo sc-icon-dd fas fa-user-circle"></i>
+                        <span class="dd-label">Lisa-Marie von Bobrutzki</span>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-                        <a class="dropdown-item" href="profiledit.php">Profil</a>
-                        <a class="dropdown-item" href="#">Einstellungen</a>
-                        <a class="dropdown-item" href="benutzerverwaltung.php">Benutzerverwaltung</a>
-                        <a class="dropdown-item" href="#">Abmelden</a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime dropdown-menu-wide">
+                        <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fas fa-user-edit"></i>
+                                <span>mein Profil</span></a>
+                        <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fas fa-users"></i>
+                                <span>Benutzerverwaltung</span></a>
+                        <a class="dropdown-item" href="#"><i class="sc-icon-dd fas fa-power-off"></i>
+                                <span>Abmelden</span></a>
                     </div>
                 </div>
             </div>
