@@ -903,7 +903,7 @@ img.round {
 }
 
 .btn-delete:hover {
-    background-color: white;
+    background-color: rgb(190,114,190);
     color: rgb(155, 72, 155);
     border-color: rgb(155, 72, 155);
 }
