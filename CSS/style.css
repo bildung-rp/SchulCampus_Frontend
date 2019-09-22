@@ -1503,13 +1503,13 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
 }
 
 .sidebar .card {
-    padding-top :15px;
+    padding: 0 0 20px 0;
     background-color: transparent;
     border:none;
 }
 
 .sidebar .card-header {
-    padding: .5rem 1.25rem;
+    padding: 20px 1.25rem;
     color: #505B64;
     background-color: transparent;
     border-bottom: 1px solid #F0F0F1;
@@ -1536,6 +1536,7 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
 .sidebar .btn-link {
     font-weight: 400;
     color: #737C83;
+    height: 40px;
 }
 
 .sidebar .btn-link:hover {
@@ -1647,7 +1648,7 @@ footer .navbar-nav .nav-link:hover,footer .navbar-nav .nav-link:focus {
 
 /*Suche*/
 .pagesearch .card-header {
-    padding: 15px 10px;
+    padding: 20px 10px;
 }
 
 .pagesearch .btn-link-blue {

@@ -142,7 +142,7 @@ $(document).ready(function () {
             $(".btn-sidebar").css("align-items", "center");
             
             $(".icon-grip-lines-vertical-solid").css("display", "block");
-            $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
+            $(".sidebar .card-header").css("padding", "20px 0.5rem");
             $(".sidebar .card-body").css("display", "none");
             $(".sidebar span").css("display", "none");
             $(".sidebar .new .btn").css("margin-left", "-18px");
@@ -156,7 +156,7 @@ $(document).ready(function () {
             
             $(".icon-grip-lines-vertical-solid").css("display", "block");
 
-            $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+            $(".sidebar .card-header").css("padding", "20px 1.25rem");
             $(".sidebar .card-body").css("display", "block");
             $(".sidebar span").css("display", "block");
             $(".dropdown-toggle").removeClass("special");
@@ -170,7 +170,7 @@ $(document).ready(function () {
             
             $(".icon-grip-lines-vertical-solid").css("display", "block");
 
-            $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+            $(".sidebar .card-header").css("padding", "20px 1.25rem");
             $(".sidebar .card-body").css("display", "block");
             $(".sidebar span").css("display", "block");
             $(".dropdown-toggle").removeClass("special");
@@ -179,7 +179,7 @@ $(document).ready(function () {
             
             $(".sidebar .dropdown-toggle").addClass("special");
             $(".btn-sidebar").css("align-items", "center");
-            $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
+            $(".sidebar .card-header").css("padding", "20px 0.5rem");
             $(".sidebar .card-body").css("display", "none");
             $(".sidebar span").css("display", "none");
             $(".sidebar .new .btn").css("margin-left", "-18px");
@@ -208,7 +208,7 @@ $(document).ready(function () {
                 $(".icon-grip-lines-vertical-solid").css("display", "block");
                 $(".btn-sidebar").css("align-items", "center");
 
-                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-header").css("padding", "20px 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
                 
@@ -226,7 +226,7 @@ $(document).ready(function () {
                 $(".sidebar .dropdown-toggle").addClass("special");
                 
 
-                $(".sidebar .card-header").css("padding", ".5rem 0.5rem");
+                $(".sidebar .card-header").css("padding", "20px 0.5rem");
                 $(".sidebar .card-body").css("display", "none");
                 $(".sidebar span").css("display", "none");
                 $(".sidebar .new .btn").css("margin-left", "-18px");
@@ -238,7 +238,7 @@ $(document).ready(function () {
 
                 $(".icon-menu").css("display", "none");
                 $(".icon-grip-lines-vertical-solid").css("display", "block");
-                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-header").css("padding", "20px 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
 
