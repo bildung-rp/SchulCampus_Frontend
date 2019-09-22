@@ -156,7 +156,7 @@ $(document).ready(function () {
             
             $(".icon-grip-lines-vertical-solid").css("display", "block");
 
-            $(".sidebar .card-header").css("padding", "20px 1.25rem");
+            $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
             $(".sidebar .card-body").css("display", "block");
             $(".sidebar span").css("display", "block");
             $(".dropdown-toggle").removeClass("special");
@@ -170,7 +170,7 @@ $(document).ready(function () {
             
             $(".icon-grip-lines-vertical-solid").css("display", "block");
 
-            $(".sidebar .card-header").css("padding", "20px 1.25rem");
+            $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
             $(".sidebar .card-body").css("display", "block");
             $(".sidebar span").css("display", "block");
             $(".dropdown-toggle").removeClass("special");
@@ -208,7 +208,7 @@ $(document).ready(function () {
                 $(".icon-grip-lines-vertical-solid").css("display", "block");
                 $(".btn-sidebar").css("align-items", "center");
 
-                $(".sidebar .card-header").css("padding", "20px 1.25rem");
+                $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
                 
@@ -238,7 +238,7 @@ $(document).ready(function () {
 
                 $(".icon-menu").css("display", "none");
                 $(".icon-grip-lines-vertical-solid").css("display", "block");
-                $(".sidebar .card-header").css("padding", "20px 1.25rem");
+                $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
 
@@ -267,7 +267,7 @@ $(document).ready(function () {
 
                 $('.sidebar').css("min-width", "300px");
 
-                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
             }
@@ -285,7 +285,7 @@ $(document).ready(function () {
         if ($(window).width() < 992) {
 
 
-                $(".sidebar .card-header").css("padding", ".5rem 1.25rem");
+                $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
             }

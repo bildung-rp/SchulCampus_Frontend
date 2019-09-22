@@ -216,12 +216,8 @@
                                 <th>Erstellt
                                     <i class="sc-icon icon-down-dir" style="display:none"></i>
                                 </th>
-
-
-                                <th>Status
-                                    <i class=""></i>
-                                </th>
-                                <th>Aktion</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-right">&nbsp;</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -246,10 +242,9 @@
                                     <td>16.07.2018</td>
 
 
-                                    <td class="sc-icon icon-circle status status-green"></td>
-                                    <td>
+                                    <td class="sc-icon icon-circle status status-green text-center"></td>
+                                    <td class="text-right">
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -272,8 +267,8 @@
                                     <td>11.07.2018</td>
 
 
-                                    <td class="sc-icon icon-circle status status-yellow"></td>
-                                    <td>
+                                    <td class="sc-icon icon-circle status status-yellow text-center"></td>
+                                    <td class="text-right">
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
 
                                     </td>
@@ -290,8 +285,8 @@
                                     <td>11.08.2018</td>
 
 
-                                    <td class="sc-icon icon-circle status status-red"></td>
-                                    <td>
+                                    <td class="sc-icon icon-circle status status-red text-center"></td>
+                                    <td class="text-right">
                                         <a class="icon-pencil" href=" " title="action"></a>
 
                                     </td>
