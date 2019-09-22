@@ -138,7 +138,7 @@
                                         <select class="selectpicker">
                                             <option value="1">aktiv</option>
                                             <option value="2">inaktiv</option>
-                                            <option value="3">gespeert</option>
+                                            <option value="3">gesperrt</option>
                                         </select>
                                     </div>
                             </form>
@@ -933,115 +933,128 @@
                         <button type="submit" class="btn btn-lock">Sperren</button>
                         <button type="submit" class="btn btn-delete">Löschen</button>
                     </div>
+
                     <form>
-                        <div class="form-group">
-                            <div class="form-wrapper mb-15">
-                                <label for="lastname" class="col-lg-2 pl-15" style="font-weight:700">Gruppe</label>
-                                <div class="col-lg-3">
-                                    <h4>Ausgewählte Objekte</h4>
-                                    <ul class="auswahlbox">
-                                        <li class="auswahlobjekt">
-                                            Schulleitung
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="iconnav">
-                                    <button class="btn" style="border: none">
-                                        <i class="sc-icon icon-actions-move-to-top"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-up-dir"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-down-dir"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-actions-move-to-bottom"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-trash"></i>
-                                    </button>
-                                </div>
-                                <div class="col-lg-3">
-                                    <h4>Verfügbare Objekte</h4>
-                                    <ul class="auswahlbox">
-                                        <li class="auswahlobjekt">
-                                            Schülerzeitung
-                                        </li>
-                                        <li class="auswahlobjekt">
-                                            Sekretariat
-                                        </li>
-                                        <li class="auswahlobjekt">
-                                            5a (2015/16)
-                                        </li>
-                                        <li class="auswahlobjekt">
-                                            6a (2015/16)
-                                        </li>
-                                        <li class="auswahlobjekt">
-                                            7a (2015/16)
-                                        </li>
-                                        <li class="auswahlobjekt">
-                                            8a (2015/16)
-                                        </li>
-                                        <li class="auswahlobjekt">
-                                            9d (2015/16)
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="iconset">
-                                    <button class="btn">
-                                        <i class="sc-icon icon-pencil"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-plus"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-list-alt"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="form-wrapper mb-15">
-                                <label for="lastname" class="col-lg-2 pl-15" style="font-weight:700">Rolle/ Berechtigung</label>
-                                <div class="col-lg-3">
-                                    <h4>Ausgewählte Objekte</h4>
-                                    <ul class="auswahlbox">
-                                        <li class="auswahlobjekt">
-                                            Lehrkraft
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="iconnav">
-                                    <button class="btn" style="border: none">
-                                        <i class="sc-icon icon-actions-move-to-top"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-up-dir"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-down-dir"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-actions-move-to-bottom"></i>
-                                    </button>
-                                    <button class="btn">
-                                        <i class="sc-icon icon-trash"></i>
-                                    </button>
-                                </div>
-                                <div class="col-lg-3">
-                                    <h4>Verfügbare Objekte</h4>
-                                    <ul class="auswahlbox">
-                                        <li class="auswahlobjekt">
-                                            Schüler/ in
-                                        </li>
-                                        <li class="auswahlobjekt">
-                                            an Schule Beteiligte
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="iconset">
-                                </div>
-                            </div>
+
+<div class="sbsms">
+    <div class="form-wizards-wrap form-wizards-aside">
+        <div class="form-wizards-element">
+            <div class="form-multigroup-wrap">
+                <div class="form-multigroup-item form-multigroup-element">
+                    <label>Ausgewählte Objekte</label>
+                    <div class="form-wizards-wrap form-wizards-aside">
+                        <div class="form-wizards-element">
+                            <select size="5" class="form-control tceforms-multiselect" multiple="multiple">
+                                <option value="40" title=".">Lehrerzimmer</option>
+                                <option value="216" title=".">FK Deutsch</option>
+                                <option value="329" title=".">FK evang. Religion</option>
+                                <option value="338" title=".">7c (2019/20)</option>
+                                <option value="297" title=".">11d2 (2019/20)</option>
+                            </select>
                         </div>
+                        <div class="form-wizards-items">
+                            <div class="btn-group-vertical">
+                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte zum Anfang verschieben">
+                                    <span class="icon icon-size-small icon-state-default icon-actions-move-to-top">
+                                        <span class="icon-markup">
+                                            <img src="/images/actions-move-to-top.svg" width="16" height="16">
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte nach oben verschieben">
+                                    <span class="icon icon-size-small icon-state-default icon-actions-move-up">
+                                        <span class="icon-markup">
+                                            <img src="/images/actions-move-up.svg" width="16" height="16">
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte nach unten verschieben">
+                                    <span class="icon icon-size-small icon-state-default icon-actions-move-down">
+                                        <span class="icon-markup">
+                                            <img src="/images/actions-move-down.svg" width="16" height="16">
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte zum Ende verschieben">
+                                    <span class="icon icon-size-small icon-state-default icon-actions-move-to-bottom">
+                                        <span class="icon-markup">
+                                            <img src="/images/actions-move-to-bottom.svg" width="16" height="16">
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="#" class="btn btn-default" title="Ausgewähltes Objekt löschen">
+                                    <span class="icon icon-size-small icon-state-default icon-actions-selection-delete">
+                                        <span class="icon-markup">
+                                            <img src="/images/actions-selection-delete.svg" width="16" height="16">
+                                        </span>
+                                    </span>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-multigroup-item form-multigroup-element">
+                    <label>Verfügbare Objekte</label>
+                    <div class="form-multigroup-item-wizard"><span class="input-group input-group-sm">
+                            <span class="input-group-addon">
+                                <span class="fa fa-filter"></span>
+                            </span>
+                            <input class="form-control" value="">
+                        </span></div>
+                    <select class="form-control" size="5">
+                        <option value="62" title=".anwalt">5a (2019/20)</option>
+                        <option value="103" title=".bau">5b (2019/20)</option>
+                        <option value="84" title=".beratung">6a (2019/20)</option>
+                        <option value="40" title=".berufsbildendeschule" class="hidden" disabled="disabled">6b (2019/20)</option>
+                        <option value="295" title=".berufsorientierung">7a (2019/20)</option>
+                        <option value="302" title=".bildungsnetz">7b (2019/20)</option>
+                        <option value="49" title=".bio">8a (2019/20)</option>
+                        <option value="327" title=".biss">8b (2019/20)</option>
+                        <option value="312" title=".bw-geschichte">9a (2019/20)</option>
+                        <option value="220" title=".cct">9b (2019/20)</option>
+                        <option value="116" title=".chemie">10a (2019/20)</option>
+                        <option value="152" title=".comedison">10b</option>
+                        <option value="57" title=".deu">11d1 (2019/20)</option>
+                        <option value="51" title=".egs">12M1 (2019/20)</option>
+                        <option value="163" title=".eltern">12m1 (2019/20)</option>
+                        <option value="55" title=".engl">13e1 (2019/20)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-wizards-items">
+        <div class="btn-group btn-group-vertical">
+            <a class="btn btn-default" href="#">
+                <span alt="Benutzergruppe bearbeiten" title="Benutzergruppe bearbeiten">
+                    <span class="icon icon-size-small icon-state-default icon-actions-open">
+                        <span class="icon-markup">
+                            <img src="/images/actions-open.svg" width="16" height="16">
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <a class="btn btn-default" href="#">
+                <span alt="Neue Gruppe erstellen" title="Neue Gruppe erstellen">
+                    <span class="icon icon-size-small icon-state-default icon-actions-add">
+                        <span class="icon-markup">
+                            <img src="/images/actions-add.svg" width="16" height="16">
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <a class="btn btn-default" href="#">
+                <span alt="Gruppen anzeigen" title="Gruppen anzeigen">
+                    <span class="icon icon-size-small icon-state-default icon-actions-system-list-open">
+                        <span class="icon-markup">
+                            <img src="/images/actions-system-list-open.svg" width="16" height="16">
+                        </span>
+                    </span>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
                     </form>
                     <nav aria-label="page navigation">
                         <ul class="pagination">
