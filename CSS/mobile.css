@@ -67,6 +67,10 @@
 /*MobileAnsicht*/
 @media screen and (max-width: 992px) {   
 
+    body {
+        padding-top: 0px;
+    }
+
     #container-blue {
         width: 100%;
     }
