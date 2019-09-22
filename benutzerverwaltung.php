@@ -24,7 +24,7 @@
 
     <div class="sidebar" id="sidebar">
 
-        <div class="accordion">
+        <div class="accordion sticky-top">
 
             <div class="card">
                 <div class="card-header" id="s1">
