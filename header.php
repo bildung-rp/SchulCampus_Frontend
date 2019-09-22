@@ -44,7 +44,7 @@
 
 
 
-    <header class="container-fluid" id="header">
+    <header class="container-fluid fixed-top" id="header">
         <div class="row">
             <div class="col-xl-2 col-3 col-md-3">
                 <div class="dropdown" id="topnav">
