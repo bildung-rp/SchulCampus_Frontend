@@ -1,5 +1,4 @@
 <?php include "header.php"; ?>
-
 <div class="container-fluid" id="maintabs">
     <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -19,21 +18,15 @@
         </li>
     </ul>
 </div>
-
 <main class="space" id="main">
-
     <div class="sidebar" id="sidebar">
-
         <div class="accordion sticky-top">
-
             <div class="card">
                 <div class="card-header" id="s1">
-
                     <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs1" aria-expanded="true" aria-controls="cs1">
                         <i class="sc-icon icon-user"></i>
                         <span>Benutzer</span>
                     </button>
-
                 </div>
                 <div id="cs1" class="collapse show" aria-labelledby="s1" data-parent="#accordion1">
                     <div class="card-body">
@@ -50,15 +43,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="card">
                 <div class="card-header" id="s2">
-
                     <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs2" aria-expanded="true" aria-controls="cs2">
                         <i class="sc-icon icon-user-friends-solid"></i>
                         <span>Gruppen</span>
                     </button>
-
                 </div>
                 <div id="cs2" class="collapse show" aria-labelledby="s2" data-parent="#accordion1">
                     <div class="card-body">
@@ -72,15 +62,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="card">
                 <div class="card-header" id="s3">
-
                     <button class="btn btn-link dropdown-toggle special" data-toggle="collapse" data-target="#cs3" aria-expanded="true" aria-controls="cs3">
                         <i class="sc-icon icon-flag"></i>
                         <span>Rollen</span>
                     </button>
-
                 </div>
                 <div id="cs3" class="collapse show" aria-labelledby="s3" data-parent="#accordion1">
                     <div class="card-body">
@@ -97,31 +84,20 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-
-
     </div>
-
-
     <div class="btn-sidebar">
         <button type="button" class="btn">
             <i class="sc-icon icon-grip-lines-vertical-solid"></i>
             <i class="sc-icon icon-menu"></i>
         </button>
     </div>
-
-
-
     <div class="main-content" id="main-content">
-
         <div class="pagesearch" id="tabsearch">
             <div class="accordion small">
                 <div class="card card-blue">
                     <div class="card-header card-header-blue" id="v1">
                         <div class="pagesearch-field">
-
                             <div class="input-group">
                                 <input class="form-control border-right-0" type="search" value="" id="" placeholder="Suchbegriff">
                                 <span class="input-group-append">
@@ -130,7 +106,6 @@
                                     </button>
                                 </span>
                             </div>
-
                             <button class="btn btn-link btn-link-blue dropdown-toggle" data-toggle="collapse" data-target="#c1" aria-expanded="true"
                                 aria-controls="c1">
                                 Erweiterte Suche
@@ -139,21 +114,16 @@
                     </div>
                     <div id="c1" class="collapse" aria-labelledby="v1">
                         <div class="card-body pagesearch-filter">
-
                             <form>
                                 <div class="form-row">
                                     <div class="col-auto">
-
                                         <select class="selectpicker" multiple>
                                                 <option>Klasse 5d</option>
                                                 <option>Schule A</option>
                                                 <option>Naturwissenschaft AG</option>
                                         </select>
-
                                     </div>
                                     <div class="col-auto">
-
-
                                         <select class="selectpicker" multiple>
                                                 <option value="1">Admin</option>
                                                 <option value="2">Lehrkraft</option>
@@ -163,33 +133,23 @@
                                                 <option value="6">Web-Werkzeuge</option>
                                                 <option value="7">...Sonstiges</option>
                                         </select>
-
                                     </div>
                                     <div class="col-auto">
-
-
                                         <select class="selectpicker">
                                             <option value="1">aktiv</option>
                                             <option value="2">inaktiv</option>
                                             <option value="3">gespeert</option>
                                         </select>
-
                                     </div>
-
-
                             </form>
-
                             <button type="submit" class="btn btn-blue btn-submit">Suchen</button>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
             <div class="tab-content">
                 <div class="tab-pane active" id="idm">
-
                     <table class="table">
                         <thead>
                             <tr>
@@ -240,8 +200,6 @@
                                         <a href="profiledit.php">john@example.com</a>
                                     </td>
                                     <td>16.07.2018</td>
-
-
                                     <td class="sc-icon icon-circle status status-green text-center"></td>
                                     <td class="text-right">
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
@@ -265,12 +223,9 @@
                                         <a href="profiledit.php">mary@example.com</a>
                                     </td>
                                     <td>11.07.2018</td>
-
-
                                     <td class="sc-icon icon-circle status status-yellow text-center"></td>
                                     <td class="text-right">
                                         <a class="sc-icon icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -283,12 +238,9 @@
                                     <td>ghtt785</td>
                                     <td>juhghdy@example.com</td>
                                     <td>11.08.2018</td>
-
-
                                     <td class="sc-icon icon-circle status status-red text-center"></td>
                                     <td class="text-right">
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -301,12 +253,9 @@
                                     <td>ghtt785</td>
                                     <td>juhghdy@example.com</td>
                                     <td>11.08.2018</td>
-
-
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -319,12 +268,9 @@
                                     <td>maxmuster1</td>
                                     <td>maxmuster@muster.de</td>
                                     <td>10.02.2019</td>
-
-
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -337,12 +283,9 @@
                                     <td>maxmuster1</td>
                                     <td>maxmuster@muster.de</td>
                                     <td>10.02.2019</td>
-
-
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -355,12 +298,9 @@
                                     <td>maxmuster1</td>
                                     <td>maxmuster@muster.de</td>
                                     <td>10.02.2019</td>
-
-
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -373,12 +313,9 @@
                                     <td>maxmuster1</td>
                                     <td>maxmuster@muster.de</td>
                                     <td>10.02.2019</td>
-
-
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -391,12 +328,9 @@
                                     <td>maxmuster1</td>
                                     <td>maxmuster@muster.de</td>
                                     <td>10.02.2019</td>
-
-
                                     <td class="sc-icon icon-circle status status-red"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -409,12 +343,9 @@
                                     <td>maxmuster1</td>
                                     <td>maxmuster@muster.de</td>
                                     <td>10.02.2019</td>
-
-
                                     <td class="sc-icon icon-circle status status-green"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -427,56 +358,39 @@
                                     <td>maxmuster1</td>
                                     <td>maxmuster@muster.de</td>
                                     <td>10.02.2019</td>
-
-
                                     <td class="sc-icon icon-circle status status-yellow"></td>
                                     <td>
                                         <a class="icon-pencil" href=" " title="action"></a>
-
                                     </td>
                                 </tr>
                             </form>
                         </tbody>
-
-
                         <div class="status-change">
                             <i class="sc-icon icon-circle status status-red"></i>
                             <i class="sc-icon icon-circle status status-yellow"></i>
                             <i class="sc-icon icon-circle status status-green"></i>
                         </div>
-
                     </table>
-
-
                     <div class="markaction">
-
                         <button type="submit" class="btn btn-delete">Löschen</button>
-                        <button type="submit" class="btn btn-reject">Ablehnen</button>
                         <button type="submit" class="btn btn-lock">Sperren</button>
+                        <button type="submit" class="btn btn-reject">Ablehnen</button>
                         <button type="submit" class="btn btn-unlock">Freischalten</button>
                         <button type="submit" class="btn btn-blue btn-password">Passwort zurücksetzen</button>
-
                     </div>
-
                     
-
                     <form>
                         <div class="form-group">
-
                             <div class="form-wrapper mb-15">
                                 <label for="lastname" class="col-lg-2 pl-15" style="font-weight:700">Gruppe</label>
                                 <div class="col-lg-3">
-
                                     <h4>Ausgewählte Objekte</h4>
-
                                     <ul class="auswahlbox">
                                         <li class="auswahlobjekt">
                                             Schulleitung
                                         </li>
                                     </ul>
-
                                 </div>
-
                                 <div class="iconnav">
                                     <button class="btn" style="border: none">
                                         <i class="sc-icon icon-actions-move-to-top"></i>
@@ -494,10 +408,8 @@
                                         <i class="sc-icon icon-trash"></i>
                                     </button>
                                 </div>
-
                                 <div class="col-lg-3">
                                     <h4>Verfügbare Objekte</h4>
-
                                     <ul class="auswahlbox">
                                         <li class="auswahlobjekt">
                                             Schülerzeitung
@@ -521,7 +433,6 @@
                                             9d (2015/16)
                                         </li>
                                     </ul>
-
                                 </div>
                                 <div class="iconset">
                                     <button class="btn">
@@ -535,21 +446,16 @@
                                     </button>
                                 </div>
                             </div>
-
                             <div class="form-wrapper mb-15">
                                 <label for="lastname" class="col-lg-2 pl-15" style="font-weight:700">Rolle/ Berechtigung</label>
                                 <div class="col-lg-3">
-
                                     <h4>Ausgewählte Objekte</h4>
-
                                     <ul class="auswahlbox">
                                         <li class="auswahlobjekt">
                                             Lehrkraft
                                         </li>
                                     </ul>
-
                                 </div>
-
                                 <div class="iconnav">
                                     <button class="btn" style="border: none">
                                         <i class="sc-icon icon-actions-move-to-top"></i>
@@ -567,10 +473,8 @@
                                         <i class="sc-icon icon-trash"></i>
                                     </button>
                                 </div>
-
                                 <div class="col-lg-3">
                                     <h4>Verfügbare Objekte</h4>
-
                                     <ul class="auswahlbox">
                                         <li class="auswahlobjekt">
                                             Schüler/ in
@@ -579,17 +483,12 @@
                                             an Schule Beteiligte
                                         </li>
                                     </ul>
-
                                 </div>
                                 <div class="iconset">
-
                                 </div>
                             </div>
                         </div>
                     </form>
-
-
-
                     <nav aria-label="page navigation">
                         <ul class="pagination">
                             <li class="page-item disabled">
@@ -621,108 +520,22 @@
                             </li>
                         </ul>
                     </nav>
-
                     <div class="result-counter">
-
                     <span class="result-text">Zeige&nbsp;</span>
                     <select class="result-select">
                         <option value="1">50</option>
                         <option value="2">100</option>
-                        <option value="3">150</option>
-                        <option value="3">200</option>
                         <option value="3">250</option>
                         <option value="3">500</option>
                     </select>
                     <span class="result-text">Einträge pro Seite.</span>
                     </div>
-
-
-
                 </div>
-
                 <div class="tab-pane" id="moodle">
-
                     moodle-Tab
-
                 </div>
-
-
-
-
-
-
-
                 <div class="tab-pane" id="orga">
-
-                    <h1 class="mb-15">Mein Profil</h1>
-
-                    <h2>Allgemein</h2>
-
-                    <form class="">
-
-                        <div class="form-group d-flex">
-                            <div class="col-lg-12">
-                                <div class="form-wrapper mb-15">
-                                    <label for="name" class="col-lg-2">Vorname</label>
-                                    <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Vorname" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
-                                </div>
-
-                                <div class="form-wrapper mb-15">
-                                    <label for="lastname" class="col-lg-2">Nachname</label>
-                                    <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="lastname" placeholder="Nachname" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
-                                </div>
-
-                                <div class="form-wrapper mb-15">
-                                    <label for="email" class="col-lg-2">E-Mail</label>
-                                    <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-
-                        <h2>Mitgliedschaften</h2>
-
-                        <div class="form-group d-flex">
-                            <div class="col-lg-12">
-
-                            </div>
-                        </div>
-
-
-                        <h2>Account</h2>
-
-                        <div class="form-group d-flex">
-                            <div class="col-lg-12">
-
-                                <div class="form-wrapper mb-15">
-                                    <label for="name" class="col-lg-2">Benutzerkennung</label>
-                                    <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Nutzerkennung" value="">
-
-                                </div>
-
-                                <div class="form-wrapper mb-15">
-                                    <label for="inputPassword2" class="col-lg-2">Passwort</label>
-                                    <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
-                                    <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort"></a>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-9">
-                            <button type="submit" class="btn btn-blue btn-save">Speichern</button>
-                        </div>
-
-
-                    </form>
-
+                    <h1 class="mb-15">Orga-Tab</h1>
                     <button type="button" class="btn btn-blue m-2" data-toggle="modal" data-target="#exampleModal">
                         lange Fehlermeldung
                     </button>
@@ -741,7 +554,6 @@
                             </div>
                             <div class="modal-body modal-body-error">
                                 Hier ist ein Fehler aufgetreten!
-
                             </div>
                             <div class="modal-footer modal-footer-error">
                                 <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Deteils</button>
@@ -750,7 +562,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content modal-content-error">
@@ -764,24 +575,8 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
-
         </div>
-
-
-
-
     </div>
-
-
-
-
-
 </main>
-
 <?php include "footer.php"; ?>

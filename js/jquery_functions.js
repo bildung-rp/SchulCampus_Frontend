@@ -350,8 +350,8 @@ $(document).ready(function () {
 
         console.log((posX) + ' , ' + (posY));
 
-        var y = posY + 5
-        var x = posX - 30
+        var y = posY + 7
+        var x = posX + 3
 
         $(".status-change").css("top", y + "px");
         $(".status-change").css("left", x + "px");
