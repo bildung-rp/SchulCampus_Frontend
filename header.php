@@ -183,48 +183,49 @@
                 </div>
             </div>
         </div>
+        <div class="dropdown-menu-full" id="topnav-mobile">
+            <div class="dropdown-menu dropdown-menu-lime">
+                <a class="dropdown-item" href="index.php">
+                    <i class="sc-icon-dd icon-schulcampus"></i>
+                    <span>Schulcampus</span>
+                </a>
+                <a class="dropdown-item" href="workspace.php">
+                    <i class="sc-icon-dd icon-folder-open"></i>
+                    <span>Meine Dateien</span>
+                </a>
+                <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
+                    <i class="sc-icon-dd icon-graduation-cap"></i>
+                    <span>Moodle</span>
+                </a>
+                <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                    <i class="sc-icon-dd icon-play-circled"></i>
+                    <span>Mediathek</span>
+                </a>
+                <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                    <i class="sc-icon-dd icon-bank"></i>
+                    <span>Curriculum</span>
+                </a>
+                <a class="dropdown-item" href="">
+                    <i class="sc-icon-dd icon-book-1"></i>
+                    <span>Lehr- und Arbeitspläne</span>
+                </a>
+                <a class="dropdown-item" href="infoportal.php">
+                    <i class="sc-icon-dd icon-info-circled"></i>
+                    <span>Infoportal</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-menu-full" id="usernav-mobile">
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
+                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="#">Einstellungen</a>
+                <a class="dropdown-item" href="benutzerverwaltung.php">Benutzerverwaltung</a>
+                <a class="dropdown-item" href="#">Abmelden</a>
+            </div>
+        </div>
     </header>
 
-    <div class="dropdown-menu-full" id="topnav-mobile">
-        <div class="dropdown-menu dropdown-menu-lime">
-            <a class="dropdown-item" href="index.php">
-                <i class="sc-icon-dd icon-schulcampus"></i>
-                <span>Schulcampus</span>
-            </a>
-            <a class="dropdown-item" href="workspace.php">
-                <i class="sc-icon-dd icon-folder-open"></i>
-                <span>Meine Dateien</span>
-            </a>
-            <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
-                <i class="sc-icon-dd icon-graduation-cap"></i>
-                <span>Moodle</span>
-            </a>
-            <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
-                <i class="sc-icon-dd icon-play-circled"></i>
-                <span>Mediathek</span>
-            </a>
-            <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
-                <i class="sc-icon-dd icon-bank"></i>
-                <span>Curriculum</span>
-            </a>
-            <a class="dropdown-item" href="">
-                <i class="sc-icon-dd icon-book-1"></i>
-                <span>Lehr- und Arbeitspläne</span>
-            </a>
-            <a class="dropdown-item" href="infoportal.php">
-                <i class="sc-icon-dd icon-info-circled"></i>
-                <span>Infoportal</span>
-            </a>
-        </div>
-    </div>
 
-    <div class="dropdown-menu-full" id="usernav-mobile">
-        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-            <a class="dropdown-item" href="#">Profil</a>
-            <a class="dropdown-item" href="#">Einstellungen</a>
-            <a class="dropdown-item" href="benutzerverwaltung.php">Benutzerverwaltung</a>
-            <a class="dropdown-item" href="#">Abmelden</a>
-        </div>
-    </div>
 
         <div id="content">
