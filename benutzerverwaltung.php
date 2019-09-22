@@ -176,7 +176,7 @@
                                 <th>Erstellt
                                     <i class="sc-icon icon-down-dir" style="display:none"></i>
                                 </th>
-                                <th class="text-center">Status</th>
+                                <th class="text-center" style="width: 80px;">Status</th>
                                 <th class="text-right">&nbsp;</th>
                             </tr>
                         </thead>
@@ -927,13 +927,12 @@
                         </div>
                     </table>
                     <div class="markaction">
-                        <button type="submit" class="btn btn-delete">Löschen</button>
-                        <button type="submit" class="btn btn-lock">Sperren</button>
-                        <button type="submit" class="btn btn-reject">Ablehnen</button>
-                        <button type="submit" class="btn btn-unlock">Freischalten</button>
                         <button type="submit" class="btn btn-blue btn-password">Passwort zurücksetzen</button>
+                        <button type="submit" class="btn btn-unlock">Freischalten</button>
+                        <button type="submit" class="btn btn-reject">Ablehnen</button>
+                        <button type="submit" class="btn btn-lock">Sperren</button>
+                        <button type="submit" class="btn btn-delete">Löschen</button>
                     </div>
-                    
                     <form>
                         <div class="form-group">
                             <div class="form-wrapper mb-15">

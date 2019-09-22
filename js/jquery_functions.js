@@ -351,7 +351,7 @@ $(document).ready(function () {
         console.log((posX) + ' , ' + (posY));
 
         var y = posY + 7
-        var x = posX + 3
+        var x = posX
 
         $(".status-change").css("top", y + "px");
         $(".status-change").css("left", x + "px");
