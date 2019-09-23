@@ -128,17 +128,17 @@
 
                     <div class="form-group d-flex">
                         <div class="col-lg-10">
-                            <div class="form-wrapper mb-15">
+                            <div class="form-wrapper mb-15 form-group row">
                                 <label for="lastname" class="col-lg-2">Nachname</label>
                                 <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="lastname" placeholder="Nachname" value="Wörsdörfer">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
                             </div>
-                            <div class="form-wrapper mb-15">
+                            <div class="form-wrapper mb-15 form-group row">
                                 <label for="name" class="col-lg-2">Vorname</label>
                                 <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Vorname" value="Hans-Reinhard">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
                             </div>
-                            <div class="form-wrapper mb-15">
+                            <div class="form-wrapper mb-15 form-group row">
                                 <label for="email" class="col-lg-2">E-Mail</label>
                                 <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
