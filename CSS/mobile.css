@@ -277,16 +277,28 @@
         color: #fff;
     }
 
-
     .sidebar {
         display: block;
         min-width: 70px
     }
 
-    
-    .btn-sidebar .btn:not(:disabled):not(.disabled) {
-        cursor: pointer;
+    .sidebar .card-header {
+        padding: 20px 0.6rem 0 0.6rem;
     }
+
+    .sidebar .card-body {
+        display: none;
+    }
+
+    .sidebar span {
+        display: none;
+    }
+
+    .sidebar .new .btn {
+        margin-left: -18px;
+    }
+    
+    
 
     
 
