@@ -1254,6 +1254,7 @@ input[type=radio]:disabled+label {
 /*Pagination*/
 .pagination {
     justify-content: center;
+    padding-top: 30px;
 }
 
 .pagination .sc-icon {
