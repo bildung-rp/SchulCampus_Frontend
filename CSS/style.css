@@ -760,6 +760,10 @@ dt::before {
 
 /* ------------------Formulare-------------------- */
 
+label {
+    font-size: 0.8rem;
+}
+
 input[type=text] {
     height: 40px;
     width: auto;
