@@ -5,7 +5,9 @@
 
     /*Header-Elemente*/
 
-        
+    .icon-schulcampus::before{
+        margin-left: 5px;
+    }      
 
     .dropdown-item{
         height: 50px; /*Zeilenhöhe soll 50px sein - TODO*/
@@ -53,9 +55,8 @@
 
 
     .pagesearch-field {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+        width: 90%;
+        display: inline-block;
     }
 
 
@@ -106,18 +107,14 @@
     .dropdown-menu-full{
         display: block;
         position: absolute;
-/*        margin-top: 50px; */
         left: 0px;
         right:0px;
         z-index: 1024;
     }
 
-    .show > .dropdown-toggle::after {
-        content: "\f106";
-    }
-
     #usernav-mobile.dropdown-menu-full .dropdown-menu{
         width: 100%;
+        text-align: center;
         border-radius: 0;
     }
 
@@ -127,9 +124,7 @@
         border-radius: 0; 
     }
 
-    #usernav-mobile .dropdown-item {
-        padding-left: 40%;
-    }
+   
 
     #topnav-mobile .dropdown-item{
         padding-left: 40%;
@@ -182,10 +177,14 @@
         padding: 0 40px;
     }
 
+    .bluebox section:hover {
+        box-shadow: none;
+    }
+
     .box-content-full {
         display:none;
         background-color: #00B2F9;
-        height: 139px;
+        height: 135px;
         width: calc(100% - 20px);
         margin-left: 10px;
 		margin-bottom: 10px;
@@ -315,9 +314,7 @@
         display:none;
     }
 
-    .form-group .btn {
-        margin-right: 32%;
-    }
+
 
     .box-content .card {
         padding:0
@@ -351,22 +348,6 @@
         height: auto;
     }
 
-/*    #container-blue {
-        max-width: 540;
-    }
-*/
-    .infopage-image {
-        display: none;
-    }
-
-    .form-group .btn {
-        margin-right: 15%;
-    }
-
-    .bluebox {
-        height: 454px;
-    }
-
 
 }
 
@@ -385,7 +366,7 @@
     }
 
     .bluebox .col-4{
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
 
     
@@ -404,31 +385,23 @@
         font-size: 60%;
     }
 
-    /* .nav-link {
-        padding: .3rem 0.75rem;
-    } */
-
     #topnav-mobile .dropdown-item {
-        padding-left: 25%;
-        display: flex;
-        align-items: center;
-    }
-
-    #usernav .dropdown-item {
-        display: flex;
-        align-items: center;
+        padding-left: 20%;
     }
 
     #teaser.container {
-        width:100%;
-        height: 180px;
+        width:369px;
+        height: 170px;
     }
 
-   
 
     .bluebox .col-4 {
         margin: 0;
-        padding: 0 0 5px 0;
+        padding: 0 0 15px 0;
+    }
+
+	.bluebox {
+        height: 300px;
     }
 
     .bluebox section {
@@ -443,9 +416,11 @@
     }
 
     .box-content-full {
-        width: 100%;
-        margin-left: 0;
+        width: calc(100% - 40px);
+        margin-left: 20px;
         margin-right: 0;
+        height: 135px;
+        margin-bottom: 15px;
     }
 
     .nav-tabs {
@@ -464,14 +439,9 @@
         
     }
 
-    input[type="text"] {
-        height: 34px;
-    }
-
-    .box-content-full {
-        height: 147px;
-    }
     
+
+   
 
 
 }
@@ -479,7 +449,7 @@
 
 /*Ansicht bis 440px gut*/
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 440px) { 
 
     main {
         margin-left: 0;
@@ -522,21 +492,12 @@
         width:100%;
         height: 180px;
     }
-
-    .carousel {
-        height: 120px;
-    }
-    
-
-    .carousel-indicators {
-        margin-bottom: -40px;
-    }
-
+	
     .bluebox{
         height:180px;
     }
 
-
+    
     .bluebox section {
         width: 100px;
         min-height: 100px;
@@ -558,13 +519,8 @@
     }
 
     .box-content-full {
-        width: 100%;
-    }
-
-    .box-content-full h4 {
-        font-size: 15px;
-        margin: 15px 0; 
-        max-width: 238px;
+        width: calc(100% - 23px);
+        margin-left: 13px;
     }
 
     #subheader {
@@ -586,6 +542,38 @@
 
 
 }
+
+
+@media screen and (max-width: 320px) { 
+
+    .bluebox section {
+        width: 95px;
+        min-height: 95px;
+        margin: 5px 0;
+    }
+
+    .bluebox-lg {
+        position: absolute;
+        width: 95px;
+        height: 95px;
+    }
+
+    .box-content-full {
+        width: calc(100% - 4px);
+        margin-left: 3px;
+    }
+
+    .carousel {
+        height: 120px;
+    }
+
+}
+
+
+   
+
+
+
 
 
 
