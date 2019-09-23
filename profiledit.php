@@ -147,7 +147,6 @@
 
                         <div class="col-lg-2 profil-image">
                             <img class="round" src="images/persona.png" alt="Bsp">
-                            <!-- <i class="sc-icon icon-user"></i> -->
                             <div class="img-edit">
                                 <i class="sc-icon icon-pencil"></i>
                                 <i class="sc-icon icon-trash"></i>
