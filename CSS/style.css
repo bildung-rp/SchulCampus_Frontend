@@ -864,6 +864,7 @@ img.round {
     margin-right: 5px;
     font-size: 14px;
     margin-bottom: 5px;
+    padding: .375rem 1.25rem;
 }
 
 .markaction .btn:hover {
@@ -877,7 +878,7 @@ img.round {
 .btn-blue::before,
 .btn::before {
     display: inline-block;
-    padding: 0 22px 0 0;
+    padding: 0 8px 0 0;
     font-family: 'SCicons';
     color: #fff;
     font-weight: 400;
@@ -899,6 +900,12 @@ img.round {
 .btn-delete {
     background-color: rgb(155, 72, 155);
     color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: rgb(190,114,190);
+    color: rgb(155, 72, 155);
+    border-color: rgb(155, 72, 155);
 }
 
 .btn-delete.btn::before {
