@@ -130,17 +130,17 @@
                         <div class="col-lg-10">
                             <div class="form-wrapper mb-15">
                                 <label for="lastname" class="col-lg-2">Nachname</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="lastname" placeholder="Nachname" value="Wörsdörfer">
+                                <input type="text" class="form-control col-lg-8 col-md-8 col-10" id="lastname" placeholder="Nachname" value="Wörsdörfer">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
                             </div>
                             <div class="form-wrapper mb-15">
-                                <label for="name" class="col-lg-2">Vorname</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Vorname" value="Hans-Reinhard">
+                                <label for="firstname" class="col-lg-2">Vorname</label>
+                                <input type="text" class="form-control col-lg-8 col-md-8 col-10" id="firstname" placeholder="Vorname" value="Hans-Reinhard">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
                             </div>
                             <div class="form-wrapper mb-15">
                                 <label for="email" class="col-lg-2">E-Mail</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
+                                <input type="text" class="form-control col-lg-8 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
                             </div>
                         </div>
@@ -243,13 +243,13 @@
                     <div class="form-group d-flex">
                         <div class="col-lg-12">
                             <div class="form-wrapper mb-15">
-                                <label for="name" class="col-lg-2">Personalnummer</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Personalnummer" value="00875326">
+                                <label for="nummer" class="col-lg-2">Personalnummer</label>
+                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="nummer" placeholder="Personalnummer" value="00875326">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Personalnummer"></a>
                             </div>
                             <div class="form-wrapper mb-15">
-                                <label for="name" class="col-lg-2">Stammorganisation</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Stammorganisation" value="GY Mainz Rabanus-Maurus">
+                                <label for="org" class="col-lg-2">Stammorganisation</label>
+                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="org" placeholder="Stammorganisation" value="GY Mainz Rabanus-Maurus">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Stammorganisation"></a>
                             </div>                            
                             <div class="form-wrapper mb-15">
@@ -270,19 +270,19 @@
                     <div class="form-group d-flex">
                         <div class="col-lg-12">
                             <div class="form-wrapper mb-15">
-                                <label for="name" class="col-lg-2">Benutzerkennung</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Nutzerkennung" value="">
+                                <label for="account" class="col-lg-2">Benutzerkennung</label>
+                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="account" placeholder="Nutzerkennung" value="">
                             </div>
 
                             <div class="form-wrapper mb-15">
-                                <label for="inputPassword2" class="col-lg-2">Passwort</label>
-                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
-                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort"></a>
+                                <label for="inputPassword1" class="col-lg-2">Passwort</label>
+                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword1" placeholder="Passwort">
+                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort, leer lassen für keine Änderung"></a>
                             </div>
 
                             <div class="form-wrapper mb-15">
                                 <label for="inputPassword2" class="col-lg-2">Passwort (Bestätigung)</label>
-                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
+                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort wiederholen">
                             </div>
                         </div>
                     </div>
