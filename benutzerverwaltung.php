@@ -951,44 +951,6 @@
                                 <li>11d2 (2019/20)</li>
                             </ul>
                         </div>
-                        <div class="form-wizards-items">
-                            <div class="btn-group-vertical">
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte zum Anfang verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-to-top">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-to-top.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte nach oben verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-up">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-up.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte nach unten verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-down">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-down.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte zum Ende verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-to-bottom">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-to-bottom.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewähltes Objekt löschen">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-selection-delete">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-selection-delete.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a></div>
-                        </div>
                     </div>
                 </div>
                 <div class="form-multigroup-item form-multigroup-element">
@@ -1060,44 +1022,6 @@
                             <ul class="form-control">
                                 <li>Lehrkraft</li>
                             </ul>
-                        </div>
-                        <div class="form-wizards-items">
-                            <div class="btn-group-vertical">
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte zum Anfang verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-to-top">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-to-top.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte nach oben verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-up">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-up.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte nach unten verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-down">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-down.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewählte Objekte zum Ende verschieben">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-move-to-bottom">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-move-to-bottom.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-default" title="Ausgewähltes Objekt löschen">
-                                    <span class="icon icon-size-small icon-state-default icon-actions-selection-delete">
-                                        <span class="icon-markup">
-                                            <img src="/images/actions-selection-delete.svg" width="16" height="16">
-                                        </span>
-                                    </span>
-                                </a></div>
                         </div>
                     </div>
                 </div>
