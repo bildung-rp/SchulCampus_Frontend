@@ -61,7 +61,7 @@ include "header.php";
                     <div class="bluebox-label">
                         <a href="">Meine Dateien</a>
                         <button class="btn btn-blue" type="button">
-                            <span class="sc-icon icon-plus"></span>
+                            <span class="fa fa-plus"></span>
                         </button>
                         <div class="box-content">
                             <div class="accordion small">
@@ -69,7 +69,7 @@ include "header.php";
                                 <div class="card">
                                     <div class="card-header" id="s1">
 
-                                        <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
+                                        <button class="btn btn-link fa fa-times" data-toggle="collapse"
                                             data-target="#cs1" aria-expanded="true" aria-controls="cs1">
 
                                             <h4>Konrad Adenauer Gymnasium Westerburg</h4>
