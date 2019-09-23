@@ -955,57 +955,28 @@
                 </div>
                 <div class="form-multigroup-item form-multigroup-element">
                     <label>Verfügbare Objekte</label>
-                    <div class="form-multigroup-item-wizard"><span class="input-group input-group-sm">
+                    <div class="form-multigroup-item-wizard">
+                        <span class="input-group input-group-sm">
                             <span class="input-group-addon">
                                 <span class="fa fa-filter"></span>
                             </span>
                             <input class="form-control" value="">
-                        </span></div>
-                        <ul class="form-control right">
-                            <li>5a (2019/20)</li>
-                            <li>5b (2019/20)</li>
-                            <li>6a (2019/20)</li>
-                            <li>6b (2019/20)</li>
-                            <li>7a (2019/20)</li>
-                            <li>8a (2019/20)</li>
-                            <li>8b (2019/20)</li>
-                            <li>9a (2019/20)</li>
-                            <li>9b (2019/20)</li>
-                            <li>10a (2019/20)</li>
-                            <li>10b (2019/20)</li>
-                </ul>
+                        </span>
+                    </div>
+                    <ul class="form-control right">
+                        <li>5a (2019/20)</li>
+                        <li>5b (2019/20)</li>
+                        <li>6a (2019/20)</li>
+                        <li>6b (2019/20)</li>
+                        <li>7a (2019/20)</li>
+                        <li>8a (2019/20)</li>
+                        <li>8b (2019/20)</li>
+                        <li>9a (2019/20)</li>
+                        <li>9b (2019/20)</li>
+                        <li>10a (2019/20)</li>
+                        <li>10b (2019/20)</li>
+                    </ul>
                 </div>
-    <div class="form-wizards-items">
-        <div class="btn-group btn-group-vertical">
-            <a class="btn btn-default" href="#">
-                <span alt="Benutzergruppe bearbeiten" title="Benutzergruppe bearbeiten">
-                    <span class="icon icon-size-small icon-state-default icon-actions-open">
-                        <span class="icon-markup">
-                            <img src="/images/actions-open.svg" width="16" height="16">
-                        </span>
-                    </span>
-                </span>
-            </a>
-            <a class="btn btn-default" href="#">
-                <span alt="Neue Gruppe erstellen" title="Neue Gruppe erstellen">
-                    <span class="icon icon-size-small icon-state-default icon-actions-add">
-                        <span class="icon-markup">
-                            <img src="/images/actions-add.svg" width="16" height="16">
-                        </span>
-                    </span>
-                </span>
-            </a>
-            <a class="btn btn-default" href="#">
-                <span alt="Gruppen anzeigen" title="Gruppen anzeigen">
-                    <span class="icon icon-size-small icon-state-default icon-actions-system-list-open">
-                        <span class="icon-markup">
-                            <img src="/images/actions-system-list-open.svg" width="16" height="16">
-                        </span>
-                    </span>
-                </span>
-            </a>
-        </div>
-    </div>
             </div>
         </div>
     </div>
@@ -1027,48 +998,19 @@
                 </div>
                 <div class="form-multigroup-item form-multigroup-element">
                     <label>Verfügbare Objekte</label>
-                    <div class="form-multigroup-item-wizard"><span class="input-group input-group-sm">
+                    <div class="form-multigroup-item-wizard">
+                        <span class="input-group input-group-sm">
                             <span class="input-group-addon">
                                 <span class="fa fa-filter"></span>
                             </span>
                             <input class="form-control" value="">
-                        </span></div>
-                        <ul class="form-control right">
-                            <li>Schüler/in</li>
-                            <li>an Schule Beteiligte</li>
-                </ul>
+                        </span>
+                    </div>
+                    <ul class="form-control right">
+                        <li>Schüler/in</li>
+                        <li>an Schule Beteiligte</li>
+                    </ul>
                 </div>
-    <div class="form-wizards-items">
-        <div class="btn-group btn-group-vertical">
-            <a class="btn btn-default" href="#">
-                <span alt="Benutzergruppe bearbeiten" title="Benutzergruppe bearbeiten">
-                    <span class="icon icon-size-small icon-state-default icon-actions-open">
-                        <span class="icon-markup">
-                            <img src="/images/actions-open.svg" width="16" height="16">
-                        </span>
-                    </span>
-                </span>
-            </a>
-            <a class="btn btn-default" href="#">
-                <span alt="Neue Gruppe erstellen" title="Neue Gruppe erstellen">
-                    <span class="icon icon-size-small icon-state-default icon-actions-add">
-                        <span class="icon-markup">
-                            <img src="/images/actions-add.svg" width="16" height="16">
-                        </span>
-                    </span>
-                </span>
-            </a>
-            <a class="btn btn-default" href="#">
-                <span alt="Gruppen anzeigen" title="Gruppen anzeigen">
-                    <span class="icon icon-size-small icon-state-default icon-actions-system-list-open">
-                        <span class="icon-markup">
-                            <img src="/images/actions-system-list-open.svg" width="16" height="16">
-                        </span>
-                    </span>
-                </span>
-            </a>
-        </div>
-    </div>
             </div>
         </div>
     </div>
