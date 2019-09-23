@@ -258,7 +258,7 @@
                             <div class="form-wrapper mb-15">
                                 <label for="status" class="col-lg-2"></label>
                                 <div class="checks">
-                                    <input type="checkbox" id="f1" name="f1" value="">
+                                    <input type="checkbox" id="f1" name="f1" value="" selected="selected">
                                     <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
 
                                     <input type="checkbox" id="f2" name="f2" value="">
@@ -268,41 +268,31 @@
                         </div>
                     </div>
 
-                    <h2>Account</h2>
+                    <h2>Anmeldedaten</h2>
 
                     <div class="form-group d-flex">
                         <div class="col-lg-12">
-
                             <div class="form-wrapper mb-15">
                                 <label for="name" class="col-lg-2">Benutzerkennung</label>
-                                <input type="text" class="form-control col-lg-4 col-md-8 col-10" id="name" placeholder="Nutzerkennung" value="">
-
+                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Nutzerkennung" value="">
                             </div>
 
                             <div class="form-wrapper mb-15">
                                 <label for="inputPassword2" class="col-lg-2">Passwort</label>
-                                <input type="password" class="form-control col-lg-4 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
+                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort"></a>
                             </div>
 
                             <div class="form-wrapper mb-15">
                                 <label for="inputPassword2" class="col-lg-2">Passwort (Bestätigung)</label>
-                                <input type="password" class="form-control col-lg-4 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
+                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort">
                             </div>
-
-
-
-
-
                         </div>
                     </div>
 
                     <div class="col-lg-9">
                         <button type="submit" class="btn btn-blue btn-save">Speichern</button>
                     </div>
-
-
-            
 
             </form>
 
