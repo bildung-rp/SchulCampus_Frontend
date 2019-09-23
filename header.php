@@ -218,10 +218,12 @@
 
         <div class="dropdown-menu-full" id="usernav-mobile">
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-                <a class="dropdown-item" href="profiledit.php">Profil</a>
-                <a class="dropdown-item" href="#">Einstellungen</a>
-                <a class="dropdown-item" href="benutzerverwaltung.php">Benutzerverwaltung</a>
-                <a class="dropdown-item" href="#">Abmelden</a>
+                <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fas fa-user-edit"></i>
+                                <span>Profil</span></a>
+                <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fas fa-users"></i>
+                                <span>Benutzerverwaltung</span></a>
+                <a class="dropdown-item" href="#"><i class="sc-icon-dd fas fa-power-off"></i>
+                                <span>Abmelden</span></a>
             </div>
         </div>
     </header>

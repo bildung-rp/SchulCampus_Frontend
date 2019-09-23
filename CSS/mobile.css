@@ -67,8 +67,6 @@
 /*MobileAnsicht*/
 @media screen and (max-width: 992px) {   
 
-    
-
     #topnav button, .dd-right button{
         width:auto;
     }
@@ -120,7 +118,6 @@
 
     #usernav-mobile.dropdown-menu-full .dropdown-menu{
         width: 100%;
-        text-align: center;
         border-radius: 0;
     }
 
@@ -128,6 +125,10 @@
         width: 100%;
         float: left;     
         border-radius: 0; 
+    }
+
+    #usernav-mobile .dropdown-item {
+        padding-left: 40%;
     }
 
     #topnav-mobile .dropdown-item{
@@ -327,6 +328,11 @@
     #topnav-mobile .dropdown-item{
         padding-left: 30%;
     }
+
+    #usernav-mobile .dropdown-item {
+        padding-left: 30%;
+    }
+    
 
     #info-nav .column {
         width: 100%;
