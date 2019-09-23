@@ -218,7 +218,7 @@
 
         <div class="dropdown-menu-full" id="usernav-mobile">
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="profiledit.php">Profil</a>
                 <a class="dropdown-item" href="#">Einstellungen</a>
                 <a class="dropdown-item" href="benutzerverwaltung.php">Benutzerverwaltung</a>
                 <a class="dropdown-item" href="#">Abmelden</a>

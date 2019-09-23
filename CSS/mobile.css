@@ -67,9 +67,7 @@
 /*MobileAnsicht*/
 @media screen and (max-width: 992px) {   
 
-    #container-blue {
-        width: 100%;
-    }
+    
 
     #topnav button, .dd-right button{
         width:auto;
