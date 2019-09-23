@@ -8,12 +8,12 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#moodle" data-toggle="tab">MOODLE
+            <a class="nav-link" href="#moodle" data-toggle="tab">ORGA
                 <span></span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#orga" data-toggle="tab">CAMPUS_CLOUD
+            <a class="nav-link" href="#orga" data-toggle="tab">MOODLE
                 <span></span>
             </a>
         </li>
@@ -127,7 +127,7 @@
                     <h2>Allgemein</h2>
 
                     <div class="form-group d-flex">
-                        <div class="col-lg-12">
+                        <div class="col-lg-10">
                             <div class="form-wrapper mb-15">
                                 <label for="lastname" class="col-lg-2">Nachname</label>
                                 <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="lastname" placeholder="Nachname" value="Wörsdörfer">
@@ -145,7 +145,7 @@
                             </div>
                         </div>
 
-                        <div class="profil-image">
+                        <div class="col-lg-2 profil-image">
                             <img class="round" src="images/persona.png" alt="Bsp">
                             <!-- <i class="sc-icon icon-user"></i> -->
                             <div class="img-edit">

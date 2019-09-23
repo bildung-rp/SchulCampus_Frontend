@@ -7,12 +7,12 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#moodle" data-toggle="tab">MOODLE
+            <a class="nav-link" href="#moodle" data-toggle="tab">ORGA
                 <span></span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#orga" data-toggle="tab">ORGA
+            <a class="nav-link" href="#orga" data-toggle="tab">MOODLE
                 <span></span>
             </a>
         </li>
@@ -1058,12 +1058,12 @@
                     <span class="result-text">Einträge pro Seite.</span>
                     </div>
                 </div>
-                <div class="tab-pane" id="moodle">
-                    moodle-Tab
-                </div>
-
                 <div class="tab-pane" id="orga">
                     <h1 class="mb-15">Orga-Tab</h1>
+                </div>
+
+                <div class="tab-pane" id="moodle">
+                    <h1 class="mb-15">Moodle-Tab</h1>
                     <button type="button" class="btn btn-blue m-2" data-toggle="modal" data-target="#exampleModal">
                         modal: lange Fehlermeldung
                     </button>
