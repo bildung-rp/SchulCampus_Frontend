@@ -129,17 +129,15 @@
                     <div class="form-group d-flex">
                         <div class="col-lg-12">
                             <div class="form-wrapper mb-15">
-                                <label for="name" class="col-lg-2">Vorname</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Vorname" value="">
-                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
-                            </div>
-
-                            <div class="form-wrapper mb-15">
                                 <label for="lastname" class="col-lg-2">Nachname</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="lastname" placeholder="Nachname" value="">
+                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="lastname" placeholder="Nachname" value="Wörsdörfer">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
                             </div>
-
+                            <div class="form-wrapper mb-15">
+                                <label for="name" class="col-lg-2">Vorname</label>
+                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="name" placeholder="Vorname" value="Hans-Reinhard">
+                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
+                            </div>
                             <div class="form-wrapper mb-15">
                                 <label for="email" class="col-lg-2">E-Mail</label>
                                 <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
@@ -258,7 +256,7 @@
                             <div class="form-wrapper mb-15">
                                 <label for="status" class="col-lg-2"></label>
                                 <div class="checks">
-                                    <input type="checkbox" id="f1" name="f1" value="" selected="selected">
+                                    <input type="checkbox" id="f1" name="f1" value="" checked>
                                     <label for="f1">&nbsp;Der Benutzer besitzt ein 2.Staatsexamen für das Lehramt (Lehrer in RLP)</label>
 
                                     <input type="checkbox" id="f2" name="f2" value="">

@@ -819,10 +819,11 @@ input[type=text].small {
 }
 
 .profil-image {
-    position: absolute;
-    right: 174px;
-    width: 200px;
-    height: 200px;
+    position: relative;
+    left: 10px;
+    top: -100px;
+    width: 120px;
+    height: 120px;
     padding-left: 20px;
 }
 
