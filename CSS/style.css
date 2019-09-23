@@ -241,10 +241,7 @@ a.btn {
 h1,
 h2,
 h3,
-h4 .h1,
-.h2,
-.h3,
-.h4 {
+h4 {
     font-family: 'Open Sans', Arial, sans-serif;
     color: #2F3A48;
 }
@@ -363,7 +360,7 @@ dt {
 }
 
 
-/* Link Liste (Defination-List) */
+/* Link Liste (Definition-List) */
 dt {
     font-size: 14px;
 }
@@ -835,7 +832,9 @@ input[type=text].small {
 
 .img-edit {
     display: none;
-    float: right;
+    position: absolute;
+    top: 50px
+    right: 50px;
 }
 
 .img-edit .icon-pencil::before,
@@ -849,11 +848,10 @@ input[type=text].small {
     color: #009CEE;
 }
 
-
-
 img.round {
     border-radius: 50%;
 }
+
 
 .markaction {
     display: flex;
