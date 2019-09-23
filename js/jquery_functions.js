@@ -5,10 +5,11 @@ $(document).ready(function () {
     $(window).resize(function () {
 
         update();
-        sidebarView()
+        
 
         if ($(window).width() > 975) {
-            //$(".bluebox").css("height", "465");
+            
+            
         }
 
 
@@ -25,7 +26,7 @@ $(document).ready(function () {
 
     $('select').selectpicker();
 
-    $(".dropdown-toggle").removeClass("special");
+    
     
 
     function update() {
@@ -73,6 +74,7 @@ $(document).ready(function () {
     
         //---------Sidebar-Toggle------//
     
+        sidebarView()
         countMediaElements()
     
 
@@ -129,123 +131,59 @@ $(document).ready(function () {
 
 
 
-
-
     //------------Sidebar Ein-und Ausklappen------//
+    //---Veränderung anhand bei Bildschirmbreite---//
+    //---Ist die Breite größer als 992 soll die Sidebar aufgeklappt 300px sein, sonst zugeklappt 70px---//
+
 
     function sidebarView() {
 
         if ($(window).width() < 992) {
-            
 
+            $('.sidebar').css("min-width", "70px");
             $(".sidebar .dropdown-toggle").addClass("special");
-            $(".btn-sidebar").css("align-items", "center");
-            
-            $(".icon-grip-lines-vertical-solid").css("display", "block");
             $(".sidebar .card-header").css("padding", "20px 0.6rem 0 0.6rem");
             $(".sidebar .card-body").css("display", "none");
             $(".sidebar span").css("display", "none");
             $(".sidebar .new .btn").css("margin-left", "-18px");
 
-
         } else {
-            $("#sidebar").css("min-width", "300px");
-            $('#sidebar').css("display", "block");
-
-            $(".btn-sidebar").css("align-items", "center");
-            
-            $(".icon-grip-lines-vertical-solid").css("display", "block");
-
+            $(".sidebar").css("min-width", "300px");
+            $('.sidebar').css("display", "block");
             $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
             $(".sidebar .card-body").css("display", "block");
             $(".sidebar span").css("display", "block");
             $(".dropdown-toggle").removeClass("special");
-        }
-
-
-
-        if($("#sidebar").css("min-width") == "300px") {
-            $('#sidebar').css("display", "block");
-            $(".btn-sidebar").css("align-items", "center");
-            
-            $(".icon-grip-lines-vertical-solid").css("display", "block");
-
-            $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
-            $(".sidebar .card-body").css("display", "block");
-            $(".sidebar span").css("display", "block");
-            $(".dropdown-toggle").removeClass("special");
-            
-        } else {
-            
-            $(".sidebar .dropdown-toggle").addClass("special");
-            $(".btn-sidebar").css("align-items", "center");
-            $(".sidebar .card-header").css("padding", "20px 0.6rem 0 0.6rem");
-            $(".sidebar .card-body").css("display", "none");
-            $(".sidebar span").css("display", "none");
-            $(".sidebar .new .btn").css("margin-left", "-18px");
         }
         
     }
 
 
+    //---Veränderung durch Klicken---//
+    //---Ist die Sidebar zugeklappt, geht sie auf, ist die Sidebar aufgeklappt geht sie zu---//
+
+
     $(".btn-sidebar").click(function () { 
         
-        if ($(window).width() < 992) {
+            if($(".sidebar").css("min-width") == "300px") {
 
-            if($("#sidebar").css("min-width") == "300px") {
-
-                
                 $('.sidebar').css("min-width", "70px");
-                
-                
-
-                $(".dropdown-toggle").removeClass("special");
-                
-            } else {
-                $('#sidebar').css("min-width", "300px");
-                $('#sidebar').css("display", "block");
-                
-                $(".icon-grip-lines-vertical-solid").css("display", "block");
-                $(".btn-sidebar").css("align-items", "center");
-
-                $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
-                $(".sidebar .card-body").css("display", "block");
-                $(".sidebar span").css("display", "block");
-                
-                $(".dropdown-toggle").removeClass("special");
-                
-                
-            }
-        } else {
-
-            if($("#sidebar").css("min-width") == "300px"){
-
-                $('#sidebar').css("min-width", "70px");
-                $('#sidebar').css("display", "block");
-
+                $('.sidebar').css("display", "block");
                 $(".sidebar .dropdown-toggle").addClass("special");
-                
-
                 $(".sidebar .card-header").css("padding", "20px 0.6rem 0 0.6rem");
                 $(".sidebar .card-body").css("display", "none");
                 $(".sidebar span").css("display", "none");
                 $(".sidebar .new .btn").css("margin-left", "-18px");
 
-            } else {
                 
-                $('#sidebar').css("min-width", "300px");
-                $('#sidebar').css("display", "block");
-
-                $(".icon-menu").css("display", "none");
-                $(".icon-grip-lines-vertical-solid").css("display", "block");
+            } else {
+                $('.sidebar').css("min-width", "300px");
+                $('.sidebar').css("display", "block");
                 $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
                 $(".sidebar .card-body").css("display", "block");
                 $(".sidebar span").css("display", "block");
-
-                $(".sidebar .dropdown-toggle").removeClass("special");
-                
- 
-            }
+                $(".dropdown-toggle").removeClass("special");
+  
 
         }
 
@@ -280,17 +218,7 @@ $(document).ready(function () {
     });
 
 
-    //--------Header Dropdown--------//
-    $("#topnav.dropdown .btn").click(function (e) {
-        if ($(window).width() < 992) {
-
-
-                $(".sidebar .card-header").css("padding", "20px 1.25rem 5px 1.25rem");
-                $(".sidebar .card-body").css("display", "block");
-                $(".sidebar span").css("display", "block");
-            }
-    });
-
+ 
 
     //--------Header Dropdown--------//
     $("#topnav.dropdown .btn").click(function (e) {
