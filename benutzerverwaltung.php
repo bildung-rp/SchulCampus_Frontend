@@ -948,7 +948,7 @@
                                 <li>Lehrerzimmer</li>
                                 <li>FK Deutsch</li>
                                 <li>FK evang. Religion</li>
-                                <li>7c (2019/20)</li>
+                                <li>7b (2019/20)</li>
                                 <li>11d2 (2019/20)</li>
 <!--                            <select size="5" class="form-control tceforms-multiselect" multiple="multiple">
                                 <option value="40" title=".">Lehrerzimmer</option>
@@ -1007,7 +1007,15 @@
                             </span>
                             <input class="form-control" value="">
                         </span></div>
-                    <select class="form-control" size="5">
+                        <ul class="form-control">
+                            <li>5a (2019/20)</li>
+                            <li>5b (2019/20)</li>
+                            <li>6a (2019/20)</li>
+                            <li>6b (2019/20)</li>
+                            <li>7a (2019/20)</li>
+                            <li>8a (2019/20)</li>
+                            <li>9a (2019/20)</li>
+<!--                    <select class="form-control" size="5">
                         <option value="62" title=".anwalt">5a (2019/20)</option>
                         <option value="103" title=".bau">5b (2019/20)</option>
                         <option value="84" title=".beratung">6a (2019/20)</option>
@@ -1024,7 +1032,8 @@
                         <option value="51" title=".egs">12M1 (2019/20)</option>
                         <option value="163" title=".eltern">12m1 (2019/20)</option>
                         <option value="55" title=".engl">13e1 (2019/20)</option>
-                    </select>
+                    </select> -->
+                </ul>
                 </div>
             </div>
         </div>
