@@ -1007,7 +1007,7 @@
                             </span>
                             <input class="form-control" value="">
                         </span></div>
-                        <ul class="form-control">
+                        <ul class="form-control right">
                             <li>5a (2019/20)</li>
                             <li>5b (2019/20)</li>
                             <li>6a (2019/20)</li>
