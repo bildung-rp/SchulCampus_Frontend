@@ -1084,8 +1084,8 @@
                                 Hier ist ein Fehler aufgetreten!
                             </div>
                             <div class="modal-footer modal-footer-error">
-                                <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Deteils</button>
-                                <button type="button" class="btn btn-sm btn-error">Schließen</button>
+                                <button type="button" class="btn btn-sm btn-error">Details</button>
+                                <button type="button" class="btn btn-sm btn-error" data-dismiss="modal">Schließen</button>
                             </div>
                         </div>
                     </div>
