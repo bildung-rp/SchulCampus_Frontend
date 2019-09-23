@@ -1014,7 +1014,11 @@
                             <li>6b (2019/20)</li>
                             <li>7a (2019/20)</li>
                             <li>8a (2019/20)</li>
+                            <li>8b (2019/20)</li>
                             <li>9a (2019/20)</li>
+                            <li>9b (2019/20)</li>
+                            <li>10a (2019/20)</li>
+                            <li>10b (2019/20)</li>
 <!--                    <select class="form-control" size="5">
                         <option value="62" title=".anwalt">5a (2019/20)</option>
                         <option value="103" title=".bau">5b (2019/20)</option>
