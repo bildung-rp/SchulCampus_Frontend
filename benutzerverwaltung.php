@@ -1040,8 +1040,6 @@
                 </ul>
                 </div>
             </div>
-        </div>
-    </div>
     <div class="form-wizards-items">
         <div class="btn-group btn-group-vertical">
             <a class="btn btn-default" href="#">
@@ -1073,8 +1071,10 @@
             </a>
         </div>
     </div>
-</div>
 
+        </div>
+    </div>
+</div>
                     </form>
                     <nav aria-label="page navigation">
                         <ul class="pagination">
