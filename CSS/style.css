@@ -762,6 +762,7 @@ dt::before {
 
 label {
     font-size: 0.8rem;
+    margin-top: 5px;
 }
 
 input[type=text] {
