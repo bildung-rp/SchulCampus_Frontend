@@ -1,7 +1,4 @@
 <?php 
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
-header("Pragma: no-cache");
 include "header.php"; 
 ?>
 
@@ -20,25 +17,24 @@ include "header.php";
         <div class="row carousel-inner">
             <section class="col-lg-4 active">
 
-                <h4>20.01.2019</h4>
+                <h4>23.09.2019</h4>
                 <h2>
-                    <a href="#news1">Fortbildungen in Mathematik und Deutsch</a>
+                    <a href="https://bildung-rp.de/gehezu/startseite/einzelmeldung.html?tx_ttnews%5Btt_news%5D=7156&cHash=c5547cd3792c46d610fb372170b1ab88">Schulwettbewerb um den Deutschen Klimapreis</a>
                 </h2>
 
             </section>
             <section class="col-lg-4">
 
-                <h4>11.10.2018</h4>
+                <h4>16.09.2019</h4>
                 <h2>
-                    <a href="#news2">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt
-                        ut labore et dolor</a>
+                    <a href="https://bildung-rp.de/gehezu/startseite/einzelmeldung.html?tx_ttnews%5Btt_news%5D=7142&cHash=da38f734af57b3cc83000d1a97d0f702">Junge Forscher und Forscherinnen für den Klimaschutz gesucht: Schülerakademie 2°Campus</a>
                 </h2>
             </section>
             <section class="col-lg-4">
 
-                <h4>02.10.2018</h4>
+                <h4>13.09.2019</h4>
                 <h2>
-                    <a href="#news3">Wartungsarbeiten bei moodle</a>
+                    <a href="https://bildung-rp.de/gehezu/startseite/einzelmeldung.html?tx_ttnews%5Btt_news%5D=7137&cHash=a6ad5b6b165babc9d5f79bf6fe03cf38">Solarboot-Regatta 2020 - Das erfolgreiche Projekt für Realschulen plus startete im September in die zweite Runde</a>
                 </h2>
 
             </section>
