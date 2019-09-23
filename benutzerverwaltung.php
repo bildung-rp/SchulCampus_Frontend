@@ -944,13 +944,20 @@
                     <label>Ausgewählte Objekte</label>
                     <div class="form-wizards-wrap form-wizards-aside">
                         <div class="form-wizards-element">
-                            <select size="5" class="form-control tceforms-multiselect" multiple="multiple">
+                            <ul class="form-control">
+                                <li>Lehrerzimmer</li>
+                                <li>FK Deutsch</li>
+                                <li>FK evang. Religion</li>
+                                <li>7c (2019/20)</li>
+                                <li>11d2 (2019/20)</li>
+<!--                            <select size="5" class="form-control tceforms-multiselect" multiple="multiple">
                                 <option value="40" title=".">Lehrerzimmer</option>
                                 <option value="216" title=".">FK Deutsch</option>
                                 <option value="329" title=".">FK evang. Religion</option>
                                 <option value="338" title=".">7c (2019/20)</option>
                                 <option value="297" title=".">11d2 (2019/20)</option>
-                            </select>
+                            </select> -->
+                            </ul>
                         </div>
                         <div class="form-wizards-items">
                             <div class="btn-group-vertical">
