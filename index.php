@@ -59,7 +59,7 @@ include "header.php";
                         <span class="icon-folder-open blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="">Meine Dateien</a>
+                        <a href="">meine Dateien</a>
                         <button class="btn btn-blue" type="button">
                             <span class="sc-icon icon-plus"></span>
                         </button>

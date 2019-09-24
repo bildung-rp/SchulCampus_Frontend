@@ -58,17 +58,15 @@
                         switch($lastElement) {
                             case "index.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
-                                <span>
-                                    <b>Schul</b>campus&nbsp;<i>RLP</i>
-                                </span>";
+                                <span>Startseite</span>";
                             break;
                             case "workspace.php":
                                 echo "<i class='sc-icon-dd icon-folder-open'></i>
-                                <span>Meine Dateien</span>";
+                                <span>meine Dateien</span>";
                             break;
                             case "moodle.php":
                                 echo "<i class='sc-icon-dd icon-graduation-cap'></i>
-                                <span>Moodle</span>";
+                                <span>moodle@RLP</span>";
                             break;
                             case "mediathek.php":
                                 echo "<i class='sc-icon-dd icon-play-circled'></i>
@@ -76,11 +74,11 @@
                             break;
                             case "curriculum.php":
                                 echo "<i class='sc-icon-dd icon-bank'></i>
-                                <span>Curriculum</span>";
+                                <span>curriculum</span>";
                             break;
                             case "lehrplan.php":
                                 echo "<i class='sc-icon-dd icon-book-1'></i>
-                                <span>Lehr- und Arbeitspläne</span>";
+                                <span>Lehr- und Rahmenpläne</span>";
                             break;
                             case "infoportal.php":
                                 echo "<i class='sc-icon-dd icon-info-circled'></i>
@@ -88,9 +86,7 @@
                             break;
                             default:
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
-                                <span>
-                                    <b>Schul</b>campus&nbsp;<i>RLP</i>
-                                </span>";
+                                <span>Startseite</span>";
                             break;
                         } ?>
                         </div>
@@ -99,21 +95,19 @@
                         <a class="dropdown-item" href="index.php">
                             
                                 <i class="sc-icon-dd icon-schulcampus"></i>
-                                <span>
-                                    <b>Schul</b>campus&nbsp;<i>RLP</i>
-                                </span>
+                                <span>Startseite</span>
                             
                         </a>
                         <a class="dropdown-item" href="workspace.php">
                             
                                 <i class="sc-icon-dd icon-folder-open"></i>
-                                <span>Meine Dateien</span>
+                                <span>meine Dateien</span>
                             
                         </a>
                         <a class="dropdown-item" href="moodle.php">
                             
                                 <i class="sc-icon-dd icon-graduation-cap"></i>
-                                <span>Moodle</span>
+                                <span>moodle@RLP</span>
                             
                         </a>
                         <a class="dropdown-item" href="mediathek.php">
@@ -125,13 +119,13 @@
                         <a class="dropdown-item" href="curriculum.php">
                             
                                 <i class="sc-icon-dd icon-bank"></i>
-                                <span>Curriculum</span>
+                                <span>curriculum</span>
                             
                         </a>
                         <a class="dropdown-item" href="lehrplan.php">
                             
                                 <i class="sc-icon-dd icon-book-1"></i>
-                                <span>Lehr- und Arbeitspläne</span>
+                                <span>Lehr- und Rahmenpläne</span>
                             
                         </a>
                         <a class="dropdown-item" href="infoportal.php">
@@ -188,15 +182,15 @@
             <div class="dropdown-menu dropdown-menu-lime">
                 <a class="dropdown-item" href="index.php">
                     <i class="sc-icon-dd icon-schulcampus"></i>
-                    <span>Schulcampus</span>
+                    <span>Startseite</span>
                 </a>
                 <a class="dropdown-item" href="workspace.php">
                     <i class="sc-icon-dd icon-folder-open"></i>
-                    <span>Meine Dateien</span>
+                    <span>meine Dateien</span>
                 </a>
                 <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
                     <i class="sc-icon-dd icon-graduation-cap"></i>
-                    <span>Moodle</span>
+                    <span>moodle@RLP</span>
                 </a>
                 <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
                     <i class="sc-icon-dd icon-play-circled"></i>
@@ -204,11 +198,11 @@
                 </a>
                 <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
                     <i class="sc-icon-dd icon-bank"></i>
-                    <span>Curriculum</span>
+                    <span>curriculum</span>
                 </a>
                 <a class="dropdown-item" href="">
                     <i class="sc-icon-dd icon-book-1"></i>
-                    <span>Lehr- und Arbeitspläne</span>
+                    <span>Lehr- und Rahmenpläne</span>
                 </a>
                 <a class="dropdown-item" href="infoportal.php">
                     <i class="sc-icon-dd icon-info-circled"></i>
@@ -220,7 +214,7 @@
         <div class="dropdown-menu-full" id="usernav-mobile">
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
                 <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fas fa-user-edit"></i>
-                                <span>Profil</span></a>
+                                <span>mein Profil</span></a>
                 <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fas fa-users"></i>
                                 <span>Benutzerverwaltung</span></a>
                 <a class="dropdown-item" href="#"><i class="sc-icon-dd fas fa-power-off"></i>
