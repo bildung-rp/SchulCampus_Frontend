@@ -127,7 +127,7 @@ include "header.php";
                         <span class="icon-bank blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="Curriculum.html">Curriculum</a>
+                        <a href="Curriculum.html">curriculum</a>
                         <button class="btn btn-blue" type="button">
                             <span class="sc-icon icon-plus"></span>
                         </button>
@@ -141,13 +141,13 @@ include "header.php";
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#ct1" aria-expanded="true" aria-controls="ct1">
 
-                                            <h4>Instanz wählen</h4>
+                                            <h4>Medienkompass Kl. 6</h4>
                                         </button>
 
                                     </div>
                                     <div id="ct1" class="collapse" aria-labelledby="t1" data-parent="#accordion1">
                                         <div class="card-body">
-                                            <a href="#">Klasse 7e</a>
+                                            <a href="#">Klasse 6b</a>
                                         </div>
 
                                     </div>
@@ -339,8 +339,7 @@ include "header.php";
                     </div>
                     <div class="bluebox-label">
                         <a href="">Lehr- &amp;
-                            <br>Arbeitspläne
-                            <h4>Digital</h4>
+                            <br>Rahmenpläne
                         </a>
                     </div>
                 </section>
