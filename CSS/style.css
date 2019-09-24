@@ -393,9 +393,12 @@ dt::before {
     font-family: 'SCicons';
     content: "\f107";
     border: none;
-    width:22px;
+    
 }
 
+.pagesearch .dropdown-toggle::after {
+    width:22px;
+}
 
 .sidebar .dropdown-toggle.special::after {
     display: none;
@@ -1991,7 +1994,7 @@ select .dropdown-item::before {
 }
 
 select.result-counter {
-    background-color: rgb(202, 205, 207);
+    background-color: #2F3A48;
 }
 
 .result-counter .btn-light {
@@ -2484,7 +2487,7 @@ select.result-counter {
 }
 
 
-.icon-cancel::before{
+.bluebox .icon-cancel::before{
     padding:0;
 }
 
