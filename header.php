@@ -58,7 +58,7 @@
                         switch($lastElement) {
                             case "index.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
-                                <span>Startseite</span>";
+                                <span><b>Schul</b>campus&nbsp;<i>RLP</i></span>";
                             break;
                             case "workspace.php":
                                 echo "<i class='sc-icon-dd icon-folder-open'></i>
@@ -86,7 +86,7 @@
                             break;
                             default:
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
-                                <span>Startseite</span>";
+                                <span><b>Schul</b>campus&nbsp;<i>RLP</i></span>";
                             break;
                         } ?>
                         </div>
