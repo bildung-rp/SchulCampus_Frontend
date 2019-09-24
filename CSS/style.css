@@ -393,6 +393,7 @@ dt::before {
     font-family: 'SCicons';
     content: "\f107";
     border: none;
+    width:22px;
 }
 
 
@@ -833,7 +834,7 @@ input[type=text].small {
 .img-edit {
     display: none;
     position: absolute;
-    top: 50px
+    top: 50px;
     right: 50px;
 }
 
@@ -2480,6 +2481,11 @@ select.result-counter {
 
 .icon-userhead::before {
     margin-right: 2px;
+}
+
+
+.icon-cancel::before{
+    padding:0;
 }
 
 
