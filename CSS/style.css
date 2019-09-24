@@ -396,7 +396,7 @@ dt::before {
     
 }
 
-.pagesearch .dropdown-toggle::after {
+.pagesearch-field .dropdown-toggle::after {
     width:22px;
 }
 
@@ -725,7 +725,7 @@ dt::before {
 
 .nav-link {
     display: flex;
-    padding: 0.6rem 1rem .2rem;
+    /*padding: 0.6rem 1rem .2rem;*/
     font-weight: 400;
     font-size: 17px;
     color: #2F3A48;
@@ -1084,7 +1084,12 @@ btn-group.btn-blue::before {
 }
 
 .icon-question-circle-regular.sc-icon::before {
-    margin-left: 25px;
+    margin-left: 26px;
+    padding-top: 8px;
+}
+
+#profil .icon-question-circle-regular.sc-icon::before {
+    margin-left: 16px;
     padding-top: 8px;
 }
 
@@ -1287,6 +1292,7 @@ input[type=radio]:disabled+label {
 .page-link:focus {
     box-shadow: none;
 }
+
 
 
 
@@ -2009,6 +2015,31 @@ select.result-counter {
     font-size: 16px;
     font-weight: 400;
 }
+
+.result-counter .btn-light {
+    padding: 0;
+    margin-left: -1px;
+    line-height: 1.25;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+
+}
+
+.result-counter .filter-option-inner-inner {
+    color: #2F3A48;
+    padding: .5rem .75rem;
+    font-weight: 700;
+    z-index: 1024;
+}
+
+.result-counter .dropdown-toggle::after {
+    content: "";
+    padding: 0;
+}
+
+.result-counter .btn-light.active .dropdown-toggle::after {
+    content: "";
+}   
 
 .bootstrap-select .dropdown-item.active,
 .bootstrap-select .dropdown-item:active {
