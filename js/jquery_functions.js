@@ -19,9 +19,6 @@ $(document).ready(function () {
 
     var cardheight = 0
 
-    
-    
-    
 
 
     $('select').selectpicker();
@@ -80,11 +77,7 @@ $(document).ready(function () {
 
         
         
-            
-                
-        
 
-    
 
         
 
@@ -117,17 +110,13 @@ $(document).ready(function () {
     });
     
 
-/*     //-----------------Hover-Effekt - Dropdown ---------//
-    $().ready(function(){
-        $(".dropdown-menu").hover(function(){
-            $(".dropdown-menu-lime").siblings().css("background-color", "#65A300");
-        },
-        $(".dropdown-menu").focusout(function(){
-            $(".dropdown-lime").css("background-color", "#CBD900")}))}); */
-    
-   
-       
-    
+    //-----------Höhe Window-------------//
+    var windowHeight = $(window).height();
+    console.log("windowheight " + windowHeight);
+    windowHeight = windowHeight/2;
+    $(".btn-sidebar .btn").css("top", windowHeight);
+
+
 
 
 
@@ -188,11 +177,6 @@ $(document).ready(function () {
         }
 
     });
-
-
-
-
-
 
 
     //-------Zusatz: Wenn man auf eingeklappete Sidebar klickt, geht dises auch komplett auf---//
@@ -256,12 +240,9 @@ $(document).ready(function () {
             $("#usernav-mobile.dropdown-menu-full").css("display", "none");
         };
 
-        
 
     })
-    $('#usernav.dropdown .btn').focusout(function (f) {
-        $('#usernav-mobile.dropdown-menu-full .dropdown-menu').hide();
-    });
+    
 
 
 
@@ -320,33 +301,6 @@ $(document).ready(function () {
 
 
     });
-
-
-    //------------Höhe der Mobilen Ansicht - Bluebox-innen ändern----//
-
-    /* var actheight = $(".box-content-full").height()
-    var mainheight = 0
-    console.log(actheight)
-    $('.box-content-full .card-header').click(function () {
-        
-        actheight = actheight + 30
-        console.log(actheight)
-        mainheight = mainheight + 60
-
-        $(".box-content-full").css("height", actheight);
-        $("main").css("padding-bottom", mainheight);
-
-    });
-    $('.bluebox-lg').click(function () {
-        
-        actheight = 210
-        console.log(actheight)
-        mainheight = 0
-
-        $(".box-content-full").css("height", actheight);
-        $("main").css("padding-bottom", mainheight);
-
-    }); */
 
 
 
@@ -416,29 +370,6 @@ function countMediaElements() {
 
 
 
-
-$(document).ready(function () {
-
-
-    //TODO not working
-    $('#selectAll').click(function (e) {
-        if (e.currentTarget.checked) {
-            $('.tab-content .table td').find('input[type="checkbox"]').prop('checked', true);
-        } else {
-            $('.tab-content .table td').find('input[type="checkbox"]').prop('checked', false);
-        }
-    });
-
-    $('#selectAll').click(function (e) {
-        var table = $(e.target).closest('table');
-        $('td input:checkbox', table).attr('checked', e.target.checked);
-    });
-
-
-});
-
-
-
 //Accordion Sidebar active-Zustand (Mehrfachnennung möglich)
 $(document).ready(function () {
 
@@ -448,14 +379,12 @@ $(document).ready(function () {
         if ($(this).children("card")) {
             $(this).addClass("sub");
             console.log("sub added");
-
         };
 
 
         $(".sidebar .card-body.sub").removeClass("active");
         $(".sidebar .card-body").removeClass("active");
         $(this).addClass("active");
-        console.log("sub machen active rest weg");
 
 
     });
@@ -465,18 +394,9 @@ $(document).ready(function () {
 
 //TODO wenn in desktop Kachel auf ... dann resize
 
-$(document).ready(function () {
-
-    $(window).resize(function () {
-        if ($(window).width() < 992) {
-            if ($(".bluebox").hasClass("bluebox-lg") == "true") {
-                $(".bluebox .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
-            };
-        };
-    });
 
 
-});
+
 
 //Bluebox desktop-Ansicht
 var idBlueOld = 0;
@@ -628,6 +548,8 @@ function toggleBlueMobile(tempId) {
     }
 
 };
+
+
 
 // Intro
 $(document).ready(function () {

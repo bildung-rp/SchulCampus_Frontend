@@ -1818,6 +1818,10 @@ footer .navbar-nav .nav-link:focus {
     cursor: col-resize;
 }
 
+.btn-sidebar .btn {
+    position: fixed;
+}
+
 .btn-sidebar .icon-menu {
     display: none;
 }
