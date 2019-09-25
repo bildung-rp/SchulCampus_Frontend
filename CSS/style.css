@@ -733,7 +733,7 @@ dt::before {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #009CEE;
+    color: #CBD900;
     text-decoration: none;
 }
 
@@ -836,9 +836,6 @@ input[type=text].small {
 
 .img-edit {
     display: none;
-    position: absolute;
-    top: 50px;
-    right: 50px;
 }
 
 .img-edit .icon-pencil::before,

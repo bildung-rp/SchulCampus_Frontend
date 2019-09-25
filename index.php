@@ -78,7 +78,14 @@ include "header.php";
                                     </div>
                                     <div id="cs1" class="collapse" aria-labelledby="s1" data-parent="#accordion1">
                                         <div class="card-body">
-                                            <a href="#">Klasse 7e</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Klasse 7e</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Lehrerzimmer</a>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                     </div>

@@ -5,10 +5,6 @@
 
     /*Header-Elemente*/
 
-    .dropdown-item{
-        height: 50px; /*Zeilenhöhe soll 50px sein - TODO*/
-    }
-
     header .dropdown-menu> .dropdown-item:not(:first-child){
         border-top:1px solid #E3E3E5;
     }
@@ -26,10 +22,10 @@
         height:auto;
     }
 
-    footer .navbar-nav{ 
+/*    footer .navbar-nav{ 
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     /*Bluebox*/
     .bluebox{
@@ -119,8 +115,6 @@
         float: left;     
         border-radius: 0; 
     }
-
-   
 
     #topnav-mobile .dropdown-item{
         padding-left: 40%;

@@ -145,7 +145,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 profil-image">
+                        <div class="col-lg-2 profil-image text-center">
                             <img class="round" src="images/persona.png" alt="Bsp">
                             <div class="img-edit">
                                 <i class="sc-icon icon-pencil"></i>
