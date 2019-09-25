@@ -2121,6 +2121,7 @@ select.result-counter {
     margin: -8px 0;
     border-radius: none;
     background-color: #009cee;
+    border-radius: 0;
 }
 
 .megamenu .dropdown-item {

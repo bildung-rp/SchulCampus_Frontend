@@ -391,7 +391,7 @@
     }
 
     #topnav-mobile .dropdown-item {
-        padding-left: 20%;
+        padding-left: 30%;
     }
 
     #teaser.container {
@@ -572,8 +572,13 @@
         margin-left: 3px;
     }
 
+    #usernav-mobile .dropdown-item {
+        padding-left: 20%;
+    }
 
-
+    #topnav-mobile .dropdown-item {
+        padding-left: 20%;
+    }
 
 
 

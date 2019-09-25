@@ -63,19 +63,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-4">
                                     <h5 class="text-uppercase">Links</h5>
-                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="https://source.unsplash.com/250x150/?sig=1" alt="...">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="https://source.unsplash.com/250x150/?sig=2" alt="...">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="https://source.unsplash.com/250x150/?sig=3" alt="...">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                     <div class="col-sm-6 col-lg-3">
                                     <h5 class="text-uppercase">Links</h5>
