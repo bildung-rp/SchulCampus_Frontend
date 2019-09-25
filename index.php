@@ -72,21 +72,8 @@ include "header.php";
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cs1" aria-expanded="true" aria-controls="cs1">
 
-                                            <h4>Konrad Adenauer Gymnasium Westerburg</h4>
+                                            <h4>Meine Inhalte</h4>
                                         </button>
-
-                                    </div>
-                                    <div id="cs1" class="collapse" aria-labelledby="s1" data-parent="#accordion1">
-                                        <div class="card-body">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Klasse 7e</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Lehrerzimmer</a>
-                                                </li>
-                                            </ul>
-                                        </div>
 
                                     </div>
                                 </div>
@@ -96,14 +83,8 @@ include "header.php";
 
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cs2" aria-expanded="true" aria-controls="cs2">
-                                            <h4>Mathematik</h4>
+                                            <h4>Von mir freigegeben</h4>
                                         </button>
-
-                                    </div>
-                                    <div id="cs2" class="collapse" aria-labelledby="s2" data-parent="#accordion1">
-                                        <div class="card-body">
-                                            <a href="#">Klasse 8</a>
-                                        </div>
 
                                     </div>
                                 </div>
@@ -113,14 +94,9 @@ include "header.php";
 
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cs3" aria-expanded="true" aria-controls="cs3">
-                                            <h4>Naturwissenschaft</h4>
+                                            <h4>Für mich freigegeben</h4>
                                         </button>
 
-                                    </div>
-                                    <div id="cs3" class="collapse" aria-labelledby="s3" data-parent="#accordion1">
-                                        <div class="card-body">
-                                            <a href="#">Klasse 5e</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -372,13 +348,20 @@ include "header.php";
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cw1" aria-expanded="true" aria-controls="cw1">
 
-                                            <h4>Deutsch</h4>
+                                            <h4>GY Mainz Rabanus Maurus </h4>
                                         </button>
 
                                     </div>
                                     <div id="cw1" class="collapse" aria-labelledby="w1" data-parent="#accordion1">
                                         <div class="card-body">
-                                            <a href="#">Klasse 7e</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Wör 9a Schimmelreiter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wör 11d2 Mutter Courage</a>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                     </div>
@@ -389,13 +372,17 @@ include "header.php";
 
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cw2" aria-expanded="true" aria-controls="cw2">
-                                            <h4>Mathematik</h4>
+                                            <h4>Arbeitsgruppen (PL)</h4>
                                         </button>
 
                                     </div>
                                     <div id="cw2" class="collapse" aria-labelledby="w2" data-parent="#accordion1">
                                         <div class="card-body">
-                                            <a href="#">Klasse 8</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Medienscouts RLP</a>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                     </div>
@@ -406,13 +393,17 @@ include "header.php";
 
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cw3" aria-expanded="true" aria-controls="cw3">
-                                            <h4>Naturwissenschaft</h4>
+                                            <h4>GY Mainz Willigis</h4>
                                         </button>
 
                                     </div>
                                     <div id="cw3" class="collapse" aria-labelledby="w3" data-parent="#accordion1">
                                         <div class="card-body">
-                                            <a href="#">Klasse 5e</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">13 evR Bewahrung der Schöpfung</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -424,6 +415,7 @@ include "header.php";
                     </div>
                 </section>
             </div>
+
             <div class="col-4">
                 <section id="infoportal">
                     <div class="bluebox-lg">

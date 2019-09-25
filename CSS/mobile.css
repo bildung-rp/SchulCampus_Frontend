@@ -22,11 +22,6 @@
         height:auto;
     }
 
-/*    footer .navbar-nav{ 
-        flex-direction: column;
-        align-items: center;
-    } */
-
     /*Bluebox*/
     .bluebox{
         height: 465px;
@@ -127,6 +122,11 @@
     footer .navbar-brand{
         display: flex;
         justify-content: center;
+    }
+
+    footer .navbar-nav{ 
+        flex-direction: column;
+        align-items: center;
     }
 
     #teaser section{
