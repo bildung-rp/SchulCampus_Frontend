@@ -365,6 +365,11 @@
         padding-left: 0;
     }
 
+    #container-blue {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
     .bluebox .col-4{
         justify-content: space-evenly;
     }
@@ -449,7 +454,7 @@
 
 /*Ansicht bis 440px gut*/
 
-@media screen and (max-width: 440px) { 
+@media screen and (max-width: 450px) { 
 
     main {
         margin-left: 0;
@@ -493,10 +498,6 @@
         height: 180px;
     }
 	
-    .bluebox{
-        height:180px;
-    }
-
     
     .bluebox section {
         width: 100px;
@@ -540,11 +541,19 @@
         display: none;
     }
 
+    .carousel {
+        height: 120px;
+    }
 
 }
 
 
-@media screen and (max-width: 320px) { 
+@media screen and (max-width: 340px) { 
+
+    #container-blue {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
     .bluebox section {
         width: 95px;
@@ -563,9 +572,10 @@
         margin-left: 3px;
     }
 
-    .carousel {
-        height: 120px;
-    }
+
+
+
+
 
 }
 
