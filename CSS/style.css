@@ -2050,6 +2050,7 @@ select.result-counter {
 .pagesearch-filter .btn-light {
     font-weight: 400;
     color: #fff;
+	background-color: #00B2F9;
     border: 1px solid #99E0FD;
 }
 
