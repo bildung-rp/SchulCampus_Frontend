@@ -2431,7 +2431,7 @@ select.result-counter {
 
 }
 
-.tooltip.bs-tooltip-bottom .arrow:before {
+.tooltip.bs-tooltip-top .arrow:before {
     border-right-color: #CBD900 !important;
 }
 
