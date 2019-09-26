@@ -109,12 +109,10 @@ $(document).ready(function () {
             function(){$(this).closest(".megamenu-li").css("background-color", "transparent");});
     });
     
+	
 
-    //-----------Höhe Window-------------//
-    var windowHeight = $(window).height();
-    console.log("windowheight " + windowHeight);
-    windowHeight = windowHeight/2;
-    $(".btn-sidebar .btn").css("top", windowHeight);
+    //-----------Höhe Inhalt Bluebox-------------//
+	//ToDo
 
 
 
@@ -411,6 +409,7 @@ function toggleBlueBox(sectionId) {
 
         console.log("Gleiche Box!");
 
+		
         $(idBlueNew + " .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
         $(idBlueNew + " .bluebox-lg, .bluebox-sm").toggleClass("bluebox-lg bluebox-sm");
         $(idBlueNew + " .box-content").toggle();
@@ -428,11 +427,12 @@ function toggleBlueBox(sectionId) {
         $(idBlueOld + " .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
         $(idBlueOld + " .bluebox-lg, .bluebox-sm").toggleClass("bluebox-lg bluebox-sm");
         $(idBlueOld + " .box-content").css("display", "none");
+		
         $(idBlueOld + " .bluebox-label>a").css("display", "block");
         $(idBlueOld + " .icon-plus, .icon-cancel").toggleClass("icon-plus icon-cancel");
         $(idBlueOld + " .bluebox section").css("height", "150px");
 
-
+		
         $(idBlueNew + " .blue-icon-lg, .blue-icon-sm").toggleClass("blue-icon-lg blue-icon-sm");
         $(idBlueNew + " .bluebox-lg, .bluebox-sm").toggleClass("bluebox-lg bluebox-sm");
         $(idBlueNew + " .box-content").toggle();

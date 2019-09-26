@@ -1825,24 +1825,13 @@ footer .navbar-nav .nav-link:focus {
     cursor: col-resize;
 }
 
-.btn-sidebar .btn {
-    position: fixed;
-}
+
 
 .btn-sidebar .icon-menu {
     display: none;
 }
 
-.btn-sidebar .icon-menu::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 25px;
-}
 
-.btn-sidebar:hover .icon-menu::before {
-    color: #009CEE;
-}
 
 /**********Hauptinhalt***********/
 .main-content {
@@ -2054,15 +2043,27 @@ select.result-counter {
 
 .bootstrap-select .dropdown-item.active,
 .bootstrap-select .dropdown-item:active {
-    color: inherit;
+    color: #2F3A48;
     background-color: transparent;
 }
 
-.pagesearch-filter .dropdown .btn {
+.pagesearch-filter .btn-light {
     font-weight: 400;
     color: #fff;
     border: 1px solid #99E0FD;
 }
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+	color: #2F3A48;
+    background-color: #00B2F9;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder {
+    background-color: transparent;
+    color: #fff;
+	border: 1px solid #99E0FD;
+}
+
 
 .filter-option-inner-inner {
     font-size: 14px;
@@ -2077,10 +2078,7 @@ select.result-counter {
     background-color: #E3E3E5;
 }
 
-.btn-light {
-    background-color: #00B2F9;
 
-}
 
 
 
