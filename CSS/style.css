@@ -733,7 +733,6 @@ dt::before {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #CBD900;
     text-decoration: none;
 }
 
@@ -1848,6 +1847,7 @@ footer .navbar-nav .nav-link:focus {
 .pagesearch .btn-link-blue {
     width: auto;
     white-space: nowrap;
+    padding-right: 0;
 }
 
 .pagesearch .btn-link:after {

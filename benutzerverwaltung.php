@@ -2,18 +2,18 @@
 <div class="container-fluid" id="maintabs">
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="#idm" data-toggle="tab">IDM
-                <span></span>
+            <a class="nav-link active" href="#idm" data-toggle="tab">
+                IDM
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#moodle" data-toggle="tab">ORGA
-                <span></span>
+            <a class="nav-link" href="#orga" data-toggle="tab">
+                ORGA
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#orga" data-toggle="tab">MOODLE
-                <span></span>
+            <a class="nav-link" href="#moodle" data-toggle="tab">
+                MOODLE
             </a>
         </li>
     </ul>
@@ -117,14 +117,14 @@
                             <form>
                                 <div class="form-row">
                                     <div class="col-auto">
-                                        <select class="selectpicker" multiple>
+                                        <select title="Gruppen" class="selectpicker" multiple>
                                                 <option>Klasse 5d</option>
                                                 <option>Schule A</option>
                                                 <option>Naturwissenschaft AG</option>
                                         </select>
                                     </div>
                                     <div class="col-auto">
-                                        <select class="selectpicker" multiple>
+                                        <select title="Rollen" class="selectpicker" multiple>
                                                 <option value="1">Admin</option>
                                                 <option value="2">Lehrkraft</option>
                                                 <option value="3">Schüler</option>
@@ -135,7 +135,7 @@
                                         </select>
                                     </div>
                                     <div class="col-auto">
-                                        <select class="selectpicker">
+                                        <select title="Status" class="selectpicker">
                                             <option value="1">aktiv</option>
                                             <option value="2">inaktiv</option>
                                             <option value="3">gesperrt</option>
@@ -1058,6 +1058,7 @@
                     <span class="result-text">Einträge pro Seite.</span>
                     </div>
                 </div>
+
                 <div class="tab-pane" id="orga">
                     <h1 class="mb-15">Orga-Tab</h1>
                 </div>

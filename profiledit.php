@@ -3,18 +3,18 @@
 <div class="container-fluid" id="maintabs">
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="#idm" data-toggle="tab">IDM
-                <span></span>
+            <a class="nav-link active" href="#idm" data-toggle="tab">
+                IDM
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#moodle" data-toggle="tab">ORGA
-                <span></span>
+            <a class="nav-link" href="#moodle" data-toggle="tab">
+                ORGA
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#orga" data-toggle="tab">MOODLE
-                <span></span>
+            <a class="nav-link" href="#orga" data-toggle="tab">
+                MOODLE
             </a>
         </li>
     </ul>
