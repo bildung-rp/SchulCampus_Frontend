@@ -2426,13 +2426,13 @@ select.result-counter {
 
 
 /* ----------Tooltip----------*/
-.tooltip.in {
-  opacity: 1;
+.tooltip.show {
+    opacity: 1 !important;
+
 }
 
-.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
-.bs-tooltip-bottom .arrow::before {
-  border-bottom-color: #CBD900;
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-right-color: #CBD900 !important;
 }
 
 .tooltip-inner {
