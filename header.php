@@ -98,37 +98,37 @@
                                 <span>Startseite</span>
                             
                         </a>
-                        <a class="dropdown-item" href="workspace.php">
+                        <a class="dropdown-item" href="#">
                             
                                 <i class="sc-icon-dd icon-folder-open"></i>
                                 <span>meine Dateien</span>
                             
                         </a>
-                        <a class="dropdown-item" href="moodle.php">
+                        <a class="dropdown-item" href="#">
                             
                                 <i class="sc-icon-dd icon-graduation-cap"></i>
                                 <span>moodle@RLP</span>
                             
                         </a>
-                        <a class="dropdown-item" href="mediathek.php">
+                        <a class="dropdown-item" href="#">
                             
                                 <i class="sc-icon-dd icon-play-circled"></i>
                                 <span>Mediathek</span>
                             
                         </a>
-                        <a class="dropdown-item" href="curriculum.php">
+                        <a class="dropdown-item" href="#">
                             
                                 <i class="sc-icon-dd icon-bank"></i>
                                 <span>curriculum</span>
                             
                         </a>
-                        <a class="dropdown-item" href="lehrplan.php">
+                        <a class="dropdown-item" href="#">
                             
                                 <i class="sc-icon-dd icon-book-1"></i>
                                 <span>Lehr- und Rahmenpläne</span>
                             
                         </a>
-                        <a class="dropdown-item" href="infoportal.php">
+                        <a class="dropdown-item" href="#">
                             
                                 <i class="sc-icon-dd icon-info-circled"></i>
                                 <span>Infoportal</span>
@@ -164,15 +164,15 @@
             <div class="col-xl-3 col-3 col-md-4">
                 <div id="usernav" class="dropdown dd-right">
                     <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
-                        <i class="logo sc-icon-dd fas fa-user-circle"></i>
-                        <span class="dd-label">Lisa-Marie von Bobrutzki</span>
+                        <i class="logo sc-icon-dd fa fa-user-circle"></i>
+                        <span class="dd-label">Lisa-Marie von Boblonski</span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime dropdown-menu-wide">
-                        <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fas fa-user-edit"></i>
+                        <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
                                 <span>mein Profil</span></a>
-                        <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fas fa-users"></i>
+                        <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
                                 <span>Benutzerverwaltung</span></a>
-                        <a class="dropdown-item" href="#"><i class="sc-icon-dd fas fa-power-off"></i>
+                        <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-power-off"></i>
                                 <span>Abmelden</span></a>
                     </div>
                 </div>
@@ -184,27 +184,27 @@
                     <i class="sc-icon-dd icon-schulcampus"></i>
                     <span>Startseite</span>
                 </a>
-                <a class="dropdown-item" href="workspace.php">
+                <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-folder-open"></i>
                     <span>meine Dateien</span>
                 </a>
-                <a class="dropdown-item" href="https://lernenonline.bildung-rp.de/">
+                <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-graduation-cap"></i>
                     <span>moodle@RLP</span>
                 </a>
-                <a class="dropdown-item" href="https://schul.campus-rlp.de/edu-sharing/components/workspace">
+                <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-play-circled"></i>
                     <span>Mediathek</span>
                 </a>
-                <a class="dropdown-item" href="https://curriculum.bildung-rp.de/v0.9.3.17/curriculum/public/index.php?action=login">
+                <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-bank"></i>
                     <span>curriculum</span>
                 </a>
-                <a class="dropdown-item" href="">
+                <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-book-1"></i>
                     <span>Lehr- und Rahmenpläne</span>
                 </a>
-                <a class="dropdown-item" href="infoportal.php">
+                <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-info-circled"></i>
                     <span>Infoportal</span>
                 </a>
@@ -213,11 +213,11 @@
 
         <div class="dropdown-menu-full" id="usernav-mobile">
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-                <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fas fa-user-edit"></i>
+                <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
                                 <span>mein Profil</span></a>
-                <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fas fa-users"></i>
+                <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
                                 <span>Benutzerverwaltung</span></a>
-                <a class="dropdown-item" href="#"><i class="sc-icon-dd fas fa-power-off"></i>
+                <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-power-off"></i>
                                 <span>Abmelden</span></a>
             </div>
         </div>

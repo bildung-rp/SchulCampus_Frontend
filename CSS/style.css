@@ -130,7 +130,7 @@ a.btn {
 
 .btn-blue:hover {
     color: #2F3A48;
-    background-color: #00B2F9;
+    background-color: #99E0FD;
 }
 
 .btn-blue:focus,
@@ -2426,29 +2426,22 @@ select.result-counter {
 
 
 /* ----------Tooltip----------*/
-.tooltip-inner {
-    background-color: #EAF099;
+.tooltip.in {
+  opacity: 1;
 }
 
-.tooltip.bottom .tooltip-arrow {
-    border-right: 5px solid #EAF099;
-    background-color: #EAF099;
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #CBD900;
 }
-
-.bs-tooltip-bottom .arrow::before,
-.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {}
-
-.tooltip .arrow::before {}
-
-.tooltip {}
 
 .tooltip-inner {
     max-width: 200px;
     padding: 0.25rem 0.5rem;
     color: #2F3A48;
     text-align: center;
-    background-color: #EAF099;
-    border-radius: 0.25rem;
+    background-color: #CBD900;
+    border-radius: 3px;
 }
 
 
