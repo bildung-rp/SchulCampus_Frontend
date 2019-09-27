@@ -2100,15 +2100,28 @@ select.result-counter {
 
 /************ Infoportal ****************/
 
+ul .navbar-nav {
+    margin: 12px 0 0 0;
+    width: 100%
+    border-bottom: 1px solid #e3e3e5;
+}
+
+.navbar-nav .nav-item {
+    margin-bottom: -1px;
+}
+
 #info-nav .navbar {
-    padding: .5rem 0;
+    padding: .5rem ;
 }
 
 .navbar-toggler {
     color: #2F3A48;
 }
 
-#info-nav .nav-link:active,
+#info-nav .nav-link:active {
+    border-bottom: 3px solid #009CEE;
+}
+
 #info-nav .nav-link:hover,
 #info-nav .nav-link:focus {
     background-color: #009cee;
@@ -2116,7 +2129,7 @@ select.result-counter {
 }
 
 #info-nav .nav-link {
-    padding: 0.6rem 1rem 1rem;
+    padding: .3rem .5rem;
 }
 
 .megamenu-li {

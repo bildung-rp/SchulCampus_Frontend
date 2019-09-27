@@ -13,7 +13,7 @@
                     <ul class="navbar-nav">
                         
                         <li class="nav-item dropdown megamenu-li">
-                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fächer</a>
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Themen</a>
                             <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-3">
@@ -42,7 +42,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown megamenu-li">
-                            <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Themen</a>
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fächer</a>
                             <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-4">
