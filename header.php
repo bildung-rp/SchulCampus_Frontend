@@ -61,23 +61,23 @@
                                 <span><b>Schul</b>campus&nbsp;<i>RLP</i></span>";
                             break;
                             case "workspace.php":
-                                echo "<i class='sc-icon-dd icon-folder-open'></i>
+                                echo "<i class='sc-icon-dd icon-schulcampusn'></i>
                                 <span>meine Dateien</span>";
                             break;
                             case "moodle.php":
-                                echo "<i class='sc-icon-dd icon-graduation-cap'></i>
+                                echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>moodle@RLP</span>";
                             break;
                             case "mediathek.php":
-                                echo "<i class='sc-icon-dd icon-play-circled'></i>
+                                echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>Mediathek</span>";
                             break;
                             case "curriculum.php":
-                                echo "<i class='sc-icon-dd icon-bank'></i>
+                                echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>curriculum</span>";
                             break;
                             case "lehrplan.php":
-                                echo "<i class='sc-icon-dd icon-book-1'></i>
+                                echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>Lehr- und Rahmenpläne</span>";
                             break;
                             case "infoportal.php":
@@ -94,7 +94,7 @@
                     <div class="dropdown-menu dropdown-menu-lime">
                         <a class="dropdown-item" href="index.php">
                             
-                                <i class="sc-icon-dd icon-schulcampus"></i>
+                                <i class="sc-icon-dd icon-home"></i>
                                 <span>Startseite</span>
                             
                         </a>
