@@ -389,7 +389,7 @@ dt::before {
 
 .dropdown-toggle::after {
     display: inline-table;
-    padding: 0 5px 0 5px;
+    padding: 0 0 0 5px;
     font-family: 'SCicons';
     content: "\f107";
     border: none;
