@@ -126,126 +126,136 @@
 
                     <div id="profil">
                         <h2>Allgemein</h2>
-                        <div class="row no-gutters ">
-                        <div class="col-10">
-                            <div class="form-group row no-gutters">
-                                <label for="lastname" class="col-sm-2 col-form-label">Nachname</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="lastname" placeholder="Nachname" value="von Boblonski">
-                                    <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="amtlicher Nachname"></a>
+                        <div class="row no-gutters">
+                            <div class="col-10">
+                                <div class="form-group row no-gutters">
+                                    <label for="lastname" class="col-sm-2">Nachname</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="lastname" placeholder="Nachname" value="von Boblonski">
+                                    </div>
+                                </div>
+                                <div class="form-group row no-gutters">
+                                    <label for="firstname" class="col-sm-2">Vorname</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control is-valid" id="firstname" placeholder="Vorname" value="   Lisa-Marie">
+                                    </div>
+                                </div>
+                                <div class="form-group row no-gutters">
+                                    <label for="email" class="col-sm-2">E-Mail</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control is-invalid" id="email" placeholder="E-Mail" value="">
+                                        <div class="invalid-feedback">Bitte geben Sie eine E-Mail-Adresse an.</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group row no-gutters">
-                                <label for="firstname" class="col-sm-2">Vorname</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control is-valid" id="firstname" placeholder="Vorname" value="Lisa-Marie">
-                                    <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="amtliche Vornamen"></a>
-                                </div>
-                            </div>
-                            <div class="form-group row no-gutters">
-                                <label for="email" class="col-sm-2">E-Mail</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control is-invalid" id="email" placeholder="E-Mail" value="">
-                                    <div class="invalid-feedback">Bitte geben Sie eine E-Mail-Adresse an.</div>
-                                    <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
+    
+                            <div class="col-2 profil-image text-center">
+                                <img class="round" src="images/persona.png" alt="Bsp">
+                                <div class="img-edit">
+                                    <i class="sc-icon icon-pencil"></i>
+                                    <i class="sc-icon icon-trash"></i>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-2 profil-image text-center">
-                            <img class="round" src="images/persona.png" alt="Bsp">
-                            <div class="img-edit">
-                                <i class="sc-icon icon-pencil"></i>
-                                <i class="sc-icon icon-trash"></i>
+                    <div id="memberships">
+                        <h2>Mitgliedschaften</h2>
+                        <div class="row no-gutters">
+                            <div class="col-2">
+                                <h4>Gruppen</h4>
+                            </div>
+                            <div class="col-10">
+                                <div class="sbsms">
+                                    <div class="form-wizards-wrap form-wizards-aside">
+                                        <div class="form-wizards-element">
+                                            <div class="form-multigroup-wrap">
+                                                <div class="form-multigroup-item form-multigroup-element">
+                                                    <label>Ausgewählte Objekte</label>
+                                                    <div class="form-wizards-wrap form-wizards-aside">
+                                                        <div class="form-wizards-element">
+                                                            <ul class="form-control">
+                                                                <li>Lehrerzimmer</li>
+                                                                <li>FK Deutsch</li>
+                                                                <li>FK evang. Religion</li>
+                                                                <li>7b (2019/20)</li>
+                                                                <li>11d2 (2019/20)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-multigroup-item form-multigroup-element">
+                                                    <label>Verfügbare Objekte</label>
+                                                    <div class="form-multigroup-item-wizard">
+                                                        <span class="input-group input-group-sm">
+                                                            <span class="input-group-addon">
+                                                                <span class="fa fa-filter"></span>
+                                                            </span>
+                                                            <input class="form-control" value="">
+                                                        </span>
+                                                    </div>
+                                                    <ul class="form-control right">
+                                                        <li>5a (2019/20)</li>
+                                                        <li>5b (2019/20)</li>
+                                                        <li>6a (2019/20)</li>
+                                                        <li>6b (2019/20)</li>
+                                                        <li>7a (2019/20)</li>
+                                                        <li>8a (2019/20)</li>
+                                                        <li>8b (2019/20)</li>
+                                                        <li>9a (2019/20)</li>
+                                                        <li>9b (2019/20)</li>
+                                                        <li>10a (2019/20)</li>
+                                                        <li>10b (2019/20)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="row no-gutters">
+                            <div class="col-2">
+                                <h4>Gruppen</h4>
+                            </div>
+                            <div class="col-10">
+                                <div class="sbsms">
+                                    <h4>Rollen</h4>
+                                    <div class="form-wizards-wrap form-wizards-aside">
+                                        <div class="form-wizards-element">
+                                            <div class="form-multigroup-wrap">
+                                                <div class="form-multigroup-item form-multigroup-element">
+                                                    <label>Ausgewählte Objekte</label>
+                                                    <div class="form-wizards-wrap form-wizards-aside">
+                                                        <div class="form-wizards-element">
+                                                            <ul class="form-control">
+                                                                <li>Lehrkraft</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-multigroup-item form-multigroup-element">
+                                                    <label>Verfügbare Objekte</label>
+                                                    <div class="form-multigroup-item-wizard">
+                                                        <span class="input-group input-group-sm">
+                                                            <span class="input-group-addon">
+                                                                <span class="fa fa-filter"></span>
+                                                            </span>
+                                                            <input class="form-control" value="">
+                                                        </span>
+                                                    </div>
+                                                    <ul class="form-control right">
+                                                        <li>Schüler/in</li>
+                                                        <li>an Schule Beteiligte</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    </div>
-
-
-                    <h2>Mitgliedschaften</h2>
-
-<div class="sbsms">
-    <h4>Gruppen</h4>
-    <div class="form-wizards-wrap form-wizards-aside">
-        <div class="form-wizards-element">
-            <div class="form-multigroup-wrap">
-                <div class="form-multigroup-item form-multigroup-element">
-                    <label>Ausgewählte Objekte</label>
-                    <div class="form-wizards-wrap form-wizards-aside">
-                        <div class="form-wizards-element">
-                            <ul class="form-control">
-                                <li>Lehrerzimmer</li>
-                                <li>FK Deutsch</li>
-                                <li>FK evang. Religion</li>
-                                <li>7b (2019/20)</li>
-                                <li>11d2 (2019/20)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-multigroup-item form-multigroup-element">
-                    <label>Verfügbare Objekte</label>
-                    <div class="form-multigroup-item-wizard">
-                        <span class="input-group input-group-sm">
-                            <span class="input-group-addon">
-                                <span class="fa fa-filter"></span>
-                            </span>
-                            <input class="form-control" value="">
-                        </span>
-                    </div>
-                    <ul class="form-control right">
-                        <li>5a (2019/20)</li>
-                        <li>5b (2019/20)</li>
-                        <li>6a (2019/20)</li>
-                        <li>6b (2019/20)</li>
-                        <li>7a (2019/20)</li>
-                        <li>8a (2019/20)</li>
-                        <li>8b (2019/20)</li>
-                        <li>9a (2019/20)</li>
-                        <li>9b (2019/20)</li>
-                        <li>10a (2019/20)</li>
-                        <li>10b (2019/20)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="sbsms">
-    <h4>Rollen</h4>
-    <div class="form-wizards-wrap form-wizards-aside">
-        <div class="form-wizards-element">
-            <div class="form-multigroup-wrap">
-                <div class="form-multigroup-item form-multigroup-element">
-                    <label>Ausgewählte Objekte</label>
-                    <div class="form-wizards-wrap form-wizards-aside">
-                        <div class="form-wizards-element">
-                            <ul class="form-control">
-                                <li>Lehrkraft</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-multigroup-item form-multigroup-element">
-                    <label>Verfügbare Objekte</label>
-                    <div class="form-multigroup-item-wizard">
-                        <span class="input-group input-group-sm">
-                            <span class="input-group-addon">
-                                <span class="fa fa-filter"></span>
-                            </span>
-                            <input class="form-control" value="">
-                        </span>
-                    </div>
-                    <ul class="form-control right">
-                        <li>Schüler/in</li>
-                        <li>an Schule Beteiligte</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
                     <div class="form-group d-flex">
                         <div class="col-lg-12">
