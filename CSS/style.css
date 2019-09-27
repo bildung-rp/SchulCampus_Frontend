@@ -823,6 +823,11 @@ input[type=text].small {
     margin-left: -15px;
 }
 
+.profil-image {
+    position: absolute;
+    right: -20px;
+}
+
 .profil-image img {
     width: 120px;
     height: 120px;

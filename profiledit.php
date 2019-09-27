@@ -132,7 +132,7 @@
                                     <div class="col-sm-8">
                                         <input type="text" class="form-control" id="lastname" placeholder="Nachname" value="von Boblonski">
                                     </div>
-                                    <div class="col-sm-2 profil-image">
+                                    <div class="col-sm-2 profil-image text-center">
                                         <img class="round" src="images/persona.png" alt="Bsp">
                                         <div class="img-edit">
                                             <i class="sc-icon icon-pencil"></i>
@@ -252,20 +252,30 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-group row no-gutters">
+                            <label for="persnumber" class="col-sm-2">Personalnummer</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="persnumber" placeholder="Personalnummer" value="00873526">
+                            </div>
+                            <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="IPEMA-Personalnummer"></a>
+                        </div>
+
+                        <div class="form-group row no-gutters">
+                            <label for="primaryorg" class="col-sm-2">Stammorganisation</label>
+                            <div class="col-sm-8">
+                                <select class="selectpicker" id="primaryorg">
+                                    <option selected>GY Mainz Rabanus-Maurus</option>
+                                    <option>GY Mainz Willigis</option>
+                                </select>
+                            </div>
+                            <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="IPEMA-Personalnummer"></a>
+                        </div>
+
                     </div>
 
                     <div class="form-group d-flex">
                         <div class="col-lg-12">
-                            <div class="form-wrapper mb-15">
-                                <label for="nummer" class="col-lg-2">Personalnummer</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="nummer" placeholder="Personalnummer" value="00875326">
-                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Personalnummer"></a>
-                            </div>
-                            <div class="form-wrapper mb-15">
-                                <label for="org" class="col-lg-2">Stammorganisation</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="org" placeholder="Stammorganisation" value="GY Mainz Rabanus-Maurus">
-                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Stammorganisation"></a>
-                            </div>                            
                             <div class="form-wrapper mb-15">
                                 <label for="status" class="col-lg-2"></label>
                                 <div class="checks">
