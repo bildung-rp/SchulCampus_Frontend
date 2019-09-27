@@ -2147,7 +2147,7 @@ ul.navbar-nav {
     left: 0;
     right: 0;
     padding: 30px 15px 15px;
-    margin: -8px 0;
+    margin: -10px 0;
     border-radius: none;
     background-color: #009cee;
     border-radius: 0;
@@ -2281,6 +2281,7 @@ ul.navbar-nav {
 
 #info-nav .nav-link.active {
     border-bottom: 3px solid #009CEE;
+    font-weight: 700;
 }
 
 .info-teaser-image {
