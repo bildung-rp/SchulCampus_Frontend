@@ -223,23 +223,22 @@
         </div>
     </div>
 
-<div id="subheader">
-    <div class="container">
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="#">Infoportal</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Startseite</li>
-        </ul>
+    <div id="subheader">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Infoportal</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Startseite</li>
+            </ul>
+        </div>
     </div>
-</div>
 
     <div class="pagesearch" id="pagesearch">
         <div class="accordion small">
             <div class="card card-blue">
                 <div class="card-header card-header-blue" id="v1">
                     <div class="pagesearch-field">
-
                         <div class="input-group">
                             <input class="form-control" type="search" value="" id="" placeholder="Suchbegriff">
                             <span class="input-group-append">
@@ -248,10 +247,6 @@
                                 </button>
                             </span>
                         </div>
-
-                        <button class="btn btn-link btn-link-blue">
-                            Erweiterte Suche
-                        </button>
                     </div>
                 </div>
             </div>

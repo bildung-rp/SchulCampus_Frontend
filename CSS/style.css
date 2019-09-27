@@ -1298,7 +1298,9 @@ input[type=radio]:disabled+label {
 
 /*grid-Layout für Mediathek und Workspace*/
 
-.grid-wrapper {}
+.grid-wrapper {
+    padding-top: 30px;
+}
 
 .grid-text {
     font-size: 12px;
