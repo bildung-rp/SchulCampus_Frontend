@@ -10,19 +10,10 @@
             <h2>Empfehlungen der Redaktion</h2>
         </div>
         <div class="row grid-view">
-
             <?php include "teaserbox.php"; ?>
             <?php include "teaserbox.php"; ?>
             <?php include "teaserbox.php"; ?>
             <?php include "teaserbox.php"; ?>
-        </div>
-    </div>
-
-    <div class="grid-wrapper">
-        <div class="grid-text">
-            <h2>Aus der Frischetheke</h2>
-        </div>
-        <div class="row grid-view">
             <?php include "teaserbox.php"; ?>
             <?php include "teaserbox.php"; ?>
             <?php include "teaserbox.php"; ?>
