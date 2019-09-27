@@ -2112,6 +2112,7 @@ ul.navbar-nav {
 
 .navbar-nav .nav-item {
     margin-bottom: -1px;
+    margin-right: 30px;
 }
 
 .navbar-toggler {
@@ -2147,7 +2148,7 @@ ul.navbar-nav {
     left: 0;
     right: 0;
     padding: 30px 15px 15px;
-    margin: -10px 0;
+    margin: -11px 0;
     border-radius: none;
     background-color: #009cee;
     border-radius: 0;
