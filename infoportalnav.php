@@ -249,76 +249,9 @@
                             </span>
                         </div>
 
-                        <button class="btn btn-link btn-link-blue dropdown-toggle collapsed" data-toggle="collapse" data-target="#c1" aria-expanded="true"
-                            aria-controls="c1">
+                        <button class="btn btn-link btn-link-blue">
                             Erweiterte Suche
                         </button>
-                    </div>
-                </div>
-                <div id="c1" class="collapse" aria-labelledby="v1">
-                    <div class="card-body pagesearch-filter">
-
-                        <form>
-                            <div class="form-row">
-                                <div class="col-auto">
-                                    
-                                    <select class="selectpicker">
-                                    <optgroup label="Zielgruppe">
-                                            <option value="1">Schüler</option>
-                                            <option value="2">Lehrer</option>
-                                            <option value="3">Administratoren</option>
-                                            </optgroup>
-                                        </select>
-                                    
-                                </div>
-                                <div class="col-auto">
-
-                                    
-                                    <select class="selectpicker">
-                                        <optgroup label="Inhaltliche Kategorie">
-                                            <option value="1">Moodle</option>
-                                            <option value="2">Mediathek</option>
-                                            <option value="3">Curriculum</option>
-                                            <option value="4">BNV</option>
-                                            <option value="5">Unterrichtsideen</option>
-                                            <option value="6">Web-Werkzeuge</option>
-                                            <option value="7">...Sonstiges</option>
-                                        </optgroup>
-                                    </select>
-                                    
-                                </div>
-                                <div class="col-auto">
-
-                                    
-                                    <select class="selectpicker">
-                                            <option>Fächer</option>
-                                            <option value="1">Mathematik</option>
-                                            <option value="2">Deutsch</option>
-                                            <option value="3">Chemie</option>
-                                        </select>
-                                    
-                                </div>
-                                <div class="col-auto">
-
-                                    
-                                        <select class="selectpicker" multiple data-actions-box="true">
-                                            <option>Themen</option>
-                                            <option value="1">Pure CSS</option>
-                                            <option value="2">No JS</option>
-                                            <option value="3">Nice</option>
-                                            <option value="2">Schulcampus</option>
-                                            <option value="3">Mediathek</option>
-                                        </select>
-                                    
-                                </div>
-                                
-                                
-                        </form>
-
-
-                        <button type="submit" class="btn btn-blue btn-submit">Suchen</button>
-
-                        </div>
                     </div>
                 </div>
             </div>
