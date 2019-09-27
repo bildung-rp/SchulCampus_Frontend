@@ -61,7 +61,7 @@
 <div class="col-md-4 col-sm-12">
 
 <div class="infopage-image">
-    <img class="infopage-image" src="Images/tafel.jpg" alt="tafel">
+    <img class="infopage-image" src="images/tafel.jpg" alt="tafel">
 </div>
 
 
