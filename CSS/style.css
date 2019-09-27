@@ -2130,6 +2130,8 @@ ul .navbar-nav {
 
 #info-nav .nav-link {
     padding: .3rem .5rem;
+    font-size: 21px;
+    text-transform: uppercase;
 }
 
 .megamenu-li {
