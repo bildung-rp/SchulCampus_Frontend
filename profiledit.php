@@ -143,7 +143,7 @@
                                 <div class="form-group row no-gutters">
                                     <label for="firstname" class="col-sm-2">Vorname</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control is-valid" id="firstname" placeholder="Vorname" value="   Lisa-Marie">
+                                        <input type="text" class="form-control is-valid" id="firstname" placeholder="Vorname" value="Lisa-Marie">
                                     </div>
                                 </div>
                                 <div class="form-group row no-gutters">
