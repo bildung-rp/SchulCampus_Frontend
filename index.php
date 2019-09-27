@@ -59,7 +59,7 @@ include "header.php";
                         <span class="icon-folder-open blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="">meine Dateien</a>
+                        <a href="#">meine Dateien</a>
                         <button class="btn btn-blue" type="button">
                             <span class="sc-icon icon-plus"></span>
                         </button>
@@ -110,7 +110,7 @@ include "header.php";
                         <span class="icon-bank blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="Curriculum.html">curriculum</a>
+                        <a href="#">curriculum</a>
                         <button class="btn btn-blue" type="button">
                             <span class="sc-icon icon-plus"></span>
                         </button>
@@ -183,7 +183,7 @@ include "header.php";
                         <span class="icon-play-circled blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="https://schul.campus-rlp.de/edu-sharing/components/workspace">Mediathek</a>
+                        <a href="#">Mediathek</a>
                     </div>
                 </section>
             </div>
@@ -334,7 +334,7 @@ include "header.php";
                         <span class="icon-graduation-cap blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="Moodle.html">moodle@RLP</a>
+                        <a href="#">moodle@RLP</a>
                         <button class="btn btn-blue" type="button">
                             <span class="sc-icon icon-plus"></span>
                         </button>
@@ -422,7 +422,7 @@ include "header.php";
                         <span class="icon-info-circled blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="Infoportal.php">Infoportal</a>
+                        <a href="infoportal.php">Infoportal</a>
                     </div>
                 </section>
             </div>
