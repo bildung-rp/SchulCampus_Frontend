@@ -1,19 +1,3 @@
-<div id="subheader">
-    <div class="container">
-
-        <h1 class="mt-30">Willkommen im Infoportal</h1>
-
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="#">Infoportal</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Startseite</li>
-        </ol>
-    </div>
-</div>
-
-
-
 <div class="container" id="info-nav">
 
     <div class="row">
@@ -239,8 +223,16 @@
         </div>
     </div>
 
-
-
+<div id="subheader">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Infoportal</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Startseite</li>
+        </ul>
+    </div>
+</div>
 
     <div class="pagesearch" id="pagesearch">
         <div class="accordion small">
