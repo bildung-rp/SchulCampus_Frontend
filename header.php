@@ -81,7 +81,7 @@
                                 <span>Lehr- und Rahmenpläne</span>";
                             break;
                             case "infoportal.php":
-                                echo "<i class='sc-icon-dd icon-info-circled'></i>
+                                echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>Infoportal</span>";
                             break;
                             default:
