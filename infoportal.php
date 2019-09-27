@@ -19,11 +19,9 @@
             <?php include "teaserbox.php"; ?>
             <?php include "teaserbox.php"; ?>
             <?php include "teaserbox.php"; ?>
-            <?php include
-            <div class="grid-item">14</div>
-            <div class="grid-item">15</div>
-            <div class="grid-item">16</div>
-        </div>    
+            <?php include "teaserbox.php"; ?>
+
+        </div>
     </div>
 
 </main>
