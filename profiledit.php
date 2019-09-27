@@ -127,7 +127,6 @@
                     <div id="profil">
                         <h2>Allgemein</h2>
                         <div class="row no-gutters">
-                            <div class="col-10">
                                 <div class="form-group row no-gutters">
                                     <label for="lastname" class="col-sm-2">Nachname</label>
                                     <div class="col-sm-10">
@@ -147,15 +146,6 @@
                                         <div class="invalid-feedback">Bitte geben Sie eine E-Mail-Adresse an.</div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <div class="col-2 profil-image text-center">
-                                <img class="round" src="images/persona.png" alt="Bsp">
-                                <div class="img-edit">
-                                    <i class="sc-icon icon-pencil"></i>
-                                    <i class="sc-icon icon-trash"></i>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -213,14 +203,14 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
                         <div class="row no-gutters">
                             <div class="col-2">
-                                <h4>Gruppen</h4>
+                                <h4>Rollen</h4>
                             </div>
                             <div class="col-10">
                                 <div class="sbsms">
-                                    <h4>Rollen</h4>
                                     <div class="form-wizards-wrap form-wizards-aside">
                                         <div class="form-wizards-element">
                                             <div class="form-multigroup-wrap">
