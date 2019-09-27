@@ -749,6 +749,7 @@ dt::before {
     font-weight: 400;
     font-size: 14px;
     color: #2F3A48;
+    padding-left: 30px;
     background-color: #fff;
 }
 
