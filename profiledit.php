@@ -125,8 +125,8 @@
                 <form>
 
                     <div id="profil">
-                    <h2>Allgemein</h2>
-
+                        <h2>Allgemein</h2>
+                        <div class="row no-gutters ">
                         <div class="col-10">
                             <div class="form-group row no-gutters">
                                 <label for="lastname" class="col-sm-2 col-form-label">Nachname</label>
@@ -152,14 +152,14 @@
                             </div>
                         </div>
 
-                        <div class="col-2 no-gutters profil-image text-center">
+                        <div class="col-2 profil-image text-center">
                             <img class="round" src="images/persona.png" alt="Bsp">
                             <div class="img-edit">
                                 <i class="sc-icon icon-pencil"></i>
                                 <i class="sc-icon icon-trash"></i>
                             </div>
                         </div>
-
+                    </div>
                     </div>
 
 
