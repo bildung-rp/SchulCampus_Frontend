@@ -126,7 +126,7 @@
 
                     <div id="profil">
                         <h2>Allgemein</h2>
-                        <div class="row no-gutters">
+                        <div class="no-gutters">
                                 <div class="form-group row no-gutters">
                                     <label for="lastname" class="col-sm-2">Nachname</label>
                                     <div class="col-sm-10">
