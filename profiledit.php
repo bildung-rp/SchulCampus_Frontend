@@ -129,19 +129,26 @@
                         <div class="no-gutters">
                                 <div class="form-group row no-gutters">
                                     <label for="lastname" class="col-sm-2">Nachname</label>
-                                    <div class="col-sm-10">
+                                    <div class="col-sm-8">
                                         <input type="text" class="form-control" id="lastname" placeholder="Nachname" value="von Boblonski">
+                                    </div>
+                                    <div class="col-sm-2 profil-image">
+                                        <img class="round" src="images/persona.png" alt="Bsp">
+                                        <div class="img-edit">
+                                            <i class="sc-icon icon-pencil"></i>
+                                            <i class="sc-icon icon-trash"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group row no-gutters">
                                     <label for="firstname" class="col-sm-2">Vorname</label>
-                                    <div class="col-sm-10">
+                                    <div class="col-sm-8">
                                         <input type="text" class="form-control is-valid" id="firstname" placeholder="Vorname" value="   Lisa-Marie">
                                     </div>
                                 </div>
                                 <div class="form-group row no-gutters">
                                     <label for="email" class="col-sm-2">E-Mail</label>
-                                    <div class="col-sm-10">
+                                    <div class="col-sm-8">
                                         <input type="text" class="form-control is-invalid" id="email" placeholder="E-Mail" value="">
                                         <div class="invalid-feedback">Bitte geben Sie eine E-Mail-Adresse an.</div>
                                     </div>
@@ -278,18 +285,18 @@
                         <div class="col-lg-12">
                             <div class="form-wrapper mb-15">
                                 <label for="account" class="col-lg-2">Benutzerkennung</label>
-                                <input type="text" class="form-control col-lg-6 col-md-8 col-10" id="account" placeholder="Nutzerkennung" value="">
+                                <input type="text" class="form-control col-8" id="account" placeholder="Nutzerkennung" value="">
                             </div>
 
                             <div class="form-wrapper mb-15">
                                 <label for="inputPassword1" class="col-lg-2">Passwort</label>
-                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword1" placeholder="Passwort">
+                                <input type="password" class="form-control col-8" id="inputPassword1" placeholder="Passwort">
                                 <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Passwort, leer lassen für keine Änderung"></a>
                             </div>
 
                             <div class="form-wrapper mb-15">
                                 <label for="inputPassword2" class="col-lg-2">Passwort (Bestätigung)</label>
-                                <input type="password" class="form-control col-lg-6 col-md-8 col-10" id="inputPassword2" placeholder="Passwort wiederholen">
+                                <input type="password" class="form-control col-8" id="inputPassword2" placeholder="Passwort wiederholen">
                             </div>
                         </div>
                     </div>
