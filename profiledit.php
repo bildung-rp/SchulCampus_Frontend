@@ -118,34 +118,40 @@
 
 
     <div class="main-content" id="main-content">
-
         <div class="tab-content">
             <div class="tab-pane active" id="idm" style="padding-top: 0">
 
-                <h1 class="mb-15">Benutzerprofil bearbeiten</h1>
-                <form class="">
+                <h1 class="mb-15">Benutzerdaten bearbeiten</h1>
+                <form>
+
+                    <div id="profil">
                     <h2>Allgemein</h2>
 
-                    <div class="form-group d-flex" id="profil">
-                        <div class="col-lg-10">
-                            <div class="form-wrapper mb-15">
+                        <div class="col-10 nogutter">
+                            <div class="form-group row nogutter">
                                 <label for="lastname" class="col-lg-2">Nachname</label>
-                                <input type="text" class="form-control col-lg-8 col-md-8 col-10" id="lastname" placeholder="Nachname" value="Wörsdörfer">
-                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Nachname"></a>
+                                <div class="col-lg-8 col-md-8 col-10">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Nachname" value="von Boblonski">
+                                    <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="amtlicher Nachname"></a>
+                                </div>
                             </div>
-                            <div class="form-wrapper mb-15">
+                            <div class="form-group row nogutter">
                                 <label for="firstname" class="col-lg-2">Vorname</label>
-                                <input type="text" class="form-control col-lg-8 col-md-8 col-10" id="firstname" placeholder="Vorname" value="Hans-Reinhard">
-                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Vorname"></a>
+                                <div class="col-lg-8 col-md-8 col-10">
+                                    <input type="text" class="form-control is-valid" id="firstname" placeholder="Vorname" value="Lisa-Marie">
+                                    <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="amtliche Vornamen"></a>
+                                </div>
                             </div>
-                            <div class="form-wrapper mb-15">
+                            <div class="form-group row nogutter">
                                 <label for="email" class="col-lg-2">E-Mail</label>
-                                <input type="text" class="form-control col-lg-8 col-md-8 col-10" id="email" placeholder="E-Mail" value="">
-                                <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
+                                <div class="col-lg-8 col-md-8 col-10">
+                                    <input type="text" class="form-control is-invalid" id="email" placeholder="E-Mail" value="">
+                                    <div class="invalid-feedback">Bitte geben Sie eine E-Mail-Adresse an.</div>
+                                    <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 profil-image text-center">
+                        <div class="col-2 nogutter profil-image text-center">
                             <img class="round" src="images/persona.png" alt="Bsp">
                             <div class="img-edit">
                                 <i class="sc-icon icon-pencil"></i>
