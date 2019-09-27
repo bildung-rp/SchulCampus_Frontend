@@ -1324,12 +1324,13 @@ input[type=radio]:disabled+label {
     height: 300px;
     margin-right: 10px;
     margin-bottom: 30px;
-    background-color: #A7ADB1;
-    box-shadow: 0 0 5px 3px rgba(47, 58, 72, 0.15);
+    background-color: #F1F1F6;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2),0 3px 1px -2px rgba(0,0,0,.3),0 1px 5px 0 rgba(0,0,0,.2);
 }
 
+
 .grid-item:hover {
-    box-shadow: 0 0 5px 3px rgb(47, 58, 72, 0.3);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.2),0 7px 12px -5px rgba(47,58,72,.46);
 }
 
 
@@ -2247,7 +2248,7 @@ select.result-counter {
     width: 100%;
     margin: 0;
     padding: 15px;
-    background-color: #fff;
+    background-color: #F1F1F6;
     flex-grow: 1;
     color: #2F3A48;
     font-size: 14px;
