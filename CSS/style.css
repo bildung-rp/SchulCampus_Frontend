@@ -2104,7 +2104,7 @@ select.result-counter {
     padding: .5rem 0;
 }
 
-ul.navbar-nav {
+#info-nav ul.navbar-nav {
     margin: 12px 0 0 0;
     width: 100%;
     border-bottom: 1px solid #e3e3e5;
