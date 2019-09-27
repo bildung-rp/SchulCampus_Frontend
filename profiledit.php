@@ -127,24 +127,24 @@
                     <div id="profil">
                     <h2>Allgemein</h2>
 
-                        <div class="col-10 no-gutters">
+                        <div class="col-10">
                             <div class="form-group row no-gutters">
-                                <label for="lastname" class="col-lg-2">Nachname</label>
-                                <div class="col-lg-8 col-md-8 col-10">
+                                <label for="lastname" class="col-sm-2 col-form-label">Nachname</label>
+                                <div class="col-sm-10">
                                     <input type="text" class="form-control" id="lastname" placeholder="Nachname" value="von Boblonski">
                                     <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="amtlicher Nachname"></a>
                                 </div>
                             </div>
                             <div class="form-group row no-gutters">
-                                <label for="firstname" class="col-lg-2">Vorname</label>
-                                <div class="col-lg-8 col-md-8 col-10">
+                                <label for="firstname" class="col-sm-2">Vorname</label>
+                                <div class="col-sm-10">
                                     <input type="text" class="form-control is-valid" id="firstname" placeholder="Vorname" value="Lisa-Marie">
                                     <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="amtliche Vornamen"></a>
                                 </div>
                             </div>
                             <div class="form-group row no-gutters">
-                                <label for="email" class="col-lg-2">E-Mail</label>
-                                <div class="col-lg-8 col-md-8 col-10">
+                                <label for="email" class="col-sm-2">E-Mail</label>
+                                <div class="col-sm-10">
                                     <input type="text" class="form-control is-invalid" id="email" placeholder="E-Mail" value="">
                                     <div class="invalid-feedback">Bitte geben Sie eine E-Mail-Adresse an.</div>
                                     <a class="sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="Email"></a>
