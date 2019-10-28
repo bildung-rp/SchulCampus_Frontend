@@ -107,7 +107,7 @@ include "header.php";
             <div class="col-4">
                 <section id="curriculum">
                     <div class="bluebox-lg">
-                        <span class="icon-bank blue-icon-lg"></span>
+                        <span class="icon-curriculum blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
                         <a href="#">curriculum</a>

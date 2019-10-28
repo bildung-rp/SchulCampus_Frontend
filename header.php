@@ -118,7 +118,7 @@
                         </a>
                         <a class="dropdown-item" href="#">
                             
-                                <i class="sc-icon-dd icon-bank"></i>
+                                <i class="sc-icon-dd icon-curriculum"></i>
                                 <span>curriculum</span>
                             
                         </a>
