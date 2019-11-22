@@ -3148,7 +3148,6 @@ select.result-counter {
 .login-background-2 .login-box .btn-blue{
     display: inline-block;
     margin: 0 30px 10px 30px;
-    background: radial-gradient(circle, rgba(9,158,236,1) 0%, rgba(18,151,219,1) 100%);
 }
   
 .login-background-2 .login-box .form-control {
