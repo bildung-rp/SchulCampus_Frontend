@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'scicons';
-  src: url('../font/scicons.eot?14674161');
-  src: url('../font/scicons.eot?14674161#iefix') format('embedded-opentype'),
-       url('../font/scicons.woff2?14674161') format('woff2'),
-       url('../font/scicons.woff?14674161') format('woff'),
-       url('../font/scicons.ttf?14674161') format('truetype'),
-       url('../font/scicons.svg?14674161#scicons') format('svg');
+  src: url('../font/scicons.eot?64465610');
+  src: url('../font/scicons.eot?64465610#iefix') format('embedded-opentype'),
+       url('../font/scicons.woff2?64465610') format('woff2'),
+       url('../font/scicons.woff?64465610') format('woff'),
+       url('../font/scicons.ttf?64465610') format('truetype'),
+       url('../font/scicons.svg?64465610#scicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'scicons';
-    src: url('../font/scicons.svg?14674161#scicons') format('svg');
+    src: url('../font/scicons.svg?64465610#scicons') format('svg');
   }
 }
 */
@@ -117,7 +117,11 @@
 .icon-camera:before { content: '\e83b'; } /* '' */
 .icon-curriculums:before { content: '\e83c'; } /* '' */
 .icon-moodle:before { content: '\e83d'; } /* '' */
+.icon-forward:before { content: '\e83e'; } /* '' */
+.icon-right-bold:before { content: '\e83f'; } /* '' */
 .icon-left-dir:before { content: '\e840'; } /* '' */
+.icon-forward-1:before { content: '\e841'; } /* '' */
+.icon-lightbulb-on:before { content: '\e842'; } /* '' */
 .icon-floppy:before { content: '\e844'; } /* '' */
 .icon-logout:before { content: '\e845'; } /* '' */
 .icon-export:before { content: '\e846'; } /* '' */

@@ -9,8 +9,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+
     <link rel="stylesheet" href="dist/css/bootstrap-select.min.css">
     
+
     <link rel="stylesheet" href="CSS/scicons.css">
     <link rel="stylesheet" href="CSS/animation.css">
     <link rel="stylesheet" href="CSS/scicons-codes.css">
@@ -29,8 +31,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="dist/js/bootstrap-select.min.js"></script>
 
+    
 
     <script src="js/jquery_functions.js"></script>
+
+
 
 
 </head>
@@ -51,7 +56,7 @@
                         $lastElement = array_slice(explode('/', rtrim($url, '/')), -1)[0];
 
                         switch($lastElement) {
-                            case "index.php":
+                            case "dashboard-gast.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>Schul<span style='font-weight: 400'>campus&nbsp;<i>RLP</i></span></span>";
                             break;
@@ -160,13 +165,13 @@
                 <div id="usernav" class="dropdown dd-right">
                     <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
                         <i class="logo sc-icon-dd fa fa-user-circle"></i>
-                        <span class="dd-label">Lisa-Marie von Boblonski</span>
+                        <span class="dd-label">Login</span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime dropdown-menu-wide">
-                        <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
-                                <span>mein Profil</span></a>
-                        <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
-                                <span>Benutzerverwaltung</span></a>
+                        
+                        <a class="dropdown-item" href="loginpage.php"><i class="sc-icon-dd fa fa-user-edit"></i>
+                                <span>Login</span></a>
+                        
                         <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-power-off"></i>
                                 <span>Abmelden</span></a>
                     </div>
@@ -175,7 +180,7 @@
         </div>
         <div class="dropdown-menu-full" id="topnav-mobile">
             <div class="dropdown-menu dropdown-menu-lime">
-                <a class="dropdown-item" href="index.php">
+                <a class="dropdown-item" href="dashboard-gast.php">
                     <i class="sc-icon-dd icon-schulcampus"></i>
                     <span>Startseite</span>
                 </a>
@@ -208,10 +213,10 @@
 
         <div class="dropdown-menu-full" id="usernav-mobile">
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-                <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
-                                <span>mein Profil</span></a>
-                <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
-                                <span>Benutzerverwaltung</span></a>
+                
+                <a class="dropdown-item" href="loginpage.php"><i class="sc-icon-dd fa fa-user-edit"></i>
+                                <span>Login</span></a>
+                
                 <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-power-off"></i>
                                 <span>Abmelden</span></a>
             </div>

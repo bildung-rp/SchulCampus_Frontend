@@ -129,7 +129,7 @@ a.btn {
 }
 
 .btn-blue:hover {
-    color: #2F3A48;
+    color: #0583C9;
     background-color: #99E0FD;
 }
 
@@ -780,7 +780,6 @@ input[type=text] {
     border-right: none;
     border-top: none;
     border-left: none;
-    border-radius: 3px;
 }
 
 .form-control:focus {
@@ -873,13 +872,13 @@ img.round {
     padding: .375rem 1.25rem;
 }
 
-.markaction .btn:hover {
+
+
+.markaction .btn:hover.btn::before {
+    background-color: inherit;
     color: #2F3A48;
 }
 
-.markaction .btn:hover.btn::before {
-    color: #2F3A48;
-}
 
 .btn-blue::before,
 .btn::before {
@@ -908,10 +907,15 @@ img.round {
     color: #fff;
 }
 
-.btn-delete:hover {
+.btn-delete:hover, .btn-delete:hover .btn-delete.btn::before  {
     background-color: rgb(190,114,190);
-    color: rgb(155, 72, 155);
+    color: #2F3A48;
     border-color: rgb(155, 72, 155);
+}
+
+.btn-delete:hover.btn-delete::before {
+    background-color: inherit;
+    color: #2F3A48; /*rgb(155, 72, 155) !important;*/
 }
 
 .btn-delete.btn::before {
@@ -966,7 +970,7 @@ btn-group.btn-blue::before {
 
 .btn-blue:hover.btn-blue::before {
     background-color: inherit;
-    color: #2F3A48;
+    color: #0583C9 !important;
 }
 
 .row-assign {
@@ -1364,7 +1368,7 @@ header .row {
 
 .logo span {
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .logo .sc-icon-dd,
@@ -1468,6 +1472,7 @@ footer .navbar-nav .nav-link {
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
+    /*eventuell kein Padding*/
     padding-right: 1rem;
     padding-left: 1rem;
 }
@@ -1560,7 +1565,8 @@ footer .navbar-nav .nav-link:focus {
     height: 150px;
     justify-content: center;
     background: #0088dc;
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .bluebox-sm {
@@ -1568,8 +1574,114 @@ footer .navbar-nav .nav-link:focus {
     background: #0088dc;
     width: 50px;
     height: 260px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+/*----------Kachel ausgegraut----------*/
+
+.bluebox section.inaktiv {
+    background-color: #E3E3E5 !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+}
+
+.bluebox section.inaktiv:hover {
+    box-shadow: none !important;
+}
+
+.bluebox section.inaktiv:hover .tooltip-inaktiv {
+    display: block;
+}
+
+.tooltip-inaktiv {
+
+}
+
+.bluebox section.inaktiv .btn, .bluebox section.inaktiv a {
+    cursor: not-allowed !important;
+}
+
+.bluebox section.inaktiv .bluebox-lg, .bluebox section.inaktiv bluebox-sm {
+    background-color: #A7ADB1 !important;
+}
+
+.bluebox section.inaktiv .icon-plus::before {
+    background-color: #E3E3E5 !important;
+    color: #A7ADB1 !important;
+}
+
+.bluebox section.inaktiv .bluebox-label > a {
+    color: #A7ADB1;
+}
+
+/*------------Kachel ausgegraut--------*/
+
+.tooltip-inaktiv {
+    
+    position: absolute;
+    width: 349px;
+    height: 70px;
+    margin-left: 0px;
+    margin-top: -241px;
+    background: #505b64;
+    z-index: 1024;
     border-radius: 3px;
 }
+
+.tooltip-iconarea {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    margin-top: -260px;
+    margin-left: -13px;
+    border: 2px solid #fff;
+    border-radius: 27px;
+    background-color: #505b64;
+    z-index: 2000;
+}
+
+.tooltip-iconarea .icon-attention-1::before {
+    font-size: 25px;
+    color: #fff;
+    padding-left: 13px;
+    padding-top: 12px;
+}
+
+.tooltip-inaktiv-arrow {
+    
+    position: absolute;
+    border: solid #fff;
+    content: " ";
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-top-color: #505b64;
+    border-width: 15px;
+    margin-left: 160px;
+    margin-top: -171px;
+    z-index: 1024;
+}
+
+.tooltip-inaktiv-text {
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 42px;
+}  
+
+section:hover .tooltip-inaktiv, section:hover .tooltip-inaktiv-arrow, section:hover .tooltip-inaktiv-text {
+    visibility: visible;
+}
+
+.tooltip-inaktiv, .tooltip-iconarea, .icon-lightbulb-on::before, .tooltip-inaktiv-arrow, .tooltip-inaktiv-text {
+    visibility: visible; /*hidden;*/
+}
+
+
+
+
 
 .bluebox-label {
     display: block;
@@ -2782,3 +2894,278 @@ select.result-counter {
 .space-left {
     margin: 0 0 0 5px;
 }
+
+
+/*----------------------------------Login-------------------------------*/
+
+.wrapper {
+  flex: 1 0 auto;
+  display:flex;
+  margin-top: -50px;
+}
+
+.footer-login .navbar-nav .nav-link {
+    font-size: 14px;
+}
+
+.login-form {
+    padding: 0px 15px;
+}
+
+.login-form ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #cccccf;
+}
+
+.login-form :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cccccf;
+}
+
+.sc-brand {
+    width: 100%;
+}
+
+.sc-brand img {
+    width: 50%;
+    height: auto;
+}
+
+.form-group.f-code {
+    height: 80px;
+}
+
+.form-recovery {
+    font-size: 12px;
+    color: #009CEE;
+}
+
+.form-help {
+    font-size: 14px;
+    float: right;
+    margin: 0 30px 15px 0;
+    color: #2F3A48;
+}
+
+.form-help::before {
+    padding-right: 5px;
+    content: "\e826";
+}
+
+#freischaltarea {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+
+/*---------------Dashboard Moodle-Kachel mit Freischaltcode ----------*/
+.bluebox .input-group {
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.icon-forward-1::before {
+    color: #fff !important;
+    font-size: 18px !important;
+    padding-top: 4px;
+}
+
+.bluebox .input-group-append:hover .icon-forward-1::before {
+    color: #0583C9 !important;
+}
+
+.bluebox .input-group-append {
+    background-color: #0583C9;
+}
+
+.bluebox .input-group-append:hover {
+    background-color: #99E0FD;
+}
+
+.bluebox .form-control {
+    border: none;
+}
+
+.bluebox #freischaltarea {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.bluebox .form-control {
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.bluebox .btn-unlock {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.bluebox .btn-unlock.btn::before {
+    color: #fff;
+    font-size: 18px;
+}
+
+.bluebox .btn-unlock:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-free-moodle {
+    position: relative !important;
+    padding: 5px !important;
+    margin-top: 15px;
+    width: -moz-fit-content;
+    font-weight: 700 !important;
+}
+
+.btn-free-moodle:hover {
+    background-color: #0088dc;
+    color: #fff;
+}
+
+
+.login-form .btn-unlock {
+    background-color: #fff;
+    color: #44B687; 
+    border-color: #44B687;
+}
+
+.login-form .btn-unlock.btn::before {
+    color: #44B687;
+}
+
+.btn-login-form {
+    color: #009CEE;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-login-form:hover {
+    color: #0088dc;
+    background-color: #fff;
+    font-weight: 700;
+    /*border-color: #009CEE;*/
+}
+
+.login-background-2 {
+    height: 100%;
+    background-color: #A7ADB1;
+}
+
+.login-background-2 .login-box { 
+    width: 650px;
+    height: 400px;
+    margin:auto;
+    border-radius: 6px;
+    background-color:#fff;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.2),0 7px 12px -5px rgba(133, 136, 138, 0.46);
+    transition: box-shadow 300ms ease;
+}
+
+
+.login-background-2 .login-header {
+      background-color: #CBD900;
+      text-align:center;
+      padding:15px 0 15px;
+      border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+  
+.login-background-2 .login-header .sc-icon:before {
+      font-size: 30px;
+      padding-right: 40px;
+}
+  
+.login-background-2 .form-container {
+      height: auto;
+      width: 100%;
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+}
+
+.right-column {
+    width: 50%;
+    float: right;
+}
+
+.login-background-2 .form-group input {
+    margin-top: 15px;
+}
+
+.login-background-2 .login-form .btn-unlock {
+    margin: 23px 0 0 0px;
+    width: 100%;
+}
+
+.login-background-2 #freischaltarea {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 2px;
+}
+
+.login-background-2 .form-recovery {
+    padding-left: 12px;
+    margin-top: 5px;
+}
+
+.form-group.pw-forgot {
+    height: 40px;
+}
+
+.login-background-2 .login-footer {
+    flex-shrink: 0;
+    background-color: #737C83;
+    display: flex;
+    justify-content: center;
+}
+  
+.login-background-2 .login-footer .list-group {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.login-background-2 .login-header .sc-icon {
+    color: #fff;
+    font-size:50px;
+}
+  
+.login-background-2 .login-box h2{
+    margin: 10px 0 10px;
+}
+  
+.login-background-2 .login-header .logo-label {
+    font-size:30px;
+}
+
+.login-background-2 .login-box .btn-blue{
+    display: inline-block;
+    margin: 0 30px 10px 30px;
+    background: radial-gradient(circle, rgba(9,158,236,1) 0%, rgba(18,151,219,1) 100%);
+}
+  
+.login-background-2 .login-box .form-control {
+    font-size:14px;
+}
+  
+.login-background-2 .login-option {
+    
+}
+
+.login-background-2 footer .navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.login-option .col-6 {
+    display: flex;
+    justify-content: center;
+}
+
+

@@ -61,7 +61,11 @@
 .icon-camera:before { content: '\e83b'; } /* '' */
 .icon-curriculums:before { content: '\e83c'; } /* '' */
 .icon-moodle:before { content: '\e83d'; } /* '' */
+.icon-forward:before { content: '\e83e'; } /* '' */
+.icon-right-bold:before { content: '\e83f'; } /* '' */
 .icon-left-dir:before { content: '\e840'; } /* '' */
+.icon-forward-1:before { content: '\e841'; } /* '' */
+.icon-lightbulb-on:before { content: '\e842'; } /* '' */
 .icon-floppy:before { content: '\e844'; } /* '' */
 .icon-logout:before { content: '\e845'; } /* '' */
 .icon-export:before { content: '\e846'; } /* '' */

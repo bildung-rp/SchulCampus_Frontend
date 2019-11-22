@@ -343,11 +343,69 @@
     }
 
 
+    /* ------------Login------------*/
+    .login-background-2 .login-box {   
+        height: 515px;
+    }
+
+
+    .login-background-2 .login-form .btn-unlock {
+        width: 60%;
+        margin: 0;
+    }
+
+    .login-background-2 #freischaltarea {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .login-background-2 #freischaltarea {
+        
+    }
+
+    .login-background-2 .login-box .btn-blue {
+        margin: 15px 30px 10px 30px;
+    }
+
+    .sc-brand img {
+        width: 40%;
+        height: auto;
+    }
+
+    .tooltip-inaktiv {
+        width: 520px;
+        margin-left: 359px;
+        margin-top: -99px;
+    }
+
+    .tooltip-inaktiv-arrow {
+        margin-left: 0px;
+        margin-top: -29px;
+    }
+
+
+
+
+
+
 }
 
  
 
 @media (max-width: 575px) {
+
+    .sc-brand img {
+        width: 60%;
+        height: auto;
+    }
+
+    .login-background-2 .login-box .btn-blue {
+        margin: 15px 15px 10px 15px !important;
+    }
+    
+
 
     header.container-fluid {
         padding-right: 0;
@@ -450,6 +508,12 @@
 
 @media screen and (max-width: 450px) { 
 
+    .sc-brand img {
+        width: 80%;
+        height: auto;
+    }
+
+
     main {
         margin-left: 0;
         margin-right: 0;
@@ -539,6 +603,15 @@
         height: 120px;
     }
 
+    .login-background-2 .login-form .btn-unlock {
+        width: 100%;
+    }
+
+    .login-background-2 #freischaltarea {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
 }
 
 
@@ -572,6 +645,32 @@
 
     #topnav-mobile .dropdown-item {
         padding-left: 20%;
+    }
+
+    .login-background-2 .login-box {
+        height: 500px;
+        margin-top: -50px;
+    }
+
+    .form-group.f-code {
+        height: 90px;
+    }
+
+    .login-background-2 #freischaltarea {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .btn.btn-login-form {
+        font-size: 14px !important;
+    }
+
+    
+
+    .login-background-2 .login-box .btn-blue {
+        margin: 15px 30px 10px 30px !important;
     }
 
 
