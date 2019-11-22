@@ -377,15 +377,18 @@
     .tooltip-inaktiv {
         width: 520px;
         margin-left: 359px;
-        margin-top: -99px;
+        margin-top: -76px;
     }
 
     .tooltip-inaktiv-arrow {
         margin-left: 0px;
-        margin-top: -29px;
+        margin-top: -6px;
     }
 
-
+    .tooltip-iconarea {
+        margin-top: -98px;
+        margin-left: -135px;
+    }
 
 
 
