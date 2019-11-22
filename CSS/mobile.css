@@ -405,7 +405,19 @@
         margin: 15px 15px 10px 15px !important;
     }
     
+    .login-background-2 .login-header {
+        border-radius: 0;
+    }
 
+    .wrapper {
+        display: flex;
+        margin-top: -50px;
+        flex-grow: 0;
+    }
+
+    .login-background-2 .login-box {
+        border-radius: 0;
+    }
 
     header.container-fluid {
         padding-right: 0;
@@ -650,6 +662,11 @@
     .login-background-2 .login-box {
         height: 500px;
         margin-top: -50px;
+        border-radius: 0;
+    }
+
+    .wrapper {
+        margin-top: 0px;
     }
 
     .form-group.f-code {
