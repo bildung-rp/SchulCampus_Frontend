@@ -212,9 +212,21 @@
                             </div>
                         </div>
 
+                        <div class="form-group row no-gutters">
+                            <label for="primaryorg" class="col-sm-2">primäre Rolle</label>
+                            <div class="col-9 col-sm-8">
+                                <select class="selectpicker" id="primaryorg">
+                                    <option selected>Lehrkraft</option>
+                                    <option>Schüler/-in</option>
+                                    <option>Sonstige</option>
+                                </select>
+                            </div>
+                            <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="primäre Rollenzuordnung"></a>
+                        </div>
+
                         <div class="row no-gutters">
                             <div class="col-2">
-                                <h4>Rollen</h4>
+                                <h4>weitere Rollen</h4>
                             </div>
                             <div class="col-10">
                                 <div class="sbsms">
@@ -226,7 +238,7 @@
                                                     <div class="form-wizards-wrap form-wizards-aside">
                                                         <div class="form-wizards-element">
                                                             <ul class="form-control">
-                                                                <li>Lehrkraft</li>
+                                                                <li>Campusbetreuer/-in</li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -242,8 +254,10 @@
                                                         </span>
                                                     </div>
                                                     <ul class="form-control right">
-                                                        <li>Schüler/in</li>
-                                                        <li>an Schule Beteiligte</li>
+                                                        <li>Schulleitung</li>
+                                                        <li>VHS-Lehrkraft</li>
+                                                        <li>GTS-Betreuer/-in</li>
+                                                        <li>Beta-Tester/-in</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -254,20 +268,20 @@
                         </div>
 
                         <div class="form-group row no-gutters">
-                            <label for="persnumber" class="col-sm-2">Personalnummer</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="persnumber" placeholder="Personalnummer" value="00873526">
+                            <label for="primaryorg" class="col-sm-2">Stammorganisation</label>
+                            <div class="col-9 col-sm-8">
+                                <select class="selectpicker" id="primaryorg">
+                                    <option selected>GY Mainz Rabanus-Maurus</option>
+                                    <option>GY Mainz Willigis</option>
+                                </select>
                             </div>
                             <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="IPEMA-Personalnummer"></a>
                         </div>
 
                         <div class="form-group row no-gutters">
-                            <label for="primaryorg" class="col-sm-2">Stammorganisation</label>
-                            <div class="col-sm-8">
-                                <select class="selectpicker" id="primaryorg">
-                                    <option selected>GY Mainz Rabanus-Maurus</option>
-                                    <option>GY Mainz Willigis</option>
-                                </select>
+                            <label for="persnumber" class="col-sm-2">Personalnummer</label>
+                            <div class="col-9 col-sm-8">
+                                <input type="text" class="form-control" id="persnumber" placeholder="Personalnummer" value="00873526">
                             </div>
                             <a class="col-1 sc-icon icon-question-circle-regular" data-toggle="tooltip" data-placement="top" data-html="true" title="IPEMA-Personalnummer"></a>
                         </div>
