@@ -213,7 +213,7 @@
                         </div>
 
                         <div class="form-group row no-gutters">
-                            <label for="primaryorg" class="col-sm-2">primäre Rolle</label>
+                            <label for="primaryorg" class="col-sm-2"><h4>primäre Rolle</h4></label>
                             <div class="col-9 col-sm-8">
                                 <select class="selectpicker" id="primaryorg">
                                     <option selected>Lehrkraft</option>
