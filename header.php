@@ -160,7 +160,7 @@
                 <div id="usernav" class="dropdown dd-right">
                     <button type="button" class="btn dropdown-lime dropdown-toggle" data-toggle="dropdown">
                         <i class="logo sc-icon-dd fa fa-user-circle"></i>
-                        <span class="dd-label">Lisa-Marie von Boblonski</span>
+                        <span class="dd-label">Lisa-Marie Harder</span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime dropdown-menu-wide">
                         <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>

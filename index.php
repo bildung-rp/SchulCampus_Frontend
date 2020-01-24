@@ -348,7 +348,7 @@ include "header.php";
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cw1" aria-expanded="true" aria-controls="cw1">
 
-                                            <h4>GY Mainz Rabanus Maurus </h4>
+                                            <h4>IGS Mainz Bretzenheim</h4>
                                         </button>
 
                                     </div>
@@ -393,7 +393,7 @@ include "header.php";
 
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cw3" aria-expanded="true" aria-controls="cw3">
-                                            <h4>GY Mainz Willigis</h4>
+                                            <h4>Fortbildungen (PL)</h4>
                                         </button>
 
                                     </div>
@@ -401,7 +401,7 @@ include "header.php";
                                         <div class="card-body">
                                             <ul>
                                                 <li>
-                                                    <a href="#">13 evR Bewahrung der Schöpfung</a>
+                                                    <a href="#">Nähen von Hand: Für Dich und für…</a>
                                                 </li>
                                             </ul>
                                         </div>
