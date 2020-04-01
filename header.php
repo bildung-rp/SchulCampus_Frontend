@@ -148,9 +148,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-<!--                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein."> -->
+                            <a class="nav-link" href="#" data-toggle="popover" data-trigger="focus" data-placement="auto" title="Einstellungen" data-content="Morgen wird für eine Stunde die Mediathek nicht erreichbar sein.">
                                 <span class="sc-icon-pills icon-user-cog-solid"></span>
-<!--                                <span class="badge">2</span> -->
+                                <span class="badge">2</span>
                             </a>
                         </li>
                     </ul>
