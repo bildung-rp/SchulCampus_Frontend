@@ -206,7 +206,7 @@ include "header.php";
                         <span class="icon-play-circled blue-icon-lg"></span>
                     </div>
                     <div class="bluebox-label">
-                        <a href="#">Mediathek</a>
+                        <a href="http://repo.bildung-rp.de/edu-sharing/components/search?query=&repositoryFilter=repo.bildung-rp.de,local2,brockhaus,pixabay,learningapps&repository=local2&mdsExtended=false&sidenav=false&materialsSortBy=score&materialsSortAscending=false">Mediathek</a>
                     </div>
                 </section>
             </div>
