@@ -19,7 +19,7 @@
     --dunkelgrau-4: #737C83;
     --hellgrau-1: #A7ADB1;
     --hellgrau-2: #E3E3E5;
-    --hellgrau-3: #F1F1F6;
+    --hellgrau-3: #F4F4F4;
     --hellgrau-4: #F8F8F8;
     --status-gruen: #44B687;
     --statusgelb: #EFB640;
@@ -38,6 +38,7 @@ body {
     padding: 25px 0 0 0;
     /* respect fixed header bar */
     font-family: 'Open Sans', Arial, sans-serif !important;
+    background-color: #f4f4f4;
 }
 
 body {
@@ -1816,8 +1817,9 @@ section:hover .tooltip-inaktiv, section:hover .tooltip-inaktiv-arrow, section:ho
     display: block;
     min-height: 650px;
     min-width: 300px;
-    background-color: #F0F0F1;
+    background-color: #fff;
     transition: min-width .3s ease;
+    border-radius: 5px;
 }
 
 .sidebar .accordion.sticky-top {
@@ -1834,7 +1836,7 @@ section:hover .tooltip-inaktiv, section:hover .tooltip-inaktiv-arrow, section:ho
     padding: 20px 1.25rem 5px 1.25rem;
     color: #505B64;
     background-color: transparent;
-    border-bottom: 1px solid #F0F0F1;
+    border-bottom: none;
 }
 
 .sidebar .card-body {
