@@ -722,6 +722,7 @@ dt::before {
     border-top: none;
     border-right: none;
     border-bottom: 3px solid #009CEE;
+    background-color: transparent;
 }
 
 .nav-link {
