@@ -72,7 +72,7 @@ include "header.php";
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cs1" aria-expanded="true" aria-controls="cs1">
 
-                                            <h4>Meine Inhalte</h4>
+                                            <h4><a href="http://repo.bildung-rp.de/edu-sharing/components/workspace/files?root=MY_FILES&viewType=0&mainnav=true">Meine Inhalte</a></h4>
                                         </button>
 
                                     </div>
@@ -83,7 +83,7 @@ include "header.php";
 
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cs2" aria-expanded="true" aria-controls="cs2">
-                                            <h4>Von mir freigegeben</h4>
+                                            <h4><a href="http://repo.bildung-rp.de/edu-sharing/components/workspace/files?root=MY_SHARED_FILES&viewType=0&mainnav=true">Von mir freigegeben</a></h4>
                                         </button>
 
                                     </div>
@@ -94,11 +94,34 @@ include "header.php";
 
                                         <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
                                             data-target="#cs3" aria-expanded="true" aria-controls="cs3">
-                                            <h4>Für mich freigegeben</h4>
+                                            <h4><a href="http://repo.bildung-rp.de/edu-sharing/components/workspace/files?root=TO_ME_SHARED_FILES&viewType=0&mainnav=true">Für mich freigegeben</a></h4>
                                         </button>
 
                                     </div>
                                 </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="s4">
+
+                                        <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
+                                            data-target="#cs3" aria-expanded="true" aria-controls="cs4">
+                                            <h4><a href="http://repo.bildung-rp.de/edu-sharing/components/search">Suche</a></h4>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="s5">
+
+                                        <button class="btn btn-link sc-icon collapsed" data-toggle="collapse"
+                                            data-target="#cs3" aria-expanded="true" aria-controls="cs5">
+                                            <h4><a href="http://repo.bildung-rp.de/edu-sharing/components/collections">Sammlungen</a></h4>
+                                        </button>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

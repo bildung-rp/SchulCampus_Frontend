@@ -93,31 +93,31 @@
                                 <span>Startseite</span>
                             
                         </a>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="http://repo.bildung-rp.de/edu-sharing/components/workspace/files?root=MY_FILES&viewType=0&mainnav=true">
                             
                                 <i class="sc-icon-dd icon-folder-open"></i>
                                 <span>meine Dateien</span>
                             
                         </a>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="https://lms.schulcampus-rlp.de">
                             
                                 <i class="sc-icon-dd icon-graduation-cap"></i>
                                 <span>moodle@RLP</span>
                             
                         </a>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="http://repo.bildung-rp.de/edu-sharing/components/search?query=&repositoryFilter=repo.bildung-rp.de,local2,brockhaus,pixabay,learningapps&repository=local2&mdsExtended=false&sidenav=false&materialsSortBy=score&materialsSortAscending=false">
                             
                                 <i class="sc-icon-dd icon-play-circled"></i>
                                 <span>Mediathek</span>
                             
                         </a>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="https://curriculum.schulcampus-rlp.de">
                             
                                 <i class="sc-icon-dd icon-curriculum"></i>
                                 <span>curriculum</span>
                             
                         </a>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="https://curriculum.schulcampus-rlp.de/public/">
                             
                                 <i class="sc-icon-dd icon-book-1"></i>
                                 <span>Lehr- und Rahmenpläne</span>
