@@ -752,7 +752,7 @@ dt::before {
     font-size: 14px;
     color: #2F3A48;
     padding-left: 30px;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .breadcrumb-item>a:hover {
@@ -2381,7 +2381,7 @@ select.result-counter {
     width: 100%;
     margin: 0;
     padding: 15px;
-    background-color: #F1F1F6;
+    background-color: #fff;
     flex-grow: 1;
     color: #2F3A48;
     font-size: 14px;
