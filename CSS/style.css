@@ -130,8 +130,8 @@ a.btn {
 }
 
 .btn-blue:hover {
-    color: #0583C9;
-    background-color: #99E0FD;
+    color: #2F3A48;
+    background-color: #00B2F9;
 }
 
 .btn-blue:focus,
@@ -149,7 +149,7 @@ a.btn {
 .btn-blue:not(:disabled):not(.disabled).active,
 .show>.btn-blue.dropdown-toggle {
     color: #2F3A48;
-    background-color: #00B2F9;
+    background-color: #99E0FD;
 }
 
 .btn-blue:not(:disabled):not(.disabled):active:focus,
@@ -248,23 +248,23 @@ h4 {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
-    color: #505B64;
 }
 
 h2 {
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
+    color: #505B64;
 }
 
 h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -281,8 +281,8 @@ p.gross {
 }
 
 p.normal {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .readingtext {
@@ -867,7 +867,7 @@ img.round {
 }
 
 .markaction .btn {
-    font-weight: 400;
+    font-weight: 700;
     margin-right: 5px;
     font-size: 14px;
     margin-bottom: 5px;
