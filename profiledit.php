@@ -121,11 +121,11 @@
         <div class="tab-content">
             <div class="tab-pane active" id="idm" style="padding-top: 0">
 
-                <h1 class="mb-15">Benutzerdaten bearbeiten</h1>
+                <h2 class="mb-15">Benutzerdaten bearbeiten</h2>
                 <form>
 
                     <div id="profil">
-                        <h2>Allgemein</h2>
+                        <h3>Allgemein</h3>
                         <div class="no-gutters">
                                 <div class="form-group row no-gutters">
                                     <label for="lastname" class="col-sm-2">Nachname</label>
@@ -157,7 +157,7 @@
                     </div>
 
                     <div id="memberships">
-                        <h2>Mitgliedschaften</h2>
+                        <h3>Mitgliedschaften</h3>
                         <div class="row no-gutters">
                             <div class="col-2">
                                 <h4>Gruppen</h4>
@@ -303,7 +303,7 @@
                         </div>
                     </div>
 
-                    <h2>Anmeldedaten</h2>
+                    <h3>Anmeldedaten</h3>
 
                     <div class="form-group d-flex">
                         <div class="col-lg-12">
