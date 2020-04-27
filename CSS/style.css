@@ -229,7 +229,8 @@ a.btn {
 
 .btn-search:not(:disabled):not(.disabled):active,
 .btn-search:not(:disabled):not(.disabled).active,
-.show>.btn-search.dropdown-toggle {
+.show>.btn-search.dropdown-toggle,
+.pagesearch-filter .btn-submit:hover {
     color: #fff;
     background-color: #0583C9;
 }
