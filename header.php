@@ -163,7 +163,7 @@
                         <span class="dd-label">Lisa-Marie Harder</span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime dropdown-menu-wide">
-                        <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
+                        <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-user-edit"></i>
                                 <span>mein Profil</span></a>
                         <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
                                 <span>Benutzerverwaltung</span></a>
@@ -208,7 +208,7 @@
 
         <div class="dropdown-menu-full" id="usernav-mobile">
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
-                <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
+                <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-user-edit"></i>
                                 <span>mein Profil</span></a>
                 <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
                                 <span>Benutzerverwaltung</span></a>
