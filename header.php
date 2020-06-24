@@ -51,7 +51,7 @@
                         $lastElement = array_slice(explode('/', rtrim($url, '/')), -1)[0];
 
                         switch($lastElement) {
-                            case "index.php":
+/*                            case "index.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span><b>Schul</b>campus&nbsp;<i>RLP</i></span>";
                             break;
@@ -59,13 +59,13 @@
                                 echo "<i class='sc-icon-dd icon-schulcampusn'></i>
                                 <span>meine Dateien</span>";
                             break;
-                            case "moodle.php":
-                                echo "<i class='sc-icon-dd icon-schulcampus'></i>
-                                <span>moodle@RLP</span>";
-                            break;
                             case "mediathek.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>Mediathek</span>";
+                            break;
+                            case "moodle.php":
+                                echo "<i class='sc-icon-dd icon-schulcampus'></i>
+                                <span>moodle@RLP</span>";
                             break;
                             case "curriculum.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
@@ -78,7 +78,7 @@
                             case "infoportal.php":
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span>Infoportal</span>";
-                            break;
+                            break; */
                             default:
                                 echo "<i class='sc-icon-dd icon-schulcampus'></i>
                                 <span><b>Schul</b>campus&nbsp;<i>RLP</i></span>";
@@ -99,16 +99,16 @@
                                 <span>meine Dateien</span>
                             
                         </a>
-                        <a class="dropdown-item" href="https://lms.schulcampus-rlp.de">
-                            
-                                <i class="sc-icon-dd icon-graduation-cap"></i>
-                                <span>moodle@RLP</span>
-                            
-                        </a>
                         <a class="dropdown-item" href="http://repo.bildung-rp.de/edu-sharing/components/search?query=&repositoryFilter=repo.bildung-rp.de,local2,brockhaus,pixabay,learningapps&repository=local2&mdsExtended=false&sidenav=false&materialsSortBy=score&materialsSortAscending=false">
                             
                                 <i class="sc-icon-dd icon-play-circled"></i>
                                 <span>Mediathek</span>
+                            
+                        </a>
+                        <a class="dropdown-item" href="https://lms.schulcampus-rlp.de">
+                            
+                                <i class="sc-icon-dd icon-graduation-cap"></i>
+                                <span>moodle@RLP</span>
                             
                         </a>
                         <a class="dropdown-item" href="https://curriculum.schulcampus-rlp.de">
@@ -164,7 +164,7 @@
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime dropdown-menu-wide">
                         <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
-                                <span>Profil bearbeiten</span></a>
+                                <span>mein Profil</span></a>
                         <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
                                 <span>Benutzerverwaltung</span></a>
                         <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-power-off"></i>
@@ -184,12 +184,12 @@
                     <span>meine Dateien</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <i class="sc-icon-dd icon-graduation-cap"></i>
-                    <span>moodle@RLP</span>
-                </a>
-                <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-play-circled"></i>
                     <span>Mediathek</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                    <i class="sc-icon-dd icon-graduation-cap"></i>
+                    <span>moodle@RLP</span>
                 </a>
                 <a class="dropdown-item" href="#">
                     <i class="sc-icon-dd icon-bank"></i>
@@ -209,7 +209,7 @@
         <div class="dropdown-menu-full" id="usernav-mobile">
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lime">
                 <a class="dropdown-item" href="profiledit.php"><i class="sc-icon-dd fa fa-user-edit"></i>
-                                <span>Profil bearbeiten</span></a>
+                                <span>mein Profil</span></a>
                 <a class="dropdown-item" href="benutzerverwaltung.php"><i class="sc-icon-dd fa fa-users"></i>
                                 <span>Benutzerverwaltung</span></a>
                 <a class="dropdown-item" href="#"><i class="sc-icon-dd fa fa-power-off"></i>
